@@ -1,0 +1,16 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "circle-dashed-number-7" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const CircleDashedNumber7 = createIcon("CircleDashedNumber7", "circle-dashed-number-7", {
+  nodes: [
+    ["path", { d: "M8.56 3.69a9 9 0 0 0 -2.92 1.95" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M3.69 8.56a9 9 0 0 0 -.69 3.44" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M3.69 15.44a9 9 0 0 0 1.95 2.92" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M8.56 20.31a9 9 0 0 0 3.44 .69" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M15.44 20.31a9 9 0 0 0 2.92 -1.95" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M20.31 15.44a9 9 0 0 0 .69 -3.44" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M20.31 8.56a9 9 0 0 0 -1.95 -2.92" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M15.44 3.69a9 9 0 0 0 -3.44 -.69" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M10 8h4l-2 8" }, { r: "draw", d: 0.1 }],
+  ],
+});

@@ -1,0 +1,6 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "alphabet-ethiopic" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const AlphabetEthiopic = createIcon("AlphabetEthiopic", "alphabet-ethiopic", {
+  nodes: [["path", { d: "M6 19h2v-10a4 4 0 1 1 8 0v10h2" }, { r: "draw", d: 0.0 }]],
+});

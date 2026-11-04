@@ -5,7 +5,7 @@
 <h1 align="center">PulsoIcon</h1>
 
 <p align="center">
-  <strong>2559 animated React icons. Every one has its own motion.</strong><br />
+  <strong>6328 animated React icons. Every one has its own motion.</strong><br />
   A drop-in replacement for lucide-react icons that comes alive on hover.
 </p>
 
@@ -27,7 +27,7 @@ PulsoIcon gives every icon a motion written for that icon, not one effect stampe
 
 ## Why PulsoIcon
 
-- **2559 icons**: all 2020 Lucide icons (as of Lucide 1.68), 365 extra icons drawn for this set (animals, sports, clothing, gestures, 3D and easing tools, file formats, commerce and status variants, …) and 174 brand logos (GitHub, Slack, Spotify, OpenAI, Claude, TikTok, VS Code, Google Drive, …).
+- **6328 icons**: all 2020 Lucide icons (as of Lucide 1.68), 3505 icons from [Tabler Icons](https://tabler.io/icons) (3.50, the outline set, each given its own motion), 365 extra icons drawn for this set (animals, sports, clothing, gestures, 3D and easing tools, …) and 438 brand logos (GitHub, Slack, Spotify, OpenAI, Claude, TikTok, VS Code, Google Drive, …).
 - **Switch in one line**: same component names as lucide-react (`Calendar`, `CalendarIcon`, aliases such as `AlertCircle`) and the same props. Usually you only change the import.
 - **Ships only what you use**: every icon is its own module and the package is side-effect free, so bundlers keep the icons you import and drop the rest. Three icons add about 12 kB before minification.
 - **Plays where people point**: hover or focus anywhere on a button, link, label, tab or menu item and its icon plays.
@@ -74,6 +74,10 @@ Hover a button and its icon plays.
 ```
 
 Icon components and their props work the same. Lucide's helpers (`createLucideIcon`, `LucideProvider`, the `icons` object) are not included.
+
+### Coming from Tabler
+
+Tabler icon names work too, without the `Icon` prefix: `IconMoodSad` is `MoodSad`, `IconHome` is `Home`, `IconBrandGithub` is `BrandGithub`. Where Lucide already has the icon, the Tabler name points to it (`Home` is `House`), and Tabler families follow Lucide's naming (`HomeDollar` is `HouseDollar`, `PhotoEdit` is `ImageEdit`).
 
 ## Props
 
@@ -131,7 +135,7 @@ All product names, logos and brands are the property of their respective owners 
 
 ### All icons at once
 
-For icon pickers and galleries, `pulsoicon/all` exports every icon by its kebab-case name. It pulls in all 2559 icons, so use it only where you need the full set:
+For icon pickers and galleries, `pulsoicon/all` exports every icon by its kebab-case name. It pulls in all 6328 icons, so use it only where you need the full set:
 
 ```tsx
 import { ICON_NAMES, ICONS } from "pulsoicon/all";
@@ -170,4 +174,4 @@ Each icon is a small React file in `src/icons/<name>.tsx`: the shapes of the ico
 
 ISC © CityPulso
 
-The animations, the runtime, the extra icons and the brand drawings are original work of this project, except for six icons adapted from [Hugeicons](https://hugeicons.com) and [Iconoir](https://iconoir.com) (both MIT, listed in [LICENSE](./LICENSE)); brand logos remain trademarks of their owners. The shapes of the Lucide icons are based on [Lucide](https://lucide.dev) (ISC, with some icons derived from Feather, MIT). Their notices are included in [LICENSE](./LICENSE).
+The animations, the runtime, the extra icons and the brand drawings are original work of this project, except for six icons adapted from [Hugeicons](https://hugeicons.com) and [Iconoir](https://iconoir.com) (both MIT, listed in [LICENSE](./LICENSE)); brand logos remain trademarks of their owners. The shapes of the icons marked "Adapted from Tabler Icons" in their source are from [Tabler Icons](https://tabler.io/icons) (MIT); their motions are written for this set. The shapes of the Lucide icons are based on [Lucide](https://lucide.dev) (ISC, with some icons derived from Feather, MIT). Their notices are included in [LICENSE](./LICENSE).

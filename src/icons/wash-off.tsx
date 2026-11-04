@@ -1,0 +1,16 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "wash-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const WashOff = createIcon("WashOff", "wash-off", {
+  nodes: [
+    ["path", { d: "M3 6l1.721 10.329a2 2 0 0 0 1.973 1.671h10.612c.208 0 .41 -.032 .6 -.092m1.521 -2.472l1.573 -9.436" }, { r: "pulse", a: 0.03, o: [12, 12] }],
+    [
+      "path",
+      {
+        d: "M3.486 8.965c.168 .02 .34 .033 .514 .035c.79 .009 1.539 -.178 2 -.5c.461 -.32 1.21 -.507 2 -.5m4.92 .919c.428 -.083 .805 -.227 1.08 -.418c.461 -.322 1.21 -.508 2 -.5c.79 -.008 1.539 .178 2 .5c.461 .32 1.21 .508 2 .5c.17 0 .339 -.015 .503 -.035",
+      },
+      { r: "sway", a: 3, o: [12, 9] },
+    ],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
+  ],
+});

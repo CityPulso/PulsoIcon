@@ -1,0 +1,15 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "zoom-out-area" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const ZoomOutArea = createIcon("ZoomOutArea", "zoom-out-area", {
+  nodes: [
+    ["path", { d: "M13 15h4" }, { r: "growX", d: 0.15, o: [15, 15] }],
+    ["path", { d: "M10 15a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" }, { r: "tilt", a: 10, o: [15, 15] }],
+    ["path", { d: "M22 22l-3 -3" }, { r: "tilt", a: 10, o: [15, 15] }],
+    ["path", { d: "M6 18h-1a2 2 0 0 1 -2 -2v-1" }],
+    ["path", { d: "M3 11v-1" }],
+    ["path", { d: "M3 6v-1a2 2 0 0 1 2 -2h1" }],
+    ["path", { d: "M10 3h1" }],
+    ["path", { d: "M15 3h1a2 2 0 0 1 2 2v1" }],
+  ],
+});

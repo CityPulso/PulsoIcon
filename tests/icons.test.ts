@@ -48,6 +48,15 @@ describe("icon set", () => {
   });
 });
 
+describe("pivots", () => {
+  it("rotate each shape about its own point, not the icon centre", () => {
+    // Motion overwrites a plain transformOrigin with 50% 50%; the bell must swing from its top (12, 3).
+    const markup = renderToStaticMarkup(createElement(Pulso.Bell));
+    expect(markup).toContain("transform-origin:12px 3px");
+    expect(markup).not.toContain("transform-origin:50% 50%");
+  });
+});
+
 describe("props", () => {
   const render = (props: Record<string, unknown>) => renderToStaticMarkup(createElement(Pulso.Calendar, props));
 

@@ -1,0 +1,11 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "pencil-share" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const PencilShare = createIcon("PencilShare", "pencil-share", {
+  nodes: [
+    ["path", { d: "M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" }],
+    ["path", { d: "M13.5 6.5l4 4" }],
+    ["path", { d: "M16 22l5 -5" }, { r: "slide", x: 1, y: -1, a: 1.5 }],
+    ["path", { d: "M21 21.5v-4.5h-4.5" }, { r: "slide", x: 1, y: -1, a: 1.5 }],
+  ],
+});

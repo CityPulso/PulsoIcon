@@ -1,0 +1,17 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "filter-2-cog" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const Funnel2Cog = createIcon("Funnel2Cog", "funnel-2-cog", {
+  nodes: [
+    ["path", { d: "M4 6h16" }],
+    ["path", { d: "M6 12h12" }],
+    ["path", { d: "M9 18h3" }],
+    [
+      "path",
+      {
+        d: "M19.001 21c-.53 0 -1.039 -.211 -1.414 -.586c-.375 -.375 -.586 -.884 -.586 -1.414c0 -.53 .211 -1.039 .586 -1.414c.375 -.375 .884 -.586 1.414 -.586m0 4c.53 0 1.039 -.211 1.414 -.586c.375 -.375 .586 -.884 .586 -1.414c0 -.53 -.211 -1.039 -.586 -1.414c-.375 -.375 -.884 -.586 -1.414 -.586m0 4v1.5m0 -5.5v-1.5m3.031 1.75l-1.299 .75m-3.463 2l-1.3 .75m0 -3.5l1.3 .75m3.463 2l1.3 .75",
+      },
+      { r: "spin", a: 180, o: [19, 19] },
+    ],
+  ],
+});

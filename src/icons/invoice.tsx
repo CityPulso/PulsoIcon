@@ -1,0 +1,13 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "invoice" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const Invoice = createIcon("Invoice", "invoice", {
+  nodes: [
+    ["path", { d: "M14 3v4a1 1 0 0 0 1 1h4" }, { r: "draw", d: 0.15 }],
+    [
+      "path",
+      { d: "M19 12v7a1.78 1.78 0 0 1 -3.1 1.4a1.65 1.65 0 0 0 -2.6 0a1.65 1.65 0 0 1 -2.6 0a1.65 1.65 0 0 0 -2.6 0a1.78 1.78 0 0 1 -3.1 -1.4v-14a2 2 0 0 1 2 -2h7l5 5v4.25" },
+      { r: "float", a: 1 },
+    ],
+  ],
+});

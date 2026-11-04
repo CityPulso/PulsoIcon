@@ -1,0 +1,10 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "shield-share" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const ShieldShare = createIcon("ShieldShare", "shield-share", {
+  nodes: [
+    ["path", { d: "M12 21a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 .193 6.025" }],
+    ["path", { d: "M16 22l5 -5" }, { r: "slide", x: 1, y: -1, a: 1.5 }],
+    ["path", { d: "M21 21.5v-4.5h-4.5" }, { r: "slide", x: 1, y: -1, a: 1.5 }],
+  ],
+});

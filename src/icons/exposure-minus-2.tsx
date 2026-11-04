@@ -1,0 +1,9 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "exposure-minus-2" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const ExposureMinus2 = createIcon("ExposureMinus2", "exposure-minus-2", {
+  nodes: [
+    ["path", { d: "M12 9a4 4 0 1 1 8 0c0 1.098 -.564 2.025 -1.159 2.815l-6.841 7.185h8" }, { r: "draw", d: 0.15 }],
+    ["path", { d: "M3 12h6" }, { r: "pop", o: [6, 12] }],
+  ],
+});

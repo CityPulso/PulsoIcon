@@ -1,0 +1,11 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "cash-minus" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const CashMinus = createIcon("CashMinus", "cash-minus", {
+  nodes: [
+    ["path", { d: "M7 15h-3a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v3" }],
+    ["path", { d: "M12 19h-4a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v5" }],
+    ["path", { d: "M12 14a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" }],
+    ["path", { d: "M16 19h6" }, { r: "pop", o: [19, 19] }],
+  ],
+});

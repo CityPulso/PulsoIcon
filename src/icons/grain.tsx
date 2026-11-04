@@ -1,0 +1,15 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "grain" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const Grain = createIcon("Grain", "grain", {
+  nodes: [
+    ["path", { d: "M3.5 9.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "pop", a: 0.3, o: [3.5, 9.5] }],
+    ["path", { d: "M8.5 4.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "pop", d: 0.04, a: 0.3, o: [8.5, 4.5] }],
+    ["path", { d: "M8.5 14.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "pop", d: 0.08, a: 0.3, o: [8.5, 14.5] }],
+    ["path", { d: "M3.5 19.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "pop", d: 0.12, a: 0.3, o: [3.5, 19.5] }],
+    ["path", { d: "M13.5 9.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "pop", d: 0.16, a: 0.3, o: [13.5, 9.5] }],
+    ["path", { d: "M18.5 4.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "pop", d: 0.2, a: 0.3, o: [18.5, 4.5] }],
+    ["path", { d: "M13.5 19.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "pop", d: 0.24, a: 0.3, o: [13.5, 19.5] }],
+    ["path", { d: "M18.5 14.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "pop", d: 0.28, a: 0.3, o: [18.5, 14.5] }],
+  ],
+});

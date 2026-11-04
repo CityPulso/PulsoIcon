@@ -1,0 +1,11 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "device-watch-bolt" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const WatchBolt = createIcon("WatchBolt", "watch-bolt", {
+  nodes: [
+    ["path", { d: "M13 18h-4a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v3" }],
+    ["path", { d: "M9 18v3h4.5" }],
+    ["path", { d: "M9 6v-3h6v3" }],
+    ["path", { d: "M19 16l-2 3h4l-2 3" }, { r: "flicker", d: 0.1 }],
+  ],
+});

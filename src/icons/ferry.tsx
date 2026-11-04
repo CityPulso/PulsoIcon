@@ -1,0 +1,10 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "ferry" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const Ferry = createIcon("Ferry", "ferry", {
+  nodes: [
+    ["path", { d: "M2 18h15.293c1.02 0 1.972 -.503 2.536 -1.34l2.171 -3.66h-18.479l-1.521 5" }, { r: "sway", a: 4, o: [12, 18] }],
+    ["path", { d: "M14 8l-1 -2" }, { r: "sway", a: 4, o: [12, 18] }],
+    ["path", { d: "M6.107 12.675l1.384 -4.675h8l2.675 4.598" }, { r: "sway", a: 4, o: [12, 18] }],
+  ],
+});

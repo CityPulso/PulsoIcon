@@ -1,0 +1,11 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "message-2-bolt" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const Message2Bolt = createIcon("Message2Bolt", "message-2-bolt", {
+  nodes: [
+    ["path", { d: "M8 9h8" }],
+    ["path", { d: "M8 13h6" }],
+    ["path", { d: "M13 20l-1 1l-3 -3h-3a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v5.5" }],
+    ["path", { d: "M19 16l-2 3h4l-2 3" }, { r: "flicker" }],
+  ],
+});

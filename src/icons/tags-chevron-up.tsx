@@ -1,0 +1,13 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "tags-chevron-up" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const TagsChevronUp = createIcon("TagsChevronUp", "tags-chevron-up", {
+  nodes: [
+    [
+      "path",
+      { d: "M5 21v-13.446c0 -.345 .155 -.665 .411 -.848l6.125 -4.375a.78 .78 0 0 1 .928 0l6.125 4.375c.256 .183 .411 .503 .411 .848v13.446l-7 -5l-7 5" },
+      { r: "slide", d: 0.08, y: -1, a: 1.5 },
+    ],
+    ["path", { d: "M5 14l6.536 -4.669a.78 .78 0 0 1 .928 0l6.536 4.669" }, { r: "slide", y: -1, a: 1.5 }],
+  ],
+});

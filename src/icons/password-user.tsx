@@ -1,0 +1,18 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "password-user" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const PasswordUser = createIcon("PasswordUser", "password-user", {
+  nodes: [
+    ["path", { d: "M12 17v4" }, { r: "pop", d: 0.1, o: [12, 19] }],
+    ["path", { d: "M10 20l4 -2" }, { r: "pop", d: 0.1, o: [12, 19] }],
+    ["path", { d: "M10 18l4 2" }, { r: "pop", d: 0.1, o: [12, 19] }],
+    ["path", { d: "M5 17v4" }, { r: "pop", d: 0.0, o: [5, 19] }],
+    ["path", { d: "M3 20l4 -2" }, { r: "pop", d: 0.0, o: [5, 19] }],
+    ["path", { d: "M3 18l4 2" }, { r: "pop", d: 0.0, o: [5, 19] }],
+    ["path", { d: "M19 17v4" }, { r: "pop", d: 0.2, o: [19, 19] }],
+    ["path", { d: "M17 20l4 -2" }, { r: "pop", d: 0.2, o: [19, 19] }],
+    ["path", { d: "M17 18l4 2" }, { r: "pop", d: 0.2, o: [19, 19] }],
+    ["path", { d: "M9 6a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" }, { r: "float", d: 0.1, o: [12, 6] }],
+    ["path", { d: "M7 14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2" }, { r: "float", d: 0.1, o: [12, 13] }],
+  ],
+});

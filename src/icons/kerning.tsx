@@ -1,0 +1,10 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Tabler Icons "kerning" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const Kerning = createIcon("Kerning", "kerning", {
+  nodes: [
+    ["path", { d: "M16 15v-3.5a2.5 2.5 0 1 1 5 0v3.5m0 -2h-5" }, { r: "slide", x: 1, a: 1.5 }],
+    ["path", { d: "M3 9l3 6l3 -6" }, { r: "slide", x: -1, a: 1.5 }],
+    ["path", { d: "M9 20l6 -16" }, { r: "draw", d: 0.1 }],
+  ],
+});

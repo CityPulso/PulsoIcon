@@ -1,4 +1,5 @@
-import type { CSSProperties, ElementType, ForwardRefExoticComponent, RefAttributes, SVGProps } from "react";
+import type { MotionStyle } from "motion/react";
+import type { ElementType, ForwardRefExoticComponent, RefAttributes, SVGProps } from "react";
 import type { RecipeName, RecipeVariants } from "./recipes.js";
 
 import { createElement, forwardRef, useCallback, useEffect, useImperativeHandle, useRef } from "react";
@@ -67,7 +68,7 @@ const MOTION_TAGS: Record<IconNodeTag, ElementType> = {
 
 interface Prepared {
   variants: RecipeVariants;
-  style: CSSProperties;
+  style: MotionStyle;
 }
 
 const variantsOf = (m: IconMotion) => RECIPES[m.r]({ d: m.d ?? 0, x: m.x ?? 0, y: m.y ?? 0, a: m.a ?? 0 });
@@ -75,7 +76,8 @@ const variantsOf = (m: IconMotion) => RECIPES[m.r]({ d: m.d ?? 0, x: m.x ?? 0, y
 /** Shapes pivot on an absolute viewBox point, so a group of shapes moves as one rigid piece. */
 function prepareNode(m: IconMotion): Prepared {
   const [x, y] = m.o ?? [12, 12];
-  return { variants: variantsOf(m), style: { transformBox: "view-box", transformOrigin: `${x}px ${y}px` } };
+  // Motion builds transform-origin from originX/originY itself; a plain transformOrigin style would be overwritten by its 50% 50% default.
+  return { variants: variantsOf(m), style: { transformBox: "view-box", originX: `${x}px`, originY: `${y}px` } };
 }
 
 /** The <svg> itself is laid out like an HTML box, so its pivot is a percentage of the icon. */
