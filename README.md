@@ -17,6 +17,10 @@
 
 ---
 
+<p align="center">
+  <img src="./PulsoIcon_README_Loop.gif" alt="PulsoIcon icons animating on hover" width="720" />
+</p>
+
 A bell rings. A calendar lifts its rings. A trash can opens its lid. A clock's hand goes round.
 
 PulsoIcon gives every icon a motion written for that icon, not one effect stamped on all of them. At rest each icon is a clean 24×24 icon; it plays when someone hovers or focuses the button, link or tab it sits in.
