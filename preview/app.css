@@ -153,3 +153,49 @@ body {
   font: inherit;
   cursor: pointer;
 }
+
+.select {
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+  font: inherit;
+}
+
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 12px;
+}
+
+.letter {
+  min-width: 30px;
+  padding: 4px 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.letter[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.letter:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.pager {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 0 24px 48px;
+}

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { ICON_NAMES, ICONS } from "pulsoicon/all";
 
+import CATEGORIES from "./categories.json";
+
 enum ThemeEnum {
   LIGHT = "light",
   DARK = "dark",
@@ -20,14 +22,35 @@ function playVisible() {
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+const ALL = "all";
+const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+const categoriesOf = (name: string): readonly string[] => (CATEGORIES as Record<string, string[]>)[name] ?? ["other"];
+const CATEGORY_NAMES = [...new Set(ICON_NAMES.flatMap(categoriesOf))].sort();
+/** "food-beverage" -> "Food & beverage". */
+const categoryLabel = (c: string) => (c.charAt(0).toUpperCase() + c.slice(1)).replace("-beverage", " & beverage").replace(/-/g, " ");
+const letterOf = (name: string) => name.charAt(0).toUpperCase();
+
 export function App() {
   const [query, setQuery] = useState("");
   const [size, setSize] = useState(32);
   const [stroke, setStroke] = useState(2);
   const [theme, setTheme] = useState(() => (window.matchMedia("(prefers-color-scheme: dark)").matches ? ThemeEnum.DARK : ThemeEnum.LIGHT));
 
+  const [letter, setLetter] = useState("A");
+  const [category, setCategory] = useState(ALL);
+
   const q = query.trim().toLowerCase();
-  const names = ICON_NAMES.filter((name) => !q || name.includes(q));
+  // Search looks across every letter; the letter pages apply when the search box is empty.
+  const inCategory = ICON_NAMES.filter((name) => category === ALL || categoriesOf(name).includes(category));
+  const matching = inCategory.filter((name) => !q || name.includes(q));
+  const names = q || letter === ALL ? matching : matching.filter((name) => letterOf(name) === letter);
+  const letterCounts = new Map<string, number>();
+  for (const name of inCategory) letterCounts.set(letterOf(name), (letterCounts.get(letterOf(name)) ?? 0) + 1);
+
+  const goTo = (next: string) => {
+    setLetter(next);
+    window.scrollTo({ top: 0 });
+  };
 
   return (
     <div className="page" data-theme={theme}>
@@ -38,6 +61,14 @@ export function App() {
           {reducedMotion && <p className="warn">Your system asks for reduced motion, so icons will not animate. Turn it off to review.</p>}
         </div>
         <div className="controls">
+          <select aria-label="Category" className="select" onChange={(e) => setCategory(e.target.value)} value={category}>
+            <option value={ALL}>All categories ({ICON_NAMES.length})</option>
+            {CATEGORY_NAMES.map((c) => (
+              <option key={c} value={c}>
+                {categoryLabel(c)} ({ICON_NAMES.filter((name) => categoriesOf(name).includes(c)).length})
+              </option>
+            ))}
+          </select>
           <input aria-label="Search icons" className="search" onChange={(e) => setQuery(e.target.value)} placeholder="Search, e.g. calendar" type="search" value={query} />
           <label className="range">
             Size {size}
@@ -54,7 +85,29 @@ export function App() {
             {theme === ThemeEnum.DARK ? "Light" : "Dark"}
           </button>
         </div>
-        <p className="hint">Showing {names.length}.</p>
+        <nav aria-label="Pages by first letter" className="letters">
+          <button aria-pressed={letter === ALL} className="letter" disabled={!!q} onClick={() => goTo(ALL)} type="button">
+            All
+          </button>
+          {LETTERS.map((l) => (
+            <button
+              aria-pressed={letter === l}
+              className="letter"
+              disabled={!!q || !letterCounts.get(l)}
+              key={l}
+              onClick={() => goTo(l)}
+              title={`${letterCounts.get(l) ?? 0} icons`}
+              type="button"
+            >
+              {l}
+            </button>
+          ))}
+        </nav>
+        <p className="hint">
+          Showing {names.length}
+          {q ? " matches across all letters" : letter === ALL ? "" : ` starting with ${letter}`}
+          {category === ALL ? "" : ` in ${categoryLabel(category)}`}.
+        </p>
       </header>
       <main className="grid">
         {names.map((name) => {
@@ -69,6 +122,28 @@ export function App() {
           );
         })}
       </main>
+      {!q && letter !== ALL && (
+        <footer className="pager">
+          {(() => {
+            const pages = LETTERS.filter((l) => letterCounts.get(l));
+            const i = pages.indexOf(letter);
+            return (
+              <>
+                {i > 0 && (
+                  <button className="button" onClick={() => goTo(pages[i - 1])} type="button">
+                    ← {pages[i - 1]}
+                  </button>
+                )}
+                {i >= 0 && i < pages.length - 1 && (
+                  <button className="button" onClick={() => goTo(pages[i + 1])} type="button">
+                    {pages[i + 1]} →
+                  </button>
+                )}
+              </>
+            );
+          })()}
+        </footer>
+      )}
     </div>
   );
 }

@@ -1,0 +1,14 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+export const BrandMastodon = createIcon("BrandMastodon", "brand-mastodon", {
+  nodes: [
+    [
+      "path",
+      {
+        d: "M21 8.5c0-4-2.6-5.4-6-5.9-1.6-.2-4.4-.2-6 0-3.4.5-6 1.9-6 5.9v4.5c0 4.8 1.5 7.5 6.5 8.4 2.2.4 4.4.3 6.5-.5v-2c-1.8.5-3.6.6-5 .3-1.5-.3-2.3-1-2.5-2.2 3 .7 6.2.7 8.5-.1 2.6-.9 4-2.4 4-4.9z",
+      },
+      { r: "press", a: 0.05, o: [12, 12] },
+    ],
+    ["path", { d: "M8 13V9.5a2 2 0 0 1 4 0V12m0-2.5a2 2 0 0 1 4 0V13" }, { r: "draw", d: 0.1, o: [12, 11] }],
+  ],
+});

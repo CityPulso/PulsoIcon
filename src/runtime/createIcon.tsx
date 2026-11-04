@@ -156,11 +156,13 @@ export function createIcon(displayName: string, iconName: string, spec: IconSpec
         width={size}
         xmlns="http://www.w3.org/2000/svg"
       >
-        {nodes.map(({ tag, attrs, prepared }, i) =>
-          prepared
-            ? createElement(MOTION_TAGS[tag], { key: i, ...attrs, animate: controls, initial: "normal", variants: prepared.variants, style: prepared.style })
-            : createElement(tag, { key: i, ...attrs }),
-        )}
+        {nodes.map(({ tag, attrs, prepared }, i) => {
+          if (!prepared) return createElement(tag, { key: i, ...attrs });
+          // Motion drives the CSS transform, which would replace an SVG transform attribute, so that one moves to a wrapping group.
+          const { transform, ...own } = attrs;
+          const shape = createElement(MOTION_TAGS[tag], { key: i, ...own, animate: controls, initial: "normal", variants: prepared.variants, style: prepared.style });
+          return transform ? createElement("g", { key: i, transform }, shape) : shape;
+        })}
       </motion.svg>
     );
   });

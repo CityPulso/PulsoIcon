@@ -3,9 +3,13 @@ import type { PulsoIcon } from "./runtime/createIcon.js";
 import { AArrowDown } from "./icons/a-arrow-down.js";
 import { AArrowUp } from "./icons/a-arrow-up.js";
 import { ALargeSmall } from "./icons/a-large-small.js";
+import { AbTest } from "./icons/ab-test.js";
 import { Accessibility } from "./icons/accessibility.js";
+import { Acorn } from "./icons/acorn.js";
 import { Activity } from "./icons/activity.js";
 import { Ad } from "./icons/ad.js";
+import { AfricanTree } from "./icons/african-tree.js";
+import { Agile } from "./icons/agile.js";
 import { AirVent } from "./icons/air-vent.js";
 import { Airplay } from "./icons/airplay.js";
 import { AlarmClockCheck } from "./icons/alarm-clock-check.js";
@@ -47,7 +51,11 @@ import { Anvil } from "./icons/anvil.js";
 import { Aperture } from "./icons/aperture.js";
 import { AppWindowMac } from "./icons/app-window-mac.js";
 import { AppWindow } from "./icons/app-window.js";
+import { AppleHalf } from "./icons/apple-half.js";
 import { Apple } from "./icons/apple.js";
+import { Arc3d } from "./icons/arc-3d.js";
+import { Arcade } from "./icons/arcade.js";
+import { Archery } from "./icons/archery.js";
 import { ArchiveArrowDown } from "./icons/archive-arrow-down.js";
 import { ArchiveArrowUp } from "./icons/archive-arrow-up.js";
 import { ArchiveX } from "./icons/archive-x.js";
@@ -105,6 +113,7 @@ import { Asterisk } from "./icons/asterisk.js";
 import { Astroid } from "./icons/astroid.js";
 import { AtSign } from "./icons/at-sign.js";
 import { Atom } from "./icons/atom.js";
+import { AudioDescription } from "./icons/audio-description.js";
 import { AudioLinesOff } from "./icons/audio-lines-off.js";
 import { AudioLinesX } from "./icons/audio-lines-x.js";
 import { AudioLines } from "./icons/audio-lines.js";
@@ -116,7 +125,9 @@ import { Axis3D } from "./icons/axis-3d.js";
 import { AzerbaijaniManat } from "./icons/azerbaijani-manat.js";
 import { Baby } from "./icons/baby.js";
 import { Backpack } from "./icons/backpack.js";
+import { Backward15 } from "./icons/backward-15.js";
 import { Bacon } from "./icons/bacon.js";
+import { Bacteria } from "./icons/bacteria.js";
 import { BadgeAlert } from "./icons/badge-alert.js";
 import { BadgeCent } from "./icons/badge-cent.js";
 import { BadgeCheck } from "./icons/badge-check.js";
@@ -136,6 +147,7 @@ import { BadgeTurkishLira } from "./icons/badge-turkish-lira.js";
 import { BadgeX } from "./icons/badge-x.js";
 import { Badge } from "./icons/badge.js";
 import { BaggageClaim } from "./icons/baggage-claim.js";
+import { Balcony } from "./icons/balcony.js";
 import { BallWave } from "./icons/ball-wave.js";
 import { Balloon } from "./icons/balloon.js";
 import { Ban } from "./icons/ban.js";
@@ -149,7 +161,10 @@ import { BanknoteX } from "./icons/banknote-x.js";
 import { Banknote } from "./icons/banknote.js";
 import { Barcode } from "./icons/barcode.js";
 import { Barrel } from "./icons/barrel.js";
+import { Baseball } from "./icons/baseball.js";
 import { Baseline } from "./icons/baseline.js";
+import { BasketballCourt } from "./icons/basketball-court.js";
+import { Basketball } from "./icons/basketball.js";
 import { Bath } from "./icons/bath.js";
 import { BatteryCharging } from "./icons/battery-charging.js";
 import { BatteryFull } from "./icons/battery-full.js";
@@ -159,12 +174,16 @@ import { BatteryPause } from "./icons/battery-pause.js";
 import { BatteryPlus } from "./icons/battery-plus.js";
 import { BatteryWarning } from "./icons/battery-warning.js";
 import { Battery } from "./icons/battery.js";
+import { Bbq } from "./icons/bbq.js";
+import { Beach } from "./icons/beach.js";
 import { Beaker } from "./icons/beaker.js";
 import { BeanOff } from "./icons/bean-off.js";
 import { Bean } from "./icons/bean.js";
+import { Bear } from "./icons/bear.js";
 import { BedDouble } from "./icons/bed-double.js";
 import { BedSingle } from "./icons/bed-single.js";
 import { Bed } from "./icons/bed.js";
+import { Bee } from "./icons/bee.js";
 import { BeefOff } from "./icons/beef-off.js";
 import { Beef } from "./icons/beef.js";
 import { BeerOff } from "./icons/beer-off.js";
@@ -178,6 +197,7 @@ import { BellMinus } from "./icons/bell-minus.js";
 import { BellOff } from "./icons/bell-off.js";
 import { BellPlus } from "./icons/bell-plus.js";
 import { BellRing } from "./icons/bell-ring.js";
+import { BellSnooze } from "./icons/bell-snooze.js";
 import { Bell } from "./icons/bell.js";
 import { BetweenHorizontalEnd } from "./icons/between-horizontal-end.js";
 import { BetweenHorizontalStart } from "./icons/between-horizontal-start.js";
@@ -195,14 +215,17 @@ import { Blend } from "./icons/blend.js";
 import { Blender } from "./icons/blender.js";
 import { Blinds } from "./icons/blinds.js";
 import { Blocks } from "./icons/blocks.js";
+import { BloodPressure } from "./icons/blood-pressure.js";
 import { BluetoothConnected } from "./icons/bluetooth-connected.js";
 import { BluetoothOff } from "./icons/bluetooth-off.js";
 import { BluetoothSearching } from "./icons/bluetooth-searching.js";
 import { Bluetooth } from "./icons/bluetooth.js";
+import { BodyScan } from "./icons/body-scan.js";
 import { Bolt } from "./icons/bolt.js";
 import { Bomb } from "./icons/bomb.js";
 import { BoneFracture } from "./icons/bone-fracture.js";
 import { Bone } from "./icons/bone.js";
+import { Bonfire } from "./icons/bonfire.js";
 import { BookA } from "./icons/book-a.js";
 import { BookAlert } from "./icons/book-alert.js";
 import { BookAudio } from "./icons/book-audio.js";
@@ -236,73 +259,213 @@ import { BookmarkPlus } from "./icons/bookmark-plus.js";
 import { BookmarkX } from "./icons/bookmark-x.js";
 import { Bookmark } from "./icons/bookmark.js";
 import { BoomBox } from "./icons/boom-box.js";
+import { BorderBl } from "./icons/border-bl.js";
+import { BorderBottom } from "./icons/border-bottom.js";
+import { BorderBr } from "./icons/border-br.js";
+import { BorderInner } from "./icons/border-inner.js";
+import { BorderLeft } from "./icons/border-left.js";
+import { BorderOuter } from "./icons/border-outer.js";
+import { BorderRight } from "./icons/border-right.js";
+import { BorderTl } from "./icons/border-tl.js";
+import { BorderTop } from "./icons/border-top.js";
+import { BorderTr } from "./icons/border-tr.js";
 import { BotMessageSquare } from "./icons/bot-message-square.js";
 import { BotOff } from "./icons/bot-off.js";
 import { Bot } from "./icons/bot.js";
 import { BottleWine } from "./icons/bottle-wine.js";
+import { Boulder } from "./icons/boulder.js";
 import { BowArrow } from "./icons/bow-arrow.js";
+import { Bowling } from "./icons/bowling.js";
+import { Box3dCenter } from "./icons/box-3d-center.js";
+import { Box3dPoint } from "./icons/box-3d-point.js";
+import { Box3dThreePoints } from "./icons/box-3d-three-points.js";
 import { Box } from "./icons/box.js";
 import { BoxesLinked } from "./icons/boxes-linked.js";
 import { Boxes } from "./icons/boxes.js";
+import { BoxingGlove } from "./icons/boxing-glove.js";
 import { Braces } from "./icons/braces.js";
 import { Brackets } from "./icons/brackets.js";
+import { Braille } from "./icons/braille.js";
 import { BrainCircuit } from "./icons/brain-circuit.js";
 import { BrainCog } from "./icons/brain-cog.js";
 import { BrainOff } from "./icons/brain-off.js";
 import { Brain } from "./icons/brain.js";
+import { BrandAfterEffects } from "./icons/brand-after-effects.js";
+import { BrandAirbnb } from "./icons/brand-airbnb.js";
 import { BrandAistudio } from "./icons/brand-aistudio.js";
+import { BrandAmazon } from "./icons/brand-amazon.js";
+import { BrandAngular } from "./icons/brand-angular.js";
 import { BrandAnthropic } from "./icons/brand-anthropic.js";
+import { BrandAppStore } from "./icons/brand-app-store.js";
+import { BrandAppleFinder } from "./icons/brand-apple-finder.js";
+import { BrandAppleIntelligence } from "./icons/brand-apple-intelligence.js";
+import { BrandAppleMusic } from "./icons/brand-apple-music.js";
+import { BrandAppleNews } from "./icons/brand-apple-news.js";
+import { BrandAppleReminders } from "./icons/brand-apple-reminders.js";
+import { BrandAppleShortcuts } from "./icons/brand-apple-shortcuts.js";
+import { BrandAppleStocks } from "./icons/brand-apple-stocks.js";
+import { BrandAppleSwift } from "./icons/brand-apple-swift.js";
+import { BrandAppleVisionPro } from "./icons/brand-apple-vision-pro.js";
+import { BrandAppleWallet } from "./icons/brand-apple-wallet.js";
 import { BrandApple } from "./icons/brand-apple.js";
+import { BrandAsana } from "./icons/brand-asana.js";
 import { BrandAws } from "./icons/brand-aws.js";
+import { BrandAzure } from "./icons/brand-azure.js";
+import { BrandBandcamp } from "./icons/brand-bandcamp.js";
+import { BrandBehance } from "./icons/brand-behance.js";
+import { BrandBitbucket } from "./icons/brand-bitbucket.js";
+import { BrandBlogger } from "./icons/brand-blogger.js";
+import { BrandBluesky } from "./icons/brand-bluesky.js";
 import { BrandChrome } from "./icons/brand-chrome.js";
+import { BrandChromecast } from "./icons/brand-chromecast.js";
+import { BrandChromium } from "./icons/brand-chromium.js";
+import { BrandClaude } from "./icons/brand-claude.js";
+import { BrandClubhouse } from "./icons/brand-clubhouse.js";
+import { BrandCodepen } from "./icons/brand-codepen.js";
+import { BrandCodesandbox } from "./icons/brand-codesandbox.js";
+import { BrandCss3 } from "./icons/brand-css3.js";
 import { BrandCursor } from "./icons/brand-cursor.js";
+import { BrandDeepseek } from "./icons/brand-deepseek.js";
+import { BrandDeezer } from "./icons/brand-deezer.js";
 import { BrandDiscord } from "./icons/brand-discord.js";
 import { BrandDocker } from "./icons/brand-docker.js";
+import { BrandDogecoin } from "./icons/brand-dogecoin.js";
+import { BrandDribbble } from "./icons/brand-dribbble.js";
+import { BrandEbay } from "./icons/brand-ebay.js";
+import { BrandEdge } from "./icons/brand-edge.js";
+import { BrandElectron } from "./icons/brand-electron.js";
 import { BrandEthereum } from "./icons/brand-ethereum.js";
+import { BrandEtsy } from "./icons/brand-etsy.js";
 import { BrandFacebook } from "./icons/brand-facebook.js";
+import { BrandFacetime } from "./icons/brand-facetime.js";
 import { BrandFigma } from "./icons/brand-figma.js";
+import { BrandFirefox } from "./icons/brand-firefox.js";
+import { BrandFramer } from "./icons/brand-framer.js";
 import { BrandGemini } from "./icons/brand-gemini.js";
 import { BrandGithubCopilot } from "./icons/brand-github-copilot.js";
 import { BrandGithub } from "./icons/brand-github.js";
 import { BrandGitlab } from "./icons/brand-gitlab.js";
 import { BrandGmail } from "./icons/brand-gmail.js";
 import { BrandGolang } from "./icons/brand-golang.js";
+import { BrandGoodreads } from "./icons/brand-goodreads.js";
+import { BrandGoogleCloud } from "./icons/brand-google-cloud.js";
+import { BrandGoogleDocs } from "./icons/brand-google-docs.js";
+import { BrandGoogleDrive } from "./icons/brand-google-drive.js";
+import { BrandGoogleHome } from "./icons/brand-google-home.js";
+import { BrandGoogleLens } from "./icons/brand-google-lens.js";
+import { BrandGoogleMaps } from "./icons/brand-google-maps.js";
+import { BrandGoogleOne } from "./icons/brand-google-one.js";
+import { BrandGooglePhotos } from "./icons/brand-google-photos.js";
+import { BrandGoogleSheets } from "./icons/brand-google-sheets.js";
 import { BrandGoogle } from "./icons/brand-google.js";
 import { BrandGrok } from "./icons/brand-grok.js";
+import { BrandHtml5 } from "./icons/brand-html5.js";
+import { BrandIllustrator } from "./icons/brand-illustrator.js";
+import { BrandIndesign } from "./icons/brand-indesign.js";
 import { BrandInstagram } from "./icons/brand-instagram.js";
 import { BrandJavascript } from "./icons/brand-javascript.js";
+import { BrandJson } from "./icons/brand-json.js";
+import { BrandKimi } from "./icons/brand-kimi.js";
+import { BrandKoFi } from "./icons/brand-ko-fi.js";
+import { BrandLetterboxd } from "./icons/brand-letterboxd.js";
+import { BrandLightroom } from "./icons/brand-lightroom.js";
+import { BrandLine } from "./icons/brand-line.js";
+import { BrandLinear } from "./icons/brand-linear.js";
 import { BrandLinkedin } from "./icons/brand-linkedin.js";
+import { BrandLinux } from "./icons/brand-linux.js";
+import { BrandLitecoin } from "./icons/brand-litecoin.js";
 import { BrandLmstudio } from "./icons/brand-lmstudio.js";
+import { BrandMarkdown } from "./icons/brand-markdown.js";
+import { BrandMastercard } from "./icons/brand-mastercard.js";
+import { BrandMastodon } from "./icons/brand-mastodon.js";
+import { BrandMedium } from "./icons/brand-medium.js";
+import { BrandMessenger } from "./icons/brand-messenger.js";
+import { BrandMeta } from "./icons/brand-meta.js";
+import { BrandMicrosoftAdmin } from "./icons/brand-microsoft-admin.js";
+import { BrandMicrosoftCopilot } from "./icons/brand-microsoft-copilot.js";
+import { BrandMicrosoft } from "./icons/brand-microsoft.js";
 import { BrandMidjourney } from "./icons/brand-midjourney.js";
+import { BrandMistral } from "./icons/brand-mistral.js";
+import { BrandMonday } from "./icons/brand-monday.js";
 import { BrandMysql } from "./icons/brand-mysql.js";
+import { BrandNetflix } from "./icons/brand-netflix.js";
 import { BrandNextjs } from "./icons/brand-nextjs.js";
+import { BrandNintendoSwitch } from "./icons/brand-nintendo-switch.js";
 import { BrandNodejs } from "./icons/brand-nodejs.js";
 import { BrandNotion } from "./icons/brand-notion.js";
+import { BrandNpm } from "./icons/brand-npm.js";
+import { BrandOffice365 } from "./icons/brand-office-365.js";
 import { BrandOllama } from "./icons/brand-ollama.js";
+import { BrandOpenVpn } from "./icons/brand-open-vpn.js";
 import { BrandOpenai } from "./icons/brand-openai.js";
+import { BrandOpera } from "./icons/brand-opera.js";
+import { BrandPatreon } from "./icons/brand-patreon.js";
 import { BrandPaypal } from "./icons/brand-paypal.js";
+import { BrandPeerlist } from "./icons/brand-peerlist.js";
+import { BrandPerplexity } from "./icons/brand-perplexity.js";
+import { BrandPhotoshop } from "./icons/brand-photoshop.js";
 import { BrandPinterest } from "./icons/brand-pinterest.js";
+import { BrandPlaystation } from "./icons/brand-playstation.js";
+import { BrandPocket } from "./icons/brand-pocket.js";
+import { BrandPolarSh } from "./icons/brand-polar-sh.js";
 import { BrandPython } from "./icons/brand-python.js";
 import { BrandQwen } from "./icons/brand-qwen.js";
 import { BrandRailway } from "./icons/brand-railway.js";
 import { BrandReact } from "./icons/brand-react.js";
+import { BrandReddit } from "./icons/brand-reddit.js";
+import { BrandSafari } from "./icons/brand-safari.js";
+import { BrandShopify } from "./icons/brand-shopify.js";
+import { BrandSignalMessenger } from "./icons/brand-signal-messenger.js";
+import { BrandSiri } from "./icons/brand-siri.js";
+import { BrandSkype } from "./icons/brand-skype.js";
 import { BrandSlack } from "./icons/brand-slack.js";
 import { BrandSnapchat } from "./icons/brand-snapchat.js";
+import { BrandSoundcloud } from "./icons/brand-soundcloud.js";
 import { BrandSpotify } from "./icons/brand-spotify.js";
+import { BrandStackoverflow } from "./icons/brand-stackoverflow.js";
+import { BrandStrava } from "./icons/brand-strava.js";
 import { BrandStripe } from "./icons/brand-stripe.js";
+import { BrandSubstack } from "./icons/brand-substack.js";
+import { BrandSvelte } from "./icons/brand-svelte.js";
+import { BrandTailwind } from "./icons/brand-tailwind.js";
+import { BrandTeams } from "./icons/brand-teams.js";
 import { BrandTelegram } from "./icons/brand-telegram.js";
 import { BrandThreads } from "./icons/brand-threads.js";
+import { BrandTiktok } from "./icons/brand-tiktok.js";
+import { BrandTrello } from "./icons/brand-trello.js";
+import { BrandTumblr } from "./icons/brand-tumblr.js";
 import { BrandTwitch } from "./icons/brand-twitch.js";
 import { BrandTwitterX } from "./icons/brand-twitter-x.js";
 import { BrandTwitter } from "./icons/brand-twitter.js";
 import { BrandTypescript } from "./icons/brand-typescript.js";
+import { BrandUnity } from "./icons/brand-unity.js";
+import { BrandUps } from "./icons/brand-ups.js";
 import { BrandVercel } from "./icons/brand-vercel.js";
+import { BrandViber } from "./icons/brand-viber.js";
+import { BrandVimeo } from "./icons/brand-vimeo.js";
+import { BrandVisa } from "./icons/brand-visa.js";
+import { BrandVk } from "./icons/brand-vk.js";
+import { BrandVscode } from "./icons/brand-vscode.js";
+import { BrandVue } from "./icons/brand-vue.js";
+import { BrandWaze } from "./icons/brand-waze.js";
+import { BrandWechat } from "./icons/brand-wechat.js";
 import { BrandWhatsapp } from "./icons/brand-whatsapp.js";
+import { BrandWindowsClassic } from "./icons/brand-windows-classic.js";
 import { BrandWindows } from "./icons/brand-windows.js";
 import { BrandWordpress } from "./icons/brand-wordpress.js";
+import { BrandWpsOffice } from "./icons/brand-wps-office.js";
 import { BrandXai } from "./icons/brand-xai.js";
+import { BrandXboxA } from "./icons/brand-xbox-a.js";
+import { BrandXboxB } from "./icons/brand-xbox-b.js";
+import { BrandXboxX } from "./icons/brand-xbox-x.js";
+import { BrandXboxY } from "./icons/brand-xbox-y.js";
+import { BrandXd } from "./icons/brand-xd.js";
+import { BrandXml } from "./icons/brand-xml.js";
+import { BrandYelp } from "./icons/brand-yelp.js";
 import { BrandYoutube } from "./icons/brand-youtube.js";
 import { BrandZoom } from "./icons/brand-zoom.js";
+import { BreadSlice } from "./icons/bread-slice.js";
+import { Bread } from "./icons/bread.js";
 import { BrickWallFire } from "./icons/brick-wall-fire.js";
 import { BrickWallShield } from "./icons/brick-wall-shield.js";
 import { BrickWall } from "./icons/brick-wall.js";
@@ -326,9 +489,12 @@ import { BuildingComplexPlus } from "./icons/building-complex-plus.js";
 import { BuildingComplex } from "./icons/building-complex.js";
 import { Building } from "./icons/building.js";
 import { BusFront } from "./icons/bus-front.js";
+import { BusStop } from "./icons/bus-stop.js";
 import { Bus } from "./icons/bus.js";
+import { Butterfly } from "./icons/butterfly.js";
 import { CableCar } from "./icons/cable-car.js";
 import { Cable } from "./icons/cable.js";
+import { Cactus } from "./icons/cactus.js";
 import { CakeSlice } from "./icons/cake-slice.js";
 import { Cake } from "./icons/cake.js";
 import { Calculator } from "./icons/calculator.js";
@@ -358,15 +524,18 @@ import { CalendarX2 } from "./icons/calendar-x-2.js";
 import { CalendarX } from "./icons/calendar-x.js";
 import { Calendar } from "./icons/calendar.js";
 import { Calendars } from "./icons/calendars.js";
+import { Caliper } from "./icons/caliper.js";
 import { CameraOff } from "./icons/camera-off.js";
 import { Camera } from "./icons/camera.js";
 import { CanSoda } from "./icons/can-soda.js";
 import { Can } from "./icons/can.js";
+import { Candle } from "./icons/candle.js";
 import { CandyCane } from "./icons/candy-cane.js";
 import { CandyOff } from "./icons/candy-off.js";
 import { Candy } from "./icons/candy.js";
 import { CannabisOff } from "./icons/cannabis-off.js";
 import { Cannabis } from "./icons/cannabis.js";
+import { Cap } from "./icons/cap.js";
 import { CaptionsOff } from "./icons/captions-off.js";
 import { Captions } from "./icons/captions.js";
 import { CarBattery } from "./icons/car-battery.js";
@@ -375,6 +544,7 @@ import { CarTaxiFront } from "./icons/car-taxi-front.js";
 import { Car } from "./icons/car.js";
 import { Caravan } from "./icons/caravan.js";
 import { CardSim } from "./icons/card-sim.js";
+import { Carpet } from "./icons/carpet.js";
 import { Carrot } from "./icons/carrot.js";
 import { CartonOff } from "./icons/carton-off.js";
 import { Carton } from "./icons/carton.js";
@@ -385,9 +555,12 @@ import { CassetteTape } from "./icons/cassette-tape.js";
 import { Cast } from "./icons/cast.js";
 import { Castle } from "./icons/castle.js";
 import { Cat } from "./icons/cat.js";
+import { Cave } from "./icons/cave.js";
 import { CctvOff } from "./icons/cctv-off.js";
 import { Cctv } from "./icons/cctv.js";
+import { Cellar } from "./icons/cellar.js";
 import { Certificate } from "./icons/certificate.js";
+import { Chair } from "./icons/chair.js";
 import { ChartArea } from "./icons/chart-area.js";
 import { ChartBarBig } from "./icons/chart-bar-big.js";
 import { ChartBarDecreasing } from "./icons/chart-bar-decreasing.js";
@@ -402,6 +575,7 @@ import { ChartColumnIncreasing } from "./icons/chart-column-increasing.js";
 import { ChartColumnStacked } from "./icons/chart-column-stacked.js";
 import { ChartColumn } from "./icons/chart-column.js";
 import { ChartCovariate } from "./icons/chart-covariate.js";
+import { ChartFunnel } from "./icons/chart-funnel.js";
 import { ChartGantt } from "./icons/chart-gantt.js";
 import { ChartLine } from "./icons/chart-line.js";
 import { ChartNetwork } from "./icons/chart-network.js";
@@ -441,6 +615,10 @@ import { ChevronsRightLeft } from "./icons/chevrons-right-left.js";
 import { ChevronsRight } from "./icons/chevrons-right.js";
 import { ChevronsUpDown } from "./icons/chevrons-up-down.js";
 import { ChevronsUp } from "./icons/chevrons-up.js";
+import { Chicken } from "./icons/chicken.js";
+import { Chimney } from "./icons/chimney.js";
+import { Chocolate } from "./icons/chocolate.js";
+import { Chopsticks } from "./icons/chopsticks.js";
 import { Church } from "./icons/church.js";
 import { CigaretteOff } from "./icons/cigarette-off.js";
 import { Cigarette } from "./icons/cigarette.js";
@@ -525,6 +703,7 @@ import { CircleX } from "./icons/circle-x.js";
 import { Circle } from "./icons/circle.js";
 import { CircuitBoard } from "./icons/circuit-board.js";
 import { Citrus } from "./icons/citrus.js";
+import { Clap } from "./icons/clap.js";
 import { Clapperboard } from "./icons/clapperboard.js";
 import { ClefAlto } from "./icons/clef-alto.js";
 import { ClefBass } from "./icons/clef-bass.js";
@@ -532,12 +711,14 @@ import { ClefTreble } from "./icons/clef-treble.js";
 import { ClipboardCheck } from "./icons/clipboard-check.js";
 import { ClipboardClock } from "./icons/clipboard-clock.js";
 import { ClipboardCopy } from "./icons/clipboard-copy.js";
+import { ClipboardHeart } from "./icons/clipboard-heart.js";
 import { ClipboardList } from "./icons/clipboard-list.js";
 import { ClipboardMinus } from "./icons/clipboard-minus.js";
 import { ClipboardPaste } from "./icons/clipboard-paste.js";
 import { ClipboardPenLine } from "./icons/clipboard-pen-line.js";
 import { ClipboardPen } from "./icons/clipboard-pen.js";
 import { ClipboardPlus } from "./icons/clipboard-plus.js";
+import { ClipboardSearch } from "./icons/clipboard-search.js";
 import { ClipboardType } from "./icons/clipboard-type.js";
 import { ClipboardX } from "./icons/clipboard-x.js";
 import { Clipboard } from "./icons/clipboard.js";
@@ -563,6 +744,7 @@ import { ClockFading } from "./icons/clock-fading.js";
 import { ClockPlus } from "./icons/clock-plus.js";
 import { Clock } from "./icons/clock.js";
 import { ClosedCaption } from "./icons/closed-caption.js";
+import { Closet } from "./icons/closet.js";
 import { CloudAlert } from "./icons/cloud-alert.js";
 import { CloudBackup } from "./icons/cloud-backup.js";
 import { CloudCheck } from "./icons/cloud-check.js";
@@ -586,6 +768,7 @@ import { Cloud } from "./icons/cloud.js";
 import { Cloudy } from "./icons/cloudy.js";
 import { Clover } from "./icons/clover.js";
 import { Club } from "./icons/club.js";
+import { Coat } from "./icons/coat.js";
 import { CodeXml } from "./icons/code-xml.js";
 import { Code } from "./icons/code.js";
 import { Coffee } from "./icons/coffee.js";
@@ -602,6 +785,7 @@ import { Component } from "./icons/component.js";
 import { Computer } from "./icons/computer.js";
 import { ConciergeBell } from "./icons/concierge-bell.js";
 import { Cone } from "./icons/cone.js";
+import { Connect } from "./icons/connect.js";
 import { Construction } from "./icons/construction.js";
 import { ContactRound } from "./icons/contact-round.js";
 import { Contact } from "./icons/contact.js";
@@ -617,12 +801,17 @@ import { CopySlash } from "./icons/copy-slash.js";
 import { CopyX } from "./icons/copy-x.js";
 import { Copy } from "./icons/copy.js";
 import { Copyleft } from "./icons/copyleft.js";
+import { Coral } from "./icons/coral.js";
+import { CornerBottomLeft } from "./icons/corner-bottom-left.js";
+import { CornerBottomRight } from "./icons/corner-bottom-right.js";
 import { CornerDownLeft } from "./icons/corner-down-left.js";
 import { CornerDownRight } from "./icons/corner-down-right.js";
 import { CornerLeftDown } from "./icons/corner-left-down.js";
 import { CornerLeftUp } from "./icons/corner-left-up.js";
 import { CornerRightDown } from "./icons/corner-right-down.js";
 import { CornerRightUp } from "./icons/corner-right-up.js";
+import { CornerTopLeft } from "./icons/corner-top-left.js";
+import { CornerTopRight } from "./icons/corner-top-right.js";
 import { CornerUpLeft } from "./icons/corner-up-left.js";
 import { CornerUpRight } from "./icons/corner-up-right.js";
 import { CpuAi } from "./icons/cpu-ai.js";
@@ -634,34 +823,61 @@ import { CreditCardPlus } from "./icons/credit-card-plus.js";
 import { CreditCardReader } from "./icons/credit-card-reader.js";
 import { CreditCardX } from "./icons/credit-card-x.js";
 import { CreditCard } from "./icons/credit-card.js";
+import { Crib } from "./icons/crib.js";
 import { Croissant } from "./icons/croissant.js";
+import { CropRotateBl } from "./icons/crop-rotate-bl.js";
+import { CropRotateBr } from "./icons/crop-rotate-br.js";
+import { CropRotateTl } from "./icons/crop-rotate-tl.js";
+import { CropRotateTr } from "./icons/crop-rotate-tr.js";
 import { Crop } from "./icons/crop.js";
 import { Cross } from "./icons/cross.js";
 import { Crosshair } from "./icons/crosshair.js";
 import { Crown } from "./icons/crown.js";
+import { Crutches } from "./icons/crutches.js";
+import { CubeCutCurve } from "./icons/cube-cut-curve.js";
+import { CubeHole } from "./icons/cube-hole.js";
+import { CubeReplaceFace } from "./icons/cube-replace-face.js";
 import { Cuboid } from "./icons/cuboid.js";
 import { CupSoda } from "./icons/cup-soda.js";
 import { Cupcake } from "./icons/cupcake.js";
 import { Currency } from "./icons/currency.js";
+import { Curtain } from "./icons/curtain.js";
+import { Customs } from "./icons/customs.js";
+import { Cycling } from "./icons/cycling.js";
 import { Cylinder } from "./icons/cylinder.js";
 import { Dam } from "./icons/dam.js";
+import { DataTransferCheck } from "./icons/data-transfer-check.js";
 import { DatabaseArrowDown } from "./icons/database-arrow-down.js";
 import { DatabaseArrowUp } from "./icons/database-arrow-up.js";
 import { DatabaseBackup } from "./icons/database-backup.js";
 import { DatabaseCheck } from "./icons/database-check.js";
 import { DatabaseCog } from "./icons/database-cog.js";
+import { DatabaseExport } from "./icons/database-export.js";
 import { DatabaseMinus } from "./icons/database-minus.js";
 import { DatabasePlus } from "./icons/database-plus.js";
+import { DatabaseRestore } from "./icons/database-restore.js";
 import { DatabaseSearch } from "./icons/database-search.js";
+import { DatabaseSettings } from "./icons/database-settings.js";
+import { DatabaseStar } from "./icons/database-star.js";
+import { DatabaseWarning } from "./icons/database-warning.js";
 import { DatabaseX } from "./icons/database-x.js";
 import { DatabaseZap } from "./icons/database-zap.js";
 import { Database } from "./icons/database.js";
 import { DecimalsArrowLeft } from "./icons/decimals-arrow-left.js";
 import { DecimalsArrowRight } from "./icons/decimals-arrow-right.js";
+import { Deer } from "./icons/deer.js";
 import { Delete } from "./icons/delete.js";
+import { DeliveryTracking } from "./icons/delivery-tracking.js";
+import { Desert } from "./icons/desert.js";
+import { Desk } from "./icons/desk.js";
 import { Dessert } from "./icons/dessert.js";
+import { DewPoint } from "./icons/dew-point.js";
+import { DiagramFlowHorizontal } from "./icons/diagram-flow-horizontal.js";
+import { DiagramFlowVertical } from "./icons/diagram-flow-vertical.js";
 import { Dialpad } from "./icons/dialpad.js";
 import { Diameter } from "./icons/diameter.js";
+import { DiamondExclamationPoint } from "./icons/diamond-exclamation-point.js";
+import { DiamondInfo } from "./icons/diamond-info.js";
 import { DiamondMinus } from "./icons/diamond-minus.js";
 import { DiamondPercent } from "./icons/diamond-percent.js";
 import { DiamondPlus } from "./icons/diamond-plus.js";
@@ -675,10 +891,13 @@ import { Dice6 } from "./icons/dice-6.js";
 import { Dices } from "./icons/dices.js";
 import { Diff } from "./icons/diff.js";
 import { Dino } from "./icons/dino.js";
+import { DirectorChair } from "./icons/director-chair.js";
 import { Disc2 } from "./icons/disc-2.js";
 import { Disc3 } from "./icons/disc-3.js";
 import { DiscAlbum } from "./icons/disc-album.js";
 import { Disc } from "./icons/disc.js";
+import { Dishwasher } from "./icons/dishwasher.js";
+import { Display4k } from "./icons/display-4k.js";
 import { Divide } from "./icons/divide.js";
 import { DnaOff } from "./icons/dna-off.js";
 import { Dna } from "./icons/dna.js";
@@ -695,8 +914,11 @@ import { DoorOpen } from "./icons/door-open.js";
 import { DoorStairwell } from "./icons/door-stairwell.js";
 import { Dot } from "./icons/dot.js";
 import { Download } from "./icons/download.js";
+import { Downvote } from "./icons/downvote.js";
 import { DraftingCompass } from "./icons/drafting-compass.js";
 import { Drama } from "./icons/drama.js";
+import { Drawer } from "./icons/drawer.js";
+import { Dress } from "./icons/dress.js";
 import { Drill } from "./icons/drill.js";
 import { Drone } from "./icons/drone.js";
 import { DropletOff } from "./icons/droplet-off.js";
@@ -711,6 +933,12 @@ import { EarbudsOff } from "./icons/earbuds-off.js";
 import { Earbuds } from "./icons/earbuds.js";
 import { EarthLock } from "./icons/earth-lock.js";
 import { Earth } from "./icons/earth.js";
+import { EaseCurveControlPoints } from "./icons/ease-curve-control-points.js";
+import { EaseInControlPoint } from "./icons/ease-in-control-point.js";
+import { EaseInOut } from "./icons/ease-in-out.js";
+import { EaseIn } from "./icons/ease-in.js";
+import { EaseOutControlPoint } from "./icons/ease-out-control-point.js";
+import { EaseOut } from "./icons/ease-out.js";
 import { Eclipse } from "./icons/eclipse.js";
 import { EggFried } from "./icons/egg-fried.js";
 import { EggOff } from "./icons/egg-off.js";
@@ -718,6 +946,9 @@ import { Egg } from "./icons/egg.js";
 import { EighthNote } from "./icons/eighth-note.js";
 import { EighthNotes } from "./icons/eighth-notes.js";
 import { Eject } from "./icons/eject.js";
+import { Elephant } from "./icons/elephant.js";
+import { Elevator } from "./icons/elevator.js";
+import { Ellipse3d } from "./icons/ellipse-3d.js";
 import { Ellipse } from "./icons/ellipse.js";
 import { EllipsisVertical } from "./icons/ellipsis-vertical.js";
 import { Ellipsis } from "./icons/ellipsis.js";
@@ -733,27 +964,38 @@ import { Euro } from "./icons/euro.js";
 import { EvCharger } from "./icons/ev-charger.js";
 import { Expand } from "./icons/expand.js";
 import { ExternalLink } from "./icons/external-link.js";
+import { Extrude } from "./icons/extrude.js";
 import { EyeClosed } from "./icons/eye-closed.js";
 import { EyeDashed } from "./icons/eye-dashed.js";
 import { EyeOff } from "./icons/eye-off.js";
 import { Eye } from "./icons/eye.js";
 import { FaceAngry } from "./icons/face-angry.js";
+import { FaceConfused } from "./icons/face-confused.js";
+import { FaceCool } from "./icons/face-cool.js";
+import { FaceCry } from "./icons/face-cry.js";
 import { FaceExpressionless } from "./icons/face-expressionless.js";
 import { FaceGrinning } from "./icons/face-grinning.js";
 import { FaceNeutral } from "./icons/face-neutral.js";
 import { FaceSlightlyFrowning } from "./icons/face-slightly-frowning.js";
 import { FaceSlightlySmilingPlus } from "./icons/face-slightly-smiling-plus.js";
 import { FaceSlightlySmiling } from "./icons/face-slightly-smiling.js";
+import { FaceSurprised } from "./icons/face-surprised.js";
+import { FaceWink } from "./icons/face-wink.js";
 import { Factory } from "./icons/factory.js";
 import { Fan } from "./icons/fan.js";
+import { Farm } from "./icons/farm.js";
 import { FastForward } from "./icons/fast-forward.js";
 import { Faucet } from "./icons/faucet.js";
+import { Fax } from "./icons/fax.js";
 import { Feather } from "./icons/feather.js";
 import { Fence } from "./icons/fence.js";
+import { Fern } from "./icons/fern.js";
 import { FerrisWheel } from "./icons/ferris-wheel.js";
 import { FileArchive } from "./icons/file-archive.js";
+import { FileAvi } from "./icons/file-avi.js";
 import { FileAxis3D } from "./icons/file-axis-3d.js";
 import { FileBadge } from "./icons/file-badge.js";
+import { FileBan } from "./icons/file-ban.js";
 import { FileBox } from "./icons/file-box.js";
 import { FileBracesCorner } from "./icons/file-braces-corner.js";
 import { FileBraces } from "./icons/file-braces.js";
@@ -767,19 +1009,27 @@ import { FileClock } from "./icons/file-clock.js";
 import { FileCodeCorner } from "./icons/file-code-corner.js";
 import { FileCode } from "./icons/file-code.js";
 import { FileCog } from "./icons/file-cog.js";
+import { FileCurrencyDollar } from "./icons/file-currency-dollar.js";
+import { FileCurrencyEuro } from "./icons/file-currency-euro.js";
+import { FileCurrencyPound } from "./icons/file-currency-pound.js";
+import { FileCurrencyRupee } from "./icons/file-currency-rupee.js";
+import { FileCurrencyYen } from "./icons/file-currency-yen.js";
 import { FileDatabase } from "./icons/file-database.js";
 import { FileDiff } from "./icons/file-diff.js";
 import { FileDigit } from "./icons/file-digit.js";
 import { FileDown } from "./icons/file-down.js";
 import { FileExclamationPoint } from "./icons/file-exclamation-point.js";
+import { FileGif } from "./icons/file-gif.js";
 import { FileHeadphone } from "./icons/file-headphone.js";
 import { FileHeart } from "./icons/file-heart.js";
 import { FileImage } from "./icons/file-image.js";
 import { FileInput } from "./icons/file-input.js";
+import { FileJpg } from "./icons/file-jpg.js";
 import { FileKey } from "./icons/file-key.js";
 import { FileLock } from "./icons/file-lock.js";
 import { FileMinusCorner } from "./icons/file-minus-corner.js";
 import { FileMinus } from "./icons/file-minus.js";
+import { FileMpeg } from "./icons/file-mpeg.js";
 import { FileMusic } from "./icons/file-music.js";
 import { FileOutput } from "./icons/file-output.js";
 import { FilePenLine } from "./icons/file-pen-line.js";
@@ -787,7 +1037,9 @@ import { FilePen } from "./icons/file-pen.js";
 import { FilePlay } from "./icons/file-play.js";
 import { FilePlusCorner } from "./icons/file-plus-corner.js";
 import { FilePlus } from "./icons/file-plus.js";
+import { FilePng } from "./icons/file-png.js";
 import { FileQuestionMark } from "./icons/file-question-mark.js";
+import { FileRaw } from "./icons/file-raw.js";
 import { FileScan } from "./icons/file-scan.js";
 import { FileSearchCorner } from "./icons/file-search-corner.js";
 import { FileSearch } from "./icons/file-search.js";
@@ -795,27 +1047,37 @@ import { FileSignal } from "./icons/file-signal.js";
 import { FileSliders } from "./icons/file-sliders.js";
 import { FileSpreadsheet } from "./icons/file-spreadsheet.js";
 import { FileStack } from "./icons/file-stack.js";
+import { FileSvg } from "./icons/file-svg.js";
 import { FileSymlink } from "./icons/file-symlink.js";
 import { FileTerminal } from "./icons/file-terminal.js";
 import { FileText } from "./icons/file-text.js";
+import { FileTiff } from "./icons/file-tiff.js";
 import { FileTypeCorner } from "./icons/file-type-corner.js";
 import { FileType } from "./icons/file-type.js";
 import { FileUp } from "./icons/file-up.js";
 import { FileUser } from "./icons/file-user.js";
 import { FileVideoCamera } from "./icons/file-video-camera.js";
 import { FileVolume } from "./icons/file-volume.js";
+import { FileWebp } from "./icons/file-webp.js";
 import { FileXCorner } from "./icons/file-x-corner.js";
 import { FileX } from "./icons/file-x.js";
 import { File } from "./icons/file.js";
 import { Files } from "./icons/files.js";
+import { Fillet3d } from "./icons/fillet-3d.js";
 import { Film } from "./icons/film.js";
+import { FingerprintCheck } from "./icons/fingerprint-check.js";
+import { FingerprintMinus } from "./icons/fingerprint-minus.js";
 import { FingerprintPattern } from "./icons/fingerprint-pattern.js";
+import { FingerprintPlus } from "./icons/fingerprint-plus.js";
+import { FingerprintScan } from "./icons/fingerprint-scan.js";
 import { FireExtinguisher } from "./icons/fire-extinguisher.js";
+import { FireTruck } from "./icons/fire-truck.js";
 import { FishOff } from "./icons/fish-off.js";
 import { FishSymbol } from "./icons/fish-symbol.js";
 import { Fish } from "./icons/fish.js";
 import { FishingHook } from "./icons/fishing-hook.js";
 import { FishingRod } from "./icons/fishing-rod.js";
+import { Fishing } from "./icons/fishing.js";
 import { FlagOff } from "./icons/flag-off.js";
 import { FlagTriangleLeft } from "./icons/flag-triangle-left.js";
 import { FlagTriangleRight } from "./icons/flag-triangle-right.js";
@@ -849,6 +1111,7 @@ import { FolderKanban } from "./icons/folder-kanban.js";
 import { FolderKey } from "./icons/folder-key.js";
 import { FolderLock } from "./icons/folder-lock.js";
 import { FolderMinus } from "./icons/folder-minus.js";
+import { FolderOff } from "./icons/folder-off.js";
 import { FolderOpenDot } from "./icons/folder-open-dot.js";
 import { FolderOpen } from "./icons/folder-open.js";
 import { FolderOutput } from "./icons/folder-output.js";
@@ -866,10 +1129,14 @@ import { FolderUsers } from "./icons/folder-users.js";
 import { FolderX } from "./icons/folder-x.js";
 import { Folder } from "./icons/folder.js";
 import { Folders } from "./icons/folders.js";
+import { Football } from "./icons/football.js";
 import { Footprints } from "./icons/footprints.js";
 import { Forklift } from "./icons/forklift.js";
 import { Form } from "./icons/form.js";
+import { Forward15 } from "./icons/forward-15.js";
 import { Forward } from "./icons/forward.js";
+import { Fossil } from "./icons/fossil.js";
+import { Fox } from "./icons/fox.js";
 import { Frame } from "./icons/frame.js";
 import { Fuel } from "./icons/fuel.js";
 import { Fullscreen } from "./icons/fullscreen.js";
@@ -883,21 +1150,32 @@ import { GalleryThumbnails } from "./icons/gallery-thumbnails.js";
 import { GalleryVerticalEnd } from "./icons/gallery-vertical-end.js";
 import { GalleryVertical } from "./icons/gallery-vertical.js";
 import { Gamepad2 } from "./icons/gamepad-2.js";
+import { GamepadButtonA } from "./icons/gamepad-button-a.js";
+import { GamepadButtonB } from "./icons/gamepad-button-b.js";
+import { GamepadButtonX } from "./icons/gamepad-button-x.js";
+import { GamepadButtonY } from "./icons/gamepad-button-y.js";
 import { GamepadDirectional } from "./icons/gamepad-directional.js";
 import { Gamepad } from "./icons/gamepad.js";
 import { GapHorizontal } from "./icons/gap-horizontal.js";
 import { GapVertical } from "./icons/gap-vertical.js";
+import { Garage } from "./icons/garage.js";
+import { GardenHose } from "./icons/garden-hose.js";
+import { Gate } from "./icons/gate.js";
 import { Gauge } from "./icons/gauge.js";
 import { Gavel } from "./icons/gavel.js";
 import { Gem } from "./icons/gem.js";
+import { Generator } from "./icons/generator.js";
 import { GeorgianLari } from "./icons/georgian-lari.js";
 import { GermOff } from "./icons/germ-off.js";
 import { Germ } from "./icons/germ.js";
+import { Geyser } from "./icons/geyser.js";
 import { Ghost } from "./icons/ghost.js";
+import { Gif } from "./icons/gif.js";
 import { Gift } from "./icons/gift.js";
 import { GitBranchMinus } from "./icons/git-branch-minus.js";
 import { GitBranchPlus } from "./icons/git-branch-plus.js";
 import { GitBranch } from "./icons/git-branch.js";
+import { GitCherryPick } from "./icons/git-cherry-pick.js";
 import { GitCommitHorizontal } from "./icons/git-commit-horizontal.js";
 import { GitCommitVertical } from "./icons/git-commit-vertical.js";
 import { GitCompareArrows } from "./icons/git-compare-arrows.js";
@@ -914,18 +1192,23 @@ import { GitPullRequestDraft } from "./icons/git-pull-request-draft.js";
 import { GitPullRequest } from "./icons/git-pull-request.js";
 import { GlassWater } from "./icons/glass-water.js";
 import { Glasses } from "./icons/glasses.js";
+import { GlobeBan } from "./icons/globe-ban.js";
 import { GlobeCheck } from "./icons/globe-check.js";
 import { GlobeCode } from "./icons/globe-code.js";
 import { GlobeLock } from "./icons/globe-lock.js";
 import { GlobeOff } from "./icons/globe-off.js";
+import { GlobePlus } from "./icons/globe-plus.js";
 import { GlobeX } from "./icons/globe-x.js";
 import { Globe } from "./icons/globe.js";
+import { Glue } from "./icons/glue.js";
 import { Goal } from "./icons/goal.js";
+import { Golf } from "./icons/golf.js";
 import { Gpu } from "./icons/gpu.js";
 import { GraduationCap } from "./icons/graduation-cap.js";
 import { Grape } from "./icons/grape.js";
 import { GraphHub } from "./icons/graph-hub.js";
 import { GraphStar } from "./icons/graph-star.js";
+import { GreaterThan } from "./icons/greater-than.js";
 import { Grid2X2Check } from "./icons/grid-2x2-check.js";
 import { Grid2X2Plus } from "./icons/grid-2x2-plus.js";
 import { Grid2X2X } from "./icons/grid-2x2-x.js";
@@ -939,6 +1222,7 @@ import { Groceries } from "./icons/groceries.js";
 import { Group } from "./icons/group.js";
 import { GuitarElectric } from "./icons/guitar-electric.js";
 import { Guitar } from "./icons/guitar.js";
+import { Gym } from "./icons/gym.js";
 import { HalfNote } from "./icons/half-note.js";
 import { Ham } from "./icons/ham.js";
 import { Hamburger } from "./icons/hamburger.js";
@@ -949,7 +1233,12 @@ import { HandGrab } from "./icons/hand-grab.js";
 import { HandHeart } from "./icons/hand-heart.js";
 import { HandHelping } from "./icons/hand-helping.js";
 import { HandMetal } from "./icons/hand-metal.js";
+import { HandPeace } from "./icons/hand-peace.js";
+import { HandPinch } from "./icons/hand-pinch.js";
 import { HandPlatter } from "./icons/hand-platter.js";
+import { HandReminder } from "./icons/hand-reminder.js";
+import { HandSpock } from "./icons/hand-spock.js";
+import { HandWave } from "./icons/hand-wave.js";
 import { Hand } from "./icons/hand.js";
 import { Handbag } from "./icons/handbag.js";
 import { HandleBottomRight } from "./icons/handle-bottom-right.js";
@@ -960,9 +1249,11 @@ import { HardDrive } from "./icons/hard-drive.js";
 import { HardHat } from "./icons/hard-hat.js";
 import { Hash } from "./icons/hash.js";
 import { HatGlasses } from "./icons/hat-glasses.js";
+import { Hat } from "./icons/hat.js";
 import { Haze } from "./icons/haze.js";
 import { Hd } from "./icons/hd.js";
 import { HdmiPort } from "./icons/hdmi-port.js";
+import { Hdr } from "./icons/hdr.js";
 import { Heading1 } from "./icons/heading-1.js";
 import { Heading2 } from "./icons/heading-2.js";
 import { Heading3 } from "./icons/heading-3.js";
@@ -972,6 +1263,8 @@ import { Heading6 } from "./icons/heading-6.js";
 import { HeadphoneOff } from "./icons/headphone-off.js";
 import { Headphones } from "./icons/headphones.js";
 import { Headset } from "./icons/headset.js";
+import { HealthBar } from "./icons/health-bar.js";
+import { HeartCheck } from "./icons/heart-check.js";
 import { HeartCrack } from "./icons/heart-crack.js";
 import { HeartHandshake } from "./icons/heart-handshake.js";
 import { HeartMinus } from "./icons/heart-minus.js";
@@ -981,23 +1274,33 @@ import { HeartPulse } from "./icons/heart-pulse.js";
 import { HeartX } from "./icons/heart-x.js";
 import { Heart } from "./icons/heart.js";
 import { Heater } from "./icons/heater.js";
+import { Heatmap } from "./icons/heatmap.js";
 import { Helicopter } from "./icons/helicopter.js";
+import { Heptagon } from "./icons/heptagon.js";
 import { Hexagon } from "./icons/hexagon.js";
 import { Highlighter } from "./icons/highlighter.js";
 import { HikingStick } from "./icons/hiking-stick.js";
+import { Hiking } from "./icons/hiking.js";
 import { HockeyStick } from "./icons/hockey-stick.js";
+import { Hockey } from "./icons/hockey.js";
+import { Hoodie } from "./icons/hoodie.js";
 import { HopOff } from "./icons/hop-off.js";
 import { Hop } from "./icons/hop.js";
+import { Horse } from "./icons/horse.js";
 import { Hospital } from "./icons/hospital.js";
 import { HotAirBalloon } from "./icons/hot-air-balloon.js";
+import { Hotdog } from "./icons/hotdog.js";
 import { Hotel } from "./icons/hotel.js";
 import { HourglassCog } from "./icons/hourglass-cog.js";
+import { HourglassOff } from "./icons/hourglass-off.js";
 import { Hourglass } from "./icons/hourglass.js";
+import { HouseCheck } from "./icons/house-check.js";
 import { HouseCog } from "./icons/house-cog.js";
 import { HouseHeart } from "./icons/house-heart.js";
 import { HousePlug } from "./icons/house-plug.js";
 import { HousePlus } from "./icons/house-plus.js";
 import { HouseWifi } from "./icons/house-wifi.js";
+import { HouseX } from "./icons/house-x.js";
 import { House } from "./icons/house.js";
 import { Houses } from "./icons/houses.js";
 import { IceCreamBowl } from "./icons/ice-cream-bowl.js";
@@ -1019,22 +1322,36 @@ import { IndianRupee } from "./icons/indian-rupee.js";
 import { Infinity } from "./icons/infinity.js";
 import { Info } from "./icons/info.js";
 import { InspectionPanel } from "./icons/inspection-panel.js";
+import { IpAddressTag } from "./icons/ip-address-tag.js";
+import { Island } from "./icons/island.js";
 import { Italic } from "./icons/italic.js";
 import { IterationCcw } from "./icons/iteration-ccw.js";
 import { IterationCw } from "./icons/iteration-cw.js";
 import { IvBag } from "./icons/iv-bag.js";
+import { Ivy } from "./icons/ivy.js";
+import { Jacket } from "./icons/jacket.js";
 import { JapaneseYen } from "./icons/japanese-yen.js";
+import { Jellyfish } from "./icons/jellyfish.js";
 import { Joystick } from "./icons/joystick.js";
 import { Kanban } from "./icons/kanban.js";
 import { Kayak } from "./icons/kayak.js";
 import { KazakhTenge } from "./icons/kazakh-tenge.js";
+import { Kettle } from "./icons/kettle.js";
 import { KeyRound } from "./icons/key-round.js";
 import { KeySquare } from "./icons/key-square.js";
 import { Key } from "./icons/key.js";
 import { KeyboardMusic } from "./icons/keyboard-music.js";
 import { KeyboardOff } from "./icons/keyboard-off.js";
 import { Keyboard } from "./icons/keyboard.js";
+import { KeyframeAlignCenter } from "./icons/keyframe-align-center.js";
+import { KeyframeAlignHorizontal } from "./icons/keyframe-align-horizontal.js";
+import { KeyframeAlignVertical } from "./icons/keyframe-align-vertical.js";
+import { KeyframeMinus } from "./icons/keyframe-minus.js";
+import { KeyframePlus } from "./icons/keyframe-plus.js";
 import { Keyframes } from "./icons/keyframes.js";
+import { Ladder } from "./icons/ladder.js";
+import { Ladle } from "./icons/ladle.js";
+import { Lake } from "./icons/lake.js";
 import { Lambda } from "./icons/lambda.js";
 import { LampCeiling } from "./icons/lamp-ceiling.js";
 import { LampDesk } from "./icons/lamp-desk.js";
@@ -1045,6 +1362,7 @@ import { Lamp } from "./icons/lamp.js";
 import { LandPlot } from "./icons/land-plot.js";
 import { Landmark } from "./icons/landmark.js";
 import { Languages } from "./icons/languages.js";
+import { Lantern } from "./icons/lantern.js";
 import { LaptopMinimalCheck } from "./icons/laptop-minimal-check.js";
 import { LaptopMinimal } from "./icons/laptop-minimal.js";
 import { Laptop } from "./icons/laptop.js";
@@ -1075,6 +1393,7 @@ import { Lectern } from "./icons/lectern.js";
 import { LensConcave } from "./icons/lens-concave.js";
 import { LensConvex } from "./icons/lens-convex.js";
 import { Lens } from "./icons/lens.js";
+import { LessThan } from "./icons/less-than.js";
 import { LetterA } from "./icons/letter-a.js";
 import { LetterB } from "./icons/letter-b.js";
 import { LetterC } from "./icons/letter-c.js";
@@ -1103,6 +1422,7 @@ import { LetterX } from "./icons/letter-x.js";
 import { LetterY } from "./icons/letter-y.js";
 import { LetterZ } from "./icons/letter-z.js";
 import { Letters } from "./icons/letters.js";
+import { LevelUp } from "./icons/level-up.js";
 import { LibraryBig } from "./icons/library-big.js";
 import { Library } from "./icons/library.js";
 import { LifeBuoy } from "./icons/life-buoy.js";
@@ -1120,6 +1440,7 @@ import { LineStyle } from "./icons/line-style.js";
 import { Link2Off } from "./icons/link-2-off.js";
 import { Link2 } from "./icons/link-2.js";
 import { Link } from "./icons/link.js";
+import { Lion } from "./icons/lion.js";
 import { ListCheck } from "./icons/list-check.js";
 import { ListChecks } from "./icons/list-checks.js";
 import { ListChevronsDownUp } from "./icons/list-chevrons-down-up.js";
@@ -1154,11 +1475,13 @@ import { LockKeyholeOpen } from "./icons/lock-keyhole-open.js";
 import { LockKeyhole } from "./icons/lock-keyhole.js";
 import { LockOpen } from "./icons/lock-open.js";
 import { Lock } from "./icons/lock.js";
+import { Loft3d } from "./icons/loft-3d.js";
 import { LogIn } from "./icons/log-in.js";
 import { LogOut } from "./icons/log-out.js";
 import { Logs } from "./icons/logs.js";
 import { Lollipop } from "./icons/lollipop.js";
 import { Luggage } from "./icons/luggage.js";
+import { Lungs } from "./icons/lungs.js";
 import { Magnet } from "./icons/magnet.js";
 import { MailBadge } from "./icons/mail-badge.js";
 import { MailCheck } from "./icons/mail-check.js";
@@ -1176,6 +1499,8 @@ import { MailX } from "./icons/mail-x.js";
 import { Mail } from "./icons/mail.js";
 import { Mailbox } from "./icons/mailbox.js";
 import { Mails } from "./icons/mails.js";
+import { ManaBar } from "./icons/mana-bar.js";
+import { Mango } from "./icons/mango.js";
 import { MapMinus } from "./icons/map-minus.js";
 import { MapPinCheckInside } from "./icons/map-pin-check-inside.js";
 import { MapPinCheck } from "./icons/map-pin-check.js";
@@ -1262,6 +1587,8 @@ import { Minimize } from "./icons/minimize.js";
 import { Minus } from "./icons/minus.js";
 import { MirrorRectangular } from "./icons/mirror-rectangular.js";
 import { MirrorRound } from "./icons/mirror-round.js";
+import { Molecule } from "./icons/molecule.js";
+import { MoneyBag } from "./icons/money-bag.js";
 import { MonitorActivity } from "./icons/monitor-activity.js";
 import { MonitorCheck } from "./icons/monitor-check.js";
 import { MonitorCloud } from "./icons/monitor-cloud.js";
@@ -1283,6 +1610,7 @@ import { Moon } from "./icons/moon.js";
 import { MopSparkles } from "./icons/mop-sparkles.js";
 import { Mop } from "./icons/mop.js";
 import { Mosque } from "./icons/mosque.js";
+import { Moss } from "./icons/moss.js";
 import { Motorbike } from "./icons/motorbike.js";
 import { MountainSnow } from "./icons/mountain-snow.js";
 import { Mountain } from "./icons/mountain.js";
@@ -1311,6 +1639,7 @@ import { MoveUpRight } from "./icons/move-up-right.js";
 import { MoveUp } from "./icons/move-up.js";
 import { MoveVertical } from "./icons/move-vertical.js";
 import { Move } from "./icons/move.js";
+import { Mushroom } from "./icons/mushroom.js";
 import { Navigation2Off } from "./icons/navigation-2-off.js";
 import { Navigation2 } from "./icons/navigation-2.js";
 import { NavigationOff } from "./icons/navigation-off.js";
@@ -1320,6 +1649,7 @@ import { Network } from "./icons/network.js";
 import { Newspaper } from "./icons/newspaper.js";
 import { Nfc } from "./icons/nfc.js";
 import { NonBinary } from "./icons/non-binary.js";
+import { Noodles } from "./icons/noodles.js";
 import { NotebookDot } from "./icons/notebook-dot.js";
 import { NotebookPen } from "./icons/notebook-pen.js";
 import { NotebookTabs } from "./icons/notebook-tabs.js";
@@ -1335,10 +1665,18 @@ import { OctagonMinus } from "./icons/octagon-minus.js";
 import { OctagonPause } from "./icons/octagon-pause.js";
 import { OctagonX } from "./icons/octagon-x.js";
 import { Octagon } from "./icons/octagon.js";
+import { Okrs } from "./icons/okrs.js";
+import { OlympicRings } from "./icons/olympic-rings.js";
 import { Omega } from "./icons/omega.js";
+import { OneFingerSelect } from "./icons/one-finger-select.js";
+import { OpenSelect } from "./icons/open-select.js";
 import { Option } from "./icons/option.js";
+import { OrangeSlice } from "./icons/orange-slice.js";
 import { Orbit } from "./icons/orbit.js";
 import { Origami } from "./icons/origami.js";
+import { OrthogonalView } from "./icons/orthogonal-view.js";
+import { Oval } from "./icons/oval.js";
+import { Oxygen } from "./icons/oxygen.js";
 import { Package2 } from "./icons/package-2.js";
 import { PackageCheck } from "./icons/package-check.js";
 import { PackageMinus } from "./icons/package-minus.js";
@@ -1347,11 +1685,13 @@ import { PackagePlus } from "./icons/package-plus.js";
 import { PackageSearch } from "./icons/package-search.js";
 import { PackageX } from "./icons/package-x.js";
 import { Package } from "./icons/package.js";
+import { Pacman } from "./icons/pacman.js";
 import { PaintBucket } from "./icons/paint-bucket.js";
 import { PaintRoller } from "./icons/paint-roller.js";
 import { PaintbrushVertical } from "./icons/paintbrush-vertical.js";
 import { Paintbrush } from "./icons/paintbrush.js";
 import { Palette } from "./icons/palette.js";
+import { Pan } from "./icons/pan.js";
 import { Panda } from "./icons/panda.js";
 import { PanelBottomClose } from "./icons/panel-bottom-close.js";
 import { PanelBottomDashed } from "./icons/panel-bottom-dashed.js";
@@ -1374,8 +1714,10 @@ import { PanelTop } from "./icons/panel-top.js";
 import { PanelsLeftBottom } from "./icons/panels-left-bottom.js";
 import { PanelsRightBottom } from "./icons/panels-right-bottom.js";
 import { PanelsTopLeft } from "./icons/panels-top-left.js";
+import { Pants } from "./icons/pants.js";
 import { PaperBag } from "./icons/paper-bag.js";
 import { Paperclip } from "./icons/paperclip.js";
+import { Parallelogram } from "./icons/parallelogram.js";
 import { Parasol } from "./icons/parasol.js";
 import { Parentheses } from "./icons/parentheses.js";
 import { Park } from "./icons/park.js";
@@ -1385,6 +1727,7 @@ import { Passport } from "./icons/passport.js";
 import { Pause } from "./icons/pause.js";
 import { PawPrint } from "./icons/paw-print.js";
 import { PcCase } from "./icons/pc-case.js";
+import { Pebbles } from "./icons/pebbles.js";
 import { PenLine } from "./icons/pen-line.js";
 import { PenOff } from "./icons/pen-off.js";
 import { PenTool } from "./icons/pen-tool.js";
@@ -1398,6 +1741,8 @@ import { Pentagon } from "./icons/pentagon.js";
 import { Percent } from "./icons/percent.js";
 import { PerfumeBottle } from "./icons/perfume-bottle.js";
 import { PersonStanding } from "./icons/person-standing.js";
+import { PerspectiveView } from "./icons/perspective-view.js";
+import { PetriDish } from "./icons/petri-dish.js";
 import { Phi } from "./icons/phi.js";
 import { PhilippinePeso } from "./icons/philippine-peso.js";
 import { PhoneCall } from "./icons/phone-call.js";
@@ -1419,19 +1764,25 @@ import { PilcrowRight } from "./icons/pilcrow-right.js";
 import { Pilcrow } from "./icons/pilcrow.js";
 import { PillBottle } from "./icons/pill-bottle.js";
 import { Pill } from "./icons/pill.js";
+import { Pillow } from "./icons/pillow.js";
 import { PinOff } from "./icons/pin-off.js";
 import { Pin } from "./icons/pin.js";
+import { Pinecone } from "./icons/pinecone.js";
+import { Pipe3d } from "./icons/pipe-3d.js";
 import { Pipette } from "./icons/pipette.js";
 import { Pizza } from "./icons/pizza.js";
 import { PlaneLanding } from "./icons/plane-landing.js";
 import { PlaneTakeoff } from "./icons/plane-takeoff.js";
 import { Plane } from "./icons/plane.js";
 import { PlantPot } from "./icons/plant-pot.js";
+import { Plate } from "./icons/plate.js";
 import { PlayOff } from "./icons/play-off.js";
+import { PlayPause } from "./icons/play-pause.js";
 import { Play } from "./icons/play.js";
 import { PlayingCard } from "./icons/playing-card.js";
 import { PlayingCardsFan } from "./icons/playing-cards-fan.js";
 import { PlayingCards } from "./icons/playing-cards.js";
+import { Pliers } from "./icons/pliers.js";
 import { Plug2 } from "./icons/plug-2.js";
 import { PlugConnectedX } from "./icons/plug-connected-x.js";
 import { PlugConnected } from "./icons/plug-connected.js";
@@ -1440,20 +1791,34 @@ import { Plug } from "./icons/plug.js";
 import { Plus } from "./icons/plus.js";
 import { PocketKnife } from "./icons/pocket-knife.js";
 import { Podium } from "./icons/podium.js";
+import { PointDown } from "./icons/point-down.js";
+import { PointLeft } from "./icons/point-left.js";
+import { PointRight } from "./icons/point-right.js";
+import { PointUp } from "./icons/point-up.js";
 import { PointerOff } from "./icons/pointer-off.js";
 import { Pointer } from "./icons/pointer.js";
+import { Pokeball } from "./icons/pokeball.js";
+import { PoliceCar } from "./icons/police-car.js";
 import { Popcorn } from "./icons/popcorn.js";
 import { Popsicle } from "./icons/popsicle.js";
+import { Potion } from "./icons/potion.js";
 import { PoundSterling } from "./icons/pound-sterling.js";
 import { PowerOff } from "./icons/power-off.js";
 import { Power } from "./icons/power.js";
+import { Prescription } from "./icons/prescription.js";
 import { Presentation } from "./icons/presentation.js";
 import { Printer3d } from "./icons/printer-3d.js";
 import { PrinterCheck } from "./icons/printer-check.js";
 import { PrinterX } from "./icons/printer-x.js";
 import { Printer } from "./icons/printer.js";
+import { PriorityHigh } from "./icons/priority-high.js";
+import { PriorityLow } from "./icons/priority-low.js";
+import { PriorityMedium } from "./icons/priority-medium.js";
+import { PrivacyPolicy } from "./icons/privacy-policy.js";
+import { ProjectCurve3d } from "./icons/project-curve-3d.js";
 import { Projector } from "./icons/projector.js";
 import { Proportions } from "./icons/proportions.js";
+import { Protractor } from "./icons/protractor.js";
 import { Puzzle } from "./icons/puzzle.js";
 import { Pyramid } from "./icons/pyramid.js";
 import { QrCode } from "./icons/qr-code.js";
@@ -1468,20 +1833,27 @@ import { RadioReceiver } from "./icons/radio-receiver.js";
 import { RadioTower } from "./icons/radio-tower.js";
 import { Radio } from "./icons/radio.js";
 import { Radius } from "./icons/radius.js";
+import { RailSymbol } from "./icons/rail-symbol.js";
 import { Rainbow } from "./icons/rainbow.js";
+import { Rake } from "./icons/rake.js";
 import { Rat } from "./icons/rat.js";
 import { Ratio } from "./icons/ratio.js";
 import { ReceiptCent } from "./icons/receipt-cent.js";
+import { ReceiptCheck } from "./icons/receipt-check.js";
 import { ReceiptEuro } from "./icons/receipt-euro.js";
 import { ReceiptIndianRupee } from "./icons/receipt-indian-rupee.js";
 import { ReceiptJapaneseYen } from "./icons/receipt-japanese-yen.js";
 import { ReceiptPoundSterling } from "./icons/receipt-pound-sterling.js";
+import { ReceiptRefund } from "./icons/receipt-refund.js";
 import { ReceiptRussianRuble } from "./icons/receipt-russian-ruble.js";
 import { ReceiptSwissFranc } from "./icons/receipt-swiss-franc.js";
 import { ReceiptText } from "./icons/receipt-text.js";
 import { ReceiptTurkishLira } from "./icons/receipt-turkish-lira.js";
+import { ReceiptX } from "./icons/receipt-x.js";
 import { Receipt } from "./icons/receipt.js";
+import { ReceiveMoney } from "./icons/receive-money.js";
 import { RectangleCircle } from "./icons/rectangle-circle.js";
+import { RectangleEllipsisCheck } from "./icons/rectangle-ellipsis-check.js";
 import { RectangleEllipsis } from "./icons/rectangle-ellipsis.js";
 import { RectangleGoggles } from "./icons/rectangle-goggles.js";
 import { RectangleHorizontal } from "./icons/rectangle-horizontal.js";
@@ -1490,6 +1862,7 @@ import { Recycle } from "./icons/recycle.js";
 import { Redo2 } from "./icons/redo-2.js";
 import { RedoDot } from "./icons/redo-dot.js";
 import { Redo } from "./icons/redo.js";
+import { ReducedMotion } from "./icons/reduced-motion.js";
 import { RefreshCcwDot } from "./icons/refresh-ccw-dot.js";
 import { RefreshCcw } from "./icons/refresh-ccw.js";
 import { RefreshCwOff } from "./icons/refresh-cw-off.js";
@@ -1507,6 +1880,7 @@ import { ReplyAll } from "./icons/reply-all.js";
 import { Reply } from "./icons/reply.js";
 import { Rewind } from "./icons/rewind.js";
 import { Ribbon } from "./icons/ribbon.js";
+import { River } from "./icons/river.js";
 import { Road } from "./icons/road.js";
 import { RobotArm } from "./icons/robot-arm.js";
 import { RobotVacuum } from "./icons/robot-vacuum.js";
@@ -1530,12 +1904,15 @@ import { Rows2 } from "./icons/rows-2.js";
 import { Rows3 } from "./icons/rows-3.js";
 import { Rows4 } from "./icons/rows-4.js";
 import { Rss } from "./icons/rss.js";
+import { RubikCube } from "./icons/rubik-cube.js";
 import { RugbyBall } from "./icons/rugby-ball.js";
 import { RulerDimensionLine } from "./icons/ruler-dimension-line.js";
 import { Ruler } from "./icons/ruler.js";
+import { Running } from "./icons/running.js";
 import { RussianRuble } from "./icons/russian-ruble.js";
 import { Sailboat } from "./icons/sailboat.js";
 import { Salad } from "./icons/salad.js";
+import { Sandals } from "./icons/sandals.js";
 import { Sandwich } from "./icons/sandwich.js";
 import { SatelliteDish } from "./icons/satellite-dish.js";
 import { Satellite } from "./icons/satellite.js";
@@ -1546,6 +1923,7 @@ import { SaveOff } from "./icons/save-off.js";
 import { SavePen } from "./icons/save-pen.js";
 import { SavePlus } from "./icons/save-plus.js";
 import { Save } from "./icons/save.js";
+import { Saw } from "./icons/saw.js";
 import { Scale3D } from "./icons/scale-3d.js";
 import { Scale } from "./icons/scale.js";
 import { Scaling } from "./icons/scaling.js";
@@ -1560,24 +1938,33 @@ import { ScanSearch } from "./icons/scan-search.js";
 import { ScanSquare } from "./icons/scan-square.js";
 import { ScanText } from "./icons/scan-text.js";
 import { Scan } from "./icons/scan.js";
+import { Scarf } from "./icons/scarf.js";
 import { School } from "./icons/school.js";
 import { ScissorsLineDashed } from "./icons/scissors-line-dashed.js";
 import { Scissors } from "./icons/scissors.js";
 import { Scooter } from "./icons/scooter.js";
 import { ScratchBlocks } from "./icons/scratch-blocks.js";
+import { ScreenReader } from "./icons/screen-reader.js";
 import { ScreenShareOff } from "./icons/screen-share-off.js";
 import { ScreenShare } from "./icons/screen-share.js";
 import { Screw } from "./icons/screw.js";
+import { Screwdriver } from "./icons/screwdriver.js";
 import { ScrollText } from "./icons/scroll-text.js";
 import { Scroll } from "./icons/scroll.js";
+import { SeaAndSun } from "./icons/sea-and-sun.js";
 import { SearchAlert } from "./icons/search-alert.js";
 import { SearchCheck } from "./icons/search-check.js";
 import { SearchCode } from "./icons/search-code.js";
 import { SearchSlash } from "./icons/search-slash.js";
 import { SearchX } from "./icons/search-x.js";
 import { Search } from "./icons/search.js";
+import { Seaweed } from "./icons/seaweed.js";
 import { Section } from "./icons/section.js";
+import { SelectEdge3d } from "./icons/select-edge-3d.js";
+import { SelectFace3d } from "./icons/select-face-3d.js";
+import { SelectPoint3d } from "./icons/select-point-3d.js";
 import { SendHorizontal } from "./icons/send-horizontal.js";
+import { SendMoney } from "./icons/send-money.js";
 import { SendToBack } from "./icons/send-to-back.js";
 import { Send } from "./icons/send.js";
 import { SeparatorHorizontal } from "./icons/separator-horizontal.js";
@@ -1588,6 +1975,7 @@ import { ServerNas } from "./icons/server-nas.js";
 import { ServerOff } from "./icons/server-off.js";
 import { ServerPlus } from "./icons/server-plus.js";
 import { Server } from "./icons/server.js";
+import { SetSquare } from "./icons/set-square.js";
 import { Settings2 } from "./icons/settings-2.js";
 import { Settings } from "./icons/settings.js";
 import { Shapes } from "./icons/shapes.js";
@@ -1616,12 +2004,22 @@ import { Shield } from "./icons/shield.js";
 import { ShipCargo } from "./icons/ship-cargo.js";
 import { ShipWheel } from "./icons/ship-wheel.js";
 import { Ship } from "./icons/ship.js";
+import { ShippingFast } from "./icons/shipping-fast.js";
 import { Shirt } from "./icons/shirt.js";
+import { ShoppingBagCheck } from "./icons/shopping-bag-check.js";
+import { ShoppingBagMinus } from "./icons/shopping-bag-minus.js";
+import { ShoppingBagPlus } from "./icons/shopping-bag-plus.js";
+import { ShoppingBagX } from "./icons/shopping-bag-x.js";
 import { ShoppingBag } from "./icons/shopping-bag.js";
+import { ShoppingBasketMinus } from "./icons/shopping-basket-minus.js";
+import { ShoppingBasketPlus } from "./icons/shopping-basket-plus.js";
 import { ShoppingBasket } from "./icons/shopping-basket.js";
+import { ShoppingCartCheck } from "./icons/shopping-cart-check.js";
 import { ShoppingCartMinus } from "./icons/shopping-cart-minus.js";
 import { ShoppingCartPlus } from "./icons/shopping-cart-plus.js";
+import { ShoppingCartX } from "./icons/shopping-cart-x.js";
 import { ShoppingCart } from "./icons/shopping-cart.js";
+import { Shorts } from "./icons/shorts.js";
 import { Shovel } from "./icons/shovel.js";
 import { ShowerHead } from "./icons/shower-head.js";
 import { Shredder } from "./icons/shredder.js";
@@ -1631,6 +2029,7 @@ import { Shrink } from "./icons/shrink.js";
 import { Shrub } from "./icons/shrub.js";
 import { Shuffle } from "./icons/shuffle.js";
 import { Sigma } from "./icons/sigma.js";
+import { SignLanguage } from "./icons/sign-language.js";
 import { SignalHigh } from "./icons/signal-high.js";
 import { SignalLow } from "./icons/signal-low.js";
 import { SignalMedium } from "./icons/signal-medium.js";
@@ -1639,13 +2038,18 @@ import { Signal } from "./icons/signal.js";
 import { Signature } from "./icons/signature.js";
 import { SignpostBig } from "./icons/signpost-big.js";
 import { Signpost } from "./icons/signpost.js";
+import { SingleTap } from "./icons/single-tap.js";
+import { Sink } from "./icons/sink.js";
 import { SirenOff } from "./icons/siren-off.js";
 import { Siren } from "./icons/siren.js";
 import { SixteenthNotes } from "./icons/sixteenth-notes.js";
+import { Skateboard } from "./icons/skateboard.js";
+import { Skiing } from "./icons/skiing.js";
 import { SkipBack } from "./icons/skip-back.js";
 import { SkipForward } from "./icons/skip-forward.js";
 import { Skull } from "./icons/skull.js";
 import { Slash } from "./icons/slash.js";
+import { SleeperChair } from "./icons/sleeper-chair.js";
 import { Slice } from "./icons/slice.js";
 import { SlidersHorizontal } from "./icons/sliders-horizontal.js";
 import { SlidersVertical } from "./icons/sliders-vertical.js";
@@ -1656,17 +2060,22 @@ import { Smartphone } from "./icons/smartphone.js";
 import { Snail } from "./icons/snail.js";
 import { Snowflake } from "./icons/snowflake.js";
 import { SoapDispenserDroplet } from "./icons/soap-dispenser-droplet.js";
+import { SoccerBall } from "./icons/soccer-ball.js";
 import { Sofa } from "./icons/sofa.js";
+import { Soil } from "./icons/soil.js";
 import { SolarPanel } from "./icons/solar-panel.js";
 import { Soup } from "./icons/soup.js";
 import { Space } from "./icons/space.js";
 import { Spade } from "./icons/spade.js";
 import { Sparkle } from "./icons/sparkle.js";
 import { Sparkles } from "./icons/sparkles.js";
+import { Spatula } from "./icons/spatula.js";
 import { Speaker } from "./icons/speaker.js";
 import { Speech } from "./icons/speech.js";
 import { SpellCheck2 } from "./icons/spell-check-2.js";
 import { SpellCheck } from "./icons/spell-check.js";
+import { Sphere } from "./icons/sphere.js";
+import { Spiral } from "./icons/spiral.js";
 import { SplinePointer } from "./icons/spline-pointer.js";
 import { Spline } from "./icons/spline.js";
 import { Split } from "./icons/split.js";
@@ -1723,6 +2132,7 @@ import { SquareDot } from "./icons/square-dot.js";
 import { SquareEqual } from "./icons/square-equal.js";
 import { SquareExclamationPoint } from "./icons/square-exclamation-point.js";
 import { SquareFunction } from "./icons/square-function.js";
+import { SquareInfo } from "./icons/square-info.js";
 import { SquareKanbanPlus } from "./icons/square-kanban-plus.js";
 import { SquareKanban } from "./icons/square-kanban.js";
 import { SquareLetterA } from "./icons/square-letter-a.js";
@@ -1772,6 +2182,7 @@ import { SquarePilcrow } from "./icons/square-pilcrow.js";
 import { SquarePlay } from "./icons/square-play.js";
 import { SquarePlus } from "./icons/square-plus.js";
 import { SquarePower } from "./icons/square-power.js";
+import { SquareQuestionMark } from "./icons/square-question-mark.js";
 import { SquareRadical } from "./icons/square-radical.js";
 import { SquareRoundCorner } from "./icons/square-round-corner.js";
 import { SquareScissors } from "./icons/square-scissors.js";
@@ -1788,6 +2199,7 @@ import { SquareTerminal } from "./icons/square-terminal.js";
 import { SquareText } from "./icons/square-text.js";
 import { SquareUserRound } from "./icons/square-user-round.js";
 import { SquareUser } from "./icons/square-user.js";
+import { SquareWave } from "./icons/square-wave.js";
 import { SquareX } from "./icons/square-x.js";
 import { Square } from "./icons/square.js";
 import { SquaresExclude } from "./icons/squares-exclude.js";
@@ -1805,6 +2217,7 @@ import { StarOff } from "./icons/star-off.js";
 import { StarPlus } from "./icons/star-plus.js";
 import { StarX } from "./icons/star-x.js";
 import { Star } from "./icons/star.js";
+import { Starfish } from "./icons/starfish.js";
 import { StepBack } from "./icons/step-back.js";
 import { StepForward } from "./icons/step-forward.js";
 import { Stethoscope } from "./icons/stethoscope.js";
@@ -1817,21 +2230,41 @@ import { StickyNoteX } from "./icons/sticky-note-x.js";
 import { StickyNote } from "./icons/sticky-note.js";
 import { StickyNotes } from "./icons/sticky-notes.js";
 import { Stone } from "./icons/stone.js";
+import { StoreMinus } from "./icons/store-minus.js";
+import { StorePlus } from "./icons/store-plus.js";
 import { Store } from "./icons/store.js";
+import { Strategy } from "./icons/strategy.js";
 import { StretchHorizontal } from "./icons/stretch-horizontal.js";
 import { StretchVertical } from "./icons/stretch-vertical.js";
+import { Stretching } from "./icons/stretching.js";
 import { Strikethrough } from "./icons/strikethrough.js";
+import { Stroller } from "./icons/stroller.js";
 import { Subscript } from "./icons/subscript.js";
+import { Suggestion } from "./icons/suggestion.js";
 import { Summary } from "./icons/summary.js";
 import { SunDim } from "./icons/sun-dim.js";
 import { SunMedium } from "./icons/sun-medium.js";
 import { SunMoon } from "./icons/sun-moon.js";
 import { SunSnow } from "./icons/sun-snow.js";
 import { Sun } from "./icons/sun.js";
+import { Sunglasses } from "./icons/sunglasses.js";
 import { Sunrise } from "./icons/sunrise.js";
 import { Sunset } from "./icons/sunset.js";
 import { Superscript } from "./icons/superscript.js";
+import { SurgeProtector } from "./icons/surge-protector.js";
+import { Sushi } from "./icons/sushi.js";
 import { SwatchBook } from "./icons/swatch-book.js";
+import { Sweater } from "./icons/sweater.js";
+import { Sweep3d } from "./icons/sweep-3d.js";
+import { Swimming } from "./icons/swimming.js";
+import { SwipeDown } from "./icons/swipe-down.js";
+import { SwipeLeft } from "./icons/swipe-left.js";
+import { SwipeRight } from "./icons/swipe-right.js";
+import { SwipeTwoFingersDown } from "./icons/swipe-two-fingers-down.js";
+import { SwipeTwoFingersLeft } from "./icons/swipe-two-fingers-left.js";
+import { SwipeTwoFingersRight } from "./icons/swipe-two-fingers-right.js";
+import { SwipeTwoFingersUp } from "./icons/swipe-two-fingers-up.js";
+import { SwipeUp } from "./icons/swipe-up.js";
 import { SwissFranc } from "./icons/swiss-franc.js";
 import { SwitchCamera } from "./icons/switch-camera.js";
 import { Sword } from "./icons/sword.js";
@@ -1848,6 +2281,7 @@ import { Table } from "./icons/table.js";
 import { TabletSmartphone } from "./icons/tablet-smartphone.js";
 import { Tablet } from "./icons/tablet.js";
 import { Tablets } from "./icons/tablets.js";
+import { Taco } from "./icons/taco.js";
 import { TagPlus } from "./icons/tag-plus.js";
 import { TagX } from "./icons/tag-x.js";
 import { Tag } from "./icons/tag.js";
@@ -1858,8 +2292,11 @@ import { Tally3 } from "./icons/tally-3.js";
 import { Tally4 } from "./icons/tally-4.js";
 import { Tally5 } from "./icons/tally-5.js";
 import { Tangent } from "./icons/tangent.js";
+import { TankTop } from "./icons/tank-top.js";
+import { TapeMeasure } from "./icons/tape-measure.js";
 import { Target } from "./icons/target.js";
 import { Telescope } from "./icons/telescope.js";
+import { TennisBall } from "./icons/tennis-ball.js";
 import { TentTree } from "./icons/tent-tree.js";
 import { Tent } from "./icons/tent.js";
 import { Terminal } from "./icons/terminal.js";
@@ -1880,6 +2317,7 @@ import { TextQuote } from "./icons/text-quote.js";
 import { TextSearch } from "./icons/text-search.js";
 import { TextWrap } from "./icons/text-wrap.js";
 import { Theater } from "./icons/theater.js";
+import { ThermometerMedical } from "./icons/thermometer-medical.js";
 import { ThermometerSnowflake } from "./icons/thermometer-snowflake.js";
 import { ThermometerSun } from "./icons/thermometer-sun.js";
 import { Thermometer } from "./icons/thermometer.js";
@@ -1895,24 +2333,29 @@ import { TicketX } from "./icons/ticket-x.js";
 import { Ticket } from "./icons/ticket.js";
 import { TicketsPlane } from "./icons/tickets-plane.js";
 import { Tickets } from "./icons/tickets.js";
+import { Tie } from "./icons/tie.js";
 import { Timeline } from "./icons/timeline.js";
 import { TimerOff } from "./icons/timer-off.js";
 import { TimerReset } from "./icons/timer-reset.js";
 import { Timer } from "./icons/timer.js";
+import { Toaster } from "./icons/toaster.js";
 import { ToggleLeft } from "./icons/toggle-left.js";
 import { ToggleRight } from "./icons/toggle-right.js";
 import { Toilet } from "./icons/toilet.js";
 import { Tombstone } from "./icons/tombstone.js";
 import { ToolCase } from "./icons/tool-case.js";
 import { Toolbox } from "./icons/toolbox.js";
+import { Tooth } from "./icons/tooth.js";
 import { ToothbrushSparkles } from "./icons/toothbrush-sparkles.js";
 import { Toothbrush } from "./icons/toothbrush.js";
 import { Tornado } from "./icons/tornado.js";
 import { Torus } from "./icons/torus.js";
 import { TouchpadOff } from "./icons/touchpad-off.js";
 import { Touchpad } from "./icons/touchpad.js";
+import { Tournament } from "./icons/tournament.js";
 import { TowelRack } from "./icons/towel-rack.js";
 import { TowerControl } from "./icons/tower-control.js";
+import { Tower } from "./icons/tower.js";
 import { ToyBrick } from "./icons/toy-brick.js";
 import { Tractor } from "./icons/tractor.js";
 import { TrafficCone } from "./icons/traffic-cone.js";
@@ -1922,11 +2365,14 @@ import { TrainFront } from "./icons/train-front.js";
 import { TrainTrack } from "./icons/train-track.js";
 import { TramFront } from "./icons/tram-front.js";
 import { Transgender } from "./icons/transgender.js";
+import { Trapezoid } from "./icons/trapezoid.js";
 import { TrashOff } from "./icons/trash-off.js";
 import { Trash } from "./icons/trash.js";
+import { Treadmill } from "./icons/treadmill.js";
 import { TreeDeciduous } from "./icons/tree-deciduous.js";
 import { TreePalm } from "./icons/tree-palm.js";
 import { TreePine } from "./icons/tree-pine.js";
+import { Treemap } from "./icons/treemap.js";
 import { Trees } from "./icons/trees.js";
 import { TrendingDown } from "./icons/trending-down.js";
 import { TrendingUpDown } from "./icons/trending-up-down.js";
@@ -1941,14 +2387,17 @@ import { Trophy } from "./icons/trophy.js";
 import { TruckElectric } from "./icons/truck-electric.js";
 import { Truck } from "./icons/truck.js";
 import { TubeLotion } from "./icons/tube-lotion.js";
+import { Tulip } from "./icons/tulip.js";
 import { TurkishLira } from "./icons/turkish-lira.js";
 import { Turntable } from "./icons/turntable.js";
 import { Turtle } from "./icons/turtle.js";
+import { Tv4k } from "./icons/tv-4k.js";
 import { TvMinimalPlay } from "./icons/tv-minimal-play.js";
 import { TvMinimal } from "./icons/tv-minimal.js";
 import { Tv } from "./icons/tv.js";
 import { TypeOutline } from "./icons/type-outline.js";
 import { Type } from "./icons/type.js";
+import { Ufo } from "./icons/ufo.js";
 import { UmbrellaOff } from "./icons/umbrella-off.js";
 import { Umbrella } from "./icons/umbrella.js";
 import { Underline } from "./icons/underline.js";
@@ -1959,15 +2408,23 @@ import { UnfoldHorizontal } from "./icons/unfold-horizontal.js";
 import { UnfoldVertical } from "./icons/unfold-vertical.js";
 import { Ungroup } from "./icons/ungroup.js";
 import { University } from "./icons/university.js";
+import { Unjoin3d } from "./icons/unjoin-3d.js";
 import { Unlink2 } from "./icons/unlink-2.js";
 import { Unlink } from "./icons/unlink.js";
 import { Unplug } from "./icons/unplug.js";
 import { Upload } from "./icons/upload.js";
+import { Upvote } from "./icons/upvote.js";
 import { UsbCPort } from "./icons/usb-c-port.js";
+import { UsbDrive } from "./icons/usb-drive.js";
 import { Usb } from "./icons/usb.js";
+import { UserBag } from "./icons/user-bag.js";
+import { UserBan } from "./icons/user-ban.js";
+import { UserCart } from "./icons/user-cart.js";
 import { UserCheck } from "./icons/user-check.js";
 import { UserCog } from "./icons/user-cog.js";
+import { UserCrown } from "./icons/user-crown.js";
 import { UserGroup } from "./icons/user-group.js";
+import { UserHeart } from "./icons/user-heart.js";
 import { UserKey } from "./icons/user-key.js";
 import { UserLock } from "./icons/user-lock.js";
 import { UserMinus } from "./icons/user-minus.js";
@@ -2017,15 +2474,23 @@ import { Vinyl } from "./icons/vinyl.js";
 import { VirusOff } from "./icons/virus-off.js";
 import { Virus } from "./icons/virus.js";
 import { Voicemail } from "./icons/voicemail.js";
+import { Volcano } from "./icons/volcano.js";
 import { Volleyball } from "./icons/volleyball.js";
 import { Volume1 } from "./icons/volume-1.js";
 import { Volume2 } from "./icons/volume-2.js";
+import { VolumeMinus } from "./icons/volume-minus.js";
 import { VolumeOff } from "./icons/volume-off.js";
+import { VolumePlus } from "./icons/volume-plus.js";
 import { VolumeX } from "./icons/volume-x.js";
 import { Volume } from "./icons/volume.js";
 import { Vote } from "./icons/vote.js";
+import { Walker } from "./icons/walker.js";
+import { Walking } from "./icons/walking.js";
+import { WallOutlet } from "./icons/wall-outlet.js";
 import { WalletCards } from "./icons/wallet-cards.js";
 import { WalletMinimal } from "./icons/wallet-minimal.js";
+import { WalletMinus } from "./icons/wallet-minus.js";
+import { WalletPlus } from "./icons/wallet-plus.js";
 import { Wallet } from "./icons/wallet.js";
 import { Wallpaper } from "./icons/wallpaper.js";
 import { WandSparkles } from "./icons/wand-sparkles.js";
@@ -2033,6 +2498,9 @@ import { Wand } from "./icons/wand.js";
 import { Warehouse } from "./icons/warehouse.js";
 import { WashingMachine } from "./icons/washing-machine.js";
 import { Watch } from "./icons/watch.js";
+import { Waterfall } from "./icons/waterfall.js";
+import { WateringCan } from "./icons/watering-can.js";
+import { WateringSoil } from "./icons/watering-soil.js";
 import { WavesArrowDown } from "./icons/waves-arrow-down.js";
 import { WavesArrowUp } from "./icons/waves-arrow-up.js";
 import { WavesHorizontal } from "./icons/waves-horizontal.js";
@@ -2047,6 +2515,7 @@ import { WeightTilde } from "./icons/weight-tilde.js";
 import { Weight } from "./icons/weight.js";
 import { WheatOff } from "./icons/wheat-off.js";
 import { Wheat } from "./icons/wheat.js";
+import { Whisk } from "./icons/whisk.js";
 import { Whistle } from "./icons/whistle.js";
 import { WholeWord } from "./icons/whole-word.js";
 import { WifiCog } from "./icons/wifi-cog.js";
@@ -2063,12 +2532,16 @@ import { WindArrowUp } from "./icons/wind-arrow-up.js";
 import { Wind } from "./icons/wind.js";
 import { WineOff } from "./icons/wine-off.js";
 import { Wine } from "./icons/wine.js";
+import { Wolf } from "./icons/wolf.js";
 import { Workflow } from "./icons/workflow.js";
 import { Worm } from "./icons/worm.js";
 import { WrenchOff } from "./icons/wrench-off.js";
 import { Wrench } from "./icons/wrench.js";
 import { XLineTop } from "./icons/x-line-top.js";
 import { X } from "./icons/x.js";
+import { XpBar } from "./icons/xp-bar.js";
+import { Xray } from "./icons/xray.js";
+import { Yoga } from "./icons/yoga.js";
 import { ZapOff } from "./icons/zap-off.js";
 import { Zap } from "./icons/zap.js";
 import { ZodiacAquarius } from "./icons/zodiac-aquarius.js";
@@ -2092,9 +2565,13 @@ export const ICONS: Record<string, PulsoIcon> = {
   "a-arrow-down": AArrowDown,
   "a-arrow-up": AArrowUp,
   "a-large-small": ALargeSmall,
+  "ab-test": AbTest,
   accessibility: Accessibility,
+  acorn: Acorn,
   activity: Activity,
   ad: Ad,
+  "african-tree": AfricanTree,
+  agile: Agile,
   "air-vent": AirVent,
   airplay: Airplay,
   "alarm-clock": AlarmClock,
@@ -2137,6 +2614,10 @@ export const ICONS: Record<string, PulsoIcon> = {
   "app-window": AppWindow,
   "app-window-mac": AppWindowMac,
   apple: Apple,
+  "apple-half": AppleHalf,
+  "arc-3d": Arc3d,
+  arcade: Arcade,
+  archery: Archery,
   archive: Archive,
   "archive-arrow-down": ArchiveArrowDown,
   "archive-arrow-up": ArchiveArrowUp,
@@ -2194,6 +2675,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   astroid: Astroid,
   "at-sign": AtSign,
   atom: Atom,
+  "audio-description": AudioDescription,
   "audio-lines": AudioLines,
   "audio-lines-off": AudioLinesOff,
   "audio-lines-x": AudioLinesX,
@@ -2205,7 +2687,9 @@ export const ICONS: Record<string, PulsoIcon> = {
   "azerbaijani-manat": AzerbaijaniManat,
   baby: Baby,
   backpack: Backpack,
+  "backward-15": Backward15,
   bacon: Bacon,
+  bacteria: Bacteria,
   badge: Badge,
   "badge-alert": BadgeAlert,
   "badge-cent": BadgeCent,
@@ -2225,6 +2709,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "badge-turkish-lira": BadgeTurkishLira,
   "badge-x": BadgeX,
   "baggage-claim": BaggageClaim,
+  balcony: Balcony,
   "ball-wave": BallWave,
   balloon: Balloon,
   ban: Ban,
@@ -2238,7 +2723,10 @@ export const ICONS: Record<string, PulsoIcon> = {
   "banknote-x": BanknoteX,
   barcode: Barcode,
   barrel: Barrel,
+  baseball: Baseball,
   baseline: Baseline,
+  basketball: Basketball,
+  "basketball-court": BasketballCourt,
   bath: Bath,
   battery: Battery,
   "battery-charging": BatteryCharging,
@@ -2248,12 +2736,16 @@ export const ICONS: Record<string, PulsoIcon> = {
   "battery-pause": BatteryPause,
   "battery-plus": BatteryPlus,
   "battery-warning": BatteryWarning,
+  bbq: Bbq,
+  beach: Beach,
   beaker: Beaker,
   bean: Bean,
   "bean-off": BeanOff,
+  bear: Bear,
   bed: Bed,
   "bed-double": BedDouble,
   "bed-single": BedSingle,
+  bee: Bee,
   beef: Beef,
   "beef-off": BeefOff,
   beer: Beer,
@@ -2268,6 +2760,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "bell-off": BellOff,
   "bell-plus": BellPlus,
   "bell-ring": BellRing,
+  "bell-snooze": BellSnooze,
   "between-horizontal-end": BetweenHorizontalEnd,
   "between-horizontal-start": BetweenHorizontalStart,
   "between-vertical-end": BetweenVerticalEnd,
@@ -2284,14 +2777,17 @@ export const ICONS: Record<string, PulsoIcon> = {
   blender: Blender,
   blinds: Blinds,
   blocks: Blocks,
+  "blood-pressure": BloodPressure,
   bluetooth: Bluetooth,
   "bluetooth-connected": BluetoothConnected,
   "bluetooth-off": BluetoothOff,
   "bluetooth-searching": BluetoothSearching,
+  "body-scan": BodyScan,
   bolt: Bolt,
   bomb: Bomb,
   bone: Bone,
   "bone-fracture": BoneFracture,
+  bonfire: Bonfire,
   book: Book,
   "book-a": BookA,
   "book-alert": BookAlert,
@@ -2325,73 +2821,213 @@ export const ICONS: Record<string, PulsoIcon> = {
   "bookmark-plus": BookmarkPlus,
   "bookmark-x": BookmarkX,
   "boom-box": BoomBox,
+  "border-bl": BorderBl,
+  "border-bottom": BorderBottom,
+  "border-br": BorderBr,
+  "border-inner": BorderInner,
+  "border-left": BorderLeft,
+  "border-outer": BorderOuter,
+  "border-right": BorderRight,
+  "border-tl": BorderTl,
+  "border-top": BorderTop,
+  "border-tr": BorderTr,
   bot: Bot,
   "bot-message-square": BotMessageSquare,
   "bot-off": BotOff,
   "bottle-wine": BottleWine,
+  boulder: Boulder,
   "bow-arrow": BowArrow,
+  bowling: Bowling,
   box: Box,
+  "box-3d-center": Box3dCenter,
+  "box-3d-point": Box3dPoint,
+  "box-3d-three-points": Box3dThreePoints,
   boxes: Boxes,
   "boxes-linked": BoxesLinked,
+  "boxing-glove": BoxingGlove,
   braces: Braces,
   brackets: Brackets,
+  braille: Braille,
   brain: Brain,
   "brain-circuit": BrainCircuit,
   "brain-cog": BrainCog,
   "brain-off": BrainOff,
+  "brand-after-effects": BrandAfterEffects,
+  "brand-airbnb": BrandAirbnb,
   "brand-aistudio": BrandAistudio,
+  "brand-amazon": BrandAmazon,
+  "brand-angular": BrandAngular,
   "brand-anthropic": BrandAnthropic,
+  "brand-app-store": BrandAppStore,
   "brand-apple": BrandApple,
+  "brand-apple-finder": BrandAppleFinder,
+  "brand-apple-intelligence": BrandAppleIntelligence,
+  "brand-apple-music": BrandAppleMusic,
+  "brand-apple-news": BrandAppleNews,
+  "brand-apple-reminders": BrandAppleReminders,
+  "brand-apple-shortcuts": BrandAppleShortcuts,
+  "brand-apple-stocks": BrandAppleStocks,
+  "brand-apple-swift": BrandAppleSwift,
+  "brand-apple-vision-pro": BrandAppleVisionPro,
+  "brand-apple-wallet": BrandAppleWallet,
+  "brand-asana": BrandAsana,
   "brand-aws": BrandAws,
+  "brand-azure": BrandAzure,
+  "brand-bandcamp": BrandBandcamp,
+  "brand-behance": BrandBehance,
+  "brand-bitbucket": BrandBitbucket,
+  "brand-blogger": BrandBlogger,
+  "brand-bluesky": BrandBluesky,
   "brand-chrome": BrandChrome,
+  "brand-chromecast": BrandChromecast,
+  "brand-chromium": BrandChromium,
+  "brand-claude": BrandClaude,
+  "brand-clubhouse": BrandClubhouse,
+  "brand-codepen": BrandCodepen,
+  "brand-codesandbox": BrandCodesandbox,
+  "brand-css3": BrandCss3,
   "brand-cursor": BrandCursor,
+  "brand-deepseek": BrandDeepseek,
+  "brand-deezer": BrandDeezer,
   "brand-discord": BrandDiscord,
   "brand-docker": BrandDocker,
+  "brand-dogecoin": BrandDogecoin,
+  "brand-dribbble": BrandDribbble,
+  "brand-ebay": BrandEbay,
+  "brand-edge": BrandEdge,
+  "brand-electron": BrandElectron,
   "brand-ethereum": BrandEthereum,
+  "brand-etsy": BrandEtsy,
   "brand-facebook": BrandFacebook,
+  "brand-facetime": BrandFacetime,
   "brand-figma": BrandFigma,
+  "brand-firefox": BrandFirefox,
+  "brand-framer": BrandFramer,
   "brand-gemini": BrandGemini,
   "brand-github": BrandGithub,
   "brand-github-copilot": BrandGithubCopilot,
   "brand-gitlab": BrandGitlab,
   "brand-gmail": BrandGmail,
   "brand-golang": BrandGolang,
+  "brand-goodreads": BrandGoodreads,
   "brand-google": BrandGoogle,
+  "brand-google-cloud": BrandGoogleCloud,
+  "brand-google-docs": BrandGoogleDocs,
+  "brand-google-drive": BrandGoogleDrive,
+  "brand-google-home": BrandGoogleHome,
+  "brand-google-lens": BrandGoogleLens,
+  "brand-google-maps": BrandGoogleMaps,
+  "brand-google-one": BrandGoogleOne,
+  "brand-google-photos": BrandGooglePhotos,
+  "brand-google-sheets": BrandGoogleSheets,
   "brand-grok": BrandGrok,
+  "brand-html5": BrandHtml5,
+  "brand-illustrator": BrandIllustrator,
+  "brand-indesign": BrandIndesign,
   "brand-instagram": BrandInstagram,
   "brand-javascript": BrandJavascript,
+  "brand-json": BrandJson,
+  "brand-kimi": BrandKimi,
+  "brand-ko-fi": BrandKoFi,
+  "brand-letterboxd": BrandLetterboxd,
+  "brand-lightroom": BrandLightroom,
+  "brand-line": BrandLine,
+  "brand-linear": BrandLinear,
   "brand-linkedin": BrandLinkedin,
+  "brand-linux": BrandLinux,
+  "brand-litecoin": BrandLitecoin,
   "brand-lmstudio": BrandLmstudio,
+  "brand-markdown": BrandMarkdown,
+  "brand-mastercard": BrandMastercard,
+  "brand-mastodon": BrandMastodon,
+  "brand-medium": BrandMedium,
+  "brand-messenger": BrandMessenger,
+  "brand-meta": BrandMeta,
+  "brand-microsoft": BrandMicrosoft,
+  "brand-microsoft-admin": BrandMicrosoftAdmin,
+  "brand-microsoft-copilot": BrandMicrosoftCopilot,
   "brand-midjourney": BrandMidjourney,
+  "brand-mistral": BrandMistral,
+  "brand-monday": BrandMonday,
   "brand-mysql": BrandMysql,
+  "brand-netflix": BrandNetflix,
   "brand-nextjs": BrandNextjs,
+  "brand-nintendo-switch": BrandNintendoSwitch,
   "brand-nodejs": BrandNodejs,
   "brand-notion": BrandNotion,
+  "brand-npm": BrandNpm,
+  "brand-office-365": BrandOffice365,
   "brand-ollama": BrandOllama,
+  "brand-open-vpn": BrandOpenVpn,
   "brand-openai": BrandOpenai,
+  "brand-opera": BrandOpera,
+  "brand-patreon": BrandPatreon,
   "brand-paypal": BrandPaypal,
+  "brand-peerlist": BrandPeerlist,
+  "brand-perplexity": BrandPerplexity,
+  "brand-photoshop": BrandPhotoshop,
   "brand-pinterest": BrandPinterest,
+  "brand-playstation": BrandPlaystation,
+  "brand-pocket": BrandPocket,
+  "brand-polar-sh": BrandPolarSh,
   "brand-python": BrandPython,
   "brand-qwen": BrandQwen,
   "brand-railway": BrandRailway,
   "brand-react": BrandReact,
+  "brand-reddit": BrandReddit,
+  "brand-safari": BrandSafari,
+  "brand-shopify": BrandShopify,
+  "brand-signal-messenger": BrandSignalMessenger,
+  "brand-siri": BrandSiri,
+  "brand-skype": BrandSkype,
   "brand-slack": BrandSlack,
   "brand-snapchat": BrandSnapchat,
+  "brand-soundcloud": BrandSoundcloud,
   "brand-spotify": BrandSpotify,
+  "brand-stackoverflow": BrandStackoverflow,
+  "brand-strava": BrandStrava,
   "brand-stripe": BrandStripe,
+  "brand-substack": BrandSubstack,
+  "brand-svelte": BrandSvelte,
+  "brand-tailwind": BrandTailwind,
+  "brand-teams": BrandTeams,
   "brand-telegram": BrandTelegram,
   "brand-threads": BrandThreads,
+  "brand-tiktok": BrandTiktok,
+  "brand-trello": BrandTrello,
+  "brand-tumblr": BrandTumblr,
   "brand-twitch": BrandTwitch,
   "brand-twitter": BrandTwitter,
   "brand-twitter-x": BrandTwitterX,
   "brand-typescript": BrandTypescript,
+  "brand-unity": BrandUnity,
+  "brand-ups": BrandUps,
   "brand-vercel": BrandVercel,
+  "brand-viber": BrandViber,
+  "brand-vimeo": BrandVimeo,
+  "brand-visa": BrandVisa,
+  "brand-vk": BrandVk,
+  "brand-vscode": BrandVscode,
+  "brand-vue": BrandVue,
+  "brand-waze": BrandWaze,
+  "brand-wechat": BrandWechat,
   "brand-whatsapp": BrandWhatsapp,
   "brand-windows": BrandWindows,
+  "brand-windows-classic": BrandWindowsClassic,
   "brand-wordpress": BrandWordpress,
+  "brand-wps-office": BrandWpsOffice,
   "brand-xai": BrandXai,
+  "brand-xbox-a": BrandXboxA,
+  "brand-xbox-b": BrandXboxB,
+  "brand-xbox-x": BrandXboxX,
+  "brand-xbox-y": BrandXboxY,
+  "brand-xd": BrandXd,
+  "brand-xml": BrandXml,
+  "brand-yelp": BrandYelp,
   "brand-youtube": BrandYoutube,
   "brand-zoom": BrandZoom,
+  bread: Bread,
+  "bread-slice": BreadSlice,
   "brick-wall": BrickWall,
   "brick-wall-fire": BrickWallFire,
   "brick-wall-shield": BrickWallShield,
@@ -2416,8 +3052,11 @@ export const ICONS: Record<string, PulsoIcon> = {
   "building-complex-plus": BuildingComplexPlus,
   bus: Bus,
   "bus-front": BusFront,
+  "bus-stop": BusStop,
+  butterfly: Butterfly,
   cable: Cable,
   "cable-car": CableCar,
+  cactus: Cactus,
   cake: Cake,
   "cake-slice": CakeSlice,
   calculator: Calculator,
@@ -2447,15 +3086,18 @@ export const ICONS: Record<string, PulsoIcon> = {
   "calendar-x": CalendarX,
   "calendar-x-2": CalendarX2,
   calendars: Calendars,
+  caliper: Caliper,
   camera: Camera,
   "camera-off": CameraOff,
   can: Can,
   "can-soda": CanSoda,
+  candle: Candle,
   candy: Candy,
   "candy-cane": CandyCane,
   "candy-off": CandyOff,
   cannabis: Cannabis,
   "cannabis-off": CannabisOff,
+  cap: Cap,
   captions: Captions,
   "captions-off": CaptionsOff,
   car: Car,
@@ -2464,6 +3106,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "car-taxi-front": CarTaxiFront,
   caravan: Caravan,
   "card-sim": CardSim,
+  carpet: Carpet,
   carrot: Carrot,
   carton: Carton,
   "carton-off": CartonOff,
@@ -2474,9 +3117,12 @@ export const ICONS: Record<string, PulsoIcon> = {
   cast: Cast,
   castle: Castle,
   cat: Cat,
+  cave: Cave,
   cctv: Cctv,
   "cctv-off": CctvOff,
+  cellar: Cellar,
   certificate: Certificate,
+  chair: Chair,
   "chart-area": ChartArea,
   "chart-bar": ChartBar,
   "chart-bar-big": ChartBarBig,
@@ -2491,6 +3137,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "chart-column-increasing": ChartColumnIncreasing,
   "chart-column-stacked": ChartColumnStacked,
   "chart-covariate": ChartCovariate,
+  "chart-funnel": ChartFunnel,
   "chart-gantt": ChartGantt,
   "chart-line": ChartLine,
   "chart-network": ChartNetwork,
@@ -2530,6 +3177,10 @@ export const ICONS: Record<string, PulsoIcon> = {
   "chevrons-right-left": ChevronsRightLeft,
   "chevrons-up": ChevronsUp,
   "chevrons-up-down": ChevronsUpDown,
+  chicken: Chicken,
+  chimney: Chimney,
+  chocolate: Chocolate,
+  chopsticks: Chopsticks,
   church: Church,
   cigarette: Cigarette,
   "cigarette-off": CigaretteOff,
@@ -2614,6 +3265,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "circle-x": CircleX,
   "circuit-board": CircuitBoard,
   citrus: Citrus,
+  clap: Clap,
   clapperboard: Clapperboard,
   "clef-alto": ClefAlto,
   "clef-bass": ClefBass,
@@ -2622,12 +3274,14 @@ export const ICONS: Record<string, PulsoIcon> = {
   "clipboard-check": ClipboardCheck,
   "clipboard-clock": ClipboardClock,
   "clipboard-copy": ClipboardCopy,
+  "clipboard-heart": ClipboardHeart,
   "clipboard-list": ClipboardList,
   "clipboard-minus": ClipboardMinus,
   "clipboard-paste": ClipboardPaste,
   "clipboard-pen": ClipboardPen,
   "clipboard-pen-line": ClipboardPenLine,
   "clipboard-plus": ClipboardPlus,
+  "clipboard-search": ClipboardSearch,
   "clipboard-type": ClipboardType,
   "clipboard-x": ClipboardX,
   clock: Clock,
@@ -2652,6 +3306,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "clock-fading": ClockFading,
   "clock-plus": ClockPlus,
   "closed-caption": ClosedCaption,
+  closet: Closet,
   cloud: Cloud,
   "cloud-alert": CloudAlert,
   "cloud-backup": CloudBackup,
@@ -2675,6 +3330,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   cloudy: Cloudy,
   clover: Clover,
   club: Club,
+  coat: Coat,
   code: Code,
   "code-xml": CodeXml,
   coffee: Coffee,
@@ -2691,6 +3347,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   computer: Computer,
   "concierge-bell": ConciergeBell,
   cone: Cone,
+  connect: Connect,
   construction: Construction,
   contact: Contact,
   "contact-round": ContactRound,
@@ -2706,12 +3363,17 @@ export const ICONS: Record<string, PulsoIcon> = {
   "copy-slash": CopySlash,
   "copy-x": CopyX,
   copyleft: Copyleft,
+  coral: Coral,
+  "corner-bottom-left": CornerBottomLeft,
+  "corner-bottom-right": CornerBottomRight,
   "corner-down-left": CornerDownLeft,
   "corner-down-right": CornerDownRight,
   "corner-left-down": CornerLeftDown,
   "corner-left-up": CornerLeftUp,
   "corner-right-down": CornerRightDown,
   "corner-right-up": CornerRightUp,
+  "corner-top-left": CornerTopLeft,
+  "corner-top-right": CornerTopRight,
   "corner-up-left": CornerUpLeft,
   "corner-up-right": CornerUpRight,
   cpu: Cpu,
@@ -2723,35 +3385,62 @@ export const ICONS: Record<string, PulsoIcon> = {
   "credit-card-plus": CreditCardPlus,
   "credit-card-reader": CreditCardReader,
   "credit-card-x": CreditCardX,
+  crib: Crib,
   croissant: Croissant,
   crop: Crop,
+  "crop-rotate-bl": CropRotateBl,
+  "crop-rotate-br": CropRotateBr,
+  "crop-rotate-tl": CropRotateTl,
+  "crop-rotate-tr": CropRotateTr,
   cross: Cross,
   crosshair: Crosshair,
   crown: Crown,
+  crutches: Crutches,
+  "cube-cut-curve": CubeCutCurve,
+  "cube-hole": CubeHole,
+  "cube-replace-face": CubeReplaceFace,
   cuboid: Cuboid,
   "cup-soda": CupSoda,
   cupcake: Cupcake,
   currency: Currency,
+  curtain: Curtain,
+  customs: Customs,
+  cycling: Cycling,
   cylinder: Cylinder,
   dam: Dam,
+  "data-transfer-check": DataTransferCheck,
   database: Database,
   "database-arrow-down": DatabaseArrowDown,
   "database-arrow-up": DatabaseArrowUp,
   "database-backup": DatabaseBackup,
   "database-check": DatabaseCheck,
   "database-cog": DatabaseCog,
+  "database-export": DatabaseExport,
   "database-minus": DatabaseMinus,
   "database-plus": DatabasePlus,
+  "database-restore": DatabaseRestore,
   "database-search": DatabaseSearch,
+  "database-settings": DatabaseSettings,
+  "database-star": DatabaseStar,
+  "database-warning": DatabaseWarning,
   "database-x": DatabaseX,
   "database-zap": DatabaseZap,
   "decimals-arrow-left": DecimalsArrowLeft,
   "decimals-arrow-right": DecimalsArrowRight,
+  deer: Deer,
   delete: Delete,
+  "delivery-tracking": DeliveryTracking,
+  desert: Desert,
+  desk: Desk,
   dessert: Dessert,
+  "dew-point": DewPoint,
+  "diagram-flow-horizontal": DiagramFlowHorizontal,
+  "diagram-flow-vertical": DiagramFlowVertical,
   dialpad: Dialpad,
   diameter: Diameter,
   diamond: Diamond,
+  "diamond-exclamation-point": DiamondExclamationPoint,
+  "diamond-info": DiamondInfo,
   "diamond-minus": DiamondMinus,
   "diamond-percent": DiamondPercent,
   "diamond-plus": DiamondPlus,
@@ -2764,10 +3453,13 @@ export const ICONS: Record<string, PulsoIcon> = {
   dices: Dices,
   diff: Diff,
   dino: Dino,
+  "director-chair": DirectorChair,
   disc: Disc,
   "disc-2": Disc2,
   "disc-3": Disc3,
   "disc-album": DiscAlbum,
+  dishwasher: Dishwasher,
+  "display-4k": Display4k,
   divide: Divide,
   dna: Dna,
   "dna-off": DnaOff,
@@ -2784,8 +3476,11 @@ export const ICONS: Record<string, PulsoIcon> = {
   "door-stairwell": DoorStairwell,
   dot: Dot,
   download: Download,
+  downvote: Downvote,
   "drafting-compass": DraftingCompass,
   drama: Drama,
+  drawer: Drawer,
+  dress: Dress,
   drill: Drill,
   drone: Drone,
   droplet: Droplet,
@@ -2800,6 +3495,12 @@ export const ICONS: Record<string, PulsoIcon> = {
   "earbuds-off": EarbudsOff,
   earth: Earth,
   "earth-lock": EarthLock,
+  "ease-curve-control-points": EaseCurveControlPoints,
+  "ease-in": EaseIn,
+  "ease-in-control-point": EaseInControlPoint,
+  "ease-in-out": EaseInOut,
+  "ease-out": EaseOut,
+  "ease-out-control-point": EaseOutControlPoint,
   eclipse: Eclipse,
   egg: Egg,
   "egg-fried": EggFried,
@@ -2807,7 +3508,10 @@ export const ICONS: Record<string, PulsoIcon> = {
   "eighth-note": EighthNote,
   "eighth-notes": EighthNotes,
   eject: Eject,
+  elephant: Elephant,
+  elevator: Elevator,
   ellipse: Ellipse,
+  "ellipse-3d": Ellipse3d,
   ellipsis: Ellipsis,
   "ellipsis-vertical": EllipsisVertical,
   "emirati-dirham": EmiratiDirham,
@@ -2822,28 +3526,39 @@ export const ICONS: Record<string, PulsoIcon> = {
   "ev-charger": EvCharger,
   expand: Expand,
   "external-link": ExternalLink,
+  extrude: Extrude,
   eye: Eye,
   "eye-closed": EyeClosed,
   "eye-dashed": EyeDashed,
   "eye-off": EyeOff,
   "face-angry": FaceAngry,
+  "face-confused": FaceConfused,
+  "face-cool": FaceCool,
+  "face-cry": FaceCry,
   "face-expressionless": FaceExpressionless,
   "face-grinning": FaceGrinning,
   "face-neutral": FaceNeutral,
   "face-slightly-frowning": FaceSlightlyFrowning,
   "face-slightly-smiling": FaceSlightlySmiling,
   "face-slightly-smiling-plus": FaceSlightlySmilingPlus,
+  "face-surprised": FaceSurprised,
+  "face-wink": FaceWink,
   factory: Factory,
   fan: Fan,
+  farm: Farm,
   "fast-forward": FastForward,
   faucet: Faucet,
+  fax: Fax,
   feather: Feather,
   fence: Fence,
+  fern: Fern,
   "ferris-wheel": FerrisWheel,
   file: File,
   "file-archive": FileArchive,
+  "file-avi": FileAvi,
   "file-axis-3d": FileAxis3D,
   "file-badge": FileBadge,
+  "file-ban": FileBan,
   "file-box": FileBox,
   "file-braces": FileBraces,
   "file-braces-corner": FileBracesCorner,
@@ -2857,19 +3572,27 @@ export const ICONS: Record<string, PulsoIcon> = {
   "file-code": FileCode,
   "file-code-corner": FileCodeCorner,
   "file-cog": FileCog,
+  "file-currency-dollar": FileCurrencyDollar,
+  "file-currency-euro": FileCurrencyEuro,
+  "file-currency-pound": FileCurrencyPound,
+  "file-currency-rupee": FileCurrencyRupee,
+  "file-currency-yen": FileCurrencyYen,
   "file-database": FileDatabase,
   "file-diff": FileDiff,
   "file-digit": FileDigit,
   "file-down": FileDown,
   "file-exclamation-point": FileExclamationPoint,
+  "file-gif": FileGif,
   "file-headphone": FileHeadphone,
   "file-heart": FileHeart,
   "file-image": FileImage,
   "file-input": FileInput,
+  "file-jpg": FileJpg,
   "file-key": FileKey,
   "file-lock": FileLock,
   "file-minus": FileMinus,
   "file-minus-corner": FileMinusCorner,
+  "file-mpeg": FileMpeg,
   "file-music": FileMusic,
   "file-output": FileOutput,
   "file-pen": FilePen,
@@ -2877,7 +3600,9 @@ export const ICONS: Record<string, PulsoIcon> = {
   "file-play": FilePlay,
   "file-plus": FilePlus,
   "file-plus-corner": FilePlusCorner,
+  "file-png": FilePng,
   "file-question-mark": FileQuestionMark,
+  "file-raw": FileRaw,
   "file-scan": FileScan,
   "file-search": FileSearch,
   "file-search-corner": FileSearchCorner,
@@ -2885,24 +3610,34 @@ export const ICONS: Record<string, PulsoIcon> = {
   "file-sliders": FileSliders,
   "file-spreadsheet": FileSpreadsheet,
   "file-stack": FileStack,
+  "file-svg": FileSvg,
   "file-symlink": FileSymlink,
   "file-terminal": FileTerminal,
   "file-text": FileText,
+  "file-tiff": FileTiff,
   "file-type": FileType,
   "file-type-corner": FileTypeCorner,
   "file-up": FileUp,
   "file-user": FileUser,
   "file-video-camera": FileVideoCamera,
   "file-volume": FileVolume,
+  "file-webp": FileWebp,
   "file-x": FileX,
   "file-x-corner": FileXCorner,
   files: Files,
+  "fillet-3d": Fillet3d,
   film: Film,
+  "fingerprint-check": FingerprintCheck,
+  "fingerprint-minus": FingerprintMinus,
   "fingerprint-pattern": FingerprintPattern,
+  "fingerprint-plus": FingerprintPlus,
+  "fingerprint-scan": FingerprintScan,
   "fire-extinguisher": FireExtinguisher,
+  "fire-truck": FireTruck,
   fish: Fish,
   "fish-off": FishOff,
   "fish-symbol": FishSymbol,
+  fishing: Fishing,
   "fishing-hook": FishingHook,
   "fishing-rod": FishingRod,
   flag: Flag,
@@ -2939,6 +3674,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "folder-key": FolderKey,
   "folder-lock": FolderLock,
   "folder-minus": FolderMinus,
+  "folder-off": FolderOff,
   "folder-open": FolderOpen,
   "folder-open-dot": FolderOpenDot,
   "folder-output": FolderOutput,
@@ -2955,10 +3691,14 @@ export const ICONS: Record<string, PulsoIcon> = {
   "folder-users": FolderUsers,
   "folder-x": FolderX,
   folders: Folders,
+  football: Football,
   footprints: Footprints,
   forklift: Forklift,
   form: Form,
   forward: Forward,
+  "forward-15": Forward15,
+  fossil: Fossil,
+  fox: Fox,
   frame: Frame,
   fuel: Fuel,
   fullscreen: Fullscreen,
@@ -2973,20 +3713,31 @@ export const ICONS: Record<string, PulsoIcon> = {
   "gallery-vertical-end": GalleryVerticalEnd,
   gamepad: Gamepad,
   "gamepad-2": Gamepad2,
+  "gamepad-button-a": GamepadButtonA,
+  "gamepad-button-b": GamepadButtonB,
+  "gamepad-button-x": GamepadButtonX,
+  "gamepad-button-y": GamepadButtonY,
   "gamepad-directional": GamepadDirectional,
   "gap-horizontal": GapHorizontal,
   "gap-vertical": GapVertical,
+  garage: Garage,
+  "garden-hose": GardenHose,
+  gate: Gate,
   gauge: Gauge,
   gavel: Gavel,
   gem: Gem,
+  generator: Generator,
   "georgian-lari": GeorgianLari,
   germ: Germ,
   "germ-off": GermOff,
+  geyser: Geyser,
   ghost: Ghost,
+  gif: Gif,
   gift: Gift,
   "git-branch": GitBranch,
   "git-branch-minus": GitBranchMinus,
   "git-branch-plus": GitBranchPlus,
+  "git-cherry-pick": GitCherryPick,
   "git-commit-horizontal": GitCommitHorizontal,
   "git-commit-vertical": GitCommitVertical,
   "git-compare": GitCompare,
@@ -3004,17 +3755,22 @@ export const ICONS: Record<string, PulsoIcon> = {
   "glass-water": GlassWater,
   glasses: Glasses,
   globe: Globe,
+  "globe-ban": GlobeBan,
   "globe-check": GlobeCheck,
   "globe-code": GlobeCode,
   "globe-lock": GlobeLock,
   "globe-off": GlobeOff,
+  "globe-plus": GlobePlus,
   "globe-x": GlobeX,
+  glue: Glue,
   goal: Goal,
+  golf: Golf,
   gpu: Gpu,
   "graduation-cap": GraduationCap,
   grape: Grape,
   "graph-hub": GraphHub,
   "graph-star": GraphStar,
+  "greater-than": GreaterThan,
   "grid-2x2": Grid2X2,
   "grid-2x2-check": Grid2X2Check,
   "grid-2x2-plus": Grid2X2Plus,
@@ -3028,6 +3784,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   group: Group,
   guitar: Guitar,
   "guitar-electric": GuitarElectric,
+  gym: Gym,
   "half-note": HalfNote,
   ham: Ham,
   hamburger: Hamburger,
@@ -3039,7 +3796,12 @@ export const ICONS: Record<string, PulsoIcon> = {
   "hand-heart": HandHeart,
   "hand-helping": HandHelping,
   "hand-metal": HandMetal,
+  "hand-peace": HandPeace,
+  "hand-pinch": HandPinch,
   "hand-platter": HandPlatter,
+  "hand-reminder": HandReminder,
+  "hand-spock": HandSpock,
+  "hand-wave": HandWave,
   handbag: Handbag,
   "handle-bottom-right": HandleBottomRight,
   handshake: Handshake,
@@ -3048,10 +3810,12 @@ export const ICONS: Record<string, PulsoIcon> = {
   "hard-drive-upload": HardDriveUpload,
   "hard-hat": HardHat,
   hash: Hash,
+  hat: Hat,
   "hat-glasses": HatGlasses,
   haze: Haze,
   hd: Hd,
   "hdmi-port": HdmiPort,
+  hdr: Hdr,
   "heading-1": Heading1,
   "heading-2": Heading2,
   "heading-3": Heading3,
@@ -3061,7 +3825,9 @@ export const ICONS: Record<string, PulsoIcon> = {
   "headphone-off": HeadphoneOff,
   headphones: Headphones,
   headset: Headset,
+  "health-bar": HealthBar,
   heart: Heart,
+  "heart-check": HeartCheck,
   "heart-crack": HeartCrack,
   "heart-handshake": HeartHandshake,
   "heart-minus": HeartMinus,
@@ -3070,24 +3836,34 @@ export const ICONS: Record<string, PulsoIcon> = {
   "heart-pulse": HeartPulse,
   "heart-x": HeartX,
   heater: Heater,
+  heatmap: Heatmap,
   helicopter: Helicopter,
+  heptagon: Heptagon,
   hexagon: Hexagon,
   highlighter: Highlighter,
+  hiking: Hiking,
   "hiking-stick": HikingStick,
+  hockey: Hockey,
   "hockey-stick": HockeyStick,
+  hoodie: Hoodie,
   hop: Hop,
   "hop-off": HopOff,
+  horse: Horse,
   hospital: Hospital,
   "hot-air-balloon": HotAirBalloon,
+  hotdog: Hotdog,
   hotel: Hotel,
   hourglass: Hourglass,
   "hourglass-cog": HourglassCog,
+  "hourglass-off": HourglassOff,
   house: House,
+  "house-check": HouseCheck,
   "house-cog": HouseCog,
   "house-heart": HouseHeart,
   "house-plug": HousePlug,
   "house-plus": HousePlus,
   "house-wifi": HouseWifi,
+  "house-x": HouseX,
   houses: Houses,
   "ice-cream-bowl": IceCreamBowl,
   "ice-cream-cone": IceCreamCone,
@@ -3108,22 +3884,36 @@ export const ICONS: Record<string, PulsoIcon> = {
   infinity: Infinity,
   info: Info,
   "inspection-panel": InspectionPanel,
+  "ip-address-tag": IpAddressTag,
+  island: Island,
   italic: Italic,
   "iteration-ccw": IterationCcw,
   "iteration-cw": IterationCw,
   "iv-bag": IvBag,
+  ivy: Ivy,
+  jacket: Jacket,
   "japanese-yen": JapaneseYen,
+  jellyfish: Jellyfish,
   joystick: Joystick,
   kanban: Kanban,
   kayak: Kayak,
   "kazakh-tenge": KazakhTenge,
+  kettle: Kettle,
   key: Key,
   "key-round": KeyRound,
   "key-square": KeySquare,
   keyboard: Keyboard,
   "keyboard-music": KeyboardMusic,
   "keyboard-off": KeyboardOff,
+  "keyframe-align-center": KeyframeAlignCenter,
+  "keyframe-align-horizontal": KeyframeAlignHorizontal,
+  "keyframe-align-vertical": KeyframeAlignVertical,
+  "keyframe-minus": KeyframeMinus,
+  "keyframe-plus": KeyframePlus,
   keyframes: Keyframes,
+  ladder: Ladder,
+  ladle: Ladle,
+  lake: Lake,
   lambda: Lambda,
   lamp: Lamp,
   "lamp-ceiling": LampCeiling,
@@ -3134,6 +3924,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "land-plot": LandPlot,
   landmark: Landmark,
   languages: Languages,
+  lantern: Lantern,
   laptop: Laptop,
   "laptop-minimal": LaptopMinimal,
   "laptop-minimal-check": LaptopMinimalCheck,
@@ -3164,6 +3955,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   lens: Lens,
   "lens-concave": LensConcave,
   "lens-convex": LensConvex,
+  "less-than": LessThan,
   "letter-a": LetterA,
   "letter-b": LetterB,
   "letter-c": LetterC,
@@ -3192,6 +3984,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "letter-y": LetterY,
   "letter-z": LetterZ,
   letters: Letters,
+  "level-up": LevelUp,
   library: Library,
   "library-big": LibraryBig,
   "life-buoy": LifeBuoy,
@@ -3209,6 +4002,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   link: Link,
   "link-2": Link2,
   "link-2-off": Link2Off,
+  lion: Lion,
   list: List,
   "list-check": ListCheck,
   "list-checks": ListChecks,
@@ -3243,11 +4037,13 @@ export const ICONS: Record<string, PulsoIcon> = {
   "lock-keyhole": LockKeyhole,
   "lock-keyhole-open": LockKeyholeOpen,
   "lock-open": LockOpen,
+  "loft-3d": Loft3d,
   "log-in": LogIn,
   "log-out": LogOut,
   logs: Logs,
   lollipop: Lollipop,
   luggage: Luggage,
+  lungs: Lungs,
   magnet: Magnet,
   mail: Mail,
   "mail-badge": MailBadge,
@@ -3265,6 +4061,8 @@ export const ICONS: Record<string, PulsoIcon> = {
   "mail-x": MailX,
   mailbox: Mailbox,
   mails: Mails,
+  "mana-bar": ManaBar,
+  mango: Mango,
   map: Map,
   "map-minus": MapMinus,
   "map-pin": MapPin,
@@ -3351,6 +4149,8 @@ export const ICONS: Record<string, PulsoIcon> = {
   minus: Minus,
   "mirror-rectangular": MirrorRectangular,
   "mirror-round": MirrorRound,
+  molecule: Molecule,
+  "money-bag": MoneyBag,
   monitor: Monitor,
   "monitor-activity": MonitorActivity,
   "monitor-check": MonitorCheck,
@@ -3372,6 +4172,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   mop: Mop,
   "mop-sparkles": MopSparkles,
   mosque: Mosque,
+  moss: Moss,
   motorbike: Motorbike,
   mountain: Mountain,
   "mountain-snow": MountainSnow,
@@ -3400,6 +4201,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "move-up-left": MoveUpLeft,
   "move-up-right": MoveUpRight,
   "move-vertical": MoveVertical,
+  mushroom: Mushroom,
   navigation: Navigation,
   "navigation-2": Navigation2,
   "navigation-2-off": Navigation2Off,
@@ -3409,6 +4211,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   newspaper: Newspaper,
   nfc: Nfc,
   "non-binary": NonBinary,
+  noodles: Noodles,
   notebook: Notebook,
   "notebook-dot": NotebookDot,
   "notebook-pen": NotebookPen,
@@ -3424,10 +4227,18 @@ export const ICONS: Record<string, PulsoIcon> = {
   "octagon-minus": OctagonMinus,
   "octagon-pause": OctagonPause,
   "octagon-x": OctagonX,
+  okrs: Okrs,
+  "olympic-rings": OlympicRings,
   omega: Omega,
+  "one-finger-select": OneFingerSelect,
+  "open-select": OpenSelect,
   option: Option,
+  "orange-slice": OrangeSlice,
   orbit: Orbit,
   origami: Origami,
+  "orthogonal-view": OrthogonalView,
+  oval: Oval,
+  oxygen: Oxygen,
   package: Package,
   "package-2": Package2,
   "package-check": PackageCheck,
@@ -3436,11 +4247,13 @@ export const ICONS: Record<string, PulsoIcon> = {
   "package-plus": PackagePlus,
   "package-search": PackageSearch,
   "package-x": PackageX,
+  pacman: Pacman,
   "paint-bucket": PaintBucket,
   "paint-roller": PaintRoller,
   paintbrush: Paintbrush,
   "paintbrush-vertical": PaintbrushVertical,
   palette: Palette,
+  pan: Pan,
   panda: Panda,
   "panel-bottom": PanelBottom,
   "panel-bottom-close": PanelBottomClose,
@@ -3463,8 +4276,10 @@ export const ICONS: Record<string, PulsoIcon> = {
   "panels-left-bottom": PanelsLeftBottom,
   "panels-right-bottom": PanelsRightBottom,
   "panels-top-left": PanelsTopLeft,
+  pants: Pants,
   "paper-bag": PaperBag,
   paperclip: Paperclip,
+  parallelogram: Parallelogram,
   parasol: Parasol,
   parentheses: Parentheses,
   park: Park,
@@ -3474,6 +4289,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   pause: Pause,
   "paw-print": PawPrint,
   "pc-case": PcCase,
+  pebbles: Pebbles,
   pen: Pen,
   "pen-line": PenLine,
   "pen-off": PenOff,
@@ -3487,6 +4303,8 @@ export const ICONS: Record<string, PulsoIcon> = {
   percent: Percent,
   "perfume-bottle": PerfumeBottle,
   "person-standing": PersonStanding,
+  "perspective-view": PerspectiveView,
+  "petri-dish": PetriDish,
   phi: Phi,
   "philippine-peso": PhilippinePeso,
   phone: Phone,
@@ -3508,19 +4326,25 @@ export const ICONS: Record<string, PulsoIcon> = {
   "pilcrow-right": PilcrowRight,
   pill: Pill,
   "pill-bottle": PillBottle,
+  pillow: Pillow,
   pin: Pin,
   "pin-off": PinOff,
+  pinecone: Pinecone,
+  "pipe-3d": Pipe3d,
   pipette: Pipette,
   pizza: Pizza,
   plane: Plane,
   "plane-landing": PlaneLanding,
   "plane-takeoff": PlaneTakeoff,
   "plant-pot": PlantPot,
+  plate: Plate,
   play: Play,
   "play-off": PlayOff,
+  "play-pause": PlayPause,
   "playing-card": PlayingCard,
   "playing-cards": PlayingCards,
   "playing-cards-fan": PlayingCardsFan,
+  pliers: Pliers,
   plug: Plug,
   "plug-2": Plug2,
   "plug-connected": PlugConnected,
@@ -3529,20 +4353,34 @@ export const ICONS: Record<string, PulsoIcon> = {
   plus: Plus,
   "pocket-knife": PocketKnife,
   podium: Podium,
+  "point-down": PointDown,
+  "point-left": PointLeft,
+  "point-right": PointRight,
+  "point-up": PointUp,
   pointer: Pointer,
   "pointer-off": PointerOff,
+  pokeball: Pokeball,
+  "police-car": PoliceCar,
   popcorn: Popcorn,
   popsicle: Popsicle,
+  potion: Potion,
   "pound-sterling": PoundSterling,
   power: Power,
   "power-off": PowerOff,
+  prescription: Prescription,
   presentation: Presentation,
   printer: Printer,
   "printer-3d": Printer3d,
   "printer-check": PrinterCheck,
   "printer-x": PrinterX,
+  "priority-high": PriorityHigh,
+  "priority-low": PriorityLow,
+  "priority-medium": PriorityMedium,
+  "privacy-policy": PrivacyPolicy,
+  "project-curve-3d": ProjectCurve3d,
   projector: Projector,
   proportions: Proportions,
+  protractor: Protractor,
   puzzle: Puzzle,
   pyramid: Pyramid,
   "qr-code": QrCode,
@@ -3557,21 +4395,28 @@ export const ICONS: Record<string, PulsoIcon> = {
   "radio-receiver": RadioReceiver,
   "radio-tower": RadioTower,
   radius: Radius,
+  "rail-symbol": RailSymbol,
   rainbow: Rainbow,
+  rake: Rake,
   rat: Rat,
   ratio: Ratio,
   receipt: Receipt,
   "receipt-cent": ReceiptCent,
+  "receipt-check": ReceiptCheck,
   "receipt-euro": ReceiptEuro,
   "receipt-indian-rupee": ReceiptIndianRupee,
   "receipt-japanese-yen": ReceiptJapaneseYen,
   "receipt-pound-sterling": ReceiptPoundSterling,
+  "receipt-refund": ReceiptRefund,
   "receipt-russian-ruble": ReceiptRussianRuble,
   "receipt-swiss-franc": ReceiptSwissFranc,
   "receipt-text": ReceiptText,
   "receipt-turkish-lira": ReceiptTurkishLira,
+  "receipt-x": ReceiptX,
+  "receive-money": ReceiveMoney,
   "rectangle-circle": RectangleCircle,
   "rectangle-ellipsis": RectangleEllipsis,
+  "rectangle-ellipsis-check": RectangleEllipsisCheck,
   "rectangle-goggles": RectangleGoggles,
   "rectangle-horizontal": RectangleHorizontal,
   "rectangle-vertical": RectangleVertical,
@@ -3579,6 +4424,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   redo: Redo,
   "redo-2": Redo2,
   "redo-dot": RedoDot,
+  "reduced-motion": ReducedMotion,
   "refresh-ccw": RefreshCcw,
   "refresh-ccw-dot": RefreshCcwDot,
   "refresh-cw": RefreshCw,
@@ -3596,6 +4442,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "reply-all": ReplyAll,
   rewind: Rewind,
   ribbon: Ribbon,
+  river: River,
   road: Road,
   "robot-arm": RobotArm,
   "robot-vacuum": RobotVacuum,
@@ -3619,12 +4466,15 @@ export const ICONS: Record<string, PulsoIcon> = {
   "rows-3": Rows3,
   "rows-4": Rows4,
   rss: Rss,
+  "rubik-cube": RubikCube,
   "rugby-ball": RugbyBall,
   ruler: Ruler,
   "ruler-dimension-line": RulerDimensionLine,
+  running: Running,
   "russian-ruble": RussianRuble,
   sailboat: Sailboat,
   salad: Salad,
+  sandals: Sandals,
   sandwich: Sandwich,
   satellite: Satellite,
   "satellite-dish": SatelliteDish,
@@ -3635,6 +4485,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "save-off": SaveOff,
   "save-pen": SavePen,
   "save-plus": SavePlus,
+  saw: Saw,
   scale: Scale,
   "scale-3d": Scale3D,
   scaling: Scaling,
@@ -3649,25 +4500,34 @@ export const ICONS: Record<string, PulsoIcon> = {
   "scan-search": ScanSearch,
   "scan-square": ScanSquare,
   "scan-text": ScanText,
+  scarf: Scarf,
   school: School,
   scissors: Scissors,
   "scissors-line-dashed": ScissorsLineDashed,
   scooter: Scooter,
   "scratch-blocks": ScratchBlocks,
+  "screen-reader": ScreenReader,
   "screen-share": ScreenShare,
   "screen-share-off": ScreenShareOff,
   screw: Screw,
+  screwdriver: Screwdriver,
   scroll: Scroll,
   "scroll-text": ScrollText,
+  "sea-and-sun": SeaAndSun,
   search: Search,
   "search-alert": SearchAlert,
   "search-check": SearchCheck,
   "search-code": SearchCode,
   "search-slash": SearchSlash,
   "search-x": SearchX,
+  seaweed: Seaweed,
   section: Section,
+  "select-edge-3d": SelectEdge3d,
+  "select-face-3d": SelectFace3d,
+  "select-point-3d": SelectPoint3d,
   send: Send,
   "send-horizontal": SendHorizontal,
+  "send-money": SendMoney,
   "send-to-back": SendToBack,
   "separator-horizontal": SeparatorHorizontal,
   "separator-vertical": SeparatorVertical,
@@ -3677,6 +4537,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "server-nas": ServerNas,
   "server-off": ServerOff,
   "server-plus": ServerPlus,
+  "set-square": SetSquare,
   settings: Settings,
   "settings-2": Settings2,
   shapes: Shapes,
@@ -3705,12 +4566,22 @@ export const ICONS: Record<string, PulsoIcon> = {
   ship: Ship,
   "ship-cargo": ShipCargo,
   "ship-wheel": ShipWheel,
+  "shipping-fast": ShippingFast,
   shirt: Shirt,
   "shopping-bag": ShoppingBag,
+  "shopping-bag-check": ShoppingBagCheck,
+  "shopping-bag-minus": ShoppingBagMinus,
+  "shopping-bag-plus": ShoppingBagPlus,
+  "shopping-bag-x": ShoppingBagX,
   "shopping-basket": ShoppingBasket,
+  "shopping-basket-minus": ShoppingBasketMinus,
+  "shopping-basket-plus": ShoppingBasketPlus,
   "shopping-cart": ShoppingCart,
+  "shopping-cart-check": ShoppingCartCheck,
   "shopping-cart-minus": ShoppingCartMinus,
   "shopping-cart-plus": ShoppingCartPlus,
+  "shopping-cart-x": ShoppingCartX,
+  shorts: Shorts,
   shovel: Shovel,
   "shower-head": ShowerHead,
   shredder: Shredder,
@@ -3720,6 +4591,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   shrub: Shrub,
   shuffle: Shuffle,
   sigma: Sigma,
+  "sign-language": SignLanguage,
   signal: Signal,
   "signal-high": SignalHigh,
   "signal-low": SignalLow,
@@ -3728,13 +4600,18 @@ export const ICONS: Record<string, PulsoIcon> = {
   signature: Signature,
   signpost: Signpost,
   "signpost-big": SignpostBig,
+  "single-tap": SingleTap,
+  sink: Sink,
   siren: Siren,
   "siren-off": SirenOff,
   "sixteenth-notes": SixteenthNotes,
+  skateboard: Skateboard,
+  skiing: Skiing,
   "skip-back": SkipBack,
   "skip-forward": SkipForward,
   skull: Skull,
   slash: Slash,
+  "sleeper-chair": SleeperChair,
   slice: Slice,
   "sliders-horizontal": SlidersHorizontal,
   "sliders-vertical": SlidersVertical,
@@ -3745,17 +4622,22 @@ export const ICONS: Record<string, PulsoIcon> = {
   snail: Snail,
   snowflake: Snowflake,
   "soap-dispenser-droplet": SoapDispenserDroplet,
+  "soccer-ball": SoccerBall,
   sofa: Sofa,
+  soil: Soil,
   "solar-panel": SolarPanel,
   soup: Soup,
   space: Space,
   spade: Spade,
   sparkle: Sparkle,
   sparkles: Sparkles,
+  spatula: Spatula,
   speaker: Speaker,
   speech: Speech,
   "spell-check": SpellCheck,
   "spell-check-2": SpellCheck2,
+  sphere: Sphere,
+  spiral: Spiral,
   spline: Spline,
   "spline-pointer": SplinePointer,
   split: Split,
@@ -3813,6 +4695,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "square-equal": SquareEqual,
   "square-exclamation-point": SquareExclamationPoint,
   "square-function": SquareFunction,
+  "square-info": SquareInfo,
   "square-kanban": SquareKanban,
   "square-kanban-plus": SquareKanbanPlus,
   "square-letter-a": SquareLetterA,
@@ -3862,6 +4745,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "square-play": SquarePlay,
   "square-plus": SquarePlus,
   "square-power": SquarePower,
+  "square-question-mark": SquareQuestionMark,
   "square-radical": SquareRadical,
   "square-round-corner": SquareRoundCorner,
   "square-scissors": SquareScissors,
@@ -3878,6 +4762,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "square-text": SquareText,
   "square-user": SquareUser,
   "square-user-round": SquareUserRound,
+  "square-wave": SquareWave,
   "square-x": SquareX,
   "squares-exclude": SquaresExclude,
   "squares-intersect": SquaresIntersect,
@@ -3894,6 +4779,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "star-off": StarOff,
   "star-plus": StarPlus,
   "star-x": StarX,
+  starfish: Starfish,
   "step-back": StepBack,
   "step-forward": StepForward,
   stethoscope: Stethoscope,
@@ -3907,20 +4793,40 @@ export const ICONS: Record<string, PulsoIcon> = {
   "sticky-notes": StickyNotes,
   stone: Stone,
   store: Store,
+  "store-minus": StoreMinus,
+  "store-plus": StorePlus,
+  strategy: Strategy,
   "stretch-horizontal": StretchHorizontal,
   "stretch-vertical": StretchVertical,
+  stretching: Stretching,
   strikethrough: Strikethrough,
+  stroller: Stroller,
   subscript: Subscript,
+  suggestion: Suggestion,
   summary: Summary,
   sun: Sun,
   "sun-dim": SunDim,
   "sun-medium": SunMedium,
   "sun-moon": SunMoon,
   "sun-snow": SunSnow,
+  sunglasses: Sunglasses,
   sunrise: Sunrise,
   sunset: Sunset,
   superscript: Superscript,
+  "surge-protector": SurgeProtector,
+  sushi: Sushi,
   "swatch-book": SwatchBook,
+  sweater: Sweater,
+  "sweep-3d": Sweep3d,
+  swimming: Swimming,
+  "swipe-down": SwipeDown,
+  "swipe-left": SwipeLeft,
+  "swipe-right": SwipeRight,
+  "swipe-two-fingers-down": SwipeTwoFingersDown,
+  "swipe-two-fingers-left": SwipeTwoFingersLeft,
+  "swipe-two-fingers-right": SwipeTwoFingersRight,
+  "swipe-two-fingers-up": SwipeTwoFingersUp,
+  "swipe-up": SwipeUp,
   "swiss-franc": SwissFranc,
   "switch-camera": SwitchCamera,
   sword: Sword,
@@ -3937,6 +4843,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   tablet: Tablet,
   "tablet-smartphone": TabletSmartphone,
   tablets: Tablets,
+  taco: Taco,
   tag: Tag,
   "tag-plus": TagPlus,
   "tag-x": TagX,
@@ -3947,8 +4854,11 @@ export const ICONS: Record<string, PulsoIcon> = {
   "tally-4": Tally4,
   "tally-5": Tally5,
   tangent: Tangent,
+  "tank-top": TankTop,
+  "tape-measure": TapeMeasure,
   target: Target,
   telescope: Telescope,
+  "tennis-ball": TennisBall,
   tent: Tent,
   "tent-tree": TentTree,
   terminal: Terminal,
@@ -3970,6 +4880,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "text-wrap": TextWrap,
   theater: Theater,
   thermometer: Thermometer,
+  "thermometer-medical": ThermometerMedical,
   "thermometer-snowflake": ThermometerSnowflake,
   "thermometer-sun": ThermometerSun,
   "thumbs-down": ThumbsDown,
@@ -3984,23 +4895,28 @@ export const ICONS: Record<string, PulsoIcon> = {
   "ticket-x": TicketX,
   tickets: Tickets,
   "tickets-plane": TicketsPlane,
+  tie: Tie,
   timeline: Timeline,
   timer: Timer,
   "timer-off": TimerOff,
   "timer-reset": TimerReset,
+  toaster: Toaster,
   "toggle-left": ToggleLeft,
   "toggle-right": ToggleRight,
   toilet: Toilet,
   tombstone: Tombstone,
   "tool-case": ToolCase,
   toolbox: Toolbox,
+  tooth: Tooth,
   toothbrush: Toothbrush,
   "toothbrush-sparkles": ToothbrushSparkles,
   tornado: Tornado,
   torus: Torus,
   touchpad: Touchpad,
   "touchpad-off": TouchpadOff,
+  tournament: Tournament,
   "towel-rack": TowelRack,
+  tower: Tower,
   "tower-control": TowerControl,
   "toy-brick": ToyBrick,
   tractor: Tractor,
@@ -4011,11 +4927,14 @@ export const ICONS: Record<string, PulsoIcon> = {
   "train-track": TrainTrack,
   "tram-front": TramFront,
   transgender: Transgender,
+  trapezoid: Trapezoid,
   trash: Trash,
   "trash-off": TrashOff,
+  treadmill: Treadmill,
   "tree-deciduous": TreeDeciduous,
   "tree-palm": TreePalm,
   "tree-pine": TreePine,
+  treemap: Treemap,
   trees: Trees,
   "trending-down": TrendingDown,
   "trending-up": TrendingUp,
@@ -4030,14 +4949,17 @@ export const ICONS: Record<string, PulsoIcon> = {
   truck: Truck,
   "truck-electric": TruckElectric,
   "tube-lotion": TubeLotion,
+  tulip: Tulip,
   "turkish-lira": TurkishLira,
   turntable: Turntable,
   turtle: Turtle,
   tv: Tv,
+  "tv-4k": Tv4k,
   "tv-minimal": TvMinimal,
   "tv-minimal-play": TvMinimalPlay,
   type: Type,
   "type-outline": TypeOutline,
+  ufo: Ufo,
   umbrella: Umbrella,
   "umbrella-off": UmbrellaOff,
   underline: Underline,
@@ -4048,16 +4970,24 @@ export const ICONS: Record<string, PulsoIcon> = {
   "unfold-vertical": UnfoldVertical,
   ungroup: Ungroup,
   university: University,
+  "unjoin-3d": Unjoin3d,
   unlink: Unlink,
   "unlink-2": Unlink2,
   unplug: Unplug,
   upload: Upload,
+  upvote: Upvote,
   usb: Usb,
   "usb-c-port": UsbCPort,
+  "usb-drive": UsbDrive,
   user: User,
+  "user-bag": UserBag,
+  "user-ban": UserBan,
+  "user-cart": UserCart,
   "user-check": UserCheck,
   "user-cog": UserCog,
+  "user-crown": UserCrown,
   "user-group": UserGroup,
+  "user-heart": UserHeart,
   "user-key": UserKey,
   "user-lock": UserLock,
   "user-minus": UserMinus,
@@ -4106,22 +5036,33 @@ export const ICONS: Record<string, PulsoIcon> = {
   virus: Virus,
   "virus-off": VirusOff,
   voicemail: Voicemail,
+  volcano: Volcano,
   volleyball: Volleyball,
   volume: Volume,
   "volume-1": Volume1,
   "volume-2": Volume2,
+  "volume-minus": VolumeMinus,
   "volume-off": VolumeOff,
+  "volume-plus": VolumePlus,
   "volume-x": VolumeX,
   vote: Vote,
+  walker: Walker,
+  walking: Walking,
+  "wall-outlet": WallOutlet,
   wallet: Wallet,
   "wallet-cards": WalletCards,
   "wallet-minimal": WalletMinimal,
+  "wallet-minus": WalletMinus,
+  "wallet-plus": WalletPlus,
   wallpaper: Wallpaper,
   wand: Wand,
   "wand-sparkles": WandSparkles,
   warehouse: Warehouse,
   "washing-machine": WashingMachine,
   watch: Watch,
+  waterfall: Waterfall,
+  "watering-can": WateringCan,
+  "watering-soil": WateringSoil,
   "waves-arrow-down": WavesArrowDown,
   "waves-arrow-up": WavesArrowUp,
   "waves-horizontal": WavesHorizontal,
@@ -4136,6 +5077,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "weight-tilde": WeightTilde,
   wheat: Wheat,
   "wheat-off": WheatOff,
+  whisk: Whisk,
   whistle: Whistle,
   "whole-word": WholeWord,
   wifi: Wifi,
@@ -4152,12 +5094,16 @@ export const ICONS: Record<string, PulsoIcon> = {
   "wind-arrow-up": WindArrowUp,
   wine: Wine,
   "wine-off": WineOff,
+  wolf: Wolf,
   workflow: Workflow,
   worm: Worm,
   wrench: Wrench,
   "wrench-off": WrenchOff,
   x: X,
   "x-line-top": XLineTop,
+  "xp-bar": XpBar,
+  xray: Xray,
+  yoga: Yoga,
   zap: Zap,
   "zap-off": ZapOff,
   "zodiac-aquarius": ZodiacAquarius,
