@@ -1,23 +1,44 @@
-# PulsoIcon
+<p align="center">
+  <img src="./logo.png" alt="PulsoIcon" width="160" />
+</p>
 
-2086 animated icons for React. Every icon has its own hand-written motion: a bell rings, a calendar lifts its rings, a trash can opens its lid, a clock's hand goes round. At rest each icon is a clean 24×24 line icon; it plays when you hover or focus it.
+<h1 align="center">PulsoIcon</h1>
 
-- **What's inside**: all 2015 Lucide icons, 18 extra icons drawn for this set (dashed arrows, dial pad, passport, vinyl, filled bell and mail, …) and 53 brand logos (GitHub, Slack, Spotify, OpenAI, …).
-- **Drop-in for lucide-react**: same names (`Calendar`, `CalendarIcon`, and Lucide's aliases such as `AlertCircle`) and the same props (`size`, `color`, `strokeWidth`, `absoluteStrokeWidth`, `className`).
-- **Tree-shakable**: import only what you use; every icon is its own module.
-- **Plays where people point**: hovering or focusing the closest button, link, label, tab or menu item plays its icon, so the whole control feels alive.
+<p align="center">
+  <strong>2086 animated React icons. Every one has its own motion.</strong><br />
+  A drop-in replacement for lucide-react icons that comes alive on hover.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/pulsoicon"><img src="https://img.shields.io/npm/v/pulsoicon?color=f2552c" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/pulsoicon"><img src="https://img.shields.io/npm/dm/pulsoicon?color=f2552c" alt="npm downloads" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/npm/l/pulsoicon?color=f2552c" alt="license" /></a>
+</p>
+
+---
+
+A bell rings. A calendar lifts its rings. A trash can opens its lid. A clock's hand goes round.
+
+PulsoIcon gives every icon a motion written for that icon, not one effect stamped on all of them. At rest each icon is a clean 24×24 icon; it plays when someone hovers or focuses the button, link or tab it sits in.
+
+## Why PulsoIcon
+
+- **2086 icons**: all 2015 Lucide icons (as of Lucide 1.66), 18 extra icons drawn for this set (dashed arrows, dial pad, passport, vinyl, filled bell and mail, …) and 53 brand logos (GitHub, Slack, Spotify, OpenAI, …).
+- **Switch in one line**: same component names as lucide-react (`Calendar`, `CalendarIcon`, aliases such as `AlertCircle`) and the same props. Usually you only change the import.
+- **Ships only what you use**: every icon is its own module and the package is side-effect free, so bundlers keep the icons you import and drop the rest. Three icons add about 12 kB before minification.
+- **Plays where people point**: hover or focus anywhere on a button, link, label, tab or menu item and its icon plays.
 - **Respects reduced motion**: nothing moves when the system asks for less motion.
-- **Small runtime**: the only dependencies are React and [Motion](https://motion.dev).
+- **Two dependencies**: React and [Motion](https://motion.dev).
 
 ## Install
 
 ```bash
-npm install pulsoicon motion react
+npm install pulsoicon motion
 ```
 
-`react` (18 or newer) and `motion` (12 or newer) are peer dependencies.
+Requires `react` 18 or newer and `motion` 12 or newer.
 
-## Use
+## Quick start
 
 ```tsx
 import { Bell, Calendar, Trash2 } from "pulsoicon";
@@ -31,7 +52,7 @@ export function Toolbar() {
       <button>
         <Calendar /> Schedule
       </button>
-      <button className="danger">
+      <button>
         <Trash2 color="crimson" strokeWidth={1.5} /> Delete
       </button>
     </>
@@ -39,23 +60,34 @@ export function Toolbar() {
 }
 ```
 
-Hover any of the buttons and its icon plays.
+Hover a button and its icon plays.
 
-### Props
+### Coming from lucide-react
 
-| Prop | Type | Default | |
+```diff
+- import { Bell, Calendar, Trash2 } from "lucide-react";
++ import { Bell, Calendar, Trash2 } from "pulsoicon";
+```
+
+Icon components and their props work the same. Lucide's helpers (`createLucideIcon`, `LucideProvider`, the `icons` object) are not included.
+
+## Props
+
+| Prop | Type | Default | Description |
 |---|---|---|---|
 | `size` | `number \| string` | `24` | Width and height |
 | `color` | `string` | `currentColor` | Stroke colour |
 | `strokeWidth` | `number \| string` | `2` | Stroke width on the 24-unit grid |
 | `absoluteStrokeWidth` | `boolean` | `false` | Keep the stroke the same number of pixels at any size |
-| `animated` | `boolean` | `true` | `false` keeps the icon still on hover (the ref still works) |
+| `animated` | `boolean` | `true` | `false` keeps the icon still on hover; the ref still plays it |
 
-Any other SVG attribute (`className`, `style`, `aria-label`, …) is passed to the `<svg>`.
+Any other SVG attribute (`className`, `style`, `aria-label`, …) is passed to the `<svg>`. Icons render with `aria-hidden="true"`; give the surrounding button or link a label.
 
-### Choosing what triggers the animation
+## When the animation plays
 
-By default an icon plays when the pointer enters, or focus moves into, its closest `button`, `a`, `label`, `summary`, `[role="button"]`, `[role="link"]`, `[role="tab"]` or `[role="menuitem"]`. Any other element can opt in with `data-icon-trigger`:
+An icon plays when the pointer enters, or focus moves into, its closest `button`, `a`, `label`, `summary`, `[role="button"]`, `[role="link"]`, `[role="tab"]` or `[role="menuitem"]`. If there is none, the icon plays on its own hover.
+
+Any other element can become the trigger with `data-icon-trigger`:
 
 ```tsx
 <div className="card" data-icon-trigger>
@@ -63,9 +95,9 @@ By default an icon plays when the pointer enters, or focus moves into, its close
 </div>
 ```
 
-### Playing from code
+### Play from code
 
-Every icon forwards a ref with `startAnimation()` and `stopAnimation()`:
+Every icon forwards a ref with `startAnimation()` and `stopAnimation()`. Both return a promise that resolves when the motion has finished, so you can `await check.current?.startAnimation()` before moving on:
 
 ```tsx
 import { useRef } from "react";
@@ -81,9 +113,21 @@ function SaveButton() {
 }
 ```
 
+## Finding icons
+
+### Other names
+
+Icons also answer to the names other icon sets use: `Gear` is `Settings`, `Magnifier` is `Search`, `Cart` is `ShoppingCart`, `World` is `Globe`, `DotsHorizontal` is `Ellipsis`, and so on. Every icon is also exported with an `Icon` suffix (`BellIcon`).
+
+### Brand logos
+
+Brand icons start with `Brand` (`BrandGithub`, `BrandSlack`, `BrandOpenai`, …); most are also exported without the prefix (`Github`, `Slack`). They are simplified line drawings made for this set.
+
+All product names, logos and brands are the property of their respective owners and are used here only to refer to those products or services. Their use does not imply endorsement. Follow each brand's own guidelines when you use its logo.
+
 ### All icons at once
 
-For icon pickers or galleries, `pulsoicon/all` exports every icon by its kebab-case name. It includes all 2086 icons, so use it only where you really need the full set:
+For icon pickers and galleries, `pulsoicon/all` exports every icon by its kebab-case name. It pulls in all 2086 icons, so use it only where you need the full set:
 
 ```tsx
 import { ICON_NAMES, ICONS } from "pulsoicon/all";
@@ -91,33 +135,35 @@ import { ICON_NAMES, ICONS } from "pulsoicon/all";
 const Icon = ICONS["party-popper"];
 ```
 
-A single icon can also be imported by path: `import { Calendar } from "pulsoicon/icons/calendar"`.
+One icon can also be imported by path: `import { Calendar } from "pulsoicon/icons/calendar"`.
 
-### Other names
+## Styling
 
-Many icons also answer to the names other icon sets use, so they are easy to find: `Gear` is `Settings`, `Magnifier` is `Search`, `Cart` is `ShoppingCart`, `World` is `Globe`, `DotsHorizontal` is `Ellipsis`, and so on.
+Each icon renders `<svg class="pulsoicon pulsoicon-<name>">`, so CSS can target every icon or a single one:
 
-### Brand logos
+```css
+.pulsoicon {
+  vertical-align: -0.125em;
+}
 
-Brand icons are prefixed with `Brand` (`BrandGithub`, `BrandSlack`, `BrandOpenai`, …); most are also exported without the prefix (`Github`, `Slack`). They are simplified line drawings made for this set.
+.pulsoicon-bell {
+  color: #f2552c;
+}
+```
 
-All product names, logos and brands are the property of their respective owners and are used here only to refer to those products or services. Their use does not imply endorsement. Follow each brand's own guidelines when you use its logo.
-
-### Styling
-
-Each icon renders `<svg class="pulsoicon pulsoicon-<name>">`, so you can target all icons or a single one from CSS.
-
-## Development
+## Contributing
 
 ```bash
 npm install
-npm run preview     # gallery with every icon at http://localhost:10205
+npm run preview   # gallery of every icon at http://localhost:10205
 npm test
 npm run build
 ```
 
-Each icon is a small React file in `src/icons/<name>.tsx`: the shapes of the icon, and for each shape an optional motion (`r` = recipe from `src/runtime/recipes.ts`, `d` = delay, `x`/`y` = direction, `a` = amplitude, `o` = pivot point on the 24×24 grid). Edit that file to change how an icon moves.
+Each icon is a small React file in `src/icons/<name>.tsx`: the shapes of the icon and, for each shape, an optional motion (`r` recipe from `src/runtime/recipes.ts`, `d` delay, `x`/`y` direction, `a` amplitude, `o` pivot point on the 24×24 grid). Edit that file to change how an icon moves.
 
 ## License
 
-ISC © CityPulso. The animations, the runtime, the extra icons and the brand drawings are original work of this project; brand logos remain trademarks of their owners. The shapes of the Lucide icons are based on [Lucide](https://lucide.dev) (ISC, with some icons derived from Feather, MIT); their notices are included in [LICENSE](./LICENSE).
+ISC © CityPulso
+
+The animations, the runtime, the extra icons and the brand drawings are original work of this project; brand logos remain trademarks of their owners. The shapes of the Lucide icons are based on [Lucide](https://lucide.dev) (ISC, with some icons derived from Feather, MIT). Their notices are included in [LICENSE](./LICENSE).

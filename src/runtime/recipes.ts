@@ -21,7 +21,43 @@ export interface RecipeVariants extends Variants {
   animate: Variant;
 }
 
-type Recipe = (p: RecipeParams) => RecipeVariants;
+/** Builds the resting (`normal`) and playing (`animate`) states of one shape. */
+export type Recipe = (p: RecipeParams) => RecipeVariants;
+
+/** Every motion a shape can play. */
+export type RecipeName =
+  | "draw"
+  | "redraw"
+  | "pop"
+  | "press"
+  | "spin"
+  | "turn"
+  | "ring"
+  | "beat"
+  | "pulse"
+  | "slide"
+  | "shoot"
+  | "bounce"
+  | "shake"
+  | "tilt"
+  | "swing"
+  | "lift"
+  | "blink"
+  | "flip"
+  | "fold"
+  | "fade"
+  | "twinkle"
+  | "float"
+  | "grow"
+  | "drop"
+  | "rise"
+  | "stamp"
+  | "jelly"
+  | "roll"
+  | "sway"
+  | "flicker"
+  | "wobble"
+  | "growX";
 
 const back: Transition = { duration: 0.25, ease: "easeOut" };
 
@@ -29,7 +65,7 @@ const at = (p: RecipeParams, duration: number, extra: Transition = {}): Transiti
 
 const transformRest = { x: 0, y: 0, rotate: 0, scale: 1, scaleX: 1, scaleY: 1, opacity: 1, transition: back };
 
-export const RECIPES = {
+export const RECIPES: Record<RecipeName, Recipe> = {
   /** Stroke draws itself on. */
   draw: (p) => ({
     normal: { pathLength: 1, opacity: 1, transition: back },
@@ -205,8 +241,6 @@ export const RECIPES = {
     normal: transformRest,
     animate: { scaleX: [0, 1], transition: at(p, 0.45) },
   }),
-} satisfies Record<string, Recipe>;
-
-export type RecipeName = keyof typeof RECIPES;
+};
 
 export const RECIPE_NAMES = Object.keys(RECIPES) as RecipeName[];

@@ -1,17 +1,17 @@
 {
   "name": "pulsoicon",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "2086 animated React icons, each with its own hand-written motion. Drop-in replacement for lucide-react.",
   "type": "module",
   "sideEffects": false,
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NebulaForgeX/PulsoIcon.git"
+    "url": "git+https://github.com/CityPulso/PulsoIcon.git"
   },
-  "homepage": "https://github.com/NebulaForgeX/PulsoIcon#readme",
+  "homepage": "https://github.com/CityPulso/PulsoIcon#readme",
   "bugs": {
-    "url": "https://github.com/NebulaForgeX/PulsoIcon/issues"
+    "url": "https://github.com/CityPulso/PulsoIcon/issues"
   },
   "keywords": [
     "icons",

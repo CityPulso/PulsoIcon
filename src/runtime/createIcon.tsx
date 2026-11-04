@@ -26,10 +26,12 @@ export interface IconSpec {
   nodes: readonly IconNode[];
 }
 
-/** Imperative control through `ref`. */
+/** Imperative control through `ref`. Both resolve when the motion has finished. */
 export interface IconHandle {
-  startAnimation: () => void;
-  stopAnimation: () => void;
+  /** Play the icon's motion (does nothing when the system asks for reduced motion). */
+  startAnimation: () => Promise<void>;
+  /** Return to the resting frame. */
+  stopAnimation: () => Promise<void>;
 }
 
 export interface IconProps extends Omit<SVGProps<SVGSVGElement>, "ref" | "onAnimationStart" | "onAnimationEnd" | "onAnimationIteration" | "onDrag" | "onDragStart" | "onDragEnd"> {
@@ -104,10 +106,12 @@ export function createIcon(displayName: string, iconName: string, spec: IconSpec
     const controls = useAnimation();
     const svgRef = useRef<SVGSVGElement>(null);
 
-    const start = useCallback(() => {
-      if (!prefersReducedMotion()) void controls.start("animate");
+    const start = useCallback(async () => {
+      if (!prefersReducedMotion()) await controls.start("animate");
     }, [controls]);
-    const stop = useCallback(() => void controls.start("normal"), [controls]);
+    const stop = useCallback(async () => {
+      await controls.start("normal");
+    }, [controls]);
 
     useImperativeHandle(ref, () => ({ startAnimation: start, stopAnimation: stop }), [start, stop]);
 
@@ -115,15 +119,17 @@ export function createIcon(displayName: string, iconName: string, spec: IconSpec
       const svg = svgRef.current;
       if (!animated || !svg) return;
       const trigger = svg.closest<HTMLElement>(TRIGGER_SELECTOR) ?? svg;
-      trigger.addEventListener("pointerenter", start);
-      trigger.addEventListener("pointerleave", stop);
-      trigger.addEventListener("focusin", start);
-      trigger.addEventListener("focusout", stop);
+      const play = () => void start();
+      const rest = () => void stop();
+      trigger.addEventListener("pointerenter", play);
+      trigger.addEventListener("pointerleave", rest);
+      trigger.addEventListener("focusin", play);
+      trigger.addEventListener("focusout", rest);
       return () => {
-        trigger.removeEventListener("pointerenter", start);
-        trigger.removeEventListener("pointerleave", stop);
-        trigger.removeEventListener("focusin", start);
-        trigger.removeEventListener("focusout", stop);
+        trigger.removeEventListener("pointerenter", play);
+        trigger.removeEventListener("pointerleave", rest);
+        trigger.removeEventListener("focusin", play);
+        trigger.removeEventListener("focusout", rest);
       };
     }, [animated, start, stop]);
 

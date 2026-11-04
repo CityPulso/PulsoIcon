@@ -3,7 +3,7 @@
 #
 # 第一个版本要在本机手动 npm publish（npm 只能给已存在的包配置 Trusted Publisher），之后在
 # https://www.npmjs.com/package/pulsoicon → Settings → Trusted Publisher 添加：
-#   Organization or user: NebulaForgeX
+#   Organization or user: CityPulso
 #   Repository:            PulsoIcon
 #   Workflow filename:     publish-npm.yml   （只要文件名，不要 .github/workflows/）
 #   Environment:           留空（本 workflow 没有 environment:）
@@ -52,6 +52,11 @@ jobs:
           else
             echo "published=false" >> $GITHUB_OUTPUT
           fi
+
+      # Trusted publishing (OIDC) needs npm 11.5.1 or newer.
+      - name: Update npm
+        if: steps.check.outputs.published != 'true'
+        run: npm install -g npm@latest
 
       - name: Install
         if: steps.check.outputs.published != 'true'

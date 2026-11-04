@@ -1,7 +1,7 @@
 export { createIcon } from "./runtime/createIcon.js";
 export type { IconHandle, IconMotion, IconNode, IconProps, IconSpec, PulsoIcon } from "./runtime/createIcon.js";
 export { RECIPE_NAMES, RECIPES } from "./runtime/recipes.js";
-export type { RecipeName, RecipeParams } from "./runtime/recipes.js";
+export type { Recipe, RecipeName, RecipeParams, RecipeVariants } from "./runtime/recipes.js";
 
 export { AArrowDown, AArrowDown as AArrowDownIcon } from "./icons/a-arrow-down.js";
 export { AArrowUp, AArrowUp as AArrowUpIcon } from "./icons/a-arrow-up.js";
