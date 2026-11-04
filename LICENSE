@@ -16,7 +16,31 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ---
 
-The icon shapes (SVG path data) are based on Lucide, used under the
+THIRD-PARTY NOTICES
+
+PulsoIcon's animations, runtime code, and the icons and brand drawings made for
+this set are covered by the ISC license above. The shapes (SVG path data) of
+some icons are based on, or were drawn after, other open icon sets. Each such icon
+names its source in a comment at the top of its file. Their licenses follow:
+
+  1. Lucide (ISC): the Lucide icons (icons without a source comment that are
+     also in Lucide), with some icons derived from Feather (MIT)
+  2. Hugeicons (MIT): five adapted icons, listed below
+  3. Iconoir (MIT): icons marked "Adapted from Iconoir"
+  4. Tabler Icons (MIT): icons marked "Adapted from Tabler Icons"
+  5. Phosphor Icons (MIT): icons marked "Drawn after Phosphor Icons"
+  6. Simple Icons (CC0 1.0): brand icons marked "Drawn after Simple Icons", with
+     the logos whose owners use other terms listed by name
+
+If you distribute PulsoIcon, or software that includes it (for example an app
+or a website bundle), keep this whole file with it, for instance in your
+third-party or open-source licenses notice. Brand names and logos remain
+trademarks of their owners.
+
+---
+
+The shapes (SVG path data) of the Lucide icons in PulsoIcon are based on
+Lucide, used under the
 following license:
 
 ISC License

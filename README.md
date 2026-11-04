@@ -25,9 +25,14 @@ A bell rings. A calendar lifts its rings. A trash can opens its lid. A clock's h
 
 PulsoIcon gives every icon a motion written for that icon, not one effect stamped on all of them. At rest each icon is a clean 24×24 icon; it plays when someone hovers or focuses the button, link or tab it sits in.
 
+Every one of the 9955 motions is written for this set. About 3,700 icons are drawn here, including the line-art brand logos; the rest build on the shapes of [Lucide](https://lucide.dev), [Tabler Icons](https://tabler.io/icons) and [Iconoir](https://iconoir.com), which are credited in [LICENSE](./LICENSE).
+
 ## Why PulsoIcon
 
-- **9955 icons**: all 2020 Lucide icons (as of Lucide 1.68), 3505 icons from [Tabler Icons](https://tabler.io/icons) (3.50, outline set), 491 from [Iconoir](https://iconoir.com) (7.12), 897 drawn for this set (lowercase a–z among them, 290 after [Phosphor](https://phosphoricons.com) icons) and 3042 brand logos (CityPulso, GitHub, Slack, Spotify, OpenAI, Claude, TikTok, VS Code, Google Drive, … most of them drawn after [Simple Icons](https://simpleicons.org)). Every one has its own motion.
+- **9955 icons, each with its own motion**:
+  - **About 3,700 drawn for this set**: about 2,770 line-art brand logos (CityPulso, GitHub, Slack, Spotify, OpenAI, Claude, TikTok, VS Code, Google Drive, …, most drawn after the logos collected by [Simple Icons](https://simpleicons.org)) and around 900 other icons, including lowercase a–z, animals, sports, 3D tools and icons drawn after [Phosphor](https://phosphoricons.com).
+  - **Built on open icon sets**: all 2020 [Lucide](https://lucide.dev) icons (as of 1.68), plus the shapes of [Tabler Icons](https://tabler.io/icons) (3.50, including 264 brand logos) and [Iconoir](https://iconoir.com) (7.12).
+  - **3042 brand logos** in all.
 - **Switch in one line**: same component names as lucide-react (`Calendar`, `CalendarIcon`, aliases such as `AlertCircle`) and the same props. Usually you only change the import.
 - **Ships only what you use**: every icon is its own module and the package is side-effect free, so bundlers keep the icons you import and drop the rest. Three icons add about 12 kB before minification.
 - **Plays where people point**: hover or focus anywhere on a button, link, label, tab or menu item and its icon plays.
@@ -178,6 +183,30 @@ Each icon is a small React file in `src/icons/<name>.tsx`: the shapes of the ico
 
 ## License
 
-ISC © CityPulso
+PulsoIcon is open source under the [ISC license](./LICENSE) © CityPulso.
 
-The animations, the runtime, the extra icons and the brand drawings are original work of this project, except for six icons adapted from [Hugeicons](https://hugeicons.com) and the icons adapted from [Iconoir](https://iconoir.com) or drawn after [Phosphor](https://phosphoricons.com) (all MIT, see [LICENSE](./LICENSE)); brand logos remain trademarks of their owners. The shapes of the icons marked "Adapted from Tabler Icons" in their source are from [Tabler Icons](https://tabler.io/icons) (MIT); their motions are written for this set. The shapes of the Lucide icons are based on [Lucide](https://lucide.dev) (ISC, with some icons derived from Feather, MIT). Their notices are included in [LICENSE](./LICENSE).
+### What is ours, and what comes from other icon sets
+
+| Part | Origin |
+|---|---|
+| Every animation (how each icon moves) | Written for PulsoIcon |
+| Runtime code (`createIcon`, triggers, motion recipes) | Written for PulsoIcon |
+| About 3,700 icons, including about 2,770 line-art brand logos | Drawn for PulsoIcon |
+| Shapes of the 2020 Lucide icons | Based on [Lucide](https://lucide.dev) (ISC; some derived from Feather, MIT) |
+| Shapes of the icons marked "Adapted from Tabler Icons" | Based on [Tabler Icons](https://tabler.io/icons) (MIT) |
+| Shapes of the icons marked "Adapted from Iconoir" | Based on [Iconoir](https://iconoir.com) (MIT) |
+| Five icons marked "Adapted from Hugeicons" | Adapted from [Hugeicons](https://hugeicons.com) (MIT) |
+| Icons marked "Drawn after Phosphor Icons" | Redrawn after [Phosphor](https://phosphoricons.com) shapes (MIT) |
+| Brand icons marked "Drawn after Simple Icons" | Drawn after the logos collected by [Simple Icons](https://simpleicons.org) (CC0) |
+
+Icons based on or drawn after Tabler Icons, Iconoir, Hugeicons, Phosphor or Simple Icons name their source in a comment at the top of their file; the Lucide icons keep their Lucide names. The full license texts are in [LICENSE](./LICENSE).
+
+### Using PulsoIcon in your project
+
+You may use PulsoIcon freely, including in commercial and closed-source products. The one condition, from ISC and the MIT licenses of the sets above, is the notice:
+
+- **If you ship PulsoIcon** (in an app, a website bundle, a template or a library of your own), include PulsoIcon's [LICENSE](./LICENSE) file with it, for example on your "open-source licenses" or "third-party notices" page or in a `THIRD_PARTY_NOTICES` file. It already contains the notices of Lucide, Tabler Icons, Iconoir, Hugeicons and Phosphor.
+- **If you copy or modify icons** from PulsoIcon into your own set, keep the source comment at the top of each file, and keep the LICENSE notices.
+- You don't have to credit PulsoIcon inside your product's interface, although a link is always appreciated.
+
+Brand logos are trademarks of their owners. Using a brand icon doesn't imply endorsement, and you should follow each brand's own guidelines.
