@@ -1,0 +1,16 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Iconoir "planet-sat" (MIT, Copyright (c) 2021 Luca Burgio).
+export const PlanetSat = createIcon("PlanetSat", "planet-sat", {
+  nodes: [
+    ["circle", { cx: "12", cy: "12", r: "8" }],
+    [
+      "path",
+      {
+        d: "M17.4995 6.34835C19.7975 5.80967 21.4447 5.87208 21.8376 6.66002C22.5686 8.12616 18.6797 11.5491 13.1515 14.3053C7.62327 17.0616 2.5492 18.1074 1.81821 16.6413C1.4263 15.8553 2.36234 14.5067 4.16701 13.0001",
+      },
+      { r: "tilt", o: [12, 12] },
+    ],
+    ["path", { d: "M9.5 10.51L9.51 10.4989" }, { r: "pop", d: 0.2, o: [9.5, 10.5] }],
+  ],
+});

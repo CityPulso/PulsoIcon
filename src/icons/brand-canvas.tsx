@@ -1,0 +1,23 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Drawn after Simple Icons "canvas" (CC0-1.0). Canvas is a trademark of its owner.
+export const BrandCanvas = createIcon("BrandCanvas", "brand-canvas", {
+  nodes: [
+    ["circle", { cx: "12", cy: "3.5", r: "1.25" }, { r: "pop", d: 0, o: [12, 3.5] }],
+    ["circle", { cx: "5.99", cy: "5.99", r: "1.25" }, { r: "pop", d: 0.05, o: [5.99, 5.99] }],
+    ["circle", { cx: "3.5", cy: "12", r: "1.25" }, { r: "pop", d: 0.1, o: [3.5, 12] }],
+    ["circle", { cx: "5.99", cy: "18.01", r: "1.25" }, { r: "pop", d: 0.15, o: [5.99, 18.01] }],
+    ["circle", { cx: "12", cy: "20.5", r: "1.25" }, { r: "pop", d: 0.2, o: [12, 20.5] }],
+    ["circle", { cx: "18.01", cy: "18.01", r: "1.25" }, { r: "pop", d: 0.25, o: [18.01, 18.01] }],
+    ["circle", { cx: "20.5", cy: "12", r: "1.25" }, { r: "pop", d: 0.3, o: [20.5, 12] }],
+    ["circle", { cx: "18.01", cy: "5.99", r: "1.25" }, { r: "pop", d: 0.35, o: [18.01, 5.99] }],
+    ["path", { d: "M10.28 7.84h.01" }, { r: "pop", d: 0.2, o: [10.28, 7.84] }],
+    ["path", { d: "M7.84 10.28h.01" }, { r: "pop", d: 0.25, o: [7.84, 10.28] }],
+    ["path", { d: "M7.84 13.72h.01" }, { r: "pop", d: 0.3, o: [7.84, 13.72] }],
+    ["path", { d: "M10.28 16.16h.01" }, { r: "pop", d: 0.35, o: [10.28, 16.16] }],
+    ["path", { d: "M13.72 16.16h.01" }, { r: "pop", d: 0.4, o: [13.72, 16.16] }],
+    ["path", { d: "M16.16 13.72h.01" }, { r: "pop", d: 0.45, o: [16.16, 13.72] }],
+    ["path", { d: "M16.16 10.28h.01" }, { r: "pop", d: 0.5, o: [16.16, 10.28] }],
+    ["path", { d: "M13.72 7.84h.01" }, { r: "pop", d: 0.55, o: [13.72, 7.84] }],
+  ],
+});

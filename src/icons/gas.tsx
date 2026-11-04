@@ -1,0 +1,14 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Iconoir "gas" (MIT, Copyright (c) 2021 Luca Burgio).
+export const Gas = createIcon("Gas", "gas", {
+  nodes: [
+    [
+      "path",
+      { d: "M9 8C9 6.34315 10.3431 5 12 5V5C13.6569 5 15 6.34315 15 8V21.4C15 21.7314 14.7314 22 14.4 22H9.6C9.26863 22 9 21.7314 9 21.4V8Z" },
+      { r: "wobble", a: 4, o: [12, 22] },
+    ],
+    ["path", { d: "M9 11H15" }, { r: "wobble", a: 4, o: [12, 22] }],
+    ["path", { d: "M12 5V2M12 2H11M12 2H13" }, { r: "wobble", a: 4, o: [12, 22] }],
+  ],
+});

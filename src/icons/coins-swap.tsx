@@ -1,0 +1,15 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Iconoir "coins-swap" (MIT, Copyright (c) 2021 Luca Burgio).
+export const CoinsSwap = createIcon("CoinsSwap", "coins-swap", {
+  nodes: [
+    [
+      "path",
+      { d: "M9.01894 9C9.00639 8.83498 9 8.66824 9 8.5C9 4.91015 11.9101 2 15.5 2C19.0899 2 22 4.91015 22 8.5C22 12.0899 19.0899 15 15.5 15C15.3318 15 15.165 14.9936 15 14.9811" },
+      { r: "slide", x: -1, y: 1, a: 1 },
+    ],
+    ["path", { d: "M8.5 22C4.91015 22 2 19.0899 2 15.5C2 11.9101 4.91015 9 8.5 9C12.0899 9 15 11.9101 15 15.5C15 19.0899 12.0899 22 8.5 22Z" }, { r: "slide", x: 1, y: -1, a: 1 }],
+    ["path", { d: "M22 17C22 18.6569 20.6569 20 19 20H17M17 20L19 18M17 20L19 22" }, { r: "slide", d: 0.1, x: -1, y: 0, a: 1.5 }],
+    ["path", { d: "M2 7C2 5.34315 3.34315 4 5 4H7M7 4L5 6M7 4L5 2" }, { r: "slide", d: 0.1, x: 1, y: 0, a: 1.5 }],
+  ],
+});

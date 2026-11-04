@@ -1,0 +1,18 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Iconoir "password-cursor" (MIT, Copyright (c) 2021 Luca Burgio).
+export const PasswordCursor = createIcon("PasswordCursor", "password-cursor", {
+  nodes: [
+    ["path", { d: "M21 13V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V14C3 15.1046 3.89543 16 5 16H12" }],
+    [
+      "path",
+      {
+        d: "M20.8789 16.9174C21.3727 17.2211 21.3423 17.9604 20.8337 18.0181L18.2671 18.309L17.1159 20.6213C16.8878 21.0795 16.1827 20.8552 16.0661 20.2873L14.8108 14.1713C14.7123 13.6913 15.1437 13.3892 15.561 13.646L20.8789 16.9174Z",
+      },
+      { r: "slide", x: -1, y: -1, a: 1.5 },
+    ],
+    ["path", { d: "M12 11.01L12.01 10.9989" }, { r: "pop", d: 0.18, o: [12, 11] }],
+    ["path", { d: "M16 11.01L16.01 10.9989" }, { r: "pop", d: 0.26, o: [16, 11] }],
+    ["path", { d: "M8 11.01L8.01 10.9989" }, { r: "pop", d: 0.1, o: [8, 11] }],
+  ],
+});

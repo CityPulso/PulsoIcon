@@ -1,7 +1,7 @@
 {
   "name": "pulsoicon",
-  "version": "3.1.0",
-  "description": "6331 animated React icons, each with its own hand-written motion. Drop-in replacement for lucide-react.",
+  "version": "4.0.0",
+  "description": "9955 animated React icons, each with its own hand-written motion. Drop-in replacement for lucide-react.",
   "type": "module",
   "sideEffects": false,
   "license": "ISC",
@@ -19,6 +19,9 @@
     "react",
     "lucide",
     "tabler",
+    "iconoir",
+    "phosphor",
+    "simple-icons",
     "motion",
     "svg",
     "brand-icons"

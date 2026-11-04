@@ -1,5 +1,31 @@
 # Changelog
 
+## 4.0.0
+
+**9955 icons** (+3624).
+
+### Added
+
+- **491 icons from [Iconoir](https://iconoir.com)** (7.12, MIT). Their shapes were converted to our format, and each was given
+  its own motion.
+- **Lowercase letters a–z** (`letter-a-lowercase` … `letter-z-lowercase`, also `LowercaseA` …), drawn in the same
+  stroke style as the uppercase set; the strokes write themselves in.
+- **290 icons drawn after [Phosphor](https://phosphoricons.com)** (MIT) and **216 icons drawn from scratch** for concepts
+  other sets have but we lacked: messages, files, finance, media, weather, people and more.
+- **2601 brand logos**, for **3042** in total. Most are single-weight line drawings made after the logos collected by
+  [Simple Icons](https://simpleicons.org), each with its own motion. They are exported only with the `Brand` prefix
+  (`BrandNetflix`), because many brand names are ordinary words.
+- **About 1300 aliases**: other sets' names for icons we already had (`MailOpened` is `MailOpen`, `CurrencyYen` is
+  `JapaneseYen`, `ChatCircle` is `MessageCircle`, …).
+- Preview: versions are grouped by major (1.x, 2.x, 3.x).
+
+### Notes
+
+- Brand logos that could only be drawn as a single letter at 24px were left out; a lone "Q" or "B" doesn't identify
+  a brand.
+- Logos whose owners license them under terms other than CC0 are listed in [LICENSE](./LICENSE) with their license
+  and source.
+
 ## 3.1.0
 
 **6331 icons** (+3).

@@ -1,0 +1,14 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Drawn after Simple Icons "miraheze" (CC0-1.0). Miraheze is a trademark of its owner.
+export const BrandMiraheze = createIcon("BrandMiraheze", "brand-miraheze", {
+  nodes: [
+    ["path", { d: "M12 8.9 14.68 10.45 14.68 13.55 12 15.1 9.32 13.55 9.32 10.45z" }, { r: "pop", o: [12, 12] }],
+    ["path", { d: "M17.37 8.9 20.05 10.45 20.05 13.55 17.37 15.1 14.68 13.55 14.68 10.45z" }],
+    ["path", { d: "M14.68 13.55 17.37 15.1 17.37 18.2 14.68 19.75 12 18.2 12 15.1z" }],
+    ["path", { d: "M9.32 13.55 12 15.1 12 18.2 9.32 19.75 6.63 18.2 6.63 15.1z" }],
+    ["path", { d: "M6.63 8.9 9.32 10.45 9.32 13.55 6.63 15.1 3.95 13.55 3.95 10.45z" }],
+    ["path", { d: "M9.32 4.25 12 5.8 12 8.9 9.32 10.45 6.63 8.9 6.63 5.8z" }],
+    ["path", { d: "M14.68 4.25 17.37 5.8 17.37 8.9 14.68 10.45 12 8.9 12 5.8z" }],
+  ],
+});

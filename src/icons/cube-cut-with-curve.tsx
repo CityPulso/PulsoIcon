@@ -1,0 +1,19 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+// Adapted from Iconoir "cube-cut-with-curve" (MIT, Copyright (c) 2021 Luca Burgio).
+export const CubeCutWithCurve = createIcon("CubeCutWithCurve", "cube-cut-with-curve", {
+  nodes: [
+    ["path", { d: "M3.52844 7.29346L9 10.3332" }],
+    ["path", { d: "M22 2L20 2M12 12L12 10C12 6.45478 14.3061 3.44817 17.5 2.39838" }, { r: "draw", d: 0, o: [17, 7] }],
+    ["path", { d: "M22 12L20 12M12 22L12 20C12 16.4548 14.3061 13.4482 17.5 12.3984" }, { r: "draw", d: 0.15, o: [17, 17] }],
+    [
+      "path",
+      {
+        d: "M12 22L3.30861 17.1715C3.11813 17.0656 3 16.8649 3 16.647L2.99998 7.35304C2.99998 7.13514 3.11812 6.93437 3.3086 6.82855L11.7086 2.16188C11.8898 2.06121 12.1102 2.06121 12.2914 2.16188L15 3.66667",
+      },
+    ],
+    ["path", { d: "M12 11.9999L3.52842 7.29346" }],
+    ["path", { d: "M12 21L12 12" }],
+    ["path", { d: "M15 13.5L15 4" }],
+  ],
+});
