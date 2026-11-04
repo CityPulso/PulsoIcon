@@ -33,10 +33,10 @@ PulsoIcon gives every icon a motion written for that icon, not one effect stampe
 ## Install
 
 ```bash
-npm install pulsoicon motion
+npm install pulsoicon
 ```
 
-Requires `react` 18 or newer and `motion` 12 or newer.
+Works with React 18 or newer. [Motion](https://motion.dev) (12 or newer) is installed for you; if your app already uses Motion, PulsoIcon shares that copy.
 
 ## Quick start
 
