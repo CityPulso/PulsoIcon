@@ -1,0 +1,10 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+export const FileXCorner = createIcon("FileXCorner", "file-x-corner", {
+  nodes: [
+    ["path", { d: "M11 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v5" }, { r: "shake", a: 1, o: [12, 12] }],
+    ["path", { d: "M14 2v5a1 1 0 0 0 1 1h5" }, { r: "shake", a: 1, o: [12, 12] }],
+    ["path", { d: "m15 17 5 5" }, { r: "draw", d: 0.1, o: [17.5, 19.5] }],
+    ["path", { d: "m20 17-5 5" }, { r: "draw", d: 0.2, o: [17.5, 19.5] }],
+  ],
+});

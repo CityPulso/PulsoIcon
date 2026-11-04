@@ -1,0 +1,9 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+export const TestTube = createIcon("TestTube", "test-tube", {
+  nodes: [
+    ["path", { d: "M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5c-1.4 0-2.5-1.1-2.5-2.5V2" }, { r: "sway", a: 8, o: [12, 2] }],
+    ["path", { d: "M8.5 2h7" }, { r: "sway", a: 8, o: [12, 2] }],
+    ["path", { d: "M14.5 16h-5" }, { r: "redraw", d: 0.1, o: [12, 16] }],
+  ],
+});

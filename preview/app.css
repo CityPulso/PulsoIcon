@@ -1,0 +1,155 @@
+:root {
+  color-scheme: light dark;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+.page {
+  --bg: #f4f5f7;
+  --panel: #ffffff;
+  --line: #e2e4e9;
+  --text: #1c2024;
+  --muted: #60646c;
+  --accent: #3e63dd;
+  --accent-soft: #e6edfe;
+  --warn: #c2410c;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.page[data-theme="dark"] {
+  --bg: #111113;
+  --panel: #19191b;
+  --line: #2e3035;
+  --text: #edeef0;
+  --muted: #a0a4ab;
+  --accent: #849dff;
+  --accent-soft: #1d2a5c;
+  --warn: #ff9b5c;
+}
+
+body {
+  margin: 0;
+}
+
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 16px 24px 12px;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.title p,
+.hint {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.warn {
+  color: var(--warn);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.search {
+  width: 220px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--text);
+}
+
+.button {
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.check,
+.range {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  padding: 16px 24px 48px;
+}
+
+.card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 150px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.card:hover {
+  border-color: var(--accent);
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  min-height: 84px;
+  border-radius: 8px;
+  background: var(--bg);
+}
+
+.cell {
+  color: var(--accent);
+}
+
+.name {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .bar,
+  .grid {
+    padding-inline: 16px;
+  }
+
+  .search {
+    width: 100%;
+  }
+}
+
+.button {
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}

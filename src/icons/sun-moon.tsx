@@ -1,0 +1,11 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+export const SunMoon = createIcon("SunMoon", "sun-moon", {
+  nodes: [
+    ["path", { d: "M12 2v2" }, { r: "spin", d: 0.05, a: 45, o: [12, 12] }],
+    ["path", { d: "M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715" }, { r: "swing", a: 14, o: [9, 15] }],
+    ["path", { d: "M16 12a4 4 0 0 0-4-4" }, { r: "swing", a: 14, o: [9, 15] }],
+    ["path", { d: "m19 5-1.256 1.256" }, { r: "spin", d: 0.05, a: 45, o: [12, 12] }],
+    ["path", { d: "M20 12h2" }, { r: "spin", d: 0.05, a: 45, o: [12, 12] }],
+  ],
+});

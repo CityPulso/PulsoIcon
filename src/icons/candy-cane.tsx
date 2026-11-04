@@ -1,0 +1,12 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+export const CandyCane = createIcon("CandyCane", "candy-cane", {
+  svg: { r: "swing", a: 10, o: [14, 3] },
+  nodes: [
+    ["path", { d: "m10.8 5 2.111 4.223" }, { r: "fade", d: 0.1, o: [11.312, 10.494] }],
+    ["path", { d: "M17.75 7 15 2.1" }, { r: "fade", d: 0.15, o: [11.312, 10.494] }],
+    ["path", { d: "m4.874 14.647 2.12 4.24" }, { r: "fade", d: 0.2, o: [11.312, 10.494] }],
+    ["path", { d: "M5.7 21a2 2 0 0 1-3.5-2l8.6-14a6 6 0 0 1 10.4 6 2 2 0 1 1-3.464-2 2 2 0 1 0-3.464-2z" }],
+    ["path", { d: "m7.906 9.712 2.005 4.411" }, { r: "fade", d: 0.25, o: [11.312, 10.494] }],
+  ],
+});

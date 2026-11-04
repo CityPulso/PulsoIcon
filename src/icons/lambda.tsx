@@ -1,0 +1,8 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+export const Lambda = createIcon("Lambda", "lambda", {
+  nodes: [
+    ["path", { d: "M11.38 10 5 20" }, { r: "draw", d: 0.2, o: [8.19, 15] }],
+    ["path", { d: "M19 18a2 2 0 01-2 2c-4.87-.003-5.052-16-10-16a2 2 0 00-2 2" }, { r: "redraw", o: [12, 12] }],
+  ],
+});

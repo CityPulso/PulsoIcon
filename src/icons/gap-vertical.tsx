@@ -1,0 +1,12 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+export const GapVertical = createIcon("GapVertical", "gap-vertical", {
+  nodes: [
+    ["path", { d: "M2 12h2" }, { r: "fade", o: [12, 12] }],
+    ["path", { d: "M8 12h2" }, { r: "fade", d: 0.04, o: [12, 12] }],
+    ["path", { d: "M14 12h2" }, { r: "fade", d: 0.08, o: [12, 12] }],
+    ["path", { d: "M20 12h2" }, { r: "fade", d: 0.12, o: [12, 12] }],
+    ["path", { d: "M3 21v-3a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3" }, { r: "slide", y: 1, a: 1.5, o: [12, 18.5] }],
+    ["path", { d: "M3 3v3a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3" }, { r: "slide", y: -1, a: 1.5, o: [12, 5.5] }],
+  ],
+});

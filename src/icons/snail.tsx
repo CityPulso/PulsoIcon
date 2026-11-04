@@ -1,0 +1,11 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+export const Snail = createIcon("Snail", "snail", {
+  nodes: [
+    ["path", { d: "M2 13a6 6 0 1 0 12 0 4 4 0 1 0-8 0 2 2 0 0 0 4 0" }, { r: "slide", x: 1, a: 1.5, o: [12, 13] }],
+    ["circle", { cx: "10", cy: "13", r: "8" }, { r: "slide", x: 1, a: 1.5, o: [12, 13] }],
+    ["path", { d: "M2 21h12c4.4 0 8-3.6 8-8V7a2 2 0 1 0-4 0v6" }, { r: "slide", x: 1, a: 1.5, o: [12, 13] }],
+    ["path", { d: "M18 3 19.1 5.2" }, { r: "swing", d: 0.1, a: 14, o: [19, 5] }],
+    ["path", { d: "M22 3 20.9 5.2" }, { r: "swing", d: 0.1, a: 14, o: [19, 5] }],
+  ],
+});

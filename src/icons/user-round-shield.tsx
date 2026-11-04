@@ -1,0 +1,14 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+export const UserRoundShield = createIcon("UserRoundShield", "user-round-shield", {
+  nodes: [
+    ["path", { d: "M2 21a8 8 0 0 1 8-8 5 5 0 1 1 4.845-3.759" }, { r: "float", a: 1.5, o: [8.501, 12] }],
+    [
+      "path",
+      {
+        d: "M22 17.5c0 2.5-1.75 3.75-3.83 4.474a.5.5 0 0 1-.335-.005C15.75 21.25 14 20 14 17.5V14a.5.5 0 0 1 .5-.499c1 0 2.25-.6 3.12-1.36a.6.6 0 0 1 .76-.001c.875.765 2.12 1.36 3.12 1.36a.5.5 0 0 1 .5.5z",
+      },
+      { r: "stamp", d: 0.1, a: 0.3, o: [18, 17.003] },
+    ],
+  ],
+});

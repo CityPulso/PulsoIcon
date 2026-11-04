@@ -1,0 +1,10 @@
+import { createIcon } from "../runtime/createIcon.js";
+
+export const BellRing = createIcon("BellRing", "bell-ring", {
+  nodes: [
+    ["path", { d: "M10.268 21a2 2 0 0 0 3.464 0" }, { r: "ring", o: [12, 3] }],
+    ["path", { d: "M22 8c0-2.3-.8-4.3-2-6" }, { r: "slide", d: 0.1, x: 1, a: 1.5, o: [21, 5] }],
+    ["path", { d: "M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" }, { r: "ring", o: [12, 3] }],
+    ["path", { d: "M4 2C2.8 3.7 2 5.7 2 8" }, { r: "slide", d: 0.1, x: -1, a: 1.5, o: [3, 5] }],
+  ],
+});
