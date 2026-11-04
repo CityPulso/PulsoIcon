@@ -784,7 +784,9 @@ import { BrandChrome } from "./icons/brand-chrome.js";
 import { BrandChromecast } from "./icons/brand-chromecast.js";
 import { BrandChromium } from "./icons/brand-chromium.js";
 import { BrandCinema4d } from "./icons/brand-cinema-4d.js";
+import { BrandCineplex } from "./icons/brand-cineplex.js";
 import { BrandCitymapper } from "./icons/brand-citymapper.js";
+import { BrandCitypulso } from "./icons/brand-citypulso.js";
 import { BrandClaude } from "./icons/brand-claude.js";
 import { BrandCloudflare } from "./icons/brand-cloudflare.js";
 import { BrandClubhouse } from "./icons/brand-clubhouse.js";
@@ -1085,6 +1087,7 @@ import { BrandTwitch } from "./icons/brand-twitch.js";
 import { BrandTwitterX } from "./icons/brand-twitter-x.js";
 import { BrandTwitter } from "./icons/brand-twitter.js";
 import { BrandTypescript } from "./icons/brand-typescript.js";
+import { BrandUberText } from "./icons/brand-uber-text.js";
 import { BrandUber } from "./icons/brand-uber.js";
 import { BrandUbuntu } from "./icons/brand-ubuntu.js";
 import { BrandUnity } from "./icons/brand-unity.js";
@@ -7115,7 +7118,9 @@ export const ICONS: Record<string, PulsoIcon> = {
   "brand-chromecast": BrandChromecast,
   "brand-chromium": BrandChromium,
   "brand-cinema-4d": BrandCinema4d,
+  "brand-cineplex": BrandCineplex,
   "brand-citymapper": BrandCitymapper,
+  "brand-citypulso": BrandCitypulso,
   "brand-claude": BrandClaude,
   "brand-cloudflare": BrandCloudflare,
   "brand-clubhouse": BrandClubhouse,
@@ -7417,6 +7422,7 @@ export const ICONS: Record<string, PulsoIcon> = {
   "brand-twitter-x": BrandTwitterX,
   "brand-typescript": BrandTypescript,
   "brand-uber": BrandUber,
+  "brand-uber-text": BrandUberText,
   "brand-ubuntu": BrandUbuntu,
   "brand-unity": BrandUnity,
   "brand-unsplash": BrandUnsplash,

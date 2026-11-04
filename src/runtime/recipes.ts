@@ -57,7 +57,9 @@ export type RecipeName =
   | "sway"
   | "flicker"
   | "wobble"
-  | "growX";
+  | "growX"
+  | "drawBack"
+  | "drawOut";
 
 const back: Transition = { duration: 0.25, ease: "easeOut" };
 
@@ -70,6 +72,16 @@ export const RECIPES: Record<RecipeName, Recipe> = {
   draw: (p) => ({
     normal: { pathLength: 1, opacity: 1, transition: back },
     animate: { pathLength: [0, 1], opacity: [0, 1], transition: at(p, 0.55, { opacity: { duration: 0.1, delay: p.d } }) },
+  }),
+  /** Stroke draws itself on from its end back to its start (a shaft whose path begins at the arrowhead). */
+  drawBack: (p) => ({
+    normal: { pathLength: 1, pathOffset: 0, opacity: 1, transition: back },
+    animate: { pathLength: [0, 1], pathOffset: [1, 0], opacity: [0, 1], transition: at(p, 0.55, { opacity: { duration: 0.1, delay: p.d } }) },
+  }),
+  /** Stroke grows from its middle towards both ends (a shaft with an arrowhead at each end). */
+  drawOut: (p) => ({
+    normal: { pathLength: 1, pathOffset: 0, opacity: 1, transition: back },
+    animate: { pathLength: [0, 1], pathOffset: [0.5, 0], opacity: [0, 1], transition: at(p, 0.55, { opacity: { duration: 0.1, delay: p.d } }) },
   }),
   /** Stroke erases and redraws from the other end. */
   redraw: (p) => ({

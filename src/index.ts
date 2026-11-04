@@ -6364,7 +6364,9 @@ export { BrandChrome, BrandChrome as BrandChromeIcon, BrandChrome as Chrome, Bra
 export { BrandChromecast, BrandChromecast as BrandChromecastIcon, BrandChromecast as Chromecast, BrandChromecast as ChromecastIcon } from "./icons/brand-chromecast.js";
 export { BrandChromium, BrandChromium as BrandChromiumIcon, BrandChromium as Chromium, BrandChromium as ChromiumIcon } from "./icons/brand-chromium.js";
 export { BrandCinema4d, BrandCinema4d as BrandCinema4dIcon, BrandCinema4d as Cinema4d, BrandCinema4d as Cinema4dIcon } from "./icons/brand-cinema-4d.js";
+export { BrandCineplex, BrandCineplex as BrandCineplexIcon, BrandCineplex as Cineplex, BrandCineplex as CineplexIcon } from "./icons/brand-cineplex.js";
 export { BrandCitymapper, BrandCitymapper as BrandCitymapperIcon, BrandCitymapper as Citymapper, BrandCitymapper as CitymapperIcon } from "./icons/brand-citymapper.js";
+export { BrandCitypulso, BrandCitypulso as BrandCitypulsoIcon, BrandCitypulso as Citypulso, BrandCitypulso as CitypulsoIcon } from "./icons/brand-citypulso.js";
 export { BrandClaude, BrandClaude as BrandClaudeIcon, BrandClaude as Claude, BrandClaude as ClaudeIcon } from "./icons/brand-claude.js";
 export { BrandCloudflare, BrandCloudflare as BrandCloudflareIcon, BrandCloudflare as Cloudflare, BrandCloudflare as CloudflareIcon } from "./icons/brand-cloudflare.js";
 export { BrandClubhouse, BrandClubhouse as BrandClubhouseIcon, BrandClubhouse as Clubhouse, BrandClubhouse as ClubhouseIcon } from "./icons/brand-clubhouse.js";
@@ -6761,6 +6763,7 @@ export { BrandTwitter, BrandTwitter as BrandTwitterIcon, BrandTwitter as Twitter
 export { BrandTwitterX, BrandTwitterX as BrandTwitterXIcon, BrandTwitterX as TwitterX, BrandTwitterX as TwitterXIcon } from "./icons/brand-twitter-x.js";
 export { BrandTypescript, BrandTypescript as BrandTypescriptIcon, BrandTypescript as Typescript, BrandTypescript as TypescriptIcon } from "./icons/brand-typescript.js";
 export { BrandUber, BrandUber as BrandUberIcon, BrandUber as Uber, BrandUber as UberIcon } from "./icons/brand-uber.js";
+export { BrandUberText, BrandUberText as BrandUberTextIcon, BrandUberText as UberText, BrandUberText as UberTextIcon } from "./icons/brand-uber-text.js";
 export { BrandUbuntu, BrandUbuntu as BrandUbuntuIcon, BrandUbuntu as Ubuntu, BrandUbuntu as UbuntuIcon } from "./icons/brand-ubuntu.js";
 export { BrandUnity, BrandUnity as BrandUnityIcon } from "./icons/brand-unity.js";
 export { BrandUnsplash, BrandUnsplash as BrandUnsplashIcon, BrandUnsplash as Unsplash, BrandUnsplash as UnsplashIcon } from "./icons/brand-unsplash.js";
@@ -6986,6 +6989,7 @@ export { BrandAppStore as BrandAppleAppStore, BrandAppStore as BrandAppleAppStor
 export { BrandFacetime as BrandAppleFacetime, BrandFacetime as BrandAppleFacetimeIcon } from "./icons/brand-facetime.js";
 export { BrandSafari as BrandAppleSafari, BrandSafari as BrandAppleSafariIcon } from "./icons/brand-safari.js";
 export { BrandSiri as BrandAppleSiri, BrandSiri as BrandAppleSiriIcon } from "./icons/brand-siri.js";
+export { BrandCitypulso as BrandCityPulso, BrandCitypulso as BrandCityPulsoIcon } from "./icons/brand-citypulso.js";
 export { BrandMicrosoftCopilot as BrandCopilot, BrandMicrosoftCopilot as BrandCopilotIcon } from "./icons/brand-microsoft-copilot.js";
 export { BrandCss3 as BrandCss, BrandCss3 as BrandCssIcon } from "./icons/brand-css3.js";
 export { BrandMessenger as BrandFacebookMessenger, BrandMessenger as BrandFacebookMessengerIcon } from "./icons/brand-messenger.js";
@@ -7006,6 +7010,7 @@ export { BrandStackoverflow as BrandStackOverflow, BrandStackoverflow as BrandSt
 export { BrandAppleSwift as BrandSwift, BrandAppleSwift as BrandSwiftIcon } from "./icons/brand-apple-swift.js";
 export { BrandTailwind as BrandTailwindcss, BrandTailwind as BrandTailwindcssIcon } from "./icons/brand-tailwind.js";
 export { BrandLinux as BrandTux, BrandLinux as BrandTuxIcon } from "./icons/brand-linux.js";
+export { BrandUberText as BrandUberWordmark, BrandUberText as BrandUberWordmarkIcon } from "./icons/brand-uber-text.js";
 export { BrandVscode as BrandVisualStudioCode, BrandVscode as BrandVisualStudioCodeIcon } from "./icons/brand-vscode.js";
 export { BrandVue as BrandVuejs, BrandVue as BrandVuejsIcon } from "./icons/brand-vue.js";
 export { BrandWindowsClassic as BrandWindowsXp, BrandWindowsClassic as BrandWindowsXpIcon } from "./icons/brand-windows-classic.js";
@@ -7046,6 +7051,7 @@ export { ChevronFirst as ChevronLeftPipe, ChevronFirst as ChevronLeftPipeIcon } 
 export { ChevronLast as ChevronRightPipe, ChevronLast as ChevronRightPipeIcon } from "./icons/chevron-last.js";
 export { CircleAlert as CircleExclamationPoint, CircleAlert as CircleExclamationPointIcon } from "./icons/circle-alert.js";
 export { CirclePercent as CirclePercentage, CirclePercent as CirclePercentageIcon } from "./icons/circle-percent.js";
+export { BrandCitypulso as CityPulso, BrandCitypulso as CityPulsoIcon } from "./icons/brand-citypulso.js";
 export { RemoveFormatting as ClearFormatting, RemoveFormatting as ClearFormattingIcon } from "./icons/remove-formatting.js";
 export { MousePointerClick as Click, MousePointerClick as ClickIcon } from "./icons/mouse-pointer-click.js";
 export { ClipboardType as ClipboardTypography, ClipboardType as ClipboardTypographyIcon } from "./icons/clipboard-type.js";

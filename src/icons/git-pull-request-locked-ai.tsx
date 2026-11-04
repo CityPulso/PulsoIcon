@@ -6,7 +6,7 @@ export const GitPullRequestLockedAi = createIcon("GitPullRequestLockedAi", "git-
     ["path", { d: "M4 18a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" }],
     ["path", { d: "M4 6a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" }],
     ["path", { d: "M6 8v8" }],
-    ["path", { d: "M11 6h5a2 2 0 0 1 2 2v3.25" }, { r: "draw" }],
+    ["path", { d: "M11 6h5a2 2 0 0 1 2 2v3.25" }, { r: "drawBack" }],
     ["path", { d: "M14 9l-3 -3l3 -3" }, { r: "slide", x: -1, a: 1.5 }],
     ["path", { d: "M14 21v-4a2 2 0 1 1 4 0v4" }, { r: "draw", d: 0.3 }],
     ["path", { d: "M14 19h4" }, { r: "draw", d: 0.35 }],
