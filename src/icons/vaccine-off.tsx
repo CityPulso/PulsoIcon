@@ -11,4 +11,13 @@ export const VaccineOff = createIcon("VaccineOff", "vaccine-off", {
     ["path", { d: "M3 21l3 -3" }, { r: "press", a: 0.1, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "m18 2 4 4", fill: "none" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "m17 7 3-3", fill: "none" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "m9 11 4 4" }, { r: "press", a: 0.1, o: [12, 12] }, "line"],
+    ["path", { d: "m5 19-3 3", fill: "none" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "m14 4 6 6", fill: "none" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

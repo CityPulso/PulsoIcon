@@ -8,4 +8,10 @@ export const AspectRatioOff = createIcon("AspectRatioOff", "aspect-ratio-off", {
     ["path", { d: "M17 12v1m-2 2h-1" }, { r: "slide", x: 0.7, y: 0.7, a: 1, o: [16, 14] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" }],
+    ["path", { d: "M7 12v-3h3" }, { r: "slide", x: -0.7, y: -0.7, a: 1, o: [8, 10] }, "line"],
+    ["path", { d: "M17 12v3h-3" }, { r: "slide", x: 0.7, y: 0.7, a: 1, o: [16, 14] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

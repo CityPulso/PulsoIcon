@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const ArrowDownZA = createIcon("ArrowDownZA", "arrow-down-z-a", {
+  text: true,
   nodes: [
     ["path", { d: "m3 16 4 4 4-4" }, { r: "bounce", y: 1, a: 2, o: [7, 12] }],
     ["path", { d: "M7 4v16" }, { r: "bounce", y: 1, a: 2, o: [7, 12] }],

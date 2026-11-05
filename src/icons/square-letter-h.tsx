@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const SquareLetterH = createIcon("SquareLetterH", "square-letter-h", {
+  text: true,
   nodes: [
     ["path", { d: "M9 16V8" }, { r: "grow", d: 0.05, o: [9, 12] }],
     ["path", { d: "M15 16V8" }, { r: "grow", d: 0.13, o: [15, 12] }],

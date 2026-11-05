@@ -12,4 +12,15 @@ export const MovieOff = createIcon("MovieOff", "movie-off", {
     ["path", { d: "M16 8h4" }, { r: "blink", o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2" }, { r: "blink", o: [12, 12] }],
+    ["path", { d: "M7 3v18" }, { r: "blink", o: [12, 12] }, "line"],
+    ["path", { d: "M3 7.5h4" }, { r: "blink", o: [12, 12] }, "line"],
+    ["path", { d: "M3 12h18" }, { r: "blink", o: [12, 12] }, "line"],
+    ["path", { d: "M3 16.5h4" }, { r: "blink", o: [12, 12] }, "line"],
+    ["path", { d: "M17 3v18" }, { r: "blink", o: [12, 12] }, "line"],
+    ["path", { d: "M17 7.5h4" }, { r: "blink", o: [12, 12] }, "line"],
+    ["path", { d: "M17 16.5h4" }, { r: "blink", o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

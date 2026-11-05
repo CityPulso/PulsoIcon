@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "octagon-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+// Solid from Tabler Icons "octagon" filled (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const OctagonOff = createIcon("OctagonOff", "octagon-off", {
   nodes: [
     [
@@ -18,5 +19,16 @@ export const OctagonOff = createIcon("OctagonOff", "octagon-off", {
       { r: "turn", a: 45, o: [12, 12] },
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
+  ],
+  solid: [
+    [
+      "path",
+      {
+        d: "M14.899 2c.796 0 1.558 .316 2.121 .879l4.101 4.1c.563 .563 .879 1.325 .879 2.122v5.798c0 .796 -.316 1.558 -.879 2.121l-4.101 4.101c-.563 .563 -1.325 .879 -2.121 .879h-5.798c-.796 0 -1.558 -.316 -2.122 -.879l-4.1 -4.101c-.563 -.563 -.879 -1.325 -.879 -2.121v-5.798c0 -.796 .316 -1.558 .879 -2.122l4.1 -4.1c.563 -.563 1.325 -.879 2.122 -.879h5.798z",
+        stroke: "none",
+      },
+      { r: "turn", a: 45, o: [12, 12] },
+    ],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
   ],
 });

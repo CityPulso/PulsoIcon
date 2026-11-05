@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Euro = createIcon("Euro", "euro", {
+  text: true,
   nodes: [
     ["path", { d: "M4 10h12" }, { r: "growX", d: 0.2, o: [4, 10] }],
     ["path", { d: "M4 14h9" }, { r: "growX", d: 0.28, o: [4, 14] }],

@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "file-type-tsx" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const FileTypeTsx = createIcon("FileTypeTsx", "file-type-tsx", {
+  text: true,
   nodes: [
     ["path", { d: "M5 12v-7a2 2 0 0 1 2 -2h7l5 5v4" }],
     ["path", { d: "M14 3v4a1 1 0 0 0 1 1h4" }],

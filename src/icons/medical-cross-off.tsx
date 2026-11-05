@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "medical-cross-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+// Solid from Tabler Icons "medical-cross" filled (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const MedicalCrossOff = createIcon("MedicalCrossOff", "medical-cross-off", {
   nodes: [
     [
@@ -11,5 +12,16 @@ export const MedicalCrossOff = createIcon("MedicalCrossOff", "medical-cross-off"
       { r: "turn", a: 60, o: [12, 12] },
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
+  ],
+  solid: [
+    [
+      "path",
+      {
+        d: "M11 2l-.15 .005a2 2 0 0 0 -1.85 1.995v2.803l-2.428 -1.401a2 2 0 0 0 -2.732 .732l-1 1.732l-.073 .138a2 2 0 0 0 .805 2.594l2.427 1.402l-2.427 1.402a2 2 0 0 0 -.732 2.732l1 1.732l.083 .132a2 2 0 0 0 2.649 .6l2.428 -1.402v2.804a2 2 0 0 0 2 2h2l.15 -.005a2 2 0 0 0 1.85 -1.995v-2.804l2.428 1.403a2 2 0 0 0 2.732 -.732l1 -1.732l.073 -.138a2 2 0 0 0 -.805 -2.594l-2.428 -1.403l2.428 -1.402a2 2 0 0 0 .732 -2.732l-1 -1.732l-.083 -.132a2 2 0 0 0 -2.649 -.6l-2.428 1.4v-2.802a2 2 0 0 0 -2 -2h-2z",
+        stroke: "none",
+      },
+      { r: "turn", a: 60, o: [12, 12] },
+    ],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
   ],
 });

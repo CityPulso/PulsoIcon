@@ -8,4 +8,10 @@ export const RainbowOff = createIcon("RainbowOff", "rainbow-off", {
     ["path", { d: "M14 17a2 2 0 1 0 -4 0" }, { r: "draw", d: 0.16 }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M22 17a10 10 0 0 0-20 0" }, { r: "draw", d: 0 }],
+    ["path", { d: "M6 17a6 6 0 0 1 12 0" }, { r: "draw", d: 0.08 }, "cut"],
+    ["path", { d: "M10 17a2 2 0 0 1 4 0" }, { r: "draw", d: 0.16 }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

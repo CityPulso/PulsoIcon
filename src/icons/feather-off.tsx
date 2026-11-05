@@ -12,4 +12,10 @@ export const FeatherOff = createIcon("FeatherOff", "feather-off", {
     ["path", { d: "M11 18l3.499 -3.499m2.008 -2.008l2.493 -2.493" }, { r: "sway", a: 6, o: [5, 19] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M14.086 18.412A2 2 0 0112.67 19H5v-7.672a2 2 0 01.586-1.414L11.75 3.75a6 6 0 118.49 8.49z" }, { r: "sway", a: 6, o: [5, 19] }],
+    ["path", { d: "M16 8 2 22" }, { r: "draw" }, "line"],
+    ["path", { d: "M17.488 15H9" }, { r: "sway", a: 6, o: [5, 19] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "alphabet-devanagari" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const AlphabetDevanagari = createIcon("AlphabetDevanagari", "alphabet-devanagari", {
+  text: true,
   nodes: [
     ["path", { d: "M4 5h16" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M16 5v14" }, { r: "draw", d: 0.12 }],

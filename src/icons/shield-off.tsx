@@ -1,5 +1,6 @@
 import { createIcon } from "../runtime/createIcon.js";
 
+// Solid from Tabler Icons "shield" filled (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const ShieldOff = createIcon("ShieldOff", "shield-off", {
   nodes: [
     ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.1, o: [12, 12] }],
@@ -9,5 +10,16 @@ export const ShieldOff = createIcon("ShieldOff", "shield-off", {
       { d: "M9.309 3.652A12.252 12.252 0 0 0 11.24 2.28a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v7a9.784 9.784 0 0 1-.08 1.264" },
       { r: "press", a: 0.05, o: [12, 12.001] },
     ],
+  ],
+  solid: [
+    [
+      "path",
+      {
+        d: "M11.884 2.007l.114 -.007l.118 .007l.059 .008l.061 .013l.111 .034a.993 .993 0 0 1 .217 .112l.104 .082l.255 .218a11 11 0 0 0 7.189 2.537l.342 -.01a1 1 0 0 1 1.005 .717a13 13 0 0 1 -9.208 16.25a1 1 0 0 1 -.502 0a13 13 0 0 1 -9.209 -16.25a1 1 0 0 1 1.005 -.717a11 11 0 0 0 7.531 -2.527l.263 -.225l.096 -.075a.993 .993 0 0 1 .217 -.112l.112 -.034a.97 .97 0 0 1 .119 -.021z",
+        stroke: "none",
+      },
+      { r: "press", a: 0.05, o: [12, 12.001] },
+    ],
+    ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.1, o: [12, 12] }, "line"],
   ],
 });

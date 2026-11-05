@@ -7,4 +7,9 @@ export const DeviceIpadOff = createIcon("DeviceIpadOff", "device-ipad-off", {
     ["path", { d: "M9 19h6" }, { r: "tilt", a: 5, o: [12, 22] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["rect", { width: "16", height: "20", x: "4", y: "2", rx: "2", ry: "2" }, { r: "tilt", a: 5, o: [12, 22] }],
+    ["line", { x1: "12", x2: "12.01", y1: "18", y2: "18" }, { r: "tilt", a: 5, o: [12, 22] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

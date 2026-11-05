@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "square-rounded-number-8" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const SquareRoundedNumber8 = createIcon("SquareRoundedNumber8", "square-rounded-number-8", {
+  text: true,
   nodes: [
     [
       "path",

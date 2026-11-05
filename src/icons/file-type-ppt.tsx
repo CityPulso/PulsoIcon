@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "file-type-ppt" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const FileTypePpt = createIcon("FileTypePpt", "file-type-ppt", {
+  text: true,
   nodes: [
     ["path", { d: "M14 3v4a1 1 0 0 0 1 1h4" }],
     ["path", { d: "M14 3v4a1 1 0 0 0 1 1h4" }],

@@ -9,4 +9,12 @@ export const AccessPointOff = createIcon("AccessPointOff", "access-point-off", {
     ["path", { d: "M9.168 14.828a4 4 0 0 1 0 -5.656" }, { r: "pulse", a: 0.12, o: [12, 12] }],
     ["path", { d: "M6.337 17.657a8 8 0 0 1 0 -11.314" }, { r: "pulse", d: 0.12, a: 0.12, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M12 12l0 .01", fill: "none" }, { r: "pulse", a: 0.12, o: [12, 12] }],
+    ["path", { d: "M14.828 9.172a4 4 0 0 1 0 5.656", fill: "none" }, { r: "pulse", a: 0.12, o: [12, 12] }],
+    ["path", { d: "M17.657 6.343a8 8 0 0 1 0 11.314", fill: "none" }, { r: "pulse", d: 0.12, a: 0.12, o: [12, 12] }],
+    ["path", { d: "M9.168 14.828a4 4 0 0 1 0 -5.656", fill: "none" }, { r: "pulse", a: 0.12, o: [12, 12] }],
+    ["path", { d: "M6.337 17.657a8 8 0 0 1 0 -11.314", fill: "none" }, { r: "pulse", d: 0.12, a: 0.12, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

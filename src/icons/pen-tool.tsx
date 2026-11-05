@@ -1,5 +1,6 @@
 import { createIcon } from "../runtime/createIcon.js";
 
+// Solid from Phosphor Icons "pen-nib" fill (MIT, Copyright (c) 2023 Phosphor Icons).
 export const PenTool = createIcon("PenTool", "pen-tool", {
   nodes: [
     [
@@ -14,5 +15,15 @@ export const PenTool = createIcon("PenTool", "pen-tool", {
     ],
     ["path", { d: "m3 3 6.586 6.586" }, { r: "tilt", a: 12, o: [21, 21] }],
     ["circle", { cx: "11", cy: "11", r: "2" }, { r: "tilt", a: 12, o: [21, 21] }],
+  ],
+  solid: [
+    [
+      "path",
+      {
+        d: "M22.81 7.627 16.372 1.189a1.5 1.5 0 0 0-2.122 0L11.584 3.855l-5.438 2.04A1.5 1.5 0 0 0 5.19 7.053L3.243 18.734a0.375 0.375 0 0 0 0.635 0.327l5.344-5.344a2.236 2.236 0 0 1-0.215-1.133 2.25 2.25 0 1 1 1.275 2.194l-5.344 5.344a0.375 0.375 0 0 0 0.327 0.635l11.682-1.947a1.5 1.5 0 0 0 1.158-0.953l2.041-5.444L22.81 9.75a1.5 1.5 0 0 0 0-2.122ZM19.5 10.939 13.061 4.5l2.25-2.25L21.75 8.689Z",
+        stroke: "none",
+      },
+      { r: "tilt", a: 12, o: [21, 21] },
+    ],
   ],
 });

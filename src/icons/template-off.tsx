@@ -10,4 +10,12 @@ export const TemplateOff = createIcon("TemplateOff", "template-off", {
     ["path", { d: "M14 20h6" }, { r: "growX", d: 0.16, o: [14, 16] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M4 5a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1l0 -2" }, { r: "growX", o: [4, 6] }],
+    ["path", { d: "M4 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1l0 -6" }, { r: "pop", d: 0.08, o: [7, 16] }],
+    ["path", { d: "M14 12l6 0", fill: "none" }, { r: "growX", d: 0.16, o: [14, 16] }],
+    ["path", { d: "M14 16l6 0", fill: "none" }, { r: "growX", d: 0.16, o: [14, 16] }],
+    ["path", { d: "M14 20l6 0", fill: "none" }, { r: "growX", d: 0.16, o: [14, 16] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

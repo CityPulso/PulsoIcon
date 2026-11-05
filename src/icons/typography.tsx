@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "typography" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const Typography = createIcon("Typography", "typography", {
+  text: true,
   nodes: [
     ["path", { d: "M4 20l3 0" }, { r: "growX", d: 0.4, o: [4, 20] }],
     ["path", { d: "M14 20l7 0" }, { r: "growX", d: 0.4, o: [14, 20] }],

@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "http-trace" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const HttpTrace = createIcon("HttpTrace", "http-trace", {
+  text: true,
   nodes: [
     ["path", { d: "M3 8h4" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M5 8v8" }, { r: "draw", d: 0.0 }],

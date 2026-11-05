@@ -13,4 +13,9 @@ export const CylinderOff = createIcon("CylinderOff", "cylinder-off", {
     ["path", { d: "M5 6v12c0 1.657 3.134 3 7 3c3.245 0 5.974 -.946 6.767 -2.23m.233 -3.77v-9" }, { r: "jelly", o: [12, 21] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["ellipse", { cx: "12", cy: "5", rx: "9", ry: "3" }, { r: "jelly", o: [12, 21] }],
+    ["path", { d: "M3 5v14a9 3 0 0 0 18 0V5", fill: "none" }, { r: "jelly", o: [12, 21] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

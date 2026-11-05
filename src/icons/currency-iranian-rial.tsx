@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "currency-iranian-rial" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CurrencyIranianRial = createIcon("CurrencyIranianRial", "currency-iranian-rial", {
+  text: true,
   nodes: [
     ["path", { d: "M9 4v9a2 2 0 0 1 -2 2h-1a3 3 0 0 1 -3 -3v-1" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M12 5v8a1 1 0 0 0 1 1h1a2 2 0 0 0 2 -2v-1" }, { r: "draw", d: 0.1 }],

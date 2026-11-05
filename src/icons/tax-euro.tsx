@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "tax-euro" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const TaxEuro = createIcon("TaxEuro", "tax-euro", {
+  text: true,
   nodes: [
     [
       "path",

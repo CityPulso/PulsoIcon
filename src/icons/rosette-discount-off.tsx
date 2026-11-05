@@ -15,4 +15,15 @@ export const RosetteDiscountOff = createIcon("RosetteDiscountOff", "rosette-disc
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    [
+      "path",
+      { d: "M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" },
+      { r: "spin", a: 45, o: [12, 12] },
+    ],
+    ["path", { d: "m15 9-6 6" }, { r: "draw", d: 0.1, o: [12, 12] }, "line"],
+    ["path", { d: "M9 9h.01" }, { r: "pop", d: 0.2, o: [9.5, 9.5] }, "line"],
+    ["path", { d: "M15 15h.01" }, { r: "pop", d: 0.3, o: [14.5, 14.5] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

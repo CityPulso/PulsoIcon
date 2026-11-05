@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Iconoir "svg-format" (MIT, Copyright (c) 2021 Luca Burgio).
 export const SvgFormat = createIcon("SvgFormat", "svg-format", {
+  text: true,
   nodes: [
     [
       "path",

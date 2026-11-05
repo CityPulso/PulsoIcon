@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "circle-dashed-letter-l" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CircleDashedLetterL = createIcon("CircleDashedLetterL", "circle-dashed-letter-l", {
+  text: true,
   nodes: [
     ["path", { d: "M10 8v8h4" }, { r: "draw", d: 0.1 }],
     ["path", { d: "M8.56 3.69a9 9 0 0 0 -2.92 1.95" }, { r: "spin", a: 45, o: [12, 12] }],

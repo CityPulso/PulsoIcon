@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "box-multiple-7" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const BoxMultiple7 = createIcon("BoxMultiple7", "box-multiple-7", {
+  text: true,
   nodes: [
     ["path", { d: "M7 5a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2l0 -10" }],
     ["path", { d: "M12 6h4l-2 8" }, { r: "draw", d: 0.15 }],

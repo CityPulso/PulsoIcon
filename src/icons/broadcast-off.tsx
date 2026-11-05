@@ -8,4 +8,10 @@ export const BroadcastOff = createIcon("BroadcastOff", "broadcast-off", {
     ["path", { d: "M12 12a1 1 0 1 0 1 1" }, { r: "pop", o: [12, 12.5] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M18.364 19.364a9 9 0 1 0 -12.728 0", fill: "none" }, { r: "fade", d: 0.16, o: [12, 12.5] }],
+    ["path", { d: "M15.536 16.536a5 5 0 1 0 -7.072 0", fill: "none" }, { r: "fade", d: 0.08, o: [12, 12.5] }],
+    ["path", { d: "M11 13a1 1 0 1 0 2 0a1 1 0 1 0 -2 0", fill: "none" }, { r: "pop", o: [12, 12.5] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

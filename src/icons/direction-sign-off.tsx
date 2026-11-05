@@ -14,4 +14,16 @@ export const DirectionSignOff = createIcon("DirectionSignOff", "direction-sign-o
     ["path", { d: "M13.748 13.752l-1.748 1.748" }, { r: "slide", x: 1, a: 1.5 }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    [
+      "path",
+      {
+        d: "M3.32 12.774l7.906 7.905c.427 .428 1.12 .428 1.548 0l7.905 -7.905a1.095 1.095 0 0 0 0 -1.548l-7.905 -7.905a1.095 1.095 0 0 0 -1.548 0l-7.905 7.905a1.095 1.095 0 0 0 0 1.548",
+      },
+      { r: "swing", o: [12, 21] },
+    ],
+    ["path", { d: "M8 12h7.5" }, { r: "slide", x: 1, a: 1.5 }, "line"],
+    ["path", { d: "M12 8.5l3.5 3.5l-3.5 3.5" }, { r: "slide", x: 1, a: 1.5 }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

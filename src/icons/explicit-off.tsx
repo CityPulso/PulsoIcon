@@ -8,4 +8,10 @@ export const ExplicitOff = createIcon("ExplicitOff", "explicit-off", {
     ["path", { d: "M12 12h-2" }, { r: "draw" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M4 5a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1l0 -14" }],
+    ["path", { d: "M14 8h-4v8h4" }, { r: "draw" }, "line"],
+    ["path", { d: "M14 12h-4" }, { r: "draw" }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

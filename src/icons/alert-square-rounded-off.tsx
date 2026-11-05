@@ -13,4 +13,10 @@ export const AlertSquareRoundedOff = createIcon("AlertSquareRoundedOff", "alert-
     ["path", { d: "M12 16h.01" }, { r: "pop", d: 0.1, o: [12, 16] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9" }],
+    ["path", { d: "M12 8v4" }, { r: "draw" }, "line"],
+    ["path", { d: "M12 16h.01" }, { r: "pop", d: 0.1, o: [12, 16] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

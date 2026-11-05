@@ -10,4 +10,12 @@ export const IdOff = createIcon("IdOff", "id-off", {
     ["path", { d: "M7 16h9" }, { r: "growX", d: 0.16, o: [7, 16] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M13 19a4 4 0 00-8 0" }, { r: "growX", d: 0.16, o: [7, 16] }, "cut"],
+    ["path", { d: "M16 10h2" }, { r: "growX", d: 0.08, o: [15, 8] }, "line"],
+    ["path", { d: "M16 14h2" }, { r: "growX", d: 0.12, o: [16, 12] }, "line"],
+    ["circle", { cx: "9", cy: "12", r: "3" }, { r: "pop", o: [9.5, 10] }, "cut"],
+    ["rect", { x: "2", y: "5", width: "20", height: "14", rx: "2" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

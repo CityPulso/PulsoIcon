@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "hexagon-letter-z" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const HexagonLetterZ = createIcon("HexagonLetterZ", "hexagon-letter-z", {
+  text: true,
   nodes: [
     [
       "path",

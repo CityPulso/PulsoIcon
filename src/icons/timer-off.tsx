@@ -8,4 +8,10 @@ export const TimerOff = createIcon("TimerOff", "timer-off", {
     ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.1, o: [12, 12] }],
     ["path", { d: "M12 12v-2" }, { r: "fade", o: [12.006, 12.007] }],
   ],
+  solid: [
+    ["line", { x1: "10", x2: "14", y1: "2", y2: "2", fill: "none" }, { r: "fade", o: [12.006, 12.007] }],
+    ["line", { x1: "12", x2: "15", y1: "14", y2: "11" }, { r: "fade", o: [12.006, 12.007] }, "line"],
+    ["circle", { cx: "12", cy: "14", r: "8" }, { r: "fade", o: [12.006, 12.007] }],
+    ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.1, o: [12, 12] }, "line"],
+  ],
 });

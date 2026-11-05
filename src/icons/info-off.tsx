@@ -8,4 +8,10 @@ export const InfoOff = createIcon("InfoOff", "info-off", {
     ["path", { d: "M12 17v-2" }, { r: "grow", d: 0.2, o: [12, 17] }],
     ["path", { d: "M12 8h.01" }, { r: "drop", d: 0.15, o: [12.005, 8] }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }, { r: "fade", o: [12, 12] }],
+    ["path", { d: "M12 16v-4" }, { r: "grow", d: 0.2, o: [12, 17] }, "line"],
+    ["path", { d: "M12 8h.01" }, { r: "drop", d: 0.15, o: [12.005, 8] }, "line"],
+    ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.1, o: [12, 12] }, "line"],
+  ],
 });

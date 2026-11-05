@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "photo-ai" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const ImageAi = createIcon("ImageAi", "image-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M15 8h.01" }],
     ["path", { d: "M10 21h-4a3 3 0 0 1 -3 -3v-12a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v5" }],

@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Ad = createIcon("Ad", "ad", {
+  text: true,
   nodes: [
     ["path", { d: "M10 13H6" }, { r: "draw", o: [8, 12] }],
     ["path", { d: "M10 15v-4a2 2 0 0 0-4 0v4" }, { r: "draw", d: 0.1, o: [8, 12] }],

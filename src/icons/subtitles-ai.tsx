@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "subtitles-ai" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const SubtitlesAi = createIcon("SubtitlesAi", "subtitles-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M11.5 19h-5.5a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4" }],
     ["path", { d: "M7 15h5" }, { r: "growX", o: [7, 15] }],

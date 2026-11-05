@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const CircleLetterK = createIcon("CircleLetterK", "circle-letter-k", {
+  text: true,
   nodes: [
     ["path", { d: "M9 16V8" }, { r: "grow", d: 0.1, o: [9, 12] }],
     ["path", { d: "m11 12 4 4" }, { r: "draw", d: 0.2, o: [12, 12] }],

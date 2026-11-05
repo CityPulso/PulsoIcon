@@ -9,4 +9,12 @@ export const StethoscopeOff = createIcon("StethoscopeOff", "stethoscope-off", {
     ["path", { d: "M18 10a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }, { r: "beat", o: [20, 10] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M11 2v2", fill: "none" }],
+    ["path", { d: "M5 2v2", fill: "none" }],
+    ["path", { d: "M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1", fill: "none" }],
+    ["path", { d: "M8 15a6 6 0 0 0 12 0v-3", fill: "none" }, { r: "sway", a: 4, o: [8, 15] }],
+    ["circle", { cx: "20", cy: "10", r: "2" }, { r: "beat", o: [20, 10] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

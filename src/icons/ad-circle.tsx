@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "ad-circle" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const AdCircle = createIcon("AdCircle", "ad-circle", {
+  text: true,
   nodes: [
     ["path", { d: "M2 12a10 10 0 1 0 20 0a10 10 0 1 0 -20 0" }, { r: "press", a: 0.05, o: [12, 12] }],
     ["path", { d: "M7 15v-4.5a1.5 1.5 0 0 1 3 0v4.5" }, { r: "draw" }],

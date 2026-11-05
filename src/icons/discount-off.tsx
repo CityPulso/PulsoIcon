@@ -9,4 +9,11 @@ export const DiscountOff = createIcon("DiscountOff", "discount-off", {
     ["path", { d: "M5.641 5.631a9 9 0 1 0 12.719 12.738m1.68 -2.318a9 9 0 0 0 -12.074 -12.098" }, { r: "wobble", a: 4, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }, { r: "wobble", a: 4, o: [12, 12] }],
+    ["path", { d: "m15 9-6 6" }, { r: "draw", d: 0.1, o: [12, 12] }, "line"],
+    ["path", { d: "M9 9h.01" }, { r: "pop", d: 0.2, o: [9.5, 9.5] }, "line"],
+    ["path", { d: "M15 15h.01" }, { r: "pop", d: 0.3, o: [14.5, 14.5] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

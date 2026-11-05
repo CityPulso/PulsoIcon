@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "scan-letter-a" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const ScanLetterA = createIcon("ScanLetterA", "scan-letter-a", {
+  text: true,
   nodes: [
     ["path", { d: "M9 16v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" }, { r: "draw", d: 0.1 }],
     ["path", { d: "M9 13h6" }, { r: "draw", d: 0.22 }],

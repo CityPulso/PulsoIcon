@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "currency-renminbi" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CurrencyRenminbi = createIcon("CurrencyRenminbi", "currency-renminbi", {
+  text: true,
   nodes: [
     ["path", { d: "M15 9v8a2 2 0 1 0 4 0" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M19 9h-14" }, { r: "draw", d: 0.1 }],

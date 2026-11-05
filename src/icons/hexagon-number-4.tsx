@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "hexagon-number-4" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const HexagonNumber4 = createIcon("HexagonNumber4", "hexagon-number-4", {
+  text: true,
   nodes: [
     [
       "path",

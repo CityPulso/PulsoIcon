@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Drawn after Phosphor Icons "file-type-py" (MIT, Copyright (c) 2023 Phosphor Icons).
 export const FileTypePy = createIcon("FileTypePy", "file-type-py", {
+  text: true,
   nodes: [
     ["path", { d: "M5 11V4a2 2 0 0 1 2-2h7l5 5v13a2 2 0 0 1-2 2h-1" }],
     ["path", { d: "M14 2v4a1 1 0 0 0 1 1h4" }],

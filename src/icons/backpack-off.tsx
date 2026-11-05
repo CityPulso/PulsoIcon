@@ -8,4 +8,12 @@ export const BackpackOff = createIcon("BackpackOff", "backpack-off", {
     ["path", { d: "M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" }, { r: "sway", a: 4, o: [12, 4] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" }, { r: "sway", a: 4, o: [12, 4] }],
+    ["path", { d: "M8 10h8" }, { r: "sway", a: 4, o: [12, 4] }, "line"],
+    ["path", { d: "M8 18h8" }, { r: "sway", a: 4, o: [12, 4] }, "line"],
+    ["path", { d: "M8 22v-6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6" }, { r: "sway", a: 4, o: [12, 4] }, "cut"],
+    ["path", { d: "M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2", fill: "none" }, { r: "sway", a: 4, o: [12, 4] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

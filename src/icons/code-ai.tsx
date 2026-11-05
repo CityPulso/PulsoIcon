@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "code-ai" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CodeAi = createIcon("CodeAi", "code-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M7 8l-4 4l4 4" }, { r: "slide", x: -1, y: 0, a: 1 }],
     ["path", { d: "M17 8l3.111 3.111" }, { r: "slide", x: 1, y: 0, a: 1 }],

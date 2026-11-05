@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "currency-kip" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CurrencyKip = createIcon("CurrencyKip", "currency-kip", {
+  text: true,
   nodes: [
     ["path", { d: "M6 12h12" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M9 5v14" }, { r: "draw", d: 0.1 }],

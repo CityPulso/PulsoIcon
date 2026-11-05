@@ -15,4 +15,14 @@ export const ShoppingBasketOff = createIcon("ShoppingBasketOff", "shopping-baske
     ["path", { d: "M12 12a2 2 0 1 0 2 2" }, { r: "bounce", y: -1, a: 1, o: [12, 15] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "m15 11-1 9", fill: "none" }, { r: "bounce", y: -1, a: 1, o: [12, 15] }],
+    ["path", { d: "m19 11-4-7", fill: "none" }, { r: "bounce", y: -1, a: 1, o: [12, 15] }],
+    ["path", { d: "M2 11h20", fill: "none" }, { r: "bounce", y: -1, a: 1, o: [12, 15] }],
+    ["path", { d: "m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4", fill: "none" }, { r: "bounce", y: -1, a: 1, o: [12, 15] }],
+    ["path", { d: "M4.5 15.5h15", fill: "none" }, { r: "bounce", y: -1, a: 1, o: [12, 15] }],
+    ["path", { d: "m5 11 4-7", fill: "none" }, { r: "bounce", y: -1, a: 1, o: [12, 15] }],
+    ["path", { d: "m9 11 1 9", fill: "none" }, { r: "bounce", y: -1, a: 1, o: [12, 15] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Display4k = createIcon("Display4k", "display-4k", {
+  text: true,
   nodes: [
     ["rect", { width: "20", height: "14", x: "2", y: "3", rx: "2" }, { r: "press", a: 0.04, o: [12, 10] }],
     ["path", { d: "M12 17v4" }, { r: "grow", d: 0.05, o: [12, 17] }],

@@ -89,10 +89,15 @@ Tabler icon names work too, without the `Icon` prefix: `IconMoodSad` is `MoodSad
 | Prop | Type | Default | Description |
 |---|---|---|---|
 | `size` | `number \| string` | `24` | Width and height |
-| `color` | `string` | `currentColor` | Stroke colour |
+| `color` | `string` | `currentColor` | Stroke colour, and fill colour when `solid` |
 | `strokeWidth` | `number \| string` | `2` | Stroke width on the 24-unit grid |
 | `absoluteStrokeWidth` | `boolean` | `false` | Keep the stroke the same number of pixels at any size |
-| `animated` | `boolean` | `true` | `false` keeps the icon still on hover; the ref still plays it |
+| `solid` | `boolean` | `false` | Filled icon instead of outline (see [Solid icons](#solid-icons)) |
+| `animated` | `boolean` | `true` | `false` makes the icon fully static: nothing plays it, not even the ref or `play` |
+| `autoAnimated` | `boolean` | `true` | Play the built-in hover / focus trigger. `false` turns that off; the ref and `play` still work |
+| `play` | `boolean` | | `true` plays the motion, `false` returns to rest. Works with or without `autoAnimated` |
+
+`autoAnimated` and `play` only exist while the icon can animate, so TypeScript rejects `<Bell animated={false} play />`. Wrapper components that drop a prop should use the exported `DistributiveOmit<IconProps, "size">` instead of `Omit`, which would lose that check.
 
 Any other SVG attribute (`className`, `style`, `aria-label`, …) is passed to the `<svg>`. Icons render with `aria-hidden="true"`; give the surrounding button or link a label.
 
@@ -110,7 +115,7 @@ Any other element can become the trigger with `data-icon-trigger`:
 
 ### Play from code
 
-Every icon forwards a ref with `startAnimation()` and `stopAnimation()`. Both return a promise that resolves when the motion has finished, so you can `await check.current?.startAnimation()` before moving on:
+Every icon forwards a ref with `startAnimation()` and `stopAnimation()`. Both return a promise that resolves when the motion has finished, so you can `await check.current?.startAnimation()` before moving on. Set `autoAnimated={false}` when only your code should decide when it plays:
 
 ```tsx
 import { useRef } from "react";
@@ -120,11 +125,29 @@ function SaveButton() {
   const check = useRef<IconHandle>(null);
   return (
     <button onClick={() => check.current?.startAnimation()}>
-      <Check ref={check} animated={false} /> Save
+      <Check autoAnimated={false} ref={check} /> Save
     </button>
   );
 }
 ```
+
+Or drive it from state with `play`. The motion starts when `play` turns `true` and returns to rest when it turns `false`:
+
+```tsx
+<Bell autoAnimated={false} play={hasNewMessage} />
+```
+
+`animated={false}` keeps an icon completely still; the ref and `play` do nothing.
+
+## Solid icons
+
+`solid` draws the filled version of an icon, in `color`:
+
+```tsx
+<Heart solid color="crimson" />
+```
+
+About 1,700 icons have a filled drawing taken from the [Tabler](https://tabler.io/icons) filled set or the [Phosphor](https://phosphoricons.com) fill weight. Their source file has a `solid` list and a "Solid from …" comment. The other icons fill their closed outline shapes and cut their inner lines out of the fill, so the details stay visible. Motions that draw a stroke on (`draw`, `redraw`, …) pop in instead on filled shapes.
 
 ## Finding icons
 
@@ -197,6 +220,7 @@ PulsoIcon is open source under the [ISC license](./LICENSE) © CityPulso.
 | Shapes of the icons marked "Adapted from Iconoir" | Based on [Iconoir](https://iconoir.com) (MIT) |
 | Five icons marked "Adapted from Hugeicons" | Adapted from [Hugeicons](https://hugeicons.com) (MIT) |
 | Icons marked "Drawn after Phosphor Icons" | Redrawn after [Phosphor](https://phosphoricons.com) shapes (MIT) |
+| Solid shapes marked "Solid from Tabler Icons" / "Solid from Phosphor Icons" | Taken from the Tabler filled set and the Phosphor fill weight (MIT) |
 | Brand icons marked "Drawn after Simple Icons" | Drawn after the logos collected by [Simple Icons](https://simpleicons.org) (CC0) |
 
 Icons based on or drawn after Tabler Icons, Iconoir, Hugeicons, Phosphor or Simple Icons name their source in a comment at the top of their file; the Lucide icons keep their Lucide names. The full license texts are in [LICENSE](./LICENSE).

@@ -24,4 +24,14 @@ export const UfoOff = createIcon("UfoOff", "ufo-off", {
     ["path", { d: "M17 13h.01" }, { r: "flicker" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["ellipse", { cx: "12", cy: "13", rx: "10", ry: "3.5" }, { r: "float", y: -1, a: 1 }],
+    ["path", { d: "M7 10a5 5 0 0 1 10 0" }, { r: "float", y: -1, a: 1 }],
+    ["path", { d: "M7 13h 0.01" }, { r: "flicker" }, "line"],
+    ["path", { d: "M12 13.5h 0.01" }, { r: "flicker" }, "line"],
+    ["path", { d: "M17 13h 0.01" }, { r: "flicker" }, "line"],
+    ["path", { d: "M9 19L7.5 21", fill: "none" }, { r: "float", y: -1, a: 1 }],
+    ["path", { d: "M15 19l 1.5 2", fill: "none" }, { r: "float", y: -1, a: 1 }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

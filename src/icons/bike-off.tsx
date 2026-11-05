@@ -9,4 +9,11 @@ export const BikeOff = createIcon("BikeOff", "bike-off", {
     ["path", { d: "M16 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "bounce", d: 0.05, x: 0, y: -1, a: 1 }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["circle", { cx: "18.5", cy: "17.5", r: "3.5" }, { r: "spin", d: 0, o: [19, 18] }],
+    ["circle", { cx: "5.5", cy: "17.5", r: "3.5" }, { r: "spin", d: 0, o: [5, 18] }],
+    ["circle", { cx: "15", cy: "5", r: "1" }, { r: "bounce", d: 0.05, x: 0, y: -1, a: 1 }],
+    ["path", { d: "M12 17.5V14l-3-3 4-3 2 3h2", fill: "none" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

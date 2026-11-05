@@ -13,4 +13,11 @@ export const HeadsetOff = createIcon("HeadsetOff", "headset-off", {
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M3 11h 3 a 2 2 0 0 1 2 2 v 3 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 v -5 Z" }, { r: "pulse", a: 0.04, o: [12, 13] }],
+    ["path", { d: "M3 11a 9 9 0 1 1 18 0" }, { r: "pulse", a: 0.04, o: [12, 13] }],
+    ["path", { d: "M21 11v 5 a 2 2 0 0 1 -2 2 h -1 a 2 2 0 0 1 -2 -2 v -3 a 2 2 0 0 1 2 -2 h 3 Z" }, { r: "pulse", a: 0.04, o: [12, 13] }],
+    ["path", { d: "M21 16v2a4 4 0 0 1-4 4h-5", fill: "none" }, { r: "draw", d: 0.2, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

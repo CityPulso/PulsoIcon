@@ -8,4 +8,10 @@ export const TargetOff = createIcon("TargetOff", "target-off", {
     ["path", { d: "M5.649 5.623a9 9 0 1 0 12.698 12.758m1.683 -2.313a9 9 0 0 0 -12.076 -12.11" }, { r: "pulse", d: 0.0, a: 0.04, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }, { r: "pulse", d: 0, a: 0.04, o: [12, 12] }],
+    ["circle", { cx: "12", cy: "12", r: "6" }, { r: "pulse", d: 0.1, a: 0.06, o: [12, 12] }, "cut"],
+    ["circle", { cx: "12", cy: "12", r: "2" }, { r: "pop", d: 0.25, o: [12, 12] }, "cut"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "http-head" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const HttpHead = createIcon("HttpHead", "http-head", {
+  text: true,
   nodes: [
     ["path", { d: "M3 16v-8" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M7 8v8" }, { r: "draw", d: 0.0 }],

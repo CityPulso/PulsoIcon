@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "message-ai" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const MessageAi = createIcon("MessageAi", "message-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M8 9h8" }],
     ["path", { d: "M8 13h3.5" }],

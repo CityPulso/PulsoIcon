@@ -8,4 +8,10 @@ export const DownloadOff = createIcon("DownloadOff", "download-off", {
     ["path", { d: "M12 4v4m0 4v4" }, { r: "slide", y: 1, a: 1.5 }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.1 }],
   ],
+  solid: [
+    ["path", { d: "M12 15V3", fill: "none" }, { r: "slide", y: 1, a: 1.5 }],
+    ["path", { d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", fill: "none" }],
+    ["path", { d: "m7 10 5 5 5-5", fill: "none" }, { r: "slide", y: 1, a: 1.5 }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.1 }, "line"],
+  ],
 });

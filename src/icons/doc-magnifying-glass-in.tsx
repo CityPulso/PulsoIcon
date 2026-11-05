@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Iconoir "doc-magnifying-glass-in" (MIT, Copyright (c) 2021 Luca Burgio).
 export const DocMagnifyingGlassIn = createIcon("DocMagnifyingGlassIn", "doc-magnifying-glass-in", {
+  text: true,
   nodes: [
     ["path", { d: "M14 15L15.5 16.5" }, { r: "tilt", a: 12, o: [11.5, 12.5] }],
     [

@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "hexagon-letter-q" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const HexagonLetterQ = createIcon("HexagonLetterQ", "hexagon-letter-q", {
+  text: true,
   nodes: [
     [
       "path",

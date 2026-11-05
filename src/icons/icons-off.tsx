@@ -10,4 +10,12 @@ export const IconsOff = createIcon("IconsOff", "icons-off", {
     ["path", { d: "M18 14h3v3m0 4h-7v-7" }, { r: "pop", d: 0.15, o: [17.5, 17.5] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M3 6.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0 -7 0" }, { r: "pop", o: [6.5, 6.5] }],
+    ["path", { d: "M2.5 21h8l-4 -7l-4 7" }, { r: "pop", d: 0.1, o: [6.5, 18] }],
+    ["path", { d: "M14 3l7 7", fill: "none" }, { r: "spin", d: 0.05, a: 90, o: [17.5, 6.5] }],
+    ["path", { d: "M14 10l7 -7", fill: "none" }, { r: "spin", d: 0.05, a: 90, o: [17.5, 6.5] }],
+    ["path", { d: "M14 14h7v7h-7l0 -7" }, { r: "pop", d: 0.15, o: [17.5, 17.5] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

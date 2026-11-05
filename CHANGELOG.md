@@ -1,5 +1,26 @@
 # Changelog
 
+## 5.0.0
+
+### Added
+
+- **`solid`**: every icon can be drawn filled. **1712 icons** have a filled drawing taken from the
+  [Tabler](https://tabler.io/icons) filled set (3.50, MIT) or the [Phosphor](https://phosphoricons.com) fill weight (MIT).
+  The others fill their closed shapes and cut their inner lines out of the fill. On filled shapes, motions that draw a
+  stroke on pop in instead.
+- **`autoAnimated`** (default `true`): `false` turns off the built-in hover / focus trigger, so only your code plays the icon.
+- **`play`**: plays the motion when it turns `true` and returns to rest when it turns `false`, with or without `autoAnimated`.
+- Types `BaseIconProps`, `AnimationProps` and `DistributiveOmit`.
+- Preview: a Solid toggle.
+
+### Breaking
+
+- **`animated={false}` now keeps the icon completely still**: `startAnimation()` and `play` do nothing. To play an icon
+  only from code, use `autoAnimated={false}` instead.
+- `IconProps` is now a type rather than an interface, so `<Bell animated={false} play />` is a type error. Replace
+  `interface MyProps extends IconProps` with `type MyProps = IconProps & { … }`, and `Omit<IconProps, …>` with
+  `DistributiveOmit<IconProps, …>`.
+
 ## 4.0.0
 
 **9955 icons** (+3624).

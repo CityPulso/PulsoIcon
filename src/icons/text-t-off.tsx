@@ -9,4 +9,10 @@ export const TextTOff = createIcon("TextTOff", "text-t-off", {
     ["path", { d: "M9 20h6" }, { r: "fade", o: [12, 12] }],
     ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.1, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M12 4v16", fill: "none" }, { r: "fade", o: [12, 12] }],
+    ["path", { d: "M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2", fill: "none" }, { r: "fade", o: [12, 12] }],
+    ["path", { d: "M9 20h6", fill: "none" }, { r: "fade", o: [12, 12] }],
+    ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.1, o: [12, 12] }, "line"],
+  ],
 });

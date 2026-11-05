@@ -13,4 +13,11 @@ export const FireHydrantOff = createIcon("FireHydrantOff", "fire-hydrant-off", {
     ["path", { d: "M6 8h2m4 0h6" }, { r: "pulse", a: 0.03, o: [12, 13] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M5 21h14", fill: "none" }],
+    ["path", { d: "M17 21v-5h1a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-1v-4a5 5 0 0 0 -10 0v4h-1a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h1v5" }, { r: "pulse", a: 0.03, o: [12, 13] }],
+    ["path", { d: "M10 14a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }, { r: "spin", a: 90, o: [12, 14] }, "cut"],
+    ["path", { d: "M6 8h12" }, { r: "pulse", a: 0.03, o: [12, 13] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

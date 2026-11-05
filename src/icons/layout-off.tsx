@@ -8,4 +8,10 @@ export const LayoutOff = createIcon("LayoutOff", "layout-off", {
     ["path", { d: "M14 10v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v10m-.595 3.423a2 2 0 0 1 -1.405 .577h-2a2 2 0 0 1 -2 -2v-4" }, { r: "pop", d: 0.16, o: [17, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2" }, { r: "pop", d: 0.16, o: [17, 12] }],
+    ["path", { d: "M3 9h18" }, { r: "pop", o: [7, 7] }, "line"],
+    ["path", { d: "M9 21V9" }, { r: "pop", d: 0.08, o: [7, 16.5] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

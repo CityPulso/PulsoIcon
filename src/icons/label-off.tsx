@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "label-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+// Solid from Tabler Icons "label" filled (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const LabelOff = createIcon("LabelOff", "label-off", {
   nodes: [
     [
@@ -9,5 +10,13 @@ export const LabelOff = createIcon("LabelOff", "label-off", {
       { r: "swing", o: [4, 12] },
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
+  ],
+  solid: [
+    [
+      "path",
+      { d: "M16.52 6a2 2 0 0 1 1.561 .75l3.7 4.625a1 1 0 0 1 0 1.25l-3.7 4.624a2 2 0 0 1 -1.561 .751h-10.52a3 3 0 0 1 -3 -3v-6a3 3 0 0 1 3 -3z", stroke: "none" },
+      { r: "swing", o: [4, 12] },
+    ],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
   ],
 });

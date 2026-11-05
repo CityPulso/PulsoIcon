@@ -13,4 +13,12 @@ export const TowerOff = createIcon("TowerOff", "tower-off", {
     ["path", { d: "M10 21v-5a2 2 0 1 1 4 0v5" }, { r: "float", o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M5 8V3h2.5v2H10V3h4v2h2.5V3H19v5Z" }, { r: "float", o: [12, 12] }],
+    ["path", { d: "M7 8v 13", fill: "none" }, { r: "float", o: [12, 12] }],
+    ["path", { d: "M17 8v 13", fill: "none" }, { r: "float", o: [12, 12] }],
+    ["path", { d: "M4 21h16", fill: "none" }, { r: "float", o: [12, 12] }],
+    ["path", { d: "M10 21v-3a2 2 0 0 1 4 0v3" }, { r: "float", o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

@@ -9,4 +9,13 @@ export const CartonOff = createIcon("CartonOff", "carton-off", {
     ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.15, o: [12, 12] }],
     ["path", { d: "M7.034 7.034 5.539 8.633A2 2 0 005 10" }, { r: "press", a: 0.05, o: [12, 12] }],
   ],
+  solid: [
+    [
+      "path",
+      { d: "M13 22V10a2 2 0 01.539-1.367L16 6H8L5.539 8.633A2 2 0 005 10v10a2 2 0 002 2h10a2 2 0 002-2V10a2 2 0 00-.539-1.367L16 6V3a1 1 0 00-1-1H9a1 1 0 00-1 1v3", fill: "none" },
+      { r: "press", a: 0.05, o: [12, 12] },
+    ],
+    ["path", { d: "M5 10h8", fill: "none" }, { r: "press", a: 0.05, o: [12, 12] }],
+    ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

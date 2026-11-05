@@ -9,4 +9,13 @@ export const FirstAidKitOff = createIcon("FirstAidKitOff", "first-aid-kit-off", 
     ["path", { d: "M12 12v4" }, { r: "pop", d: 0.1, o: [12, 14] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M12 11v4" }, { r: "pop", d: 0.1, o: [12, 14] }, "line"],
+    ["path", { d: "M14 13h-4" }, { r: "pop", d: 0.1, o: [12, 14] }, "line"],
+    ["path", { d: "M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2", fill: "none" }, { r: "lift", y: -1, a: 1, o: [12, 6] }],
+    ["path", { d: "M18 6v14" }, { r: "pop", d: 0.1, o: [12, 14] }, "line"],
+    ["path", { d: "M6 6v14" }, { r: "pop", d: 0.1, o: [12, 14] }, "line"],
+    ["rect", { width: "20", height: "14", x: "2", y: "6", rx: "2" }, { r: "pulse", a: 0.04, o: [12, 14] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

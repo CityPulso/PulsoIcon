@@ -10,4 +10,13 @@ export const RouterOff = createIcon("RouterOff", "router-off", {
     ["path", { d: "M9.445 5.407a8 8 0 0 1 12.055 1.093" }, { r: "fade", d: 0.12, o: [15, 10] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["rect", { width: "20", height: "8", x: "2", y: "14", rx: "2" }],
+    ["path", { d: "M6.01 18H6" }, { r: "flicker", d: 0.05, o: [15, 17] }, "line"],
+    ["path", { d: "M10.01 18H10" }, { r: "flicker", d: 0.05, o: [15, 17] }, "line"],
+    ["path", { d: "M15 10v4", fill: "none" }, { r: "flicker", d: 0.05, o: [15, 17] }],
+    ["path", { d: "M17.84 7.17a4 4 0 0 0-5.66 0", fill: "none" }, { r: "fade", o: [15, 10] }],
+    ["path", { d: "M20.66 4.34a8 8 0 0 0-11.31 0", fill: "none" }, { r: "fade", d: 0.12, o: [15, 10] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

@@ -9,4 +9,14 @@ export const BallpenOff = createIcon("BallpenOff", "ballpen-off", {
     ["path", { d: "M4 20l1.768 -1.768" }, { r: "tilt", d: 0, a: 8, o: [5, 19] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M14 6l7 7l-4 4" }, { r: "tilt", d: 0, a: 8, o: [5, 19] }, "line"],
+    [
+      "path",
+      { d: "M5.828 18.172a2.828 2.828 0 0 0 4 0l10.586 -10.586a2 2 0 0 0 0 -2.829l-1.171 -1.171a2 2 0 0 0 -2.829 0l-10.586 10.586a2.828 2.828 0 0 0 0 4" },
+      { r: "tilt", d: 0, a: 8, o: [5, 19] },
+    ],
+    ["path", { d: "M4 20l1.768 -1.768", fill: "none" }, { r: "tilt", d: 0, a: 8, o: [5, 19] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

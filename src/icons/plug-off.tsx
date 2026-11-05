@@ -9,4 +9,11 @@ export const PlugOff = createIcon("PlugOff", "plug-off", {
     ["path", { d: "M20 9l-3.5 3.5" }, { r: "slide", x: 0.7, y: -0.7, a: 1.5, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M12 22v-5", fill: "none" }, { r: "slide", x: -0.7, y: 0.7, a: 1, o: [5.7, 18.3] }],
+    ["path", { d: "M15 8V2", fill: "none" }, { r: "slide", x: 0.7, y: -0.7, a: 1.5, o: [12, 12] }],
+    ["path", { d: "M17 8a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1z" }, { r: "slide", x: 0.7, y: -0.7, a: 1.5, o: [12, 12] }],
+    ["path", { d: "M9 8V2", fill: "none" }, { r: "slide", x: 0.7, y: -0.7, a: 1.5, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

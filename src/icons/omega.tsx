@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Omega = createIcon("Omega", "omega", {
+  text: true,
   nodes: [
     [
       "path",

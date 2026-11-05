@@ -12,4 +12,14 @@ export const BlurOff = createIcon("BlurOff", "blur-off", {
     ["path", { d: "M12 15h3m4 0h1" }, { r: "fade", o: [16, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M12 21a9.01 9.01 0 0 0 2.32 -.302a9 9 0 0 0 1.74 -16.733a9 9 0 1 0 -4.06 17.035" }],
+    ["path", { d: "M12 3v17" }, undefined, "line"],
+    ["path", { d: "M12 12h9" }, { r: "fade", o: [16, 12] }, "line"],
+    ["path", { d: "M12 9h8" }, { r: "fade", o: [16, 12] }, "line"],
+    ["path", { d: "M12 6h6" }, { r: "fade", o: [16, 12] }, "line"],
+    ["path", { d: "M12 18h6" }, { r: "fade", o: [16, 12] }, "line"],
+    ["path", { d: "M12 15h8" }, { r: "fade", o: [16, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

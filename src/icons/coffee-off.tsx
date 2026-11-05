@@ -10,4 +10,11 @@ export const CoffeeOff = createIcon("CoffeeOff", "coffee-off", {
     ["path", { d: "M20.116 16.124a3 3 0 0 0 -3.118 -4.953" }, { r: "pulse", a: 0.03, o: [9, 15] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M10 2v2", fill: "none" }, { r: "float", d: 0.1, o: [8, 4] }],
+    ["path", { d: "M14 2v2", fill: "none" }, { r: "float", d: 0.2, o: [12, 5] }],
+    ["path", { d: "M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1", fill: "none" }, { r: "pulse", a: 0.03, o: [9, 15] }],
+    ["path", { d: "M6 2v2", fill: "none" }, { r: "float", d: 0.1, o: [8, 4] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

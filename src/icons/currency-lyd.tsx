@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "currency-lyd" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CurrencyLyd = createIcon("CurrencyLyd", "currency-lyd", {
+  text: true,
   nodes: [
     ["path", { d: "M11 15h.01" }, { r: "pop", d: 0.3, o: [11.0, 15.0] }],
     ["path", { d: "M21 5v10a2 2 0 0 1 -2 2h-2.764a2 2 0 0 1 -1.789 -1.106l-.447 -.894" }, { r: "draw", d: 0.0 }],

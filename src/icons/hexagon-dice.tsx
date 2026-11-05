@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Iconoir "hexagon-dice" (MIT, Copyright (c) 2021 Luca Burgio).
 export const HexagonDice = createIcon("HexagonDice", "hexagon-dice", {
+  text: true,
   nodes: [
     [
       "path",

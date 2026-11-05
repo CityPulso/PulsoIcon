@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "math-function-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const MathFunctionOff = createIcon("MathFunctionOff", "math-function-off", {
+  text: true,
   nodes: [
     ["path", { d: "M14 10h1c.882 0 .986 .777 1.694 2.692" }, { r: "draw", d: 0.3, o: [12, 12] }],
     ["path", { d: "M13 17c.864 0 1.727 -.663 2.495 -1.512m1.717 -2.302c.993 -1.45 2.39 -3.186 3.788 -3.186" }, { r: "draw", d: 0.35, o: [12, 12] }],

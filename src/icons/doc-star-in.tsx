@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Iconoir "doc-star-in" (MIT, Copyright (c) 2021 Luca Burgio).
 export const DocStarIn = createIcon("DocStarIn", "doc-star-in", {
+  text: true,
   nodes: [
     [
       "path",

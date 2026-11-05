@@ -9,4 +9,11 @@ export const FrameOff = createIcon("FrameOff", "frame-off", {
     ["path", { d: "M17 4v9m0 4v3" }, { r: "pulse", a: 0.06, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["line", { x1: "22", x2: "2", y1: "6", y2: "6", fill: "none" }, { r: "pulse", a: 0.06, o: [12, 12] }],
+    ["line", { x1: "22", x2: "2", y1: "18", y2: "18", fill: "none" }, { r: "pulse", a: 0.06, o: [12, 12] }],
+    ["line", { x1: "6", x2: "6", y1: "2", y2: "22", fill: "none" }, { r: "pulse", a: 0.06, o: [12, 12] }],
+    ["line", { x1: "18", x2: "18", y1: "2", y2: "22", fill: "none" }, { r: "pulse", a: 0.06, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

@@ -14,4 +14,16 @@ export const DroneOff = createIcon("DroneOff", "drone-off", {
     ["path", { d: "M6 14.035a3.5 3.5 0 1 0 3.966 3.965" }, { r: "float", d: 0 }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M10 10 7 7", fill: "none" }, { r: "float", d: 0 }],
+    ["path", { d: "m10 14-3 3", fill: "none" }, { r: "float", d: 0 }],
+    ["path", { d: "m14 10 3-3", fill: "none" }, { r: "float", d: 0 }],
+    ["path", { d: "m14 14 3 3", fill: "none" }, { r: "float", d: 0 }],
+    ["path", { d: "M14.205 4.139a4 4 0 1 1 5.439 5.863", fill: "none" }, { r: "float", d: 0 }],
+    ["path", { d: "M19.637 14a4 4 0 1 1-5.432 5.868", fill: "none" }, { r: "float", d: 0 }],
+    ["path", { d: "M4.367 10a4 4 0 1 1 5.438-5.862", fill: "none" }, { r: "float", d: 0 }],
+    ["path", { d: "M9.795 19.862a4 4 0 1 1-5.429-5.873", fill: "none" }, { r: "float", d: 0 }],
+    ["rect", { x: "10", y: "8", width: "4", height: "8", rx: "1" }, { r: "float", d: 0 }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

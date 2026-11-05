@@ -7,4 +7,9 @@ export const CopyrightOff = createIcon("CopyrightOff", "copyright-off", {
     ["path", { d: "M20.042 16.045a9 9 0 0 0 -12.087 -12.087m-2.318 1.677a9 9 0 1 0 12.725 12.73" }, { r: "turn", a: 30, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M15 9.354a4 4 0 1 0 0 5.292" }, { r: "pop", o: [12, 12] }, "line"],
+    ["circle", { cx: "12", cy: "12", r: "10" }, { r: "turn", a: 30, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

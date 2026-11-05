@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Iconoir "circle-spark" (MIT, Copyright (c) 2021 Luca Burgio).
 export const CircleSpark = createIcon("CircleSpark", "circle-spark", {
+  text: true,
   nodes: [
     ["path", { d: "M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2" }],
     [

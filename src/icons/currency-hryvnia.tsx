@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "currency-hryvnia" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CurrencyHryvnia = createIcon("CurrencyHryvnia", "currency-hryvnia", {
+  text: true,
   nodes: [
     [
       "path",

@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "moon-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+// Solid from Tabler Icons "moon" filled (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const MoonOff = createIcon("MoonOff", "moon-off", {
   nodes: [
     [
@@ -11,5 +12,16 @@ export const MoonOff = createIcon("MoonOff", "moon-off", {
       { r: "tilt", d: 0, a: 10, o: [12, 12] },
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
+  ],
+  solid: [
+    [
+      "path",
+      {
+        d: "M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z",
+        stroke: "none",
+      },
+      { r: "tilt", d: 0, a: 10, o: [12, 12] },
+    ],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
   ],
 });

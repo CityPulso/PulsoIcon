@@ -8,4 +8,10 @@ export const HelpOff = createIcon("HelpOff", "help-off", {
     ["path", { d: "M12 13.5a1.5 1.5 0 0 1 .394 -1.1m2.106 -1.9a2.6 2.6 0 0 0 -3.347 -3.361" }, { r: "draw" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }],
+    ["path", { d: "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" }, { r: "draw" }, "line"],
+    ["path", { d: "M12 17h.01" }, { r: "pop", d: 0.2, o: [12, 17] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

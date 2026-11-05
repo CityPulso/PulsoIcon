@@ -14,4 +14,10 @@ export const LassoOff = createIcon("LassoOff", "lasso-off", {
     ["path", { d: "M5 17c0 1.42 .316 2.805 1 4" }, { r: "swing", a: 8, o: [5, 15] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M3.704 14.467a10 8 0 1 1 3.115 2.375", fill: "none" }, { r: "swing", a: 8, o: [5, 15] }],
+    ["path", { d: "M7 22a5 5 0 0 1-2-3.994", fill: "none" }, { r: "swing", a: 8, o: [5, 15] }],
+    ["circle", { cx: "5", cy: "16", r: "2" }, { r: "swing", a: 8, o: [5, 15] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

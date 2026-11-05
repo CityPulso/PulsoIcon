@@ -9,4 +9,11 @@ export const CupOff = createIcon("CupOff", "cup-off", {
     ["path", { d: "M15 5v-2" }, { r: "bounce", y: -1, a: 1, o: [15, 5] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8" }, { r: "pulse", a: 0.04, o: [12, 14] }],
+    ["path", { d: "M5 8h14", fill: "none" }, { r: "pulse", a: 0.04, o: [12, 14] }],
+    ["path", { d: "M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0" }, { r: "pulse", a: 0.04, o: [12, 14] }, "line"],
+    ["path", { d: "m12 8 1-6h2", fill: "none" }, { r: "bounce", y: -1, a: 1, o: [15, 5] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

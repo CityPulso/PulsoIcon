@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "heading-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const HeadingOff = createIcon("HeadingOff", "heading-off", {
+  text: true,
   nodes: [
     ["path", { d: "M7 12h5m4 0h1" }, { r: "draw", d: 0 }],
     ["path", { d: "M7 7v12" }, { r: "draw", d: 0 }],

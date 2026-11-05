@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Drawn after Phosphor Icons "file-type-cpp" (MIT, Copyright (c) 2023 Phosphor Icons).
 export const FileTypeCpp = createIcon("FileTypeCpp", "file-type-cpp", {
+  text: true,
   nodes: [
     ["path", { d: "M14 3v4a1 1 0 0 0 1 1h4" }, { r: "fold", o: [16.5, 5.5] }],
     ["path", { d: "M5 12V5a2 2 0 0 1 2-2h7l5 5v4" }],

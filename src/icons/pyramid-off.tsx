@@ -13,4 +13,9 @@ export const PyramidOff = createIcon("PyramidOff", "pyramid-off", {
     ["path", { d: "M12 2v6m0 4v10" }, { r: "wobble", o: [12, 21] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M2.5 16.88a1 1 0 0 1-.32-1.43l9-13.02a1 1 0 0 1 1.64 0l9 13.01a1 1 0 0 1-.32 1.44l-8.51 4.86a2 2 0 0 1-1.98 0Z" }, { r: "wobble", o: [12, 21] }],
+    ["path", { d: "M12 2v20" }, { r: "wobble", o: [12, 21] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

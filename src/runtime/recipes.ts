@@ -44,6 +44,7 @@ export type RecipeName =
   | "lift"
   | "blink"
   | "flip"
+  | "open"
   | "fold"
   | "fade"
   | "twinkle"
@@ -65,7 +66,7 @@ const back: Transition = { duration: 0.25, ease: "easeOut" };
 
 const at = (p: RecipeParams, duration: number, extra: Transition = {}): Transition => ({ duration, delay: p.d, ease: "easeInOut", ...extra });
 
-const transformRest = { x: 0, y: 0, rotate: 0, scale: 1, scaleX: 1, scaleY: 1, opacity: 1, transition: back };
+const transformRest = { x: 0, y: 0, rotate: 0, scale: 1, scaleX: 1, scaleY: 1, skewY: 0, opacity: 1, transition: back };
 
 export const RECIPES: Record<RecipeName, Recipe> = {
   /** Stroke draws itself on. */
@@ -178,6 +179,11 @@ export const RECIPES: Record<RecipeName, Recipe> = {
   flip: (p) => ({
     normal: transformRest,
     animate: { scaleX: [1, -1, 1], transition: at(p, 0.6) },
+  }),
+  /** Swing open on a hinge at the origin and shut again (covers, doors): narrows towards the hinge with a slight perspective tilt. */
+  open: (p) => ({
+    normal: transformRest,
+    animate: { scaleX: [1, 1 - (p.a || 0.35), 1], skewY: [0, -(p.y || 6), 0], transition: at(p, 0.6) },
   }),
   /** Fold vertically (pages, calendars). */
   fold: (p) => ({

@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "alphabet-arabic" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const AlphabetArabic = createIcon("AlphabetArabic", "alphabet-arabic", {
+  text: true,
   nodes: [
     ["path", { d: "M10 6v4" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M13 14h8q -2.518 -3 -4 -3" }, { r: "draw", d: 0.12 }],

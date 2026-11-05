@@ -10,4 +10,10 @@ export const HistoryOff = createIcon("HistoryOff", "history-off", {
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8", fill: "none" }, { r: "turn", a: -60, o: [12, 12] }],
+    ["path", { d: "M3 3v5h5", fill: "none" }, { r: "turn", a: -60, o: [12, 12] }],
+    ["path", { d: "M12 7v5l4 2", fill: "none" }, { r: "turn", a: -60, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

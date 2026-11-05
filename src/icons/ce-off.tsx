@@ -8,4 +8,10 @@ export const CeOff = createIcon("CeOff", "ce-off", {
     ["path", { d: "M16 12h5" }, { r: "draw", d: 0.1 }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M9 6a6 6 0 1 0 0 12", fill: "none" }, { r: "draw" }],
+    ["path", { d: "M21 6a6 6 0 1 0 0 12", fill: "none" }, { r: "draw", d: 0.1 }],
+    ["path", { d: "M15 12h6", fill: "none" }, { r: "draw", d: 0.1 }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

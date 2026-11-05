@@ -10,4 +10,12 @@ export const ToolsKitchenOff = createIcon("ToolsKitchenOff", "tools-kitchen-off"
     ["path", { d: "M8 12v6" }, { r: "tilt", a: 6, o: [8, 20] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M4 3h8l-1 9h-6l-1 -9" }, { r: "tilt", a: 6, o: [8, 20] }],
+    ["path", { d: "M7 18h2v3h-2l0 -3", fill: "none" }, { r: "tilt", a: 6, o: [8, 20] }],
+    ["path", { d: "M20 3v12h-5c-.023 -3.681 .184 -7.406 5 -12" }, { r: "tilt", d: 0.1, a: -6, o: [19, 20] }],
+    ["path", { d: "M20 15v6h-1v-3", fill: "none" }, { r: "tilt", d: 0.1, a: -6, o: [19, 20] }],
+    ["path", { d: "M8 12l0 6", fill: "none" }, { r: "tilt", a: 6, o: [8, 20] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

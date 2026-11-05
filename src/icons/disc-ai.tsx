@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const DiscAi = createIcon("DiscAi", "disc-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M10 21.8A10 10 0 1 1 21.8 10" }, { r: "draw", o: [12, 12] }],
     ["circle", { cx: "12", cy: "12", r: "2" }, { r: "pop", d: 0.1, o: [12, 12] }],

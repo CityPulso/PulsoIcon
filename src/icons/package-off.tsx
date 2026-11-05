@@ -10,4 +10,11 @@ export const PackageOff = createIcon("PackageOff", "package-off", {
     ["path", { d: "M16 5.25l-4.35 2.447m-2.564 1.442l-1.086 .611" }, { r: "wobble", a: 3, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" }, { r: "wobble", a: 3, o: [12, 12] }],
+    ["path", { d: "M12 22V12" }, { r: "wobble", a: 3, o: [12, 12] }, "line"],
+    ["polyline", { points: "3.29 7 12 12 20.71 7" }, { r: "wobble", a: 3, o: [12, 12] }, "line"],
+    ["path", { d: "m7.5 4.27 9 5.15" }, { r: "wobble", a: 3, o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

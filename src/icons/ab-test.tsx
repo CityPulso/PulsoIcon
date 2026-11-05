@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const AbTest = createIcon("AbTest", "ab-test", {
+  text: true,
   nodes: [
     ["path", { d: "m3 17 3.5-10 3.5 10" }, { r: "slide", d: 0.1, x: -1, a: 1, o: [6.5, 12] }],
     ["path", { d: "M4.2 14h4.6" }, { r: "slide", d: 0.1, x: -1, a: 1, o: [6.5, 12] }],

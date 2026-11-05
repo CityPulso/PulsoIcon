@@ -7,4 +7,9 @@ export const TabletHorizontalOff = createIcon("TabletHorizontalOff", "tablet-hor
     ["path", { d: "M9 17h6" }, { r: "tilt", a: 5, o: [12, 20] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M3 6a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-12" }, { r: "tilt", a: 5, o: [12, 20] }],
+    ["path", { d: "M9 17h6" }, { r: "tilt", a: 5, o: [12, 20] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

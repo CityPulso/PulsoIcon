@@ -8,4 +8,12 @@ export const PushPinSimpleOff = createIcon("PushPinSimpleOff", "push-pin-simple-
     ["path", { d: "M12 15v7" }, { r: "bounce", y: -1, a: 2, o: [12, 12] }],
     ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.1, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M8 3h 8", fill: "none" }, { r: "bounce", y: -1, a: 2, o: [12, 12] }],
+    ["path", { d: "M9 3L7.5 15", fill: "none" }, { r: "bounce", y: -1, a: 2, o: [12, 12] }],
+    ["path", { d: "M15 3l 1.5 12", fill: "none" }, { r: "bounce", y: -1, a: 2, o: [12, 12] }],
+    ["path", { d: "M4 15h 16", fill: "none" }, { r: "bounce", y: -1, a: 2, o: [12, 12] }],
+    ["path", { d: "M12 15v7", fill: "none" }, { r: "bounce", y: -1, a: 2, o: [12, 12] }],
+    ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.1, o: [12, 12] }, "line"],
+  ],
 });

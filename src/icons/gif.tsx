@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Gif = createIcon("Gif", "gif", {
+  text: true,
   nodes: [
     ["rect", { width: "20", height: "16", x: "2", y: "4", rx: "2" }, { r: "press", a: 0.04, o: [12, 12] }],
     ["path", { d: "M10 9H7.5A1.5 1.5 0 0 0 6 10.5v3A1.5 1.5 0 0 0 7.5 15H10v-3H8.5" }, { r: "pop", d: 0.05, o: [8, 12] }],

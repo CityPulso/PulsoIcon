@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const ToolCase = createIcon("ToolCase", "tool-case", {
+  text: true,
   nodes: [
     ["path", { d: "M10 15h4" }, { r: "fade", d: 0.1, o: [12, 15] }],
     ["path", { d: "m14.5 4.058.571-1.429a1 1 0 011.3-.558l5 2a1 1 0 01.549.534.88.88 0 01.01.765l-2.332 5.83" }, { r: "float", d: 0.05, a: 1, o: [12.525, 6.6] }],

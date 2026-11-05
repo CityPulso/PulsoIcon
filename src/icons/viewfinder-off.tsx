@@ -11,4 +11,13 @@ export const ViewfinderOff = createIcon("ViewfinderOff", "viewfinder-off", {
     ["path", { d: "M12 12v.01" }, { r: "pop", d: 0.2, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" }, { r: "pulse", a: 0.05, o: [12, 12] }],
+    ["path", { d: "M12 3l0 4" }, { r: "slide", y: 1, a: 1, o: [12, 5] }, "line"],
+    ["path", { d: "M12 21l0 -3" }, { r: "slide", y: -1, a: 1, o: [12, 19.5] }, "line"],
+    ["path", { d: "M3 12l4 0" }, { r: "slide", x: 1, a: 1, o: [5, 12] }, "line"],
+    ["path", { d: "M21 12l-3 0" }, { r: "slide", x: -1, a: 1, o: [19.5, 12] }, "line"],
+    ["path", { d: "M12 12l0 .01" }, { r: "pop", d: 0.2, o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

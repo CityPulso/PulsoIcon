@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "currency-husd" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CurrencyHusd = createIcon("CurrencyHusd", "currency-husd", {
+  text: true,
   nodes: [
     ["path", { d: "M7 20v-5" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M17 9v-5" }, { r: "draw", d: 0.1 }],

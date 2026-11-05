@@ -11,4 +11,13 @@ export const LockAccessOff = createIcon("LockAccessOff", "lock-access-off", {
     ["path", { d: "M10 11v-1m1.182 -2.826a2 2 0 0 1 2.818 1.826v1" }, { r: "lift", y: -1, a: 0, o: [14, 10] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M4 8v-2a2 2 0 0 1 2 -2h2", fill: "none" }],
+    ["path", { d: "M4 16v2a2 2 0 0 0 2 2h2", fill: "none" }],
+    ["path", { d: "M16 4h2a2 2 0 0 1 2 2v2", fill: "none" }],
+    ["path", { d: "M16 20h2a2 2 0 0 0 2 -2v-2", fill: "none" }],
+    ["path", { d: "M8 12a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v3a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1l0 -3" }, { r: "press", o: [12, 13] }],
+    ["path", { d: "M10 11v-2a2 2 0 1 1 4 0v2" }, { r: "lift", y: -1, a: 0, o: [14, 10] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

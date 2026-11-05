@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "square-rounded-letter-h" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const SquareRoundedLetterH = createIcon("SquareRoundedLetterH", "square-rounded-letter-h", {
+  text: true,
   nodes: [
     ["path", { d: "M10 16v-8m4 0v8" }, { r: "draw" }],
     ["path", { d: "M10 12h4" }, { r: "draw", d: 0.12 }],

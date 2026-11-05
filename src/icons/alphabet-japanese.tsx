@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "alphabet-japanese" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const AlphabetJapanese = createIcon("AlphabetJapanese", "alphabet-japanese", {
+  text: true,
   nodes: [
     ["path", { d: "M6 6h10" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M10 4c0 6.784 .8 11.1 1.5 12.5" }, { r: "draw", d: 0.12 }],

@@ -10,4 +10,11 @@ export const AnchorOff = createIcon("AnchorOff", "anchor-off", {
     ["path", { d: "M12.866 8.873a3 3 0 1 0 -3.737 -3.747" }, { r: "swing", a: 8, o: [12, 5] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M12 6v16", fill: "none" }, { r: "swing", a: 8, o: [12, 5] }],
+    ["path", { d: "m19 13 2-1a9 9 0 0 1-18 0l2 1", fill: "none" }, { r: "swing", a: 8, o: [12, 5] }],
+    ["path", { d: "M9 11h6", fill: "none" }, { r: "swing", a: 8, o: [12, 5] }],
+    ["circle", { cx: "12", cy: "4", r: "2" }, { r: "swing", a: 8, o: [12, 5] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

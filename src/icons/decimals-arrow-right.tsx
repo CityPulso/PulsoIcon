@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const DecimalsArrowRight = createIcon("DecimalsArrowRight", "decimals-arrow-right", {
+  text: true,
   nodes: [
     ["path", { d: "M10 18h10" }, { r: "bounce", d: 0.15, x: 1, a: 2, o: [15, 18] }],
     ["path", { d: "m17 21 3-3-3-3" }, { r: "bounce", d: 0.15, x: 1, a: 2, o: [15, 18] }],

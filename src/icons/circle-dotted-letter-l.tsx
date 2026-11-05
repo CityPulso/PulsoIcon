@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "circle-dotted-letter-l" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CircleDottedLetterL = createIcon("CircleDottedLetterL", "circle-dotted-letter-l", {
+  text: true,
   nodes: [
     ["path", { d: "M10 8v8h4" }, { r: "draw", d: 0.1 }],
     ["path", { d: "M7.5 4.21v.01" }, { r: "spin", a: 45, o: [12, 12] }],

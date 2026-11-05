@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const PaintingAi = createIcon("PaintingAi", "painting-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M11 15H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v7" }, { r: "press", a: 0.04, o: [12, 9] }],
     ["path", { d: "m4 13 4-4 3 3" }, { r: "draw", d: 0.05 }],

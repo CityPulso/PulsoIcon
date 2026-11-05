@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "tip-jar-euro" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const TipJarEuro = createIcon("TipJarEuro", "tip-jar-euro", {
+  text: true,
   nodes: [
     [
       "path",

@@ -12,4 +12,11 @@ export const CraneOff = createIcon("CraneOff", "crane-off", {
     ["path", { d: "M17 9v4a2 2 0 0 1 2 2m-2 2a2 2 0 0 1 -2 -2" }, { r: "swing", d: 0.05, a: 12, o: [17, 9] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M6 21h6", fill: "none" }],
+    ["path", { d: "M9 21v-18l-6 6h18", fill: "none" }],
+    ["path", { d: "M9 3l10 6", fill: "none" }, { r: "swing", d: 0, a: 5, o: [9, 3] }],
+    ["path", { d: "M17 9v4a2 2 0 1 1 -2 2", fill: "none" }, { r: "swing", d: 0.05, a: 12, o: [17, 9] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

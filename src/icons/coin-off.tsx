@@ -8,4 +8,10 @@ export const CoinOff = createIcon("CoinOff", "coin-off", {
     ["path", { d: "M12 6v2m0 8v2" }, { r: "flip", o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }, { r: "flip", o: [12, 12] }],
+    ["path", { d: "M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" }, { r: "flip", o: [12, 12] }, "line"],
+    ["path", { d: "M12 18V6" }, { r: "flip", o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

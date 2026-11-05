@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "a-b-2" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const AB2 = createIcon("AB2", "a-b-2", {
+  text: true,
   nodes: [
     ["path", { d: "M16 21h3c.81 0 1.48 -.67 1.48 -1.48l.02 -.02c0 -.82 -.69 -1.5 -1.5 -1.5h-3v3" }, { r: "pop", d: 0.15, o: [18, 18] }],
     ["path", { d: "M16 15h2.5c.84 -.01 1.5 .66 1.5 1.5s-.66 1.5 -1.5 1.5h-2.5v-3" }, { r: "pop", d: 0.15, o: [18, 18] }],

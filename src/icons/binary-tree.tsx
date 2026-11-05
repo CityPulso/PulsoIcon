@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "binary-tree" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const BinaryTree = createIcon("BinaryTree", "binary-tree", {
+  text: true,
   nodes: [
     ["path", { d: "M6 20a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" }, { r: "pop", d: 0.3, o: [4, 20] }],
     ["path", { d: "M16 4a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" }, { r: "pop", o: [14, 4] }],

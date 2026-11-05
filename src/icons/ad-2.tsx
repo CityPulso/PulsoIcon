@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "ad-2" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const Ad2 = createIcon("Ad2", "ad-2", {
+  text: true,
   nodes: [
     ["path", { d: "M11.933 5h-6.933v16h13v-8" }],
     ["path", { d: "M14 17h-5" }, { r: "growX", d: 0.2, o: [9, 17] }],

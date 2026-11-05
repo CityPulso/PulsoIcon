@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Binary = createIcon("Binary", "binary", {
+  text: true,
   nodes: [
     ["rect", { x: "14", y: "14", width: "4", height: "6", rx: "2" }, { r: "flip", o: [16, 17] }],
     ["rect", { x: "6", y: "4", width: "4", height: "6", rx: "2" }, { r: "flip", d: 0.12, o: [8, 7] }],

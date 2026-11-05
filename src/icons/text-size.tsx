@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "text-size" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const TextSize = createIcon("TextSize", "text-size", {
+  text: true,
   nodes: [
     ["path", { d: "M3 7v-2h13v2" }, { r: "draw" }],
     ["path", { d: "M10 5v14" }, { r: "draw", d: 0.1 }],

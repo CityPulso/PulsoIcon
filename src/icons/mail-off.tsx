@@ -7,4 +7,9 @@ export const MailOff = createIcon("MailOff", "mail-off", {
     ["path", { d: "M3 7l9 6l.565 -.377m2.435 -1.623l6 -4" }, { r: "draw", o: [12, 10] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" }, { r: "draw", o: [12, 10] }, "line"],
+    ["rect", { x: "2", y: "4", width: "20", height: "16", rx: "2" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

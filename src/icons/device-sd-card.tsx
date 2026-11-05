@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "device-sd-card" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const DeviceSdCard = createIcon("DeviceSdCard", "device-sd-card", {
+  text: true,
   nodes: [
     [
       "path",

@@ -8,4 +8,10 @@ export const ElevatorOff = createIcon("ElevatorOff", "elevator-off", {
     ["path", { d: "M10 14l2 2l2 -2" }, { r: "slide", y: 1, a: 1.5 }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["rect", { x: "3", y: "3", width: "18", height: "18", rx: "2" }],
+    ["path", { d: "m8 10 4-4 4 4" }, { r: "slide", y: -1, a: 1.5 }, "line"],
+    ["path", { d: "m8 14 4 4 4-4" }, { r: "slide", y: 1, a: 1.5 }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

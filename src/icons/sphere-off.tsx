@@ -7,4 +7,9 @@ export const SphereOff = createIcon("SphereOff", "sphere-off", {
     ["path", { d: "M20.051 16.027a9 9 0 0 0 -12.083 -12.075m-2.34 1.692a9 9 0 0 0 12.74 12.716" }, { r: "roll", a: 1, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }, { r: "roll", a: 1, o: [12, 12] }],
+    ["ellipse", { cx: "12", cy: "12", rx: "10", ry: "4" }, { r: "roll", a: 1, o: [12, 12] }, "cut"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

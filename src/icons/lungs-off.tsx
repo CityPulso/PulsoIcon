@@ -21,4 +21,11 @@ export const LungsOff = createIcon("LungsOff", "lungs-off", {
     ["path", { d: "M12 4v4" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M12 3v8", fill: "none" }],
+    ["path", { d: "m9 14 3-3 3 3", fill: "none" }, { r: "pulse", a: 0.08, o: [12, 13] }],
+    ["path", { d: "M8.5 6.5C5 7 3 12 3 17c0 1.7 1.3 3 3 3 2 0 3-1.5 3-3.5V7.5c0-.6-.2-1-.5-1z" }, { r: "pulse", a: 0.08, o: [12, 13] }],
+    ["path", { d: "M15.5 6.5C19 7 21 12 21 17c0 1.7-1.3 3-3 3-2 0-3-1.5-3-3.5V7.5c0-.6.2-1 .5-1z" }, { r: "pulse", a: 0.08, o: [12, 13] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

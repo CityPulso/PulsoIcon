@@ -11,4 +11,13 @@ export const AntennaOff = createIcon("AntennaOff", "antenna-off", {
     ["path", { d: "M20 8h-8m-4 0h-4" }, { r: "sway", a: 4, o: [12, 21] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M2 12 7 2", fill: "none" }, { r: "sway", a: 4, o: [12, 21] }],
+    ["path", { d: "m7 12 5-10", fill: "none" }, { r: "sway", a: 4, o: [12, 21] }],
+    ["path", { d: "m12 12 5-10", fill: "none" }, { r: "sway", a: 4, o: [12, 21] }],
+    ["path", { d: "m17 12 5-10", fill: "none" }, { r: "sway", a: 4, o: [12, 21] }],
+    ["path", { d: "M4.5 7h15", fill: "none" }, { r: "sway", a: 4, o: [12, 21] }],
+    ["path", { d: "M12 16v6", fill: "none" }, { r: "sway", a: 4, o: [12, 21] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

@@ -8,4 +8,9 @@ export const SmartphoneOff = createIcon("SmartphoneOff", "smartphone-off", {
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
     ["path", { d: "M12 17v.01" }, { r: "shake", a: 1, o: [12, 12] }],
   ],
+  solid: [
+    ["rect", { width: "14", height: "20", x: "5", y: "2", rx: "2", ry: "2" }, { r: "shake", a: 1, o: [12, 12] }],
+    ["path", { d: "M12 18h.01" }, { r: "shake", a: 1, o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

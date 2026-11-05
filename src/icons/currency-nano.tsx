@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "currency-nano" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CurrencyNano = createIcon("CurrencyNano", "currency-nano", {
+  text: true,
   nodes: [
     ["path", { d: "M7 20l10 -16" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M7 12h10" }, { r: "draw", d: 0.1 }],

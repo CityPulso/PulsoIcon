@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Letters = createIcon("Letters", "letters", {
+  text: true,
   nodes: [
     ["path", { d: "M15 8H9" }, { r: "drop", a: 3, o: [12, 5.999] }],
     ["path", { d: "M21 15.354a4 4 0 100 5.292" }, { r: "drop", d: 0.24, a: 3, o: [17.5, 18] }],

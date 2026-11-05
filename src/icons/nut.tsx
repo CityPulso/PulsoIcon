@@ -1,5 +1,6 @@
 import { createIcon } from "../runtime/createIcon.js";
 
+// Solid from Phosphor Icons "nut" fill (MIT, Copyright (c) 2023 Phosphor Icons).
 export const Nut = createIcon("Nut", "nut", {
   nodes: [
     [
@@ -15,5 +16,15 @@ export const Nut = createIcon("Nut", "nut", {
       { r: "spin", a: 60, o: [9, 9] },
     ],
     ["path", { d: "M4.93 4.93 3 3a.7.7 0 010-1" }, { r: "spin", a: 60, o: [9, 9] }],
+  ],
+  solid: [
+    [
+      "path",
+      {
+        d: "M20.97 6.202 12.72 1.688a1.489 1.489 0 0 0-1.44 0l-8.25 4.516a1.5 1.5 0 0 0-0.78 1.313v8.966a1.5 1.5 0 0 0 0.78 1.313l8.25 4.516a1.489 1.489 0 0 0 1.44 0l8.25-4.516a1.5 1.5 0 0 0 0.78-1.313V7.517A1.5 1.5 0 0 0 20.97 6.202ZM12 15.75a3.75 3.75 0 1 1 3.75-3.75A3.75 3.75 0 0 1 12 15.75Z",
+        stroke: "none",
+      },
+      { r: "spin", a: 60, o: [9, 9] },
+    ],
   ],
 });

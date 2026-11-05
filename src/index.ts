@@ -1,5 +1,5 @@
 export { createIcon } from "./runtime/createIcon.js";
-export type { IconHandle, IconMotion, IconNode, IconProps, IconSpec, PulsoIcon } from "./runtime/createIcon.js";
+export type { AnimationProps, BaseIconProps, DistributiveOmit, IconHandle, IconMotion, IconNode, IconProps, IconSpec, PulsoIcon, SolidNode, SolidRole } from "./runtime/createIcon.js";
 export { RECIPE_NAMES, RECIPES } from "./runtime/recipes.js";
 export type { Recipe, RecipeName, RecipeParams, RecipeVariants } from "./runtime/recipes.js";
 

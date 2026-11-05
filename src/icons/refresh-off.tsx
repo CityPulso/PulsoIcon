@@ -7,4 +7,11 @@ export const RefreshOff = createIcon("RefreshOff", "refresh-off", {
     ["path", { d: "M4 13a8.1 8.1 0 0 0 13.671 4.691m2.329 -1.691v-1h-1" }, { r: "turn", a: 30, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.1 }],
   ],
+  solid: [
+    ["path", { d: "M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8", fill: "none" }, { r: "turn", a: 30, o: [12, 12] }],
+    ["path", { d: "M21 3v5h-5", fill: "none" }, { r: "turn", a: 30, o: [12, 12] }],
+    ["path", { d: "M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16", fill: "none" }, { r: "turn", a: 30, o: [12, 12] }],
+    ["path", { d: "M8 16H3v5", fill: "none" }, { r: "turn", a: 30, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.1 }, "line"],
+  ],
 });

@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "alphabet-bangla" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const AlphabetBangla = createIcon("AlphabetBangla", "alphabet-bangla", {
+  text: true,
   nodes: [
     ["path", { d: "M14 12c.904 -.027 3 2 3 7" }, { r: "draw", d: 0.0 }],
     [

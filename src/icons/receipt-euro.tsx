@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const ReceiptEuro = createIcon("ReceiptEuro", "receipt-euro", {
+  text: true,
   nodes: [
     ["path", { d: "M15.828 14.829a4 4 0 0 1-5.656 0 4 4 0 0 1 0-5.657 4 4 0 0 1 5.656 0" }, { r: "redraw", d: 0.05, o: [12.414, 12] }],
     [

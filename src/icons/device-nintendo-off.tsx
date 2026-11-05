@@ -8,4 +8,11 @@ export const DeviceNintendoOff = createIcon("DeviceNintendoOff", "device-nintend
     ["path", { d: "M5.5 8.5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "press", a: 0.3, o: [6.5, 8.5] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M10 20v-16h-3a4 4 0 0 0 -4 4v8a4 4 0 0 0 4 4h3", fill: "none" }, { r: "tilt", a: 4, o: [12, 12] }],
+    ["path", { d: "M14 20v-16h3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-3", fill: "none" }, { r: "tilt", a: 4, o: [12, 12] }],
+    ["path", { d: "M17.5 15.5h.01", fill: "none" }, { r: "tilt", a: 4, o: [12, 12] }],
+    ["path", { d: "M6.5 8.5h.01", fill: "none" }, { r: "press", a: 0.3, o: [6.5, 8.5] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

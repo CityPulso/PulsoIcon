@@ -10,4 +10,11 @@ export const RepeatOff = createIcon("RepeatOff", "repeat-off", {
     ["path", { d: "M3 11v-1a4 4 0 0 1 3.102-3.898" }, { r: "spin", a: 90, o: [12, 12] }],
     ["path", { d: "m7 22-4-4" }, { r: "spin", a: 90, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "m17 2 4 4-4 4", fill: "none" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M3 11v-1a4 4 0 0 1 4-4h14", fill: "none" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "m7 22-4-4 4-4", fill: "none" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M21 13v1a4 4 0 0 1-4 4H3", fill: "none" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.1, o: [12, 12] }, "line"],
+  ],
 });

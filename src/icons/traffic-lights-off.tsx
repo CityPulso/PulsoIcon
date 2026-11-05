@@ -9,4 +9,11 @@ export const TrafficLightsOff = createIcon("TrafficLightsOff", "traffic-lights-o
     ["path", { d: "M11 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "flicker", d: 0.4, o: [12, 17] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M7 7a5 5 0 0 1 5 -5a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5a5 5 0 0 1 -5 -5l0 -10" }],
+    ["path", { d: "M11 7a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "flicker", o: [12, 7] }, "line"],
+    ["path", { d: "M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "flicker", d: 0.2, o: [12, 12] }, "line"],
+    ["path", { d: "M11 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "flicker", d: 0.4, o: [12, 17] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

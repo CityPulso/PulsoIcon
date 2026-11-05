@@ -8,4 +8,10 @@ export const ArchiveOff = createIcon("ArchiveOff", "archive-off", {
     ["path", { d: "M10 12h2" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["rect", { width: "20", height: "5", x: "2", y: "3", rx: "1" }, { r: "lift", x: 0, y: -1, a: 0, o: [12, 6] }],
+    ["path", { d: "M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8" }],
+    ["path", { d: "M10 12h4" }, undefined, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

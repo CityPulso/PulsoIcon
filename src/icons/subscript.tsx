@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Subscript = createIcon("Subscript", "subscript", {
+  text: true,
   nodes: [
     ["path", { d: "m4 5 8 8" }, { r: "spin", a: 90, o: [8, 9] }],
     ["path", { d: "m12 5-8 8" }, { r: "spin", a: 90, o: [8, 9] }],

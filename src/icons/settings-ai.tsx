@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "settings-ai" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const SettingsAi = createIcon("SettingsAi", "settings-ai", {
+  text: true,
   nodes: [
     [
       "path",

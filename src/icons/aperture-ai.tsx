@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const ApertureAi = createIcon("ApertureAi", "aperture-ai", {
+  text: true,
   nodes: [
     ["circle", { cx: "10", cy: "10", r: "8" }, { r: "press", a: 0.04, o: [10, 10] }],
     ["path", { d: "m11.85 6.8 4.59 7.95" }, { r: "spin", a: 60, o: [10, 10] }],

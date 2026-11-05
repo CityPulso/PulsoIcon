@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Microphone2Ai = createIcon("Microphone2Ai", "microphone-2-ai", {
+  text: true,
   nodes: [
     ["circle", { cx: "15", cy: "7.5", r: "4.5" }, { r: "tilt", a: 10, o: [5, 19] }],
     ["path", { d: "M11.5 10.3 3.9 18.1a1.5 1.5 0 0 0 2 2l7.8-7.6" }, { r: "tilt", a: 10, o: [5, 19] }],

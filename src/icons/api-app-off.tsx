@@ -9,4 +9,11 @@ export const ApiAppOff = createIcon("ApiAppOff", "api-app-off", {
     ["path", { d: "M9 12v-3m.042 -3.957a2.5 2.5 0 0 1 4.958 .457v.5" }, { r: "spin", a: 90, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M12 15h-6.5a2.5 2.5 0 1 1 0 -5h.5", fill: "none" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M15 12v6.5a2.5 2.5 0 1 1 -5 0v-.5", fill: "none" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M12 9h6.5a2.5 2.5 0 1 1 0 5h-.5", fill: "none" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M9 12v-6.5a2.5 2.5 0 0 1 5 0v.5", fill: "none" }, { r: "spin", a: 90, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

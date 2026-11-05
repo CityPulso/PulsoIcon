@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const FilmAi = createIcon("FilmAi", "film-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M11 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7" }, { r: "press", a: 0.04, o: [12, 12] }],
     ["path", { d: "M7 3v18" }, { r: "slide", y: 1, a: 1.5, o: [7, 12] }],

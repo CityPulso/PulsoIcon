@@ -9,4 +9,11 @@ export const CashBanknoteOff = createIcon("CashBanknoteOff", "cash-banknote-off"
     ["path", { d: "M6 12l.01 0" }, { r: "pop", d: 0.3, o: [6, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["rect", { width: "20", height: "12", x: "2", y: "6", rx: "2" }, { r: "flip", o: [12, 12] }],
+    ["circle", { cx: "12", cy: "12", r: "2" }, { r: "spin", d: 0.1, o: [12, 12] }, "cut"],
+    ["path", { d: "M6 12h 0.01" }, { r: "pop", d: 0.3, o: [6, 12] }, "line"],
+    ["path", { d: "M18 12h 0.01" }, { r: "pop", d: 0.3, o: [18, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

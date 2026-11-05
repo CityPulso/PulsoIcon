@@ -7,4 +7,9 @@ export const ClockOff = createIcon("ClockOff", "clock-off", {
     ["path", { d: "M12 7v1" }, { r: "spin", a: 360, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }],
+    ["path", { d: "M12 6v6l4 2" }, { r: "spin", a: 360, o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

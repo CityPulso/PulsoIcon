@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "send-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+// Solid from Tabler Icons "send" filled (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const SendOff = createIcon("SendOff", "send-off", {
   nodes: [
     ["path", { d: "M10 14l2 -2m2 -2l7 -7" }, { r: "slide", x: 0.7, y: -0.7, a: 2, o: [14, 10] }],
@@ -10,5 +11,16 @@ export const SendOff = createIcon("SendOff", "send-off", {
       { r: "slide", x: 0.7, y: -0.7, a: 2, o: [14, 10] },
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
+  ],
+  solid: [
+    [
+      "path",
+      {
+        d: "M21.864 3.549l-6.454 17.868a1.55 1.55 0 0 1 -1.41 .903a1.54 1.54 0 0 1 -1.394 -.874l-2.88 -5.759zm-1.414 -1.414l-12.139 12.138l-5.728 -2.864a1.55 1.55 0 0 1 -.903 -1.409c0 -.606 .353 -1.157 .981 -1.44z",
+        stroke: "none",
+      },
+      { r: "slide", x: 0.7, y: -0.7, a: 2, o: [14, 10] },
+    ],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
   ],
 });

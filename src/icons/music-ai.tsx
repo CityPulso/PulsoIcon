@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const MusicAi = createIcon("MusicAi", "music-ai", {
+  text: true,
   nodes: [
     ["circle", { cx: "7", cy: "17", r: "3" }, { r: "bounce", y: -1, a: 2, o: [10, 12] }],
     ["path", { d: "M10 17V3l6 3.5" }, { r: "bounce", y: -1, a: 2, o: [10, 12] }],

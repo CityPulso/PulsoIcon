@@ -7,4 +7,9 @@ export const ClipboardOff = createIcon("ClipboardOff", "clipboard-off", {
     ["path", { d: "M9 5a2 2 0 0 1 2 -2h2a2 2 0 1 1 0 4h-2" }, { r: "float", o: [12, 5] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["rect", { width: "8", height: "4", x: "8", y: "2", rx: "1", ry: "1" }, { r: "float", o: [12, 5] }],
+    ["path", { d: "M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2", fill: "none" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

@@ -1,11 +1,12 @@
 import type { ReactNode } from "react";
 
-import { useState } from "react";
+import { memo, useEffect, useMemo, useRef, useState } from "react";
 import { BrandCitypulso } from "pulsoicon";
 import { ICON_NAMES, ICONS } from "pulsoicon/all";
 
 import CHANGELOG from "../CHANGELOG.md?raw";
 import CATEGORIES from "./categories.json";
+import REVIEW from "./solid-review.json";
 import VERSIONS from "./versions.json";
 
 enum ThemeEnum {
@@ -31,6 +32,8 @@ const ALL = "all";
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const categoriesOf = (name: string): readonly string[] => (CATEGORIES as Record<string, string[]>)[name] ?? ["other"];
 const CATEGORY_NAMES = [...new Set(ICON_NAMES.flatMap(categoriesOf))].sort();
+const CATEGORY_COUNTS = new Map<string, number>();
+for (const name of ICON_NAMES) for (const c of categoriesOf(name)) CATEGORY_COUNTS.set(c, (CATEGORY_COUNTS.get(c) ?? 0) + 1);
 /** "food-beverage" -> "Food & beverage". */
 const categoryLabel = (c: string) => (c.charAt(0).toUpperCase() + c.slice(1)).replace("-beverage", " & beverage").replace(/-/g, " ");
 const letterOf = (name: string) => name.charAt(0).toUpperCase();
@@ -42,6 +45,13 @@ const versionOf = (name: string): string => majorOf(releaseOf(name));
 const VERSION_NAMES = [...new Set(ICON_NAMES.map(versionOf))].sort((a, b) => Number.parseInt(a) - Number.parseInt(b));
 const VERSION_COUNTS = new Map(VERSION_NAMES.map((v) => [v, ICON_NAMES.filter((name) => versionOf(name) === v).length]));
 const FIRST_VERSION = VERSION_NAMES[0];
+
+const SEARCH_DEBOUNCE_MS = 200;
+/** Review state of each solid drawing (see solid-review.json); icons not listed still need a check. */
+const REVIEW_STATES = ["todo", "designed", "imported-ok", "auto-ok"] as const;
+const reviewOf = (name: string): string => (REVIEW as Record<string, string>)[name] ?? "todo";
+const REVIEW_COUNTS = new Map<string, number>();
+for (const name of ICON_NAMES) REVIEW_COUNTS.set(reviewOf(name), (REVIEW_COUNTS.get(reviewOf(name)) ?? 0) + 1);
 
 /** `code`, **bold** and [links](url) inside one changelog line. */
 function inline(text: string): ReactNode[] {
@@ -122,10 +132,66 @@ function Changelog({ onShow }: { onShow: (version: string) => void }) {
   return <section className="changelog">{blocks}</section>;
 }
 
+const Card = memo(function Card({ name, size, stroke }: { name: string; size: number; stroke: number }) {
+  const Icon = ICONS[name as keyof typeof ICONS];
+  return (
+    <div className="card" data-icon-trigger>
+      <div className="pair">
+        <div className="cell" title="Outline">
+          <Icon size={size} strokeWidth={stroke} />
+        </div>
+        <div className="cell" title="Solid">
+          <Icon size={size} solid strokeWidth={stroke} />
+        </div>
+      </div>
+      <div className="name">
+        {name}
+        <span className={`tag review-${reviewOf(name)}`}>{reviewOf(name)}</span>
+        {versionOf(name) !== FIRST_VERSION && <span className="tag">{versionOf(name)}</span>}
+      </div>
+    </div>
+  );
+});
+
+/** Cards mounted at first and added each time the end of the grid comes near the screen. */
+const BATCH = 60;
+
+/** Mounts the cards in batches as the page scrolls, so a long page or search stays responsive. */
+const Grid = memo(function Grid({ names, size, stroke }: { names: readonly string[]; size: number; stroke: number }) {
+  const [shown, setShown] = useState({ names, count: BATCH });
+  const count = shown.names === names ? shown.count : BATCH;
+  if (shown.names !== names) setShown({ names, count: BATCH });
+  const end = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = end.current;
+    if (!el || count >= names.length) return;
+    const observer = new IntersectionObserver(([entry]) => entry.isIntersecting && setShown((s) => ({ names: s.names, count: s.count + BATCH })), {
+      rootMargin: "800px",
+    });
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [count, names]);
+  return (
+    <main className="grid">
+      {names.slice(0, count).map((name) => (
+        <Card key={name} name={name} size={size} stroke={stroke} />
+      ))}
+      {count < names.length && <div aria-hidden="true" className="more" ref={end} />}
+    </main>
+  );
+});
+
 export function App() {
+  const [input, setInput] = useState("");
   const [query, setQuery] = useState("");
+  const [review, setReview] = useState(ALL);
   const [size, setSize] = useState(32);
   const [stroke, setStroke] = useState(2);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setQuery(input), SEARCH_DEBOUNCE_MS);
+    return () => window.clearTimeout(timer);
+  }, [input]);
   const [theme, setTheme] = useState(() => (window.matchMedia("(prefers-color-scheme: dark)").matches ? ThemeEnum.DARK : ThemeEnum.LIGHT));
 
   const [letter, setLetter] = useState("A");
@@ -134,12 +200,23 @@ export function App() {
   const [showLog, setShowLog] = useState(false);
 
   const q = query.trim().toLowerCase();
+  const inCategory = useMemo(
+    () =>
+      ICON_NAMES.filter(
+        (name) => (category === ALL || categoriesOf(name).includes(category)) && (version === ALL || versionOf(name) === version) && (review === ALL || reviewOf(name) === review),
+      ),
+    [category, version, review],
+  );
   // Search looks across every letter; the letter pages apply when the search box is empty.
-  const inCategory = ICON_NAMES.filter((name) => (category === ALL || categoriesOf(name).includes(category)) && (version === ALL || versionOf(name) === version));
-  const matching = inCategory.filter((name) => !q || name.includes(q));
-  const names = q || letter === ALL ? matching : matching.filter((name) => letterOf(name) === letter);
-  const letterCounts = new Map<string, number>();
-  for (const name of inCategory) letterCounts.set(letterOf(name), (letterCounts.get(letterOf(name)) ?? 0) + 1);
+  const names = useMemo(() => {
+    const matching = q ? inCategory.filter((name) => name.includes(q)) : inCategory;
+    return q || letter === ALL ? matching : matching.filter((name) => letterOf(name) === letter);
+  }, [inCategory, q, letter]);
+  const letterCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const name of inCategory) counts.set(letterOf(name), (counts.get(letterOf(name)) ?? 0) + 1);
+    return counts;
+  }, [inCategory]);
 
   const goTo = (next: string) => {
     setLetter(next);
@@ -171,7 +248,7 @@ export function App() {
             <option value={ALL}>All categories ({ICON_NAMES.length})</option>
             {CATEGORY_NAMES.map((c) => (
               <option key={c} value={c}>
-                {categoryLabel(c)} ({ICON_NAMES.filter((name) => categoriesOf(name).includes(c)).length})
+                {categoryLabel(c)} ({CATEGORY_COUNTS.get(c)})
               </option>
             ))}
           </select>
@@ -183,10 +260,18 @@ export function App() {
               </option>
             ))}
           </select>
-          <input aria-label="Search icons" className="search" onChange={(e) => setQuery(e.target.value)} placeholder="Search, e.g. calendar" type="search" value={query} />
+          <select aria-label="Solid review" className="select" onChange={(e) => setReview(e.target.value)} value={review}>
+            <option value={ALL}>All solid states</option>
+            {REVIEW_STATES.map((s) => (
+              <option key={s} value={s}>
+                {s} ({REVIEW_COUNTS.get(s) ?? 0})
+              </option>
+            ))}
+          </select>
+          <input aria-label="Search icons" className="search" onChange={(e) => setInput(e.target.value)} placeholder="Search, e.g. calendar" type="search" value={input} />
           <label className="range">
             Size {size}
-            <input max={64} min={16} onChange={(e) => setSize(Number(e.target.value))} type="range" value={size} />
+            <input max={96} min={16} onChange={(e) => setSize(Number(e.target.value))} type="range" value={size} />
           </label>
           <label className="range">
             Stroke {stroke}
@@ -237,22 +322,7 @@ export function App() {
           }}
         />
       )}
-      <main className="grid">
-        {names.map((name) => {
-          const Icon = ICONS[name];
-          return (
-            <div className="card" data-icon-trigger key={name}>
-              <div className="cell">
-                <Icon size={size} strokeWidth={stroke} />
-              </div>
-              <div className="name">
-                {name}
-                {versionOf(name) !== FIRST_VERSION && <span className="tag">{versionOf(name)}</span>}
-              </div>
-            </div>
-          );
-        })}
-      </main>
+      <Grid names={names} size={size} stroke={stroke} />
       {!q && letter !== ALL && (
         <footer className="pager">
           {(() => {

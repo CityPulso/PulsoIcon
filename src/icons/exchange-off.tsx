@@ -11,4 +11,13 @@ export const ExchangeOff = createIcon("ExchangeOff", "exchange-off", {
     ["path", { d: "M11.501 7.499l1.499 -1.499" }, { r: "slide", x: 1, a: 1.5 }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M3 18a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }, { r: "pop", o: [5, 18] }],
+    ["path", { d: "M17 6a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }, { r: "pop", d: 0.1, o: [19, 6] }],
+    ["path", { d: "M19 8v 5 a 5 5 0 0 1 -5 5 h -3 l 3 -3", fill: "none" }, { r: "slide", x: -1, a: 1.5 }],
+    ["path", { d: "M14 21l -3 -3", fill: "none" }, { r: "slide", x: -1, a: 1.5 }],
+    ["path", { d: "M5 16v -5 a 5 5 0 0 1 5 -5 h 3 l -3 -3", fill: "none" }, { r: "slide", x: 1, a: 1.5 }],
+    ["path", { d: "M10 9l 3 -3", fill: "none" }, { r: "slide", x: 1, a: 1.5 }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

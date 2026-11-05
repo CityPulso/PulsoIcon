@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Superscript = createIcon("Superscript", "superscript", {
+  text: true,
   nodes: [
     ["path", { d: "m4 19 8-8" }, { r: "spin", a: 90, o: [8, 15] }],
     ["path", { d: "m12 19-8-8" }, { r: "spin", a: 90, o: [8, 15] }],

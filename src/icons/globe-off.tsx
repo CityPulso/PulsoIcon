@@ -10,4 +10,10 @@ export const GlobeOff = createIcon("GlobeOff", "globe-off", {
     ["path", { d: "M2 12h10" }, { r: "spin", a: 30, o: [12, 12] }],
     ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }, { r: "spin", a: 30, o: [12, 12] }],
+    ["path", { d: "M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" }, { r: "spin", a: 30, o: [12, 12] }, "cut"],
+    ["path", { d: "M2 12h20" }, { r: "spin", a: 30, o: [12, 12] }, "line"],
+    ["path", { d: "m2 2 20 20" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

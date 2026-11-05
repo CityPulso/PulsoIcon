@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Drawn after Phosphor Icons "pipe-wrench" (MIT, Copyright (c) 2023 Phosphor Icons).
 
+// Solid from Phosphor Icons "pipe-wrench" fill (MIT, Copyright (c) 2023 Phosphor Icons).
 export const PipeWrench = createIcon("PipeWrench", "pipe-wrench", {
   nodes: [
     [
@@ -12,5 +13,15 @@ export const PipeWrench = createIcon("PipeWrench", "pipe-wrench", {
       { r: "turn", a: -18, o: [12, 7] },
     ],
     ["path", { d: "M9.67 13 L8.26 11.59 L6.49 13.35 L7.9 14.77" }, { r: "turn", a: -18, o: [12, 7] }],
+  ],
+  solid: [
+    [
+      "path",
+      {
+        d: "M20.651 5.156l-0.016-0.016-4.209-3.964a1.5 1.5 0 0 0-2.109 0.007L10.141 5.332l-0.144-0.146A2.344 2.344 0 0 0 6.682 8.492l0.137 0.139L4.94 10.5a1.5 1.5 0 0 0 0 2.122l1.189 1.189a1.5 1.5 0 0 0 2.118 0l1.868-1.842L11.25 13.125h0l0 0L5.185 19.253a2.344 2.344 0 1 0 3.313 3.308l8.313-8.377a1.5 1.5 0 0 0 0-2.119L13.465 8.687 14.678 7.5l0.009 0.008L18.188 10.819a1.5 1.5 0 0 0 2.112-0.008l0.348-0.348a3.75 3.75 0 0 0 0-5.303ZM7.19 12.75 6 11.562l1.875-1.864 1.19 1.206ZM19.594 9.401 19.242 9.75a0.113 0.113 0 0 0-0.015-0.015L15.721 6.422a1.505 1.505 0 0 0-2.099 0.011L12.41 7.621 11.197 6.397 15.375 2.25l0.016 0.015 4.208 3.962a2.25 2.25 0 0 1-0.007 3.174Z",
+        stroke: "none",
+      },
+      { r: "turn", a: -18, o: [12, 7] },
+    ],
   ],
 });

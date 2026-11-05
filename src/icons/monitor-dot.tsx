@@ -7,4 +7,11 @@ export const MonitorDot = createIcon("MonitorDot", "monitor-dot", {
     ["path", { d: "M8 21h8" }, { r: "fade", d: 0.1, o: [12, 19] }],
     ["circle", { cx: "19", cy: "6", r: "3" }, { r: "pop", d: 0.05, o: [19, 6] }],
   ],
+  solid: [
+    ["rect", { x: "2", y: "3", width: "20", height: "14", rx: "2" }, { r: "press", a: 0.04, o: [12, 10] }],
+    ["path", { d: "M12 17v4" }, { r: "fade", d: 0.1, o: [12, 19] }],
+    ["path", { d: "M8 21h8" }, { r: "fade", d: 0.1, o: [12, 19] }],
+    ["circle", { cx: "19", cy: "6", r: "5" }, { r: "pop", d: 0.05, o: [19, 6] }, "cut"],
+    ["circle", { cx: "19", cy: "6", r: "3" }, { r: "pop", d: 0.05, o: [19, 6] }],
+  ],
 });

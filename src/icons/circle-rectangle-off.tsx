@@ -7,4 +7,9 @@ export const CircleRectangleOff = createIcon("CircleRectangleOff", "circle-recta
     ["path", { d: "M20.042 16.045a9 9 0 0 0 -12.087 -12.087m-2.318 1.677a9 9 0 1 0 12.725 12.73" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" }],
+    ["path", { d: "M7 10h10v4h-10l0 -4" }, { r: "pop", a: 0.15, o: [12, 12] }, "cut"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

@@ -10,4 +10,13 @@ export const BotOff = createIcon("BotOff", "bot-off", {
     ["path", { d: "M9 13v2" }, { r: "wobble", o: [12, 12] }],
     ["path", { d: "M9.67 4H12v2.33" }, { r: "wobble", o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M12 8V4H8", fill: "none" }, { r: "wobble", o: [12, 12] }],
+    ["rect", { width: "16", height: "12", x: "4", y: "8", rx: "2" }, { r: "wobble", o: [12, 12] }],
+    ["path", { d: "M2 14h2", fill: "none" }, { r: "wobble", o: [12, 12] }],
+    ["path", { d: "M20 14h2", fill: "none" }, { r: "wobble", o: [12, 12] }],
+    ["path", { d: "M15 13v2" }, { r: "wobble", o: [12, 12] }, "line"],
+    ["path", { d: "M9 13v2" }, { r: "wobble", o: [12, 12] }, "line"],
+    ["path", { d: "M22 22 2 2" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

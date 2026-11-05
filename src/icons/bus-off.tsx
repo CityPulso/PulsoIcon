@@ -12,4 +12,14 @@ export const BusOff = createIcon("BusOff", "bus-off", {
     ["path", { d: "M12 5v3" }, { r: "slide", d: 0, x: 1, y: 0, a: 1 }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M8 6v6" }, { r: "slide", d: 0, x: 1, y: 0, a: 1 }, "line"],
+    ["path", { d: "M15 6v6" }, { r: "slide", d: 0, x: 1, y: 0, a: 1 }, "line"],
+    ["path", { d: "M2 12h19.6" }, { r: "slide", d: 0, x: 1, y: 0, a: 1 }, "line"],
+    ["path", { d: "M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3" }, { r: "slide", d: 0, x: 1, y: 0, a: 1 }],
+    ["circle", { cx: "7", cy: "18", r: "2" }, { r: "spin", d: 0, o: [6, 17] }, "line"],
+    ["path", { d: "M9 18h5", fill: "none" }, { r: "spin", d: 0, o: [6, 17] }],
+    ["circle", { cx: "16", cy: "18", r: "2" }, { r: "spin", d: 0, o: [18, 17] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

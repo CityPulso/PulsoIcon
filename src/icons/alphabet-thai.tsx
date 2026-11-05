@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "alphabet-thai" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const AlphabetThai = createIcon("AlphabetThai", "alphabet-thai", {
+  text: true,
   nodes: [
     [
       "path",

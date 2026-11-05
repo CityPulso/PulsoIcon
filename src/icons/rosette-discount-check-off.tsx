@@ -13,4 +13,13 @@ export const RosetteDiscountCheckOff = createIcon("RosetteDiscountCheckOff", "ro
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    [
+      "path",
+      { d: "M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" },
+      { r: "spin", a: 45, o: [12, 12] },
+    ],
+    ["path", { d: "m16 9-5.5 5.5L8 12" }, { r: "draw", d: 0.2, o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

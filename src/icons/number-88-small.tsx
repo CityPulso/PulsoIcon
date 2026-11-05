@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "number-88-small" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const Number88Small = createIcon("Number88Small", "number-88-small", {
+  text: true,
   nodes: [
     [
       "path",

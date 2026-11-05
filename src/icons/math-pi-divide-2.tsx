@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "math-pi-divide-2" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const MathPiDivide2 = createIcon("MathPiDivide2", "math-pi-divide-2", {
+  text: true,
   nodes: [
     ["path", { d: "M10 15h3a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h3" }, { r: "draw", d: 0.3 }],
     ["path", { d: "M5 12h14" }, { r: "growX", d: 0.15, o: [12, 12] }],

@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "hexagon-letter-y" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const HexagonLetterY = createIcon("HexagonLetterY", "hexagon-letter-y", {
+  text: true,
   nodes: [
     [
       "path",

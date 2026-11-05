@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "txt" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const Txt = createIcon("Txt", "txt", {
+  text: true,
   nodes: [
     ["path", { d: "M3 8h4" }, { r: "draw" }],
     ["path", { d: "M5 8v8" }, { r: "draw" }],

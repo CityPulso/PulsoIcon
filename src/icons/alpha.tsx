@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "alpha" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const Alpha = createIcon("Alpha", "alpha", {
+  text: true,
   nodes: [
     [
       "path",

@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "text-grammar" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const TextGrammar = createIcon("TextGrammar", "text-grammar", {
+  text: true,
   nodes: [
     ["path", { d: "M14 9a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" }, { r: "draw", d: 0.15 }],
     ["path", { d: "M4 12v-5a3 3 0 1 1 6 0v5" }, { r: "draw" }],

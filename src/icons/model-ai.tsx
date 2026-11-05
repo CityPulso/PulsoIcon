@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "model-ai" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const ModelAi = createIcon("ModelAi", "model-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" }, { r: "pop", o: [6, 19] }],
     ["path", { d: "M4 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" }, { r: "pop", o: [6, 5] }],

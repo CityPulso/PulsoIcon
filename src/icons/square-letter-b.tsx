@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const SquareLetterB = createIcon("SquareLetterB", "square-letter-b", {
+  text: true,
   nodes: [
     [
       "path",

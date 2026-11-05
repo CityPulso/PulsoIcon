@@ -3,6 +3,7 @@ import { createIcon } from "../runtime/createIcon.js";
 // Drawn after Simple Icons "gstreamer" (CC0-1.0). GStreamer is a trademark of its owner.
 
 export const BrandGstreamer = createIcon("BrandGstreamer", "brand-gstreamer", {
+  text: true,
   nodes: [
     ["path", { d: "M2 8.5c1.2-1 2.3-1 3.5 0s2.3 1 3.5 0" }, { r: "draw" }],
     ["path", { d: "M2 12c1.2-1 2.3-1 3.5 0s2.3 1 3.5 0" }, { r: "draw", d: 0.1 }],

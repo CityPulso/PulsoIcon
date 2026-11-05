@@ -13,4 +13,14 @@ export const ScaleOutlineOff = createIcon("ScaleOutlineOff", "scale-outline-off"
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-10" }, { r: "press", o: [12, 12] }],
+    [
+      "path",
+      { d: "M12 7c1.956 0 3.724 .802 5 2.095l-2.956 2.904a3 3 0 0 0 -2.038 -.799a3 3 0 0 0 -2.038 .798l-2.956 -2.903a6.979 6.979 0 0 1 5 -2.095" },
+      { r: "turn", a: 20, o: [12, 10] },
+      "cut",
+    ],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

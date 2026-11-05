@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "pentagon-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+// Solid from Tabler Icons "pentagon" filled (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const PentagonOff = createIcon("PentagonOff", "pentagon-off", {
   nodes: [
     [
@@ -11,5 +12,16 @@ export const PentagonOff = createIcon("PentagonOff", "pentagon-off", {
       { r: "turn", a: 72, o: [12, 12] },
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
+  ],
+  solid: [
+    [
+      "path",
+      {
+        d: "M10.205 2.6l-6.96 5.238a3 3 0 0 0 -1.045 3.338l2.896 8.765a3 3 0 0 0 2.85 2.059h8.12a3 3 0 0 0 2.841 -2.037l2.973 -8.764a3 3 0 0 0 -1.05 -3.37l-7.033 -5.237l-.091 -.061l-.018 -.01l-.106 -.07a3 3 0 0 0 -3.377 .148z",
+        stroke: "none",
+      },
+      { r: "turn", a: 72, o: [12, 12] },
+    ],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
   ],
 });

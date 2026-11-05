@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const MicAi = createIcon("MicAi", "mic-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M9 15v6" }, { r: "grow", d: 0.15, o: [9, 15] }],
     ["path", { d: "M14 9v1a5 5 0 0 1-10 0V9" }, { r: "redraw", d: 0.05, o: [9, 12.5] }],

@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const ArrowDown01 = createIcon("ArrowDown01", "arrow-down-0-1", {
+  text: true,
   nodes: [
     ["path", { d: "m3 16 4 4 4-4" }, { r: "bounce", y: 1, a: 2, o: [7, 12] }],
     ["path", { d: "M7 20V4" }, { r: "bounce", y: 1, a: 2, o: [7, 12] }],

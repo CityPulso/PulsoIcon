@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const CircleLetterB = createIcon("CircleLetterB", "circle-letter-b", {
+  text: true,
   nodes: [
     [
       "path",

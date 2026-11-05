@@ -13,4 +13,15 @@ export const ShapeOff = createIcon("ShapeOff", "shape-off", {
     ["path", { d: "M19 7v8" }, { r: "draw", d: 0.12, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M3 5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }],
+    ["path", { d: "M17 5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }, { r: "pop", o: [19, 5] }],
+    ["path", { d: "M3 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }, { r: "pop", d: 0.08, o: [5, 19] }],
+    ["path", { d: "M17 19a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }],
+    ["path", { d: "M5 7l0 10", fill: "none" }, { r: "draw", d: 0.12, o: [12, 12] }],
+    ["path", { d: "M7 5l10 0", fill: "none" }, { r: "draw", d: 0.12, o: [12, 12] }],
+    ["path", { d: "M7 19l10 0", fill: "none" }, { r: "draw", d: 0.12, o: [12, 12] }],
+    ["path", { d: "M19 7l0 10", fill: "none" }, { r: "draw", d: 0.12, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { createElement } from "react";
 import * as Pulso from "pulsoicon";
 import { ICON_NAMES, ICONS } from "pulsoicon/all";
+import { iconSpec } from "pulsoicon/runtime/createIcon.js";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 
@@ -79,6 +80,50 @@ describe("props", () => {
   it("keeps the stroke constant in pixels with absoluteStrokeWidth", () => {
     expect(render({ size: 48, absoluteStrokeWidth: true })).toContain('stroke-width="1"');
   });
+
+  it("keeps solid and the animation props off the svg", () => {
+    for (const props of [{ animated: false }, { autoAnimated: false, play: true }, { play: false, solid: true }]) {
+      expect(render(props)).not.toMatch(/animated|play=|solid=/i);
+    }
+  });
+});
+
+describe("solid", () => {
+  const render = (icon: keyof typeof Pulso, props: Record<string, unknown> = {}) => renderToStaticMarkup(createElement(Pulso[icon] as Pulso.PulsoIcon, { solid: true, ...props }));
+
+  it("draws pure solid shapes as fills in the icon colour", () => {
+    const markup = render("Heart", { color: "red" });
+    expect(markup).toContain('<g fill="red"><path');
+    expect(markup).toContain('stroke="none"');
+    expect(markup).not.toContain("<mask");
+    expect(markup).not.toContain("stroke-dasharray");
+  });
+
+  it("moves every solid part like its outline counterpart", () => {
+    // Same set of motions on both sides, including "stays still": a merged shape can't take one part's motion.
+    const motions = (nodes: readonly (readonly unknown[])[]) =>
+      new Set(nodes.map((n) => (n[2] ? JSON.stringify(Object.entries(n[2] as object).sort(([a], [b]) => a.localeCompare(b))) : "still")));
+    const off = ICON_NAMES.filter((name) => {
+      const spec = iconSpec(ICONS[name])!;
+      if (!spec.solid) return false;
+      const outline = motions(spec.nodes);
+      const solid = motions(spec.solid);
+      return outline.size !== solid.size || [...outline].some((m) => !solid.has(m));
+    });
+    expect(off).toEqual([]);
+  });
+
+  it("fills closed outline shapes and cuts open lines out of them when there is no solid drawing", () => {
+    const markup = render("AlarmClockCheck", { color: "red" });
+    expect(markup).toMatch(/<g fill="red" mask="url\(#pulsoicon[\w-]+-fill\)"><circle/);
+    expect(markup).toMatch(/<mask id="pulsoicon[\w-]+-fill"/);
+    expect(markup).toContain('stroke="red"');
+  });
+
+  it("renders every icon solid", () => {
+    const empty = ICON_NAMES.filter((name) => (renderToStaticMarkup(createElement(ICONS[name], { solid: true })).match(SHAPE) ?? []).length === 0);
+    expect(empty).toEqual([]);
+  }, 120_000);
 });
 
 describe("recipes", () => {

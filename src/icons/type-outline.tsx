@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const TypeOutline = createIcon("TypeOutline", "type-outline", {
+  text: true,
   nodes: [
     [
       "path",

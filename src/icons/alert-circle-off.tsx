@@ -8,4 +8,10 @@ export const AlertCircleOff = createIcon("AlertCircleOff", "alert-circle-off", {
     ["path", { d: "M12 16h.01" }, { r: "pop", d: 0.1, o: [12, 16] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }],
+    ["line", { x1: "12", x2: "12", y1: "8", y2: "12" }, { r: "draw" }, "line"],
+    ["line", { x1: "12", x2: "12.01", y1: "16", y2: "16" }, { r: "pop", d: 0.1, o: [12, 16] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

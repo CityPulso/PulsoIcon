@@ -10,4 +10,12 @@ export const SpyOff = createIcon("SpyOff", "spy-off", {
     ["path", { d: "M10 17h4" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M3 11h18", fill: "none" }, { r: "lift", y: -1, a: 0, o: [12, 11] }],
+    ["path", { d: "M5 11v-4a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v4", fill: "none" }, { r: "lift", y: -1, a: 0, o: [12, 11] }],
+    ["path", { d: "M4 17a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" }, { r: "blink", o: [7, 17] }],
+    ["path", { d: "M14 17a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" }, { r: "blink", o: [17, 17] }],
+    ["path", { d: "M10 17h4", fill: "none" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

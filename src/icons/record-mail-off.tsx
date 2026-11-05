@@ -8,4 +8,10 @@ export const RecordMailOff = createIcon("RecordMailOff", "record-mail-off", {
     ["path", { d: "M7 15h8" }, { r: "growX", o: [7, 15] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["circle", { cx: "6", cy: "12", r: "4" }, { r: "spin", a: 360, o: [7, 12] }],
+    ["circle", { cx: "18", cy: "12", r: "4" }, { r: "spin", a: 360, o: [17, 12] }],
+    ["line", { x1: "6", x2: "18", y1: "16", y2: "16", fill: "none" }, { r: "growX", o: [7, 15] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

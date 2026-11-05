@@ -8,4 +8,12 @@ export const AccessibleOff = createIcon("AccessibleOff", "accessible-off", {
     ["path", { d: "M12 8a.5 .5 0 1 0 -.5 -.5" }, { r: "bounce", y: -1, a: 1, o: [12, 13] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" }, { r: "pulse", a: 0.04, o: [12, 12] }],
+    ["path", { d: "M10 16.5l 2 -3 l 2 3" }, { r: "bounce", y: -1, a: 1, o: [12, 13] }, "line"],
+    ["path", { d: "M12 13.5v -2 l 3 -1" }, { r: "bounce", y: -1, a: 1, o: [12, 13] }, "line"],
+    ["path", { d: "M9 10.5l 3 1" }, { r: "bounce", y: -1, a: 1, o: [12, 13] }, "line"],
+    ["path", { d: "M12 7.5h.01" }, { r: "bounce", y: -1, a: 1, o: [12, 13] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

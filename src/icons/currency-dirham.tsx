@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "currency-dirham" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CurrencyDirham = createIcon("CurrencyDirham", "currency-dirham", {
+  text: true,
   nodes: [
     ["path", { d: "M8.5 19h-3.5" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M8.599 16.479a1.5 1.5 0 1 0 -1.099 2.521" }, { r: "draw", d: 0.1 }],

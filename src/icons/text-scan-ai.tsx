@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "text-scan-ai" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const TextScanAi = createIcon("TextScanAi", "text-scan-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M8 12h4.5" }, { r: "growX", d: 0.1, o: [8, 12] }],
     ["path", { d: "M8 8h6" }, { r: "growX", o: [8, 8] }],

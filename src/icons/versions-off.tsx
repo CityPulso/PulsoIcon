@@ -8,4 +8,10 @@ export const VersionsOff = createIcon("VersionsOff", "versions-off", {
     ["path", { d: "M4 8v8" }, { r: "slide", x: -1, y: 0, a: 1, o: [4, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M10 7a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2l0 -10" }],
+    ["path", { d: "M7 7l0 10", fill: "none" }, { r: "slide", d: 0.05, x: -1, y: 0, a: 0.6, o: [7, 12] }],
+    ["path", { d: "M4 8l0 8", fill: "none" }, { r: "slide", x: -1, y: 0, a: 1, o: [4, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

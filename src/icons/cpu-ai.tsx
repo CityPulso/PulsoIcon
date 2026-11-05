@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const CpuAi = createIcon("CpuAi", "cpu-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M12 20v2" }, { r: "grow", d: 0.14, o: [12, 21] }],
     ["path", { d: "M12 2v2" }, { r: "grow", d: 0.05, o: [12, 3] }],

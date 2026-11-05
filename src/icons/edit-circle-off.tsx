@@ -8,4 +8,10 @@ export const EditCircleOff = createIcon("EditCircleOff", "edit-circle-off", {
     ["path", { d: "M7.476 7.471a7 7 0 0 0 2.524 13.529a7 7 0 0 0 6.53 -4.474" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M12 15l8.385 -8.415a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3" }, { r: "tilt", o: [10, 14] }],
+    ["path", { d: "M16 5l3 3" }, { r: "tilt", o: [10, 14] }, "line"],
+    ["path", { d: "M9 7.07a7 7 0 0 0 1 13.93a7 7 0 0 0 6.929 -6", fill: "none" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

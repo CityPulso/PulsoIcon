@@ -11,4 +11,13 @@ export const AddressBookOff = createIcon("AddressBookOff", "address-book-off", {
     ["path", { d: "M4 16h3" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2" }],
+    ["path", { d: "M10 16h6" }, { r: "growX", d: 0.1, o: [10, 16] }, "line"],
+    ["path", { d: "M11 11a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }, { r: "pop", a: 0.15, o: [13, 11] }, "cut"],
+    ["path", { d: "M4 8h3", fill: "none" }],
+    ["path", { d: "M4 12h3", fill: "none" }],
+    ["path", { d: "M4 16h3", fill: "none" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

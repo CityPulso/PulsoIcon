@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "binary-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const BinaryOff = createIcon("BinaryOff", "binary-off", {
+  text: true,
   nodes: [
     ["path", { d: "M11 7v-2h-1" }, { r: "pop", o: [10.5, 6] }],
     ["path", { d: "M18 19v-1" }, { r: "pop", d: 0.3, o: [18, 18.5] }],

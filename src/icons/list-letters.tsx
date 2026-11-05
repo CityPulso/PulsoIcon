@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "list-letters" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const ListLetters = createIcon("ListLetters", "list-letters", {
+  text: true,
   nodes: [
     ["path", { d: "M11 6h9" }, { r: "growX", d: 0.1, o: [11, 6] }],
     ["path", { d: "M11 12h9" }, { r: "growX", d: 0.18, o: [11, 12] }],

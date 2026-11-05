@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Hd = createIcon("Hd", "hd", {
+  text: true,
   nodes: [
     ["path", { d: "M10 12H6" }, { r: "growX", d: 0.2, o: [8, 12] }],
     ["path", { d: "M10 15V9" }, { r: "grow", d: 0.16, o: [10, 12] }],

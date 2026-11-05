@@ -8,4 +8,10 @@ export const RippleOff = createIcon("RippleOff", "ripple-off", {
     ["path", { d: "M3 12c3 -2 6 -2 9 0m5.482 1.429c1.173 -.171 2.345 -.647 3.518 -1.429" }, { r: "slide", d: 0.08, x: 1, a: 1 }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M2 12q2.5 2 5 0t5 0 5 0 5 0", fill: "none" }, { r: "slide", d: 0.08, x: 1, a: 1 }],
+    ["path", { d: "M2 19q2.5 2 5 0t5 0 5 0 5 0", fill: "none" }, { r: "slide", d: 0.16, x: 1, a: 1 }],
+    ["path", { d: "M2 5q2.5 2 5 0t5 0 5 0 5 0", fill: "none" }, { r: "slide", x: 1, a: 1 }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

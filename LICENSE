@@ -27,8 +27,10 @@ names its source in a comment at the top of its file. Their licenses follow:
      also in Lucide), with some icons derived from Feather (MIT)
   2. Hugeicons (MIT): five adapted icons, listed below
   3. Iconoir (MIT): icons marked "Adapted from Iconoir"
-  4. Tabler Icons (MIT): icons marked "Adapted from Tabler Icons"
-  5. Phosphor Icons (MIT): icons marked "Drawn after Phosphor Icons"
+  4. Tabler Icons (MIT): icons marked "Adapted from Tabler Icons", and solid
+     shapes marked "Solid from Tabler Icons"
+  5. Phosphor Icons (MIT): icons marked "Drawn after Phosphor Icons", and solid
+     shapes marked "Solid from Phosphor Icons"
   6. Simple Icons (CC0 1.0): brand icons marked "Drawn after Simple Icons", with
      the logos whose owners use other terms listed by name
 
@@ -148,7 +150,8 @@ SOFTWARE.
 
 The PulsoIcon icons whose source file starts with the comment
 "Adapted from Tabler Icons" use shapes from Tabler Icons (outline set, 3.50.0),
-animated for this set.
+animated for this set. The solid shapes of the icons with the comment
+"Solid from Tabler Icons" are taken from Tabler Icons (filled set, 3.50.0).
 
 The MIT License (MIT) (for the icons described above)
 
@@ -176,7 +179,9 @@ SOFTWARE.
 
 The PulsoIcon icons whose source file starts with the comment "Drawn after Phosphor Icons"
 were redrawn as line icons after the corresponding Phosphor Icons (regular weight) and
-animated for this set.
+animated for this set. The solid shapes of the icons with the comment
+"Solid from Phosphor Icons" are taken from Phosphor Icons (fill weight, core 2.1.1),
+scaled to the 24-unit grid.
 
 The MIT License (MIT) (for the icons described above)
 

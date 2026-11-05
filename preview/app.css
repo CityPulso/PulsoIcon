@@ -90,7 +90,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 12px;
   padding: 16px 24px 48px;
 }
@@ -102,6 +102,11 @@ body {
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--panel);
+}
+
+.more {
+  grid-column: 1 / -1;
+  height: 1px;
 }
 
 .card:hover {
@@ -121,6 +126,17 @@ body {
 
 .cell {
   color: var(--accent);
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.tag.review-todo {
+  background: var(--bg);
+  color: var(--muted);
 }
 
 .name {

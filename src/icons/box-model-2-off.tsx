@@ -7,4 +7,9 @@ export const BoxModel2Off = createIcon("BoxModel2Off", "box-model-2-off", {
     ["path", { d: "M12 8h4v4m0 4h-8v-8" }, { r: "pulse", a: 0.15, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M8 8h8v8h-8l0 -8" }, { r: "pulse", a: 0.15, o: [12, 12] }, "cut"],
+    ["path", { d: "M4 6a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2l0 -12" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

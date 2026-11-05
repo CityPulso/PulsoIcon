@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const BadgeEuro = createIcon("BadgeEuro", "badge-euro", {
+  text: true,
   nodes: [
     [
       "path",

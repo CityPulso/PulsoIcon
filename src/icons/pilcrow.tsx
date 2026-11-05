@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Pilcrow = createIcon("Pilcrow", "pilcrow", {
+  text: true,
   nodes: [
     ["path", { d: "M13 4v16" }, { r: "grow", d: 0.15, o: [13, 12] }],
     ["path", { d: "M17 4v16" }, { r: "grow", d: 0.23, o: [17, 12] }],

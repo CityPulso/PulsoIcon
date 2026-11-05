@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Pi = createIcon("Pi", "pi", {
+  text: true,
   nodes: [
     ["line", { x1: "9", x2: "9", y1: "4", y2: "20" }, { r: "grow", d: 0.1, o: [9, 4] }],
     ["path", { d: "M4 7c0-1.7 1.3-3 3-3h13" }, { r: "growX", o: [12, 5.5] }],

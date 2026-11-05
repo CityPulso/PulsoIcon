@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "circle-dashed-number-3" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const CircleDashedNumber3 = createIcon("CircleDashedNumber3", "circle-dashed-number-3", {
+  text: true,
   nodes: [
     ["path", { d: "M8.56 3.69a9 9 0 0 0 -2.92 1.95" }, { r: "spin", a: 90, o: [12, 12] }],
     ["path", { d: "M3.69 8.56a9 9 0 0 0 -.69 3.44" }, { r: "spin", a: 90, o: [12, 12] }],

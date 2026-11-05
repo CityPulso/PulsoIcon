@@ -10,4 +10,12 @@ export const DeviceImacOff = createIcon("DeviceImacOff", "device-imac-off", {
     ["path", { d: "M14 17l.5 4" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M3 4a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-12" }, { r: "pulse", a: 0.04, o: [12, 10] }],
+    ["path", { d: "M3 13h18" }, { r: "pulse", a: 0.04, o: [12, 10] }, "line"],
+    ["path", { d: "M8 21h8", fill: "none" }],
+    ["path", { d: "M10 17l-.5 4", fill: "none" }],
+    ["path", { d: "M14 17l.5 4", fill: "none" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

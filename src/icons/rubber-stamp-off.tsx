@@ -12,4 +12,10 @@ export const RubberStampOff = createIcon("RubberStampOff", "rubber-stamp-off", {
       { r: "stamp", o: [12, 12] },
     ],
   ],
+  solid: [
+    ["path", { d: "M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-6 0c0 2 1 2 1 3.5V13" }, { r: "stamp", o: [12, 12] }],
+    ["path", { d: "M20 15.5a2.5 2.5 0 0 0-2.5-2.5h-11A2.5 2.5 0 0 0 4 15.5V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1z" }, { r: "stamp", o: [12, 12] }],
+    ["path", { d: "M5 22h14", fill: "none" }, { r: "pulse", d: 0.2, a: 0.1, o: [12, 21] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

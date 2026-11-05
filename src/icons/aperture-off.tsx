@@ -11,4 +11,14 @@ export const ApertureOff = createIcon("ApertureOff", "aperture-off", {
     ["path", { d: "M12.257 20.916l2.123 -6.533m.984 -3.028l.154 -.473" }, { r: "turn", a: 30, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }],
+    ["path", { d: "m14.31 8 5.74 9.94" }, { r: "turn", a: 30, o: [12, 12] }, "line"],
+    ["path", { d: "M9.69 8h11.48" }, { r: "turn", a: 30, o: [12, 12] }, "line"],
+    ["path", { d: "m7.38 12 5.74-9.94" }, { r: "turn", a: 30, o: [12, 12] }, "line"],
+    ["path", { d: "M9.69 16 3.95 6.06" }, { r: "turn", a: 30, o: [12, 12] }, "line"],
+    ["path", { d: "M14.31 16H2.83" }, { r: "turn", a: 30, o: [12, 12] }, "line"],
+    ["path", { d: "m16.62 12-5.74 9.94" }, { r: "turn", a: 30, o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

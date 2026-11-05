@@ -13,4 +13,11 @@ export const GiftOff = createIcon("GiftOff", "gift-off", {
     ],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M12 7v14" }, undefined, "line"],
+    ["path", { d: "M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8", fill: "none" }],
+    ["path", { d: "M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5", fill: "none" }, { r: "lift", y: -1, a: 1.5, o: [12, 6] }],
+    ["rect", { x: "3", y: "7", width: "18", height: "4", rx: "1" }, { r: "lift", y: -1, a: 1, o: [12, 10] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

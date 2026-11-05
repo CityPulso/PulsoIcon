@@ -9,4 +9,11 @@ export const IdBadgeOff = createIcon("IdBadgeOff", "id-badge-off", {
     ["path", { d: "M9 18h6" }, { r: "swing", o: [12, 3] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M5 6a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v12a3 3 0 0 1 -3 3h-8a3 3 0 0 1 -3 -3l0 -12" }, { r: "swing", o: [12, 3] }],
+    ["path", { d: "M10 13a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }, { r: "pop", o: [12, 12.5] }, "cut"],
+    ["path", { d: "M10 6h4" }, { r: "swing", o: [12, 3] }, "line"],
+    ["path", { d: "M9 18h6" }, { r: "swing", o: [12, 3] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

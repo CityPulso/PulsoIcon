@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Iconoir "square-3d-from-center" (MIT, Copyright (c) 2021 Luca Burgio).
 export const Square3dFromCenter = createIcon("Square3dFromCenter", "square-3d-from-center", {
+  text: true,
   nodes: [
     [
       "path",

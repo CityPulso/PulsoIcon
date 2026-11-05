@@ -8,4 +8,9 @@ export const HouseOff = createIcon("HouseOff", "house-off", {
     ["path", { d: "M9 21v-6a2 2 0 0 1 2 -2h2m2 2v6" }, { r: "swing", a: 10, o: [9, 21] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" }, { r: "swing", a: 10, o: [9, 21] }, "cut"],
+    ["path", { d: "M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

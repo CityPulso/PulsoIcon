@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "vip" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const Vip = createIcon("Vip", "vip", {
+  text: true,
   nodes: [
     ["path", { d: "M3 5h18" }, { r: "growX", o: [12, 5] }],
     ["path", { d: "M3 19h18" }, { r: "growX", o: [12, 19] }],

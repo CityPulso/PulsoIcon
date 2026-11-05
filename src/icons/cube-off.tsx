@@ -15,4 +15,10 @@ export const CubeOff = createIcon("CubeOff", "cube-off", {
     ["path", { d: "M3.27 6.96l8.73 5.04" }, { r: "turn", a: 12, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" }, { r: "turn", a: 12, o: [12, 12] }],
+    ["path", { d: "m3.3 7 8.7 5 8.7-5" }, { r: "turn", a: 12, o: [12, 12] }, "line"],
+    ["path", { d: "M12 22V12" }, { r: "turn", a: 12, o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

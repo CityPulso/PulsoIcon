@@ -7,4 +7,9 @@ export const CopyleftOff = createIcon("CopyleftOff", "copyleft-off", {
     ["path", { d: "M20.042 16.045a9 9 0 0 0 -12.087 -12.087m-2.318 1.677a9 9 0 1 0 12.725 12.73" }, { r: "turn", a: -30, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }, { r: "turn", a: -30, o: [12, 12] }],
+    ["path", { d: "M9.17 14.83a4 4 0 1 0 0-5.66" }, { r: "pop", o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

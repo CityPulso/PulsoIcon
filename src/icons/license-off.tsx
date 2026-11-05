@@ -12,4 +12,11 @@ export const LicenseOff = createIcon("LicenseOff", "license-off", {
     ["path", { d: "M9 11h2" }, { r: "draw", d: 0.3, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
   ],
+  solid: [
+    ["path", { d: "M15 21h -9 a 3 3 0 0 1 -3 -3 v -1 h 10 v 2 a 2 2 0 0 0 4 0 v -14 a 2 2 0 1 1 2 2 h -2", fill: "none" }, { r: "wobble", a: 4, o: [12, 12] }],
+    ["path", { d: "M19 3h -11 a 3 3 0 0 0 -3 3 v 11", fill: "none" }, { r: "wobble", a: 4, o: [12, 12] }],
+    ["path", { d: "M9 7l4 0", fill: "none" }, { r: "draw", d: 0.2, o: [12, 12] }],
+    ["path", { d: "M9 11l4 0", fill: "none" }, { r: "draw", d: 0.3, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
 });

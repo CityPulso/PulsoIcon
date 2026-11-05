@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "ai-agent" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const AiAgent = createIcon("AiAgent", "ai-agent", {
+  text: true,
   nodes: [
     ["path", { d: "M11 14a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "pop", d: 0.16, o: [12, 14] }],
     ["path", { d: "M6 14a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" }, { r: "pop", d: 0.12, o: [7, 14] }],

@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "file-type-js" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const FileTypeJs = createIcon("FileTypeJs", "file-type-js", {
+  text: true,
   nodes: [
     ["path", { d: "M14 3v4a1 1 0 0 0 1 1h4" }],
     ["path", { d: "M3 15h3v4.5a1.5 1.5 0 0 1 -3 0" }, { r: "draw", d: 0.05 }],

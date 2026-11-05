@@ -7,4 +7,9 @@ export const BadgesOff = createIcon("BadgesOff", "badges-off", {
     ["path", { d: "M13.873 9.876l3.127 -1.876v-4l-5 3l-2.492 -1.495m-2.508 1.495v1l2.492 1.495" }, { r: "float", d: 0.1, o: [12, 7] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M17 17v-4l-5 3l-5 -3v4l5 3l5 -3" }, { r: "float", o: [12, 16] }],
+    ["path", { d: "M17 8v-4l-5 3l-5 -3v4l5 3l5 -3" }, { r: "float", d: 0.1, o: [12, 7] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

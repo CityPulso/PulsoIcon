@@ -12,4 +12,10 @@ export const AlertTriangleOff = createIcon("AlertTriangleOff", "alert-triangle-o
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
     ["path", { d: "M12 7v1" }, { r: "draw" }],
   ],
+  solid: [
+    ["path", { d: "m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" }, { r: "shake", o: [12, 12] }],
+    ["path", { d: "M12 9v4" }, { r: "draw" }, "line"],
+    ["path", { d: "M12 17h.01" }, { r: "pop", d: 0.1, o: [12, 16] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

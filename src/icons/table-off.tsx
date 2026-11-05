@@ -8,4 +8,11 @@ export const TableOff = createIcon("TableOff", "table-off", {
     ["path", { d: "M10 3v3m0 4v11" }, { r: "fade", o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M12 3v18" }, { r: "fade", o: [12, 12] }, "line"],
+    ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2" }],
+    ["path", { d: "M3 9h18" }, { r: "fade", o: [12, 12] }, "line"],
+    ["path", { d: "M3 15h18" }, { r: "fade", o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

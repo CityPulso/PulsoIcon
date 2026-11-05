@@ -13,4 +13,15 @@ export const VectorOff = createIcon("VectorOff", "vector-off", {
     ["path", { d: "M7 19h10" }, { r: "draw", d: 0.12, o: [12, 12] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
   ],
+  solid: [
+    ["path", { d: "M3 4a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1l0 -2" }],
+    ["path", { d: "M17 4a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1l0 -2" }, { r: "pop", o: [19, 5] }],
+    ["path", { d: "M17 18a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1l0 -2" }],
+    ["path", { d: "M3 18a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1l0 -2" }, { r: "pop", d: 0.08, o: [5, 19] }],
+    ["path", { d: "M5 7l0 10", fill: "none" }, { r: "draw", d: 0.12, o: [12, 12] }],
+    ["path", { d: "M19 7l0 10", fill: "none" }, { r: "draw", d: 0.12, o: [12, 12] }],
+    ["path", { d: "M7 5l10 0", fill: "none" }, { r: "draw", d: 0.12, o: [12, 12] }],
+    ["path", { d: "M7 19l10 0", fill: "none" }, { r: "draw", d: 0.12, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

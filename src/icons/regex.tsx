@@ -1,6 +1,7 @@
 import { createIcon } from "../runtime/createIcon.js";
 
 export const Regex = createIcon("Regex", "regex", {
+  text: true,
   nodes: [
     ["path", { d: "M17 3v10" }, { r: "spin", a: 90, o: [17, 8] }],
     ["path", { d: "m12.67 5.5 8.66 5" }, { r: "spin", a: 90, o: [17, 8] }],

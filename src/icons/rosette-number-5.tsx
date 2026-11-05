@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "rosette-number-5" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const RosetteNumber5 = createIcon("RosetteNumber5", "rosette-number-5", {
+  text: true,
   nodes: [
     ["path", { d: "M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-3v-4h4" }, { r: "draw", d: 0.1 }],
     [

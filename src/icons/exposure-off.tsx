@@ -9,4 +9,12 @@ export const ExposureOff = createIcon("ExposureOff", "exposure-off", {
     ["path", { d: "M7 3h12a2 2 0 0 1 2 2v12m-.5 3.5c-.362 .36 -.95 .5 -1.5 .5h-14a2 2 0 0 1 -2 -2v-14c0 -.541 .215 -1.033 .565 -1.393" }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M3.6 20.4l16.8 -16.8" }, undefined, "line"],
+    ["path", { d: "M6 8h 4" }, { r: "pop", o: [7, 9] }, "line"],
+    ["path", { d: "M8 6v 4" }, { r: "pop", o: [7, 9] }, "line"],
+    ["path", { d: "M14 16h4" }, { r: "pop", d: 0.1, o: [15, 16] }, "line"],
+    ["path", { d: "M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2l0 -14" }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

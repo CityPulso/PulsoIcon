@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "alphabet-runes" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const AlphabetRunes = createIcon("AlphabetRunes", "alphabet-runes", {
+  text: true,
   nodes: [
     ["path", { d: "M17 18v-12" }, { r: "draw", d: 0.0 }],
     ["path", { d: "M13 6l4 4l4 -4" }, { r: "draw", d: 0.12 }],

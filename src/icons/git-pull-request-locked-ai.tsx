@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "git-pull-request-locked-ai" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const GitPullRequestLockedAi = createIcon("GitPullRequestLockedAi", "git-pull-request-locked-ai", {
+  text: true,
   nodes: [
     ["path", { d: "M4 18a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" }],
     ["path", { d: "M4 6a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" }],

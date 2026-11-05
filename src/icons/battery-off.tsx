@@ -10,4 +10,9 @@ export const BatteryOff = createIcon("BatteryOff", "battery-off", {
       { r: "flicker", o: [12, 12] },
     ],
   ],
+  solid: [
+    ["path", { d: "M 22 14 L 22 10", fill: "none" }, { r: "flicker", o: [12, 12] }],
+    ["rect", { x: "2", y: "6", width: "16", height: "12", rx: "2" }, { r: "flicker", o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
 });

@@ -14,4 +14,10 @@ export const BalloonOff = createIcon("BalloonOff", "balloon-off", {
     ["path", { d: "M12 17v1a2 2 0 0 1 -2 2h-3a2 2 0 0 0 -2 2" }, { r: "sway", o: [12, 17] }],
     ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
   ],
+  solid: [
+    ["path", { d: "M12 16v1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v1", fill: "none" }, { r: "sway", o: [12, 17] }],
+    ["path", { d: "M12 6a2 2 0 0 1 2 2" }, { r: "float", y: -1, a: 1.5, o: [12, 9] }, "line"],
+    ["path", { d: "M18 8c0 4-3.5 8-6 8s-6-4-6-8a6 6 0 0 1 12 0" }, { r: "float", y: -1, a: 1.5, o: [12, 9] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
 });

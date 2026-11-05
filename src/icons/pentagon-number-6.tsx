@@ -2,6 +2,7 @@ import { createIcon } from "../runtime/createIcon.js";
 
 // Adapted from Tabler Icons "pentagon-number-6" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
 export const PentagonNumber6 = createIcon("PentagonNumber6", "pentagon-number-6", {
+  text: true,
   nodes: [
     [
       "path",
