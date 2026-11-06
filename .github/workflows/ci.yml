@@ -71,9 +71,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Build for iOS
-        run: |
-          set -o pipefail
-          xcodebuild -scheme PulsoIcon -destination 'generic/platform=iOS' -skipPackagePluginValidation build | tail -40
+        # -quiet prints only warnings and errors, so the compiler's messages are never cut off.
+        run: xcodebuild -quiet -scheme PulsoIcon -destination 'generic/platform=iOS' -skipPackagePluginValidation build
 
   release:
     name: Release
