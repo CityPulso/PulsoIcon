@@ -253,7 +253,8 @@ private struct IconDrawing {
         switch node.shape {
         case let .path(d):
             do {
-                return Path(try SVGPath(string: d))
+                // SVG 的 y 轴向下：SVGPath 默认翻转 y 轴（invertYAxis: true），不关掉整个图形会画到画布上方、看不见。
+                return Path(try SVGPath(string: d, with: .init(invertYAxis: false)))
             } catch {
                 assertionFailure("PulsoIcon: bad path data \(d): \(error)")
                 return Path()

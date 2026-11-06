@@ -1,6 +1,6 @@
 {
   "name": "pulsoicon-workspace",
-  "version": "6.0.2",
+  "version": "6.1.0",
   "private": true,
   "type": "module",
   "description": "PulsoIcon for every platform. The version here is the release version of every package (npm, Maven, SwiftPM tag).",

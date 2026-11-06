@@ -74,3 +74,23 @@ import Testing
         #expect(PulsoIcon.byKey("no-such-icon") == nil)
     }
 }
+
+#if canImport(SwiftUI) && canImport(AppKit)
+import AppKit
+import SwiftUI
+
+/// The view draws path shapes inside its square (SVG's y axis points down; a flipped parse leaves the canvas empty).
+@MainActor @Suite struct PulsoIconViewRenderTests {
+    @Test func pathOnlyIconDrawsInsideTheCanvas() throws {
+        let renderer = ImageRenderer(content: PulsoIconView(.chevronRight, size: 48, color: .black, animated: false))
+        renderer.scale = 1
+        let image = try #require(renderer.cgImage)
+        let rep = NSBitmapImageRep(cgImage: image)
+        var inked = 0
+        for x in 0 ..< rep.pixelsWide {
+            for y in 0 ..< rep.pixelsHigh where (rep.colorAt(x: x, y: y)?.alphaComponent ?? 0) > 0.5 { inked += 1 }
+        }
+        #expect(inked > 20, "chevron-right drew \(inked) pixels")
+    }
+}
+#endif

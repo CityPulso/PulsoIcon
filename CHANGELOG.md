@@ -1,5 +1,13 @@
 # Changelog
 
+## 6.1.0
+
+### Fixed
+
+- **Swift: icons drawn with SVG paths were blank.** `SVGPath(string:)` flips the y axis by default, so every `<path>`
+  was drawn above the canvas and only circles, rects and lines showed. Paths now parse with SVG's own y axis (down).
+  A macOS render test draws a path-only icon so this cannot come back unnoticed.
+
 ## 6.0.2
 
 ### Fixed
