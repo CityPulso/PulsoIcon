@@ -78,8 +78,13 @@ public struct PulsoIconView: View {
         self.label = label
     }
 
+    // The body is split into small functions: one long modifier chain is more than the type checker will solve in time.
     public var body: some View {
         let drawing = IconDrawing.of(icon, solid: solid)
+        return lifecycle(triggers(accessible(canvas(drawing))), duration: drawing.duration)
+    }
+
+    private func canvas(_ drawing: IconDrawing) -> some View {
         let shading: GraphicsContext.Shading = color.map { .color($0) } ?? .foreground
         let strokeWidth = strokeWidth
         let absolute = absoluteStrokeWidth
@@ -87,7 +92,7 @@ public struct PulsoIconView: View {
         let svg = icon.svg
         let run = run
         let duration = drawing.duration
-        TimelineView(.animation(paused: run.startedAt == nil)) { timeline in
+        return TimelineView(.animation(paused: run.startedAt == nil)) { timeline in
             let frame = run.frame(at: timeline.date, duration: duration)
             Canvas { context, canvas in
                 let side = min(canvas.width, canvas.height)
@@ -98,30 +103,44 @@ public struct PulsoIconView: View {
             }
         }
         .frame(width: size, height: size)
-        .accessibilityElement()
-        .accessibilityLabel(label ?? Text(verbatim: ""))
-        .accessibilityAddTraits(.isImage)
-        .accessibilityHidden(label == nil)
-        .onHover { inside in
-            guard animated, autoAnimated else { return }
-            inside ? start() : stop()
-        }
-        .onChange(of: play, initial: true) { _, play in
-            guard animated, let play else { return }
-            play ? start() : stop()
-        }
-        .onChange(of: animated) { _, animated in
-            if !animated { run = Run(token: run.token + 1) }
-        }
-        .onChange(of: handle?.starts) { start() }
-        .onChange(of: handle?.stops) { stop() }
-        .onChange(of: icon) { run = Run(token: run.token + 1) }
-        .onChange(of: solid) { run = Run(token: run.token + 1) }
-        .onAppear { sync(duration) }
-        .onChange(of: duration) { sync(duration) }
-        .onChange(of: animated) { sync(duration) }
-        .onChange(of: reduceMotion) { sync(duration) }
-        .task(id: run.token) { await settle(token: run.token, duration: duration) }
+    }
+
+    private func accessible(_ content: some View) -> some View {
+        content
+            .accessibilityElement()
+            .accessibilityLabel(label ?? Text(verbatim: ""))
+            .accessibilityAddTraits(.isImage)
+            .accessibilityHidden(label == nil)
+    }
+
+    /// What plays and stops the motion: hover, `play`, the handle.
+    private func triggers(_ content: some View) -> some View {
+        content
+            .onHover { (inside: Bool) in
+                guard animated, autoAnimated else { return }
+                if inside { start() } else { stop() }
+            }
+            .onChange(of: play, initial: true) { (_: Bool?, play: Bool?) in
+                guard animated, let play else { return }
+                if play { start() } else { stop() }
+            }
+            .onChange(of: handle?.starts) { start() }
+            .onChange(of: handle?.stops) { stop() }
+    }
+
+    /// Resets on a new icon or drawing, keeps the handle in sync, and returns to rest when a play ends.
+    private func lifecycle(_ content: some View, duration: Double) -> some View {
+        content
+            .onChange(of: animated) { (_: Bool, animated: Bool) in
+                if !animated { run = Run(token: run.token + 1) }
+                sync(duration)
+            }
+            .onChange(of: icon) { run = Run(token: run.token + 1) }
+            .onChange(of: solid) { run = Run(token: run.token + 1) }
+            .onAppear { sync(duration) }
+            .onChange(of: duration) { sync(duration) }
+            .onChange(of: reduceMotion) { sync(duration) }
+            .task(id: run.token) { await settle(token: run.token, duration: duration) }
     }
 
     private func sync(_ duration: Double) {
