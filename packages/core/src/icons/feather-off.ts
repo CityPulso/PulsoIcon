@@ -1,0 +1,21 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "feather-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const FeatherOff = icon("FeatherOff", "feather-off", {
+  nodes: [
+    ["path", { d: "M4 20l8 -8" }, { r: "draw" }],
+    ["path", { d: "M14 5v5h5" }, { r: "sway", a: 6, o: [5, 19] }],
+    ["path", { d: "M9 11v4h4" }, { r: "sway", a: 6, o: [5, 19] }],
+    ["path", { d: "M6 13v5h5" }, { r: "sway", a: 6, o: [5, 19] }],
+    ["path", { d: "M6 13l3.502 -3.502m2.023 -2.023l2.475 -2.475" }, { r: "sway", a: 6, o: [5, 19] }],
+    ["path", { d: "M19 10c.638 -.636 1 -1.515 1 -2.486a3.515 3.515 0 0 0 -3.517 -3.514c-.97 0 -1.847 .367 -2.483 1" }, { r: "sway", a: 6, o: [5, 19] }],
+    ["path", { d: "M11 18l3.499 -3.499m2.008 -2.008l2.493 -2.493" }, { r: "sway", a: 6, o: [5, 19] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }],
+  ],
+  solid: [
+    ["path", { d: "M14.086 18.412A2 2 0 0112.67 19H5v-7.672a2 2 0 01.586-1.414L11.75 3.75a6 6 0 118.49 8.49z" }, { r: "sway", a: 6, o: [5, 19] }],
+    ["path", { d: "M16 8 2 22" }, { r: "draw" }, "line"],
+    ["path", { d: "M17.488 15H9" }, { r: "sway", a: 6, o: [5, 19] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.2 }, "line"],
+  ],
+});

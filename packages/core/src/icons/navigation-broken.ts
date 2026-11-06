@@ -1,0 +1,10 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "location-broken" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const NavigationBroken = icon("NavigationBroken", "navigation-broken", {
+  nodes: [
+    ["path", { d: "M12.896 19.792l-2.896 -5.792l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-3.487 9.657" }],
+    ["path", { d: "M21.5 21.5l-5 -5" }, { r: "draw", d: 0.1 }],
+    ["path", { d: "M16.5 21.5l5 -5" }, { r: "draw", d: 0.2 }],
+  ],
+});

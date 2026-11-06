@@ -1,0 +1,9 @@
+import { icon } from "../icon.js";
+
+// Adapted from Iconoir "bluetooth-tag" (MIT, Copyright (c) 2021 Luca Burgio).
+export const BluetoothTag = icon("BluetoothTag", "bluetooth-tag", {
+  nodes: [
+    ["path", { d: "M9 9.6L15 14.7L11.8571 18V6L15 9.3L9 14.4" }, { r: "draw" }],
+    ["path", { d: "M2 15V9C2 5.68629 4.68629 3 8 3H16C19.3137 3 22 5.68629 22 9V15C22 18.3137 19.3137 21 16 21H8C4.68629 21 2 18.3137 2 15Z" }],
+  ],
+});

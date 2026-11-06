@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "pulsoicon": [
+        "../../packages/react/src/index.ts"
+      ],
+      "pulsoicon/*": [
+        "../../packages/react/src/*"
+      ],
+      "pulsoicon-core": [
+        "../../packages/core/src/index.ts"
+      ],
+      "pulsoicon-core/*": [
+        "../../packages/core/src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "tests"
+  ]
+}

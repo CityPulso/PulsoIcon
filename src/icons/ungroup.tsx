@@ -1,8 +1,0 @@
-import { createIcon } from "../runtime/createIcon.js";
-
-export const Ungroup = createIcon("Ungroup", "ungroup", {
-  nodes: [
-    ["rect", { x: "11", y: "14", width: "10", height: "7", rx: "2" }, { r: "slide", x: 1, y: 1, a: 2, o: [16, 17.5] }],
-    ["rect", { x: "3", y: "3", width: "10", height: "7", rx: "2" }, { r: "slide", x: -1, y: -1, a: 2, o: [8, 6.5] }],
-  ],
-});

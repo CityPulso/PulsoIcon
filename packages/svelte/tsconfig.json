@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "verbatimModuleSyntax": true,
+    "paths": {
+      "pulsoicon-core": [
+        "../core/src/index.ts"
+      ],
+      "pulsoicon-core/*": [
+        "../core/src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "tests"
+  ]
+}

@@ -1,8 +1,0 @@
-import { createIcon } from "../runtime/createIcon.js";
-
-export const MoveUpRight = createIcon("MoveUpRight", "move-up-right", {
-  nodes: [
-    ["path", { d: "M13 5H19V11" }, { r: "shoot", x: 1, y: -1, a: 4, o: [12, 12] }],
-    ["path", { d: "M19 5L5 19" }, { r: "shoot", x: 1, y: -1, a: 4, o: [12, 12] }],
-  ],
-});

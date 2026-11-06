@@ -1,7 +1,0 @@
-import { createIcon } from "../runtime/createIcon.js";
-
-// Adapted from Tabler Icons "number-3-small" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
-export const Number3Small = createIcon("Number3Small", "number-3-small", {
-  text: true,
-  nodes: [["path", { d: "M10 8h2.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-1.5h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-2.5" }, { r: "draw" }]],
-});

@@ -1,0 +1,8 @@
+import { icon } from "../icon.js";
+
+export const BookmarkCheck = icon("BookmarkCheck", "bookmark-check", {
+  nodes: [
+    ["path", { d: "M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z" }, { r: "swing", a: 6, o: [12, 3] }],
+    ["path", { d: "m9 10 2 2 4-4" }, { r: "draw", d: 0.1, o: [12, 10] }],
+  ],
+});

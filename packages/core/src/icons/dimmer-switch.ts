@@ -1,0 +1,10 @@
+import { icon } from "../icon.js";
+
+// Adapted from Iconoir "dimmer-switch" (MIT, Copyright (c) 2021 Luca Burgio).
+export const DimmerSwitch = icon("DimmerSwitch", "dimmer-switch", {
+  nodes: [
+    ["path", { d: "M21 3.6V20.4C21 20.7314 20.7314 21 20.4 21H3.6C3.26863 21 3 20.7314 3 20.4V3.6C3 3.26863 3.26863 3 3.6 3H20.4C20.7314 3 21 3.26863 21 3.6Z" }],
+    ["path", { d: "M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" }, { r: "turn", a: 60, o: [12, 12] }],
+    ["path", { d: "M15.5 7.5L12 12" }, { r: "turn", a: 60, o: [12, 12] }],
+  ],
+});

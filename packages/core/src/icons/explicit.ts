@@ -1,0 +1,10 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "explicit" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const Explicit = icon("Explicit", "explicit", {
+  nodes: [
+    ["path", { d: "M4 5a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1l0 -14" }],
+    ["path", { d: "M14 8h-4v8h4" }, { r: "draw" }],
+    ["path", { d: "M14 12h-4" }, { r: "draw", d: 0.2 }],
+  ],
+});

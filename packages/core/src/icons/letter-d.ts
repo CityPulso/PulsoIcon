@@ -1,0 +1,6 @@
+import { icon } from "../icon.js";
+
+export const LetterD = icon("LetterD", "letter-d", {
+  text: true,
+  nodes: [["path", { d: "M11 4a8 8 0 010 16H6.406A.406.406 0 016 19.594V4.406A.406.406 0 016.406 4z" }, { r: "draw", o: [12.5, 12] }]],
+});

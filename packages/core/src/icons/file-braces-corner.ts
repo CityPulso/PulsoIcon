@@ -1,0 +1,10 @@
+import { icon } from "../icon.js";
+
+export const FileBracesCorner = icon("FileBracesCorner", "file-braces-corner", {
+  nodes: [
+    ["path", { d: "M14 22h4a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v6" }, { r: "press", a: 0.04, o: [12, 22] }],
+    ["path", { d: "M14 2v5a1 1 0 0 0 1 1h5" }, { r: "press", a: 0.04, o: [12, 22] }],
+    ["path", { d: "M5 14a1 1 0 0 0-1 1v2a1 1 0 0 1-1 1 1 1 0 0 1 1 1v2a1 1 0 0 0 1 1" }, { r: "slide", d: 0.1, x: -1, a: 1.5, o: [4, 18] }],
+    ["path", { d: "M9 22a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-2a1 1 0 0 0-1-1" }, { r: "slide", d: 0.1, x: 1, a: 1.5, o: [10, 18] }],
+  ],
+});

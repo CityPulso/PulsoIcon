@@ -1,0 +1,10 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "number-31-small" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const Number31Small = icon("Number31Small", "number-31-small", {
+  text: true,
+  nodes: [
+    ["path", { d: "M15 8h1v8" }, { r: "draw", d: 0.25 }],
+    ["path", { d: "M7 8h2.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-1.5h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1 -1.5 1.5h-2.5" }, { r: "draw" }],
+  ],
+});

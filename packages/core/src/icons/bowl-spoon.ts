@@ -1,0 +1,10 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "bowl-spoon" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const BowlSpoon = icon("BowlSpoon", "bowl-spoon", {
+  nodes: [
+    ["path", { d: "M4 11h16a1 1 0 0 1 1 1v.5c0 1.5 -2.517 5.573 -4 6.5v1a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-1c-1.687 -1.054 -4 -5 -4 -6.5v-.5a1 1 0 0 1 1 -1" }],
+    ["path", { d: "M8 7c1.657 0 3 -.895 3 -2s-1.343 -2 -3 -2s-3 .895 -3 2s1.343 2 3 2" }, { r: "lift", x: 1, y: -1, a: -8 }],
+    ["path", { d: "M11 5h9" }, { r: "lift", x: 1, y: -1, a: -8 }],
+  ],
+});

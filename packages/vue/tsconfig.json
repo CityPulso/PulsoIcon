@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "pulsoicon-vue": [
+        "../../packages/vue/src/index.ts"
+      ],
+      "pulsoicon-vue/*": [
+        "../../packages/vue/src/*"
+      ],
+      "pulsoicon-core": [
+        "../../packages/core/src/index.ts"
+      ],
+      "pulsoicon-core/*": [
+        "../../packages/core/src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "tests"
+  ]
+}

@@ -1,0 +1,12 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "shopping-cart-down" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const ShoppingCartDown = icon("ShoppingCartDown", "shopping-cart-down", {
+  nodes: [
+    ["path", { d: "M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" }],
+    ["path", { d: "M12.5 17h-6.5v-14h-2" }],
+    ["path", { d: "M6 5l14 1l-.859 6.011m-2.641 .989h-10.5" }],
+    ["path", { d: "M19 16v6" }, { r: "slide", y: 1, a: 2 }],
+    ["path", { d: "M22 19l-3 3l-3 -3" }, { r: "slide", y: 1, a: 2 }],
+  ],
+});

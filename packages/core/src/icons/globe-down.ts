@@ -1,0 +1,14 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "world-down" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const GlobeDown = icon("GlobeDown", "globe-down", {
+  nodes: [
+    ["path", { d: "M20.986 12.509a9 9 0 1 0 -8.455 8.476" }],
+    ["path", { d: "M3.6 9h16.8" }],
+    ["path", { d: "M3.6 15h10.9" }],
+    ["path", { d: "M11.5 3a17 17 0 0 0 0 18" }],
+    ["path", { d: "M12.5 3c2.313 3.706 3.07 7.857 2.27 12" }],
+    ["path", { d: "M19 16v6" }, { r: "slide", d: 0.1, x: 0, y: 1, a: 2 }],
+    ["path", { d: "M22 19l-3 3l-3 -3" }, { r: "slide", d: 0.1, x: 0, y: 1, a: 2 }],
+  ],
+});

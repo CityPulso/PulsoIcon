@@ -1,20 +1,26 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "moduleDetection": "force",
-    "jsx": "react-jsx",
-    "strict": true,
-    "skipLibCheck": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "isolatedModules": true,
-    "types": ["node"],
-    "paths": { "pulsoicon": ["./src/index.ts"], "pulsoicon/*": ["./src/*"] },
-    "noEmit": true
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "pulsoicon": [
+        "./packages/react/src/index.ts"
+      ],
+      "pulsoicon/*": [
+        "./packages/react/src/*"
+      ],
+      "pulsoicon-core": [
+        "./packages/core/src/index.ts"
+      ],
+      "pulsoicon-core/*": [
+        "./packages/core/src/*"
+      ]
+    }
   },
-  "include": ["src", "tests", "preview"]
+  "include": [
+    "preview",
+    "scripts"
+  ]
 }

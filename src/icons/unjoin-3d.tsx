@@ -1,8 +1,0 @@
-import { createIcon } from "../runtime/createIcon.js";
-
-export const Unjoin3d = createIcon("Unjoin3d", "unjoin-3d", {
-  nodes: [
-    ["path", { d: "M7.5 2.5 11.83 5 11.83 10 7.5 12.5 3.17 10 3.17 5ZM3.17 5 7.5 7.5 11.83 5M7.5 7.5 7.5 12.5" }, { r: "slide", x: -1, y: -1, a: 1, o: [7.5, 7.5] }],
-    ["path", { d: "M16.5 11.5 20.83 14 20.83 19 16.5 21.5 12.17 19 12.17 14ZM12.17 14 16.5 16.5 20.83 14M16.5 16.5 16.5 21.5" }, { r: "slide", x: 1, y: 1, a: 1, o: [16.5, 16.5] }],
-  ],
-});

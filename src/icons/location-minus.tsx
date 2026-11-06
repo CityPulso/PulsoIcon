@@ -1,9 +1,0 @@
-import { createIcon } from "../runtime/createIcon.js";
-
-// Adapted from Tabler Icons "location-minus" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
-export const LocationMinus = createIcon("LocationMinus", "location-minus", {
-  nodes: [
-    ["path", { d: "M12 18l-2 -4l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5l-4.347 12.038" }],
-    ["path", { d: "M16 19h6" }, { r: "growX", d: 0.15, o: [19, 19] }],
-  ],
-});

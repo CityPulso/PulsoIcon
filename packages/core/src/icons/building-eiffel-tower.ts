@@ -1,0 +1,15 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "building-eiffel-tower" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const BuildingEiffelTower = icon("BuildingEiffelTower", "building-eiffel-tower", {
+  nodes: [
+    ["path", { d: "M11 4c0 4.889 -2.292 12.111 -5 17" }],
+    ["path", { d: "M13 4c0 4.889 2.292 12.111 5 17" }],
+    ["path", { d: "M3 21h18" }],
+    ["path", { d: "M8 14h8" }, { r: "draw" }],
+    ["path", { d: "M9 10h6" }, { r: "draw", d: 0.1 }],
+    ["path", { d: "M10 4h4" }, { r: "draw", d: 0.2 }],
+    ["path", { d: "M12 2v1.778" }, { r: "flicker", d: 0.3 }],
+    ["path", { d: "M10 21s.27 -1.406 .667 -2c.333 -.5 .666 -1 1.333 -1s1 .5 1.333 1c.448 .672 .667 2 .667 2" }],
+  ],
+});

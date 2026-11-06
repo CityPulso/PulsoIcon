@@ -1,65 +1,27 @@
 {
-  "name": "pulsoicon",
+  "name": "pulsoicon-workspace",
   "version": "5.2.1",
-  "description": "9955 animated React icons, each with its own hand-written motion. Drop-in replacement for lucide-react.",
+  "private": true,
   "type": "module",
-  "sideEffects": false,
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CityPulso/PulsoIcon.git"
-  },
-  "homepage": "https://github.com/CityPulso/PulsoIcon#readme",
-  "bugs": {
-    "url": "https://github.com/CityPulso/PulsoIcon/issues"
-  },
-  "keywords": [
-    "icons",
-    "animated-icons",
-    "react",
-    "lucide",
-    "tabler",
-    "iconoir",
-    "phosphor",
-    "simple-icons",
-    "motion",
-    "svg",
-    "brand-icons"
+  "description": "PulsoIcon for every platform. The version here is the release version of every package (npm, Maven, SwiftPM tag).",
+  "workspaces": [
+    "packages/core",
+    "packages/react",
+    "packages/vue",
+    "packages/svelte"
   ],
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
-    },
-    "./all": {
-      "types": "./dist/all.d.ts",
-      "import": "./dist/all.js"
-    },
-    "./icons/*": {
-      "types": "./dist/icons/*.d.ts",
-      "import": "./dist/icons/*.js"
-    }
-  },
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.build.json",
-    "typecheck": "tsc -p tsconfig.json",
-    "test": "vitest run",
+    "gen": "tsx scripts/gen.ts",
+    "gen:check": "tsx scripts/gen.ts --check",
+    "set-version": "tsx scripts/version.ts",
+    "version:check": "tsx scripts/version.ts --check",
+    "build": "npm run gen && npm run build --workspaces",
+    "typecheck": "npm run typecheck --workspaces",
+    "test": "npm test --workspaces",
+    "test:browser": "node tests/browser/motion-parity.mjs",
     "preview": "vite --config preview/vite.config.ts",
-    "prettier": "prettier --write \"{src,tests,preview,.scripts}/**/*.{ts,tsx,css,html}\"",
-    "import-solid": "tsx .scripts/import-solid.ts && npm run prettier",
-    "prepublishOnly": "npm run typecheck && npm test && npm run build"
-  },
-  "peerDependencies": {
-    "motion": ">=12.0.0",
-    "react": ">=18.0.0"
+    "prettier": "prettier --write \"{packages/core/src,packages/*/tests,packages/react/src/runtime,preview,scripts,tests}/**/*.{ts,tsx,mjs,css,html}\" packages/vue/src/createIcon.ts",
+    "import-solid": "tsx .scripts/import-solid.ts && npm run prettier"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
@@ -71,13 +33,15 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.2.1",
     "motion": "^14.9.1",
+    "playwright-core": "^1.64.1",
     "prettier": "^3.9.10",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "tsx": "^4.23.15",
     "typescript": "~7.0.2",
     "vite": "^8.3.5",
-    "vitest": "^5.1.0"
+    "vitest": "^5.1.0",
+    "vue": "^3.5.45"
   },
   "author": "CityPulso"
 }

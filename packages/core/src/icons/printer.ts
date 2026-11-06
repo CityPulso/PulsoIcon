@@ -1,0 +1,9 @@
+import { icon } from "../icon.js";
+
+export const Printer = icon("Printer", "printer", {
+  nodes: [
+    ["path", { d: "M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" }, { r: "press", a: 0.04, o: [12, 10] }],
+    ["path", { d: "M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6" }, { r: "press", a: 0.04, o: [12, 10] }],
+    ["rect", { x: "6", y: "14", width: "12", height: "8", rx: "1" }, { r: "slide", d: 0.05, y: 1, a: 2, o: [12, 18] }],
+  ],
+});

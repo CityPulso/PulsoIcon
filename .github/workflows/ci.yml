@@ -1,0 +1,145 @@
+# Every push and pull request: test every package. Pushes to main also release whatever the root package.json
+# version has not released yet: npm (pulsoicon-core, pulsoicon, pulsoicon-vue, pulsoicon-svelte), Maven Central
+# (com.citypulso:pulsoicon) and the git tag SwiftPM installs from. Changing that version is how a release starts.
+#
+# npm uses Trusted Publishing (OIDC), no NPM_TOKEN. A package's first version is published by hand (npm can only
+# trust a publisher for a package that exists), then on npmjs.com → the package → Settings → Trusted Publisher:
+#   Organization or user: CityPulso · Repository: PulsoIcon · Workflow filename: ci.yml · Environment: (empty)
+#
+# Maven Central needs these repository secrets; without them the Maven step is skipped:
+#   MAVEN_CENTRAL_USERNAME / MAVEN_CENTRAL_PASSWORD  (central.sonatype.com → View Account → Generate User Token)
+#   SIGNING_KEY / SIGNING_KEY_PASSWORD               (gpg --armor --export-secret-keys <id>, and its passphrase)
+
+name: CI
+
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  web:
+    name: Web (core, React, Vue, Svelte)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          package-manager-cache: false
+      - run: npm ci
+      - name: One version everywhere
+        run: npm run version:check
+      - name: Kotlin and Swift files are generated from the current icons
+        run: npm run gen:check
+      - run: npm run build
+      - run: npm run typecheck
+      - run: npm test
+      - name: Motion parity in a browser (React = core player = Vue = Svelte)
+        run: |
+          npx playwright-core install --with-deps chromium
+          npm run test:browser
+
+  kotlin:
+    name: Kotlin (Compose)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v5
+      - name: Build and test
+        working-directory: kotlin
+        run: ./gradlew :pulsoicon:assembleRelease :pulsoicon:testDebugUnitTest --console=plain
+
+  swift-linux:
+    name: Swift tests (Linux)
+    runs-on: ubuntu-latest
+    container: swift:6.2
+    steps:
+      - uses: actions/checkout@v5
+      - run: swift test
+
+  swift-apple:
+    name: Swift (iOS, SwiftUI)
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v5
+      - name: Build for iOS
+        run: |
+          set -o pipefail
+          xcodebuild -scheme PulsoIcon -destination 'generic/platform=iOS' -skipPackagePluginValidation build | tail -40
+
+  release:
+    name: Release
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [web, kotlin, swift-linux, swift-apple]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
+          package-manager-cache: false
+      - name: Version
+        id: v
+        run: echo "version=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
+
+      # Trusted publishing (OIDC) needs npm 11.5.1 or newer.
+      - run: npm install -g npm@latest
+      - run: npm ci
+      - run: npm run build
+      - name: Publish to npm
+        run: |
+          for pkg in core react vue svelte; do
+            name=$(node -p "require('./packages/$pkg/package.json').name")
+            if npm view "$name@${{ steps.v.outputs.version }}" version >/dev/null 2>&1; then
+              echo "$name@${{ steps.v.outputs.version }} is already on npm"
+            else
+              npm publish --workspace "packages/$pkg"
+            fi
+          done
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "21"
+      - uses: gradle/actions/setup-gradle@v5
+      - name: Publish to Maven Central
+        working-directory: kotlin
+        env:
+          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
+          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.SIGNING_KEY }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_KEY_PASSWORD }}
+        run: |
+          if [ -z "$ORG_GRADLE_PROJECT_mavenCentralUsername" ]; then
+            echo "No Maven Central secrets: skipped"
+            exit 0
+          fi
+          v="${{ steps.v.outputs.version }}"
+          if curl -sfI "https://repo1.maven.org/maven2/com/citypulso/pulsoicon/$v/pulsoicon-$v.pom" >/dev/null; then
+            echo "com.citypulso:pulsoicon:$v is already on Maven Central"
+          else
+            ./gradlew :pulsoicon:publishAndReleaseToMavenCentral --console=plain --no-configuration-cache
+          fi
+
+      # Last, so a SwiftPM version always has its npm and Maven twins.
+      - name: Tag for SwiftPM
+        run: |
+          v="${{ steps.v.outputs.version }}"
+          if git ls-remote --exit-code --tags origin "refs/tags/$v" >/dev/null; then
+            echo "Tag $v exists"
+          else
+            git tag "$v"
+            git push origin "refs/tags/$v"
+          fi

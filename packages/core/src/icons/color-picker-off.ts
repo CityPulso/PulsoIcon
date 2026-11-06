@@ -1,0 +1,16 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "color-picker-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const ColorPickerOff = icon("ColorPickerOff", "color-picker-off", {
+  nodes: [
+    ["path", { d: "M11 7l6 6" }, { r: "tilt", o: [5, 19] }],
+    ["path", { d: "M12 8l3.699 -3.699a1 1 0 0 1 1.4 0l2.6 2.6a1 1 0 0 1 0 1.4l-3.702 3.702m-2 2l-6 6h-4v-4l6 -6" }, { r: "tilt", o: [5, 19] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
+  ],
+  solid: [
+    ["path", { d: "m12 9-8.414 8.414A2 2 0 0 0 3 18.828v1.344a2 2 0 0 1-.586 1.414A2 2 0 0 1 3.828 21h1.344a2 2 0 0 0 1.414-.586L15 12" }, { r: "tilt", o: [5, 19] }],
+    ["path", { d: "m18 9 .4.4a1 1 0 1 1-3 3l-3.8-3.8a1 1 0 1 1 3-3l.4.4 3.4-3.4a1 1 0 1 1 3 3z" }, { r: "tilt", o: [5, 19] }],
+    ["path", { d: "m2 22 .414-.414", fill: "none" }, { r: "tilt", o: [5, 19] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
+});

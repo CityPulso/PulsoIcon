@@ -1,5 +1,23 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- **Every platform from one repository**, all drawing the same 9955 icons with the same motion and the React props:
+  - `pulsoicon-vue` (Vue 3.5+) and `pulsoicon-svelte` (Svelte 5): the same `<svg>` as React, played with Motion's `animate()`.
+  - `com.citypulso:pulsoicon` (Android, Jetpack Compose) and the `PulsoIcon` Swift package (SwiftUI), with solid icons,
+    every recipe and the icons' own transforms and dashes.
+  - `pulsoicon-core`: the icon data, recipes and solid drawings the packages share.
+- **`pulsoicon/names`**: every icon key without loading any icon, for pickers that load icons on demand.
+
+### Changed
+
+- The repository is an npm workspace: icons live in `packages/core/src/icons/<name>.ts` (`icon(...)` instead of
+  `createIcon(...)`), aliases in `packages/core/src/aliases.ts`. The `pulsoicon` package renders exactly as before.
+- One version for every package, set in the root `package.json`; CI publishes npm and Maven Central and tags the Swift
+  release when it changes.
+
 ## 5.0.0
 
 ### Added

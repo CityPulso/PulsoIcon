@@ -1,0 +1,20 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "ruler-2-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const Ruler2Off = icon("Ruler2Off", "ruler-2-off", {
+  nodes: [
+    ["path", { d: "M12.03 7.97l4.97 -4.97l4 4l-5 5m-2 2l-7 7l-4 -4l7 -7" }],
+    ["path", { d: "M16 7l-1.5 -1.5" }, { r: "draw", o: [15, 6] }],
+    ["path", { d: "M10 13l-1.5 -1.5" }, { r: "draw", d: 0.08, o: [9, 12] }],
+    ["path", { d: "M7 16l-1.5 -1.5" }, { r: "draw", d: 0.16, o: [6, 15] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }],
+  ],
+  solid: [
+    ["path", { d: "M17 3l4 4l-14 14l-4 -4l14 -14" }],
+    ["path", { d: "M16 7l-1.5 -1.5" }, { r: "draw", o: [15, 6] }, "line"],
+    ["path", { d: "M13 10l-1.5 -1.5" }, { r: "draw", o: [15, 6] }, "line"],
+    ["path", { d: "M10 13l-1.5 -1.5" }, { r: "draw", d: 0.08, o: [9, 12] }, "line"],
+    ["path", { d: "M7 16l-1.5 -1.5" }, { r: "draw", d: 0.16, o: [6, 15] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15 }, "line"],
+  ],
+});

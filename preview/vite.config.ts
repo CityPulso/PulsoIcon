@@ -11,8 +11,10 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: [
-      { find: /^pulsoicon$/, replacement: path.join(root, "src", "index.ts") },
-      { find: /^pulsoicon\/(.*)$/, replacement: path.join(root, "src", "$1") },
+      { find: /^pulsoicon$/, replacement: path.join(root, "packages", "react", "src", "index.ts") },
+      { find: /^pulsoicon\/(.*)$/, replacement: path.join(root, "packages", "react", "src", "$1") },
+      { find: /^pulsoicon-core$/, replacement: path.join(root, "packages", "core", "src", "index.ts") },
+      { find: /^pulsoicon-core\/(.*)$/, replacement: path.join(root, "packages", "core", "src", "$1") },
     ],
   },
   server: { port: 10205, strictPort: true, host: true },

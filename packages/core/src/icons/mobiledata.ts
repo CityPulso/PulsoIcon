@@ -1,0 +1,11 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "mobiledata" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const Mobiledata = icon("Mobiledata", "mobiledata", {
+  nodes: [
+    ["path", { d: "M16 12v-8" }, { r: "slide", y: -1, a: 2 }],
+    ["path", { d: "M8 20v-8" }, { r: "slide", d: 0.1, y: 1, a: 2 }],
+    ["path", { d: "M13 7l3 -3l3 3" }, { r: "slide", y: -1, a: 2 }],
+    ["path", { d: "M5 17l3 3l3 -3" }, { r: "slide", d: 0.1, y: 1, a: 2 }],
+  ],
+});

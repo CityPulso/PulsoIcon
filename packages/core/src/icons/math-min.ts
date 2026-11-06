@@ -1,0 +1,10 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "math-min" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const MathMin = icon("MathMin", "math-min", {
+  nodes: [
+    ["path", { d: "M15 18a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" }, { r: "pop", d: 0.4, o: [17, 18] }],
+    ["path", { d: "M3 13s1 -9 4 -9c2.48 0 5.643 9.565 8.36 12.883" }, { r: "draw" }],
+    ["path", { d: "M18.748 17.038c.702 -.88 1.452 -3.56 2.252 -8.038" }, { r: "draw", d: 0.2 }],
+  ],
+});

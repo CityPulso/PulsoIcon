@@ -1,5 +1,0 @@
-import { createIcon } from "../runtime/createIcon.js";
-
-export const BrandMistral = createIcon("BrandMistral", "brand-mistral", {
-  nodes: [["path", { d: "M3 3h3.6v3.6h3.6v3.6h3.6V6.6h3.6V3H21v18h-3.6v-7.2h-3.6v3.6h-3.6v-3.6H6.6V21H3z" }, { r: "jelly", o: [12, 21] }]],
-});

@@ -1,0 +1,73 @@
+{
+  "name": "pulsoicon-core",
+  "version": "5.2.1",
+  "description": "Framework-free data and motion for PulsoIcon: 9955 icons, their per-shape motion recipes and the solid drawings. Used by pulsoicon (React), pulsoicon-vue and pulsoicon-svelte.",
+  "type": "module",
+  "sideEffects": false,
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CityPulso/PulsoIcon.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/CityPulso/PulsoIcon#readme",
+  "bugs": {
+    "url": "https://github.com/CityPulso/PulsoIcon/issues"
+  },
+  "keywords": [
+    "icons",
+    "animated-icons",
+    "svg",
+    "motion"
+  ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./all": {
+      "types": "./dist/all.d.ts",
+      "import": "./dist/all.js"
+    },
+    "./names": {
+      "types": "./dist/names.d.ts",
+      "import": "./dist/names.js"
+    },
+    "./icons/*": {
+      "types": "./dist/icons/*.d.ts",
+      "import": "./dist/icons/*.js"
+    },
+    "./frame": {
+      "types": "./dist/frame.d.ts",
+      "import": "./dist/frame.js"
+    },
+    "./dom": {
+      "types": "./dist/dom.d.ts",
+      "import": "./dist/dom.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "prepack": "node ../../scripts/pack-files.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "author": "CityPulso",
+  "peerDependencies": {
+    "motion": ">=12.0.0"
+  },
+  "peerDependenciesMeta": {
+    "motion": {
+      "optional": true
+    }
+  }
+}

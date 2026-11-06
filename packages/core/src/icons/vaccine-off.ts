@@ -1,0 +1,23 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "vaccine-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const VaccineOff = icon("VaccineOff", "vaccine-off", {
+  nodes: [
+    ["path", { d: "M17 3l4 4" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "M19 5l-4.5 4.5" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "M11.5 6.5l6 6" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "M16.5 11.5l-.5 .5m-2 2l-4 4h-4v-4l4 -4m2 -2l.5 -.5" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "M7.5 12.5l1.5 1.5" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "M3 21l3 -3" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
+  ],
+  solid: [
+    ["path", { d: "m18 2 4 4", fill: "none" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "m17 7 3-3", fill: "none" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "m9 11 4 4" }, { r: "press", a: 0.1, o: [12, 12] }, "line"],
+    ["path", { d: "m5 19-3 3", fill: "none" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "m14 4 6 6", fill: "none" }, { r: "press", a: 0.1, o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
+});

@@ -1,0 +1,14 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "transaction-euro" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const TransactionEuro = icon("TransactionEuro", "transaction-euro", {
+  text: true,
+  nodes: [
+    ["path", { d: "M21 12.8c-.523 -.502 -1.172 -.8 -1.875 -.8c-1.727 0 -3.125 1.791 -3.125 4s1.398 4 3.125 4c.703 0 1.352 -.298 1.874 -.8" }, { r: "draw" }],
+    ["path", { d: "M15 16h4" }, { r: "draw", d: 0.2 }],
+    ["path", { d: "M3 5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }],
+    ["path", { d: "M15 5a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" }],
+    ["path", { d: "M7 5h8" }],
+    ["path", { d: "M7 5v8a3 3 0 0 0 3 3h1" }],
+  ],
+});

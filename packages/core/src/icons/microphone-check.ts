@@ -1,0 +1,11 @@
+import { icon } from "../icon.js";
+
+// Adapted from Iconoir "microphone-check" (MIT, Copyright (c) 2021 Luca Burgio).
+export const MicrophoneCheck = icon("MicrophoneCheck", "microphone-check", {
+  nodes: [
+    ["path", { d: "M15.5 20.5L17.5 22.5L22.5 17.5" }, { r: "draw", d: 0.1 }],
+    ["rect", { x: "5", y: "2", width: "6", height: "12", rx: "3" }, { r: "pulse", a: 0.08, o: [8, 8] }],
+    ["path", { d: "M1 10V11C1 14.866 4.13401 18 8 18V18V18C11.866 18 15 14.866 15 11V10" }],
+    ["path", { d: "M8 18V22M8 22H5M8 22H11" }],
+  ],
+});

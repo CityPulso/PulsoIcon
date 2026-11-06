@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/Icon.svelte", "src/types.ts", "src/icons/bell.svelte", "tests/types.check.ts"]
+}

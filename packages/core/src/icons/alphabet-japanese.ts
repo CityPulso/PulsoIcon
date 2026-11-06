@@ -1,0 +1,15 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "alphabet-japanese" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const AlphabetJapanese = icon("AlphabetJapanese", "alphabet-japanese", {
+  text: true,
+  nodes: [
+    ["path", { d: "M6 6h10" }, { r: "draw", d: 0.0 }],
+    ["path", { d: "M10 4c0 6.784 .8 11.1 1.5 12.5" }, { r: "draw", d: 0.12 }],
+    [
+      "path",
+      { d: "M14.25 10.75c0 3.429 -2.75 6.75 -4.812 6.75s-3.438 -1.25 -3.438 -3c0 -2.5 1.375 -4.5 4.125 -4.5s6.875 .855 6.875 4.286q 0 3.428 -2.75 4.714" },
+      { r: "draw", d: 0.24 },
+    ],
+  ],
+});

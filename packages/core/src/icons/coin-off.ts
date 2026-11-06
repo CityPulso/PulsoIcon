@@ -1,0 +1,17 @@
+import { icon } from "../icon.js";
+
+// Adapted from Tabler Icons "coin-off" (MIT, Copyright (c) 2020-2026 Paweł Kuna).
+export const CoinOff = icon("CoinOff", "coin-off", {
+  nodes: [
+    ["path", { d: "M14.8 9a2 2 0 0 0 -1.8 -1h-1m-2.82 1.171a2 2 0 0 0 1.82 2.829h1m2.824 2.822a2 2 0 0 1 -1.824 1.178h-2a2 2 0 0 1 -1.8 -1" }, { r: "flip", o: [12, 12] }],
+    ["path", { d: "M20.042 16.045a9 9 0 0 0 -12.087 -12.087m-2.318 1.677a9 9 0 1 0 12.725 12.73" }, { r: "flip", o: [12, 12] }],
+    ["path", { d: "M12 6v2m0 8v2" }, { r: "flip", o: [12, 12] }],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }],
+  ],
+  solid: [
+    ["circle", { cx: "12", cy: "12", r: "10" }, { r: "flip", o: [12, 12] }],
+    ["path", { d: "M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8" }, { r: "flip", o: [12, 12] }, "line"],
+    ["path", { d: "M12 18V6" }, { r: "flip", o: [12, 12] }, "line"],
+    ["path", { d: "M3 3l18 18" }, { r: "draw", d: 0.15, o: [12, 12] }, "line"],
+  ],
+});
