@@ -1,7 +1,7 @@
 {
   "name": "pulsoicon-vue",
-  "version": "5.2.1",
-  "description": "9955 animated Vue icons, each with its own hand-written motion. The same icons, props and motion as pulsoicon (React).",
+  "version": "6.0.0",
+  "description": "9955 animated Vue icons, each with its own hand-written motion. The same icons, props and motion as pulsoicon-react.",
   "type": "module",
   "sideEffects": false,
   "license": "ISC",
@@ -56,7 +56,7 @@
     "prepublishOnly": "npm run typecheck && npm test && npm run build"
   },
   "dependencies": {
-    "pulsoicon-core": "5.2.1"
+    "pulsoicon-core": "6.0.0"
   },
   "peerDependencies": {
     "motion": ">=12.0.0",

@@ -4,7 +4,7 @@
 public struct PulsoIcon: Sendable, Hashable, Identifiable {
     /// PascalCase name, e.g. `Bell`.
     public let name: String
-    /// kebab-case key shared with every package (`pulsoicon/names`), e.g. `bell`; what gets stored on items.
+    /// kebab-case key shared with every package (the npm packages' `names`), e.g. `bell`; what gets stored on items.
     public let key: String
     public let svg: IconMotion?
     public let nodes: [IconNode]

@@ -1,6 +1,6 @@
 # Every push and pull request: test every package. Pushes to main also release whatever the root package.json
-# version has not released yet: npm (pulsoicon-core, pulsoicon, pulsoicon-vue, pulsoicon-svelte), Maven Central
-# (com.citypulso:pulsoicon) and the git tag SwiftPM installs from. Changing that version is how a release starts.
+# version has not released yet: npm (pulsoicon-core, pulsoicon-react, pulsoicon-vue, pulsoicon-svelte), Maven Central
+# (com.citypulso:pulsoicon-compose) and the git tag SwiftPM installs from. Changing that version is how a release starts.
 #
 # npm uses Trusted Publishing (OIDC), no NPM_TOKEN. A package's first version is published by hand (npm can only
 # trust a publisher for a package that exists), then on npmjs.com → the package → Settings → Trusted Publisher:
@@ -126,8 +126,8 @@ jobs:
             exit 0
           fi
           v="${{ steps.v.outputs.version }}"
-          if curl -sfI "https://repo1.maven.org/maven2/com/citypulso/pulsoicon/$v/pulsoicon-$v.pom" >/dev/null; then
-            echo "com.citypulso:pulsoicon:$v is already on Maven Central"
+          if curl -sfI "https://repo1.maven.org/maven2/com/citypulso/pulsoicon-compose/$v/pulsoicon-compose-$v.pom" >/dev/null; then
+            echo "com.citypulso:pulsoicon-compose:$v is already on Maven Central"
           else
             ./gradlew :pulsoicon:publishAndReleaseToMavenCentral --console=plain --no-configuration-cache
           fi

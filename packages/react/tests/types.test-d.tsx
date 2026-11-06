@@ -1,6 +1,6 @@
-import type { DistributiveOmit, IconProps } from "pulsoicon";
+import type { DistributiveOmit, IconProps } from "pulsoicon-react";
 
-import { Bell } from "pulsoicon";
+import { Bell } from "pulsoicon-react";
 
 declare const flag: boolean;
 

@@ -22,6 +22,5 @@ packages/*/src/names.ts
 .build/
 .swiftpm/
 Package.resolved
-packages/*/README.md
 packages/*/LICENSE
 packages/svelte/.svelte-kit/

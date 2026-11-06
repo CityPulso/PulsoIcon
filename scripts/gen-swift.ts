@@ -90,7 +90,7 @@ export function genSwift(icons: IconData[], check: boolean): string[] {
       HEADER,
       "",
       "extension PulsoIcon {",
-      "    /// Every icon key (kebab-case, shared with every package: `pulsoicon/names`), in key order.",
+      "    /// Every icon key (kebab-case, shared with every package: the npm packages' `names`), in key order.",
       "    public static let iconNames: [String] = [",
       ...icons.map((i) => `        ${str(i.key)},`),
       "    ]",

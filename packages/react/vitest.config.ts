@@ -7,8 +7,8 @@ const packages = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."
 export default defineConfig({
   resolve: {
     alias: [
-      { find: /^pulsoicon$/, replacement: path.join(packages, "react", "src", "index.ts") },
-      { find: /^pulsoicon\/(.*)$/, replacement: path.join(packages, "react", "src", "$1") },
+      { find: /^pulsoicon-react$/, replacement: path.join(packages, "react", "src", "index.ts") },
+      { find: /^pulsoicon-react\/(.*)$/, replacement: path.join(packages, "react", "src", "$1") },
       { find: /^pulsoicon-core$/, replacement: path.join(packages, "core", "src", "index.ts") },
       { find: /^pulsoicon-core\/(.*)$/, replacement: path.join(packages, "core", "src", "$1") },
     ],

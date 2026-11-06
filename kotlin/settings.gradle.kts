@@ -1,4 +1,4 @@
-// PulsoIcon for Android (Jetpack Compose). Published as com.citypulso:pulsoicon; an app can also link this
+// PulsoIcon for Android (Jetpack Compose). Published as com.citypulso:pulsoicon-compose; an app can also link this
 // build while developing: settings.gradle.kts → includeBuild("../PulsoIcon/kotlin").
 pluginManagement {
     repositories {

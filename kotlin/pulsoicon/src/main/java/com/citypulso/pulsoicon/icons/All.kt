@@ -15,7 +15,7 @@ private val names: List<String> by lazy {
     ).flatMap { it.split(" ") }
 }
 
-/** Every icon key (kebab-case, shared with every package: `pulsoicon/names`), in key order. */
+/** Every icon key (kebab-case, shared with every package: the npm packages' `names`), in key order. */
 val PulsoIcons.ICON_NAMES: List<String> get() = names
 
 /** Every icon by key. Builds all of them; prefer [byKey] for a single lookup. */

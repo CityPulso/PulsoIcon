@@ -2,9 +2,9 @@ import { readdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createElement } from "react";
-import * as Pulso from "pulsoicon";
-import { ICON_NAMES, ICONS } from "pulsoicon/all";
-import { iconSpec } from "pulsoicon/runtime/createIcon.js";
+import * as Pulso from "pulsoicon-react";
+import { ICON_NAMES, ICONS } from "pulsoicon-react/all";
+import { iconSpec } from "pulsoicon-react/runtime/createIcon.js";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 

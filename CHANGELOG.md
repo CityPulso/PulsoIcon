@@ -1,20 +1,26 @@
 # Changelog
 
-## Unreleased
+## 6.0.0
+
+### Breaking
+
+- **The React package is now `pulsoicon-react`** (it was `pulsoicon` until 5.2.1), next to `pulsoicon-vue` and
+  `pulsoicon-svelte`. Only the package name changes: replace `"pulsoicon"` with `"pulsoicon-react"` in your imports.
 
 ### Added
 
 - **Every platform from one repository**, all drawing the same 9955 icons with the same motion and the React props:
   - `pulsoicon-vue` (Vue 3.5+) and `pulsoicon-svelte` (Svelte 5): the same `<svg>` as React, played with Motion's `animate()`.
-  - `com.citypulso:pulsoicon` (Android, Jetpack Compose) and the `PulsoIcon` Swift package (SwiftUI), with solid icons,
-    every recipe and the icons' own transforms and dashes.
+  - `com.citypulso:pulsoicon-compose` (Android, Jetpack Compose) and the `PulsoIcon` Swift package (SwiftUI), with solid
+    icons, every recipe and the icons' own transforms and dashes.
   - `pulsoicon-core`: the icon data, recipes and solid drawings the packages share.
-- **`pulsoicon/names`**: every icon key without loading any icon, for pickers that load icons on demand.
+- **`<package>/names`**: every icon key without loading any icon, for pickers that load icons on demand.
+- Preview: one gallery per framework (`npm run preview:react`, `preview:vue`, `preview:svelte`).
 
 ### Changed
 
 - The repository is an npm workspace: icons live in `packages/core/src/icons/<name>.ts` (`icon(...)` instead of
-  `createIcon(...)`), aliases in `packages/core/src/aliases.ts`. The `pulsoicon` package renders exactly as before.
+  `createIcon(...)`), aliases in `packages/core/src/aliases.ts`. The React package renders exactly as 5.2.1 did.
 - One version for every package, set in the root `package.json`; CI publishes npm and Maven Central and tags the Swift
   release when it changes.
 

@@ -1,8 +1,8 @@
-// Browser parity check: plays icons through React (pulsoicon) and through pulsoicon-core/dom, and samples both mid-motion.
+// Browser parity check: plays icons through React (pulsoicon-react) and through pulsoicon-core/dom, and samples both mid-motion.
 import { createElement, createRef } from "react";
 import { flushSync } from "react-dom";
 import { createRoot } from "react-dom/client";
-import { ICONS } from "pulsoicon/all";
+import { ICONS } from "pulsoicon-react/all";
 import { ICONS as DATA } from "pulsoicon-core/all";
 import { playIcon } from "pulsoicon-core/dom";
 import { frameMarkup, iconFrame } from "pulsoicon-core/frame";

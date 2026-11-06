@@ -1,7 +1,7 @@
 import groovy.json.JsonSlurper
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
-// PulsoIcon for Android: the same icons, props and motion as the npm package `pulsoicon` (React).
+// PulsoIcon for Android: the same icons, props and motion as the npm package `pulsoicon-react`.
 // The icon files are generated from packages/core by scripts/gen.ts; the runtime is hand-written.
 plugins {
     alias(libs.plugins.android.library)
@@ -58,10 +58,10 @@ mavenPublishing {
     publishToMavenCentral()
     // Signs only when a key is configured (CI release); local publishToMavenLocal works without one.
     if (providers.gradleProperty("signingInMemoryKey").isPresent) signAllPublications()
-    coordinates("com.citypulso", "pulsoicon", pulsoIconVersion)
+    coordinates("com.citypulso", "pulsoicon-compose", pulsoIconVersion)
     pom {
         name.set("PulsoIcon")
-        description.set("Animated icons for Jetpack Compose, each with its own hand-written motion. The same icons and motion as the pulsoicon npm package.")
+        description.set("Animated icons for Jetpack Compose, each with its own hand-written motion. The same icons and motion as the pulsoicon-react npm package.")
         url.set("https://github.com/CityPulso/PulsoIcon")
         licenses {
             license {

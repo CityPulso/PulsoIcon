@@ -5,10 +5,10 @@
       "node"
     ],
     "paths": {
-      "pulsoicon": [
+      "pulsoicon-react": [
         "./packages/react/src/index.ts"
       ],
-      "pulsoicon/*": [
+      "pulsoicon-react/*": [
         "./packages/react/src/*"
       ],
       "pulsoicon-core": [

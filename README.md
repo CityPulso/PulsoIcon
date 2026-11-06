@@ -6,13 +6,13 @@
 
 <p align="center">
   <strong>9955 animated icons. Every one has its own motion.</strong><br />
-  A drop-in replacement for lucide-react icons that comes alive on hover, also for Vue, Svelte, Jetpack Compose and SwiftUI.
+  For React, Vue, Svelte, Jetpack Compose and SwiftUI. Icons come alive on hover; in React they replace lucide-react in one line.
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/pulsoicon"><img src="https://img.shields.io/npm/v/pulsoicon?color=f2552c" alt="npm version" /></a>
-  <a href="https://www.npmjs.com/package/pulsoicon"><img src="https://img.shields.io/npm/dm/pulsoicon?color=f2552c" alt="npm downloads" /></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/npm/l/pulsoicon?color=f2552c" alt="license" /></a>
+  <a href="https://www.npmjs.com/package/pulsoicon-react"><img src="https://img.shields.io/npm/v/pulsoicon-react?color=f2552c" alt="npm version" /></a>
+  <a href="https://www.npmjs.com/package/pulsoicon-react"><img src="https://img.shields.io/npm/dm/pulsoicon-react?color=f2552c" alt="npm downloads" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/npm/l/pulsoicon-react?color=f2552c" alt="license" /></a>
 </p>
 
 ---
@@ -33,79 +33,98 @@ Every one of the 9955 motions is written for this set. About 3,700 icons are dra
   - **About 3,700 drawn for this set**: about 2,770 line-art brand logos (CityPulso, GitHub, Slack, Spotify, OpenAI, Claude, TikTok, VS Code, Google Drive, …, most drawn after the logos collected by [Simple Icons](https://simpleicons.org)) and around 900 other icons, including lowercase a–z, animals, sports, 3D tools and icons drawn after [Phosphor](https://phosphoricons.com).
   - **Built on open icon sets**: all 2020 [Lucide](https://lucide.dev) icons (as of 1.68), plus the shapes of [Tabler Icons](https://tabler.io/icons) (3.50, including 264 brand logos) and [Iconoir](https://iconoir.com) (7.12).
   - **3042 brand logos** in all.
-- **Switch in one line**: same component names as lucide-react (`Calendar`, `CalendarIcon`, aliases such as `AlertCircle`) and the same props. Usually you only change the import.
+- **Switch in one line** (React): same component names as lucide-react (`Calendar`, `CalendarIcon`, aliases such as `AlertCircle`) and the same props. Usually you only change the import.
 - **Ships only what you use**: every icon is its own module and the package is side-effect free, so bundlers keep the icons you import and drop the rest. Three icons add about 12 kB before minification.
 - **Plays where people point**: hover or focus anywhere on a button, link, label, tab or menu item and its icon plays.
 - **Respects reduced motion**: nothing moves when the system asks for less motion.
-- **Two dependencies**: React and [Motion](https://motion.dev).
+- **Every platform, one source**: React, Vue, Svelte, Jetpack Compose and SwiftUI draw the same icons with the same motion and take the same props.
 
-## Install
+## Packages
 
-```bash
-npm install pulsoicon
-```
+One version number covers every package.
 
-Works with React 18 or newer. [Motion](https://motion.dev) (12 or newer) is installed for you; if your app already uses Motion, PulsoIcon shares that copy.
+| Platform                  | Install                                                                          | Docs                                 |
+| ------------------------- | -------------------------------------------------------------------------------- | ------------------------------------ |
+| React 18+                 | `npm install pulsoicon-react`                                                    | [packages/react](./packages/react)   |
+| Vue 3.5+                  | `npm install pulsoicon-vue`                                                      | [packages/vue](./packages/vue)       |
+| Svelte 5                  | `npm install pulsoicon-svelte`                                                   | [packages/svelte](./packages/svelte) |
+| Android (Jetpack Compose) | `implementation("com.citypulso:pulsoicon-compose:<version>")`                    | [kotlin](./kotlin)                   |
+| iOS / macOS (SwiftUI)     | `.package(url: "https://github.com/CityPulso/PulsoIcon.git", from: "<version>")` | [swift](./swift)                     |
 
-The same icons, props and motion are also available for [Vue, Svelte, Android and iOS](#other-platforms).
+`pulsoicon-core` holds the icon data the web packages share; they install it for you. Until 5.2.1 the React package was called `pulsoicon`; from 6.0.0 it is `pulsoicon-react` (only the import changes).
 
 ## Quick start
 
-```tsx
-import { Bell, Calendar, Trash2 } from "pulsoicon";
+React:
 
-export function Toolbar() {
-  return (
-    <>
-      <button>
-        <Bell size={20} /> Notifications
-      </button>
-      <button>
-        <Calendar /> Schedule
-      </button>
-      <button>
-        <Trash2 color="crimson" strokeWidth={1.5} /> Delete
-      </button>
-    </>
-  );
+```tsx
+import { Bell, Trash2 } from "pulsoicon-react";
+
+<button><Bell size={20} /> Notifications</button>
+<button><Trash2 color="crimson" strokeWidth={1.5} /> Delete</button>
+```
+
+Vue:
+
+```vue
+<script setup lang="ts">
+import { Bell } from "pulsoicon-vue";
+</script>
+
+<template>
+  <button><Bell :size="20" /> Notifications</button>
+</template>
+```
+
+Svelte:
+
+```svelte
+<script lang="ts">
+  import { Bell } from "pulsoicon-svelte";
+</script>
+
+<button><Bell size={20} /> Notifications</button>
+```
+
+Jetpack Compose:
+
+```kotlin
+val interactions = remember { MutableInteractionSource() }
+IconButton(onClick = { /* … */ }, interactionSource = interactions) {
+    PulsoIcon(PulsoIcons.Bell, contentDescription = "Notifications", interactionSource = interactions)
 }
 ```
 
-Hover a button and its icon plays.
+SwiftUI:
 
-### Coming from lucide-react
-
-```diff
-- import { Bell, Calendar, Trash2 } from "lucide-react";
-+ import { Bell, Calendar, Trash2 } from "pulsoicon";
+```swift
+Button { /* … */ } label: {
+    Label { Text("Notifications") } icon: { PulsoIconView(.bell, size: 20) }
+}
 ```
 
-Icon components and their props work the same. Lucide's helpers (`createLucideIcon`, `LucideProvider`, the `icons` object) are not included.
-
-### Coming from Tabler
-
-Tabler icon names work too, without the `Icon` prefix: `IconMoodSad` is `MoodSad`, `IconHome` is `Home`, `IconBrandGithub` is `BrandGithub`. Where Lucide already has the icon, the Tabler name points to it (`Home` is `House`), and Tabler families follow Lucide's naming (`HomeDollar` is `HouseDollar`, `PhotoEdit` is `ImageEdit`).
+Hover the button (press it, on Android) and its icon plays.
 
 ## Props
 
-| Prop | Type | Default | Description |
-|---|---|---|---|
-| `size` | `number \| string` | `24` | Width and height |
-| `color` | `string` | `currentColor` | Stroke colour, and fill colour when `solid` |
-| `strokeWidth` | `number \| string` | `2` | Stroke width on the 24-unit grid |
-| `absoluteStrokeWidth` | `boolean` | `false` | Keep the stroke the same number of pixels at any size |
-| `solid` | `boolean` | `false` | Filled icon instead of outline (see [Solid icons](#solid-icons)) |
-| `animated` | `boolean` | `true` | `false` makes the icon fully static: nothing plays it, not even the ref or `play` |
-| `autoAnimated` | `boolean` | `true` | Play the built-in hover / focus trigger. `false` turns that off; the ref and `play` still work |
-| `play` | `boolean` | | `true` plays the motion, `false` returns to rest. Works with or without `autoAnimated` |
+Every package takes the same props, with the same defaults and meaning (Kotlin and Swift spell the types their own way).
 
-`autoAnimated` and `play` only exist while the icon can animate, so TypeScript rejects `<Bell animated={false} play />`. Wrapper components that drop a prop should use the exported `DistributiveOmit<IconProps, "size">` instead of `Omit`, which would lose that check.
+| Prop                  | Type               | Default        | Description                                                                                    |
+| --------------------- | ------------------ | -------------- | ---------------------------------------------------------------------------------------------- |
+| `size`                | `number \| string` | `24`           | Width and height                                                                               |
+| `color`               | `string`           | `currentColor` | Stroke colour, and fill colour when `solid`                                                    |
+| `strokeWidth`         | `number \| string` | `2`            | Stroke width on the 24-unit grid                                                               |
+| `absoluteStrokeWidth` | `boolean`          | `false`        | Keep the stroke the same number of pixels at any size                                          |
+| `solid`               | `boolean`          | `false`        | Filled icon instead of outline (see [Solid icons](#solid-icons))                               |
+| `animated`            | `boolean`          | `true`         | `false` makes the icon fully static: nothing plays it, not even the ref or `play`              |
+| `autoAnimated`        | `boolean`          | `true`         | Play the built-in hover / focus trigger. `false` turns that off; the ref and `play` still work |
+| `play`                | `boolean`          |                | `true` plays the motion, `false` returns to rest. Works with or without `autoAnimated`         |
 
-Any other SVG attribute (`className`, `style`, `aria-label`, …) is passed to the `<svg>`. Icons render with `aria-hidden="true"`; give the surrounding button or link a label.
+On the web, any other SVG attribute (`className` / `class`, `style`, `aria-label`, …) is passed to the `<svg>`. Icons render with `aria-hidden="true"`; give the surrounding button or link a label.
 
 ## When the animation plays
 
-An icon plays when the pointer enters, or focus moves into, its closest `button`, `a`, `label`, `summary`, `[role="button"]`, `[role="link"]`, `[role="tab"]` or `[role="menuitem"]`. If there is none, the icon plays on its own hover.
+On the web, an icon plays when the pointer enters, or focus moves into, its closest `button`, `a`, `label`, `summary`, `[role="button"]`, `[role="link"]`, `[role="tab"]` or `[role="menuitem"]`. If there is none, the icon plays on its own hover.
 
 Any other element can become the trigger with `data-icon-trigger`:
 
@@ -115,31 +134,7 @@ Any other element can become the trigger with `data-icon-trigger`:
 </div>
 ```
 
-### Play from code
-
-Every icon forwards a ref with `startAnimation()` and `stopAnimation()`. Both return a promise that resolves when the motion has finished, so you can `await check.current?.startAnimation()` before moving on. Set `autoAnimated={false}` when only your code should decide when it plays:
-
-```tsx
-import { useRef } from "react";
-import { Check, type IconHandle } from "pulsoicon";
-
-function SaveButton() {
-  const check = useRef<IconHandle>(null);
-  return (
-    <button onClick={() => check.current?.startAnimation()}>
-      <Check autoAnimated={false} ref={check} /> Save
-    </button>
-  );
-}
-```
-
-Or drive it from state with `play`. The motion starts when `play` turns `true` and returns to rest when it turns `false`:
-
-```tsx
-<Bell autoAnimated={false} play={hasNewMessage} />
-```
-
-`animated={false}` keeps an icon completely still; the ref and `play` do nothing.
+On Android the icon plays with the control whose `interactionSource` you pass; on Apple platforms, while a pointer hovers it. Everywhere, `play` and the handle (`ref`, `bind:this`, `rememberPulsoIconHandle()`, `PulsoIconHandle`) play it from code, and nothing moves when the system asks for reduced motion.
 
 ## Solid icons
 
@@ -150,76 +145,6 @@ Or drive it from state with `play`. The motion starts when `play` turns `true` a
 ```
 
 About 1,700 icons have a filled drawing taken from the [Tabler](https://tabler.io/icons) filled set or the [Phosphor](https://phosphoricons.com) fill weight. Their source file has a `solid` list and a "Solid from …" comment. The other icons fill their closed outline shapes and cut their inner lines out of the fill, so the details stay visible. Motions that draw a stroke on (`draw`, `redraw`, …) pop in instead on filled shapes.
-
-## Other platforms
-
-Every package draws the same 9955 icons with the same motion, from the same source. The props have the same names, defaults and meaning as in React. One version number covers them all.
-
-| Platform | Install | Package |
-|---|---|---|
-| React | `npm install pulsoicon` | [pulsoicon](https://www.npmjs.com/package/pulsoicon) |
-| Vue 3.5+ | `npm install pulsoicon-vue` | [pulsoicon-vue](https://www.npmjs.com/package/pulsoicon-vue) |
-| Svelte 5 | `npm install pulsoicon-svelte` | [pulsoicon-svelte](https://www.npmjs.com/package/pulsoicon-svelte) |
-| Android (Jetpack Compose) | `implementation("com.citypulso:pulsoicon:<version>")` | Maven Central |
-| iOS / macOS (SwiftUI) | `.package(url: "https://github.com/CityPulso/PulsoIcon.git", from: "<version>")` | Swift Package Manager |
-
-### Vue
-
-```vue
-<script setup lang="ts">
-import { ref } from "vue";
-import { Bell, Check, type IconHandle } from "pulsoicon-vue";
-
-const check = ref<IconHandle>();
-</script>
-
-<template>
-  <button><Bell :size="20" /> Notifications</button>
-  <button @click="check?.startAnimation()"><Check ref="check" :auto-animated="false" /> Save</button>
-</template>
-```
-
-### Svelte
-
-```svelte
-<script lang="ts">
-  import { Bell, Check } from "pulsoicon-svelte";
-
-  let check: ReturnType<typeof Check>;
-</script>
-
-<button><Bell size={20} /> Notifications</button>
-<button onclick={() => check.startAnimation()}><Check bind:this={check} autoAnimated={false} /> Save</button>
-```
-
-Vue and Svelte render exactly the same `<svg>` as React and play it with [Motion](https://motion.dev)'s `animate()`. They take `class` and `style` like any element.
-
-### Android (Jetpack Compose)
-
-```kotlin
-import com.citypulso.pulsoicon.PulsoIcon
-import com.citypulso.pulsoicon.PulsoIcons
-import com.citypulso.pulsoicon.icons.Bell
-
-val interactions = remember { MutableInteractionSource() }
-IconButton(onClick = { /* … */ }, interactionSource = interactions) {
-    PulsoIcon(PulsoIcons.Bell, contentDescription = "Notifications", interactionSource = interactions)
-}
-```
-
-The icon plays when the control whose `interactionSource` you pass is pressed, hovered or focused (Compose has no "closest interactive ancestor", so it is passed in). `color` defaults to `LocalContentColor`. Play from code with `play = true`, or with `rememberPulsoIconHandle()` passed as `handle` and its suspending `startAnimation()` / `stopAnimation()`. `PulsoIcons.byKey("bell")` looks an icon up by its stored key. Unused icons are removed by R8.
-
-### iOS and macOS (SwiftUI)
-
-```swift
-import PulsoIcon
-
-Button { /* … */ } label: {
-    Label { Text("Notifications") } icon: { PulsoIconView(.bell, size: 20, play: hasNewMessage) }
-}
-```
-
-Names start lowercase (`.bell`, `.aArrowDown`, `.bellIcon`). `color` defaults to the foreground style. A pointer hovering the icon plays it; for taps use `play` or a `PulsoIconHandle` (`await handle.startAnimation()`). `PulsoIcon.byKey("bell")` looks an icon up by its stored key. Nothing moves with Reduce Motion on.
 
 ## Finding icons
 
@@ -235,35 +160,7 @@ All product names, logos and brands are the property of their respective owners 
 
 ### All icons at once
 
-For icon pickers and galleries, `pulsoicon/all` exports every icon by its kebab-case name. It pulls in all 9955 icons, so use it only where you need the full set:
-
-```tsx
-import { ICON_NAMES, ICONS } from "pulsoicon/all";
-
-const Icon = ICONS["party-popper"];
-```
-
-One icon can also be imported by path: `import { Calendar } from "pulsoicon/icons/calendar"`. To list the names without loading any icon (to build a picker that loads icons on demand), use `pulsoicon/names`:
-
-```tsx
-import { ICON_NAMES, type IconName } from "pulsoicon/names";
-
-const load = (name: IconName) => import(`pulsoicon/icons/${name}`);
-```
-
-## Styling
-
-Each icon renders `<svg class="pulsoicon pulsoicon-<name>">`, so CSS can target every icon or a single one:
-
-```css
-.pulsoicon {
-  vertical-align: -0.125em;
-}
-
-.pulsoicon-bell {
-  color: #f2552c;
-}
-```
+Every icon also has a kebab-case name (`party-popper`), the same on every platform, for storing on your data. The web packages export `ICONS` / `ICON_NAMES` from `<package>/all`, the names alone from `<package>/names` and one icon from `<package>/icons/<name>`; Compose has `PulsoIcons.byKey("party-popper")` and SwiftUI `PulsoIcon.byKey("party-popper")`.
 
 ## Report a wrong icon
 
@@ -275,26 +172,29 @@ to the correct logo. Issues on GitHub are welcome too.
 
 ```bash
 npm install
-npm run gen       # writes every platform's icon files from packages/core
-npm run preview   # gallery of every icon at http://localhost:10205
+npm run gen              # writes every platform's icon files from packages/core
+npm run preview:react    # gallery of every icon, http://localhost:10205
+npm run preview:vue      # the same gallery in Vue, http://localhost:10206
+npm run preview:svelte   # and in Svelte, http://localhost:10207
 npm test
 npm run build
 ```
 
 Each icon is one data file in `packages/core/src/icons/<name>.ts`, shared by every platform: the shapes of the icon and, for each shape, an optional motion (`r` recipe from `packages/core/src/recipes.ts`, `d` delay, `x`/`y` direction, `a` amplitude, `o` pivot point on the 24×24 grid). Edit that file to change how an icon moves, then run `npm run gen`. Other names live in `packages/core/src/aliases.ts`.
 
-| Folder | What |
-|---|---|
-| `packages/core` | `pulsoicon-core`: the icons, recipes, solid drawings and the framework-free player |
-| `packages/react`, `packages/vue`, `packages/svelte` | The web packages; their icon files are generated |
-| `kotlin/` | The Android library (Gradle); `icons/` is generated and committed |
-| `swift/` and `Package.swift` | The Swift package; `Icons/` is generated and committed |
+| Folder                                              | What                                                                               |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `packages/core`                                     | `pulsoicon-core`: the icons, recipes, solid drawings and the framework-free player |
+| `packages/react`, `packages/vue`, `packages/svelte` | The web packages; their icon files are generated                                   |
+| `kotlin/`                                           | The Android library (Gradle); `icons/` is generated and committed                  |
+| `swift/` and `Package.swift`                        | The Swift package; `Icons/` is generated and committed                             |
+| `preview/`                                          | The three galleries; `preview/shared` holds what they share                        |
 
 The Kotlin and Swift recipes are written by hand; their tests check them against `packages/core` (`kotlin/`: `./gradlew :pulsoicon:testDebugUnitTest`; Swift: `swift test`). `npm run test:browser` plays icons in Chromium through React, Vue and Svelte side by side and checks that they move the same.
 
 ### Releasing
 
-`package.json` at the root holds the one version of every package. `npm run set-version -- 5.3.0` sets it everywhere; push that to `main` and CI publishes the npm packages and the Maven artifact that are not out yet, then tags `5.3.0` for Swift Package Manager.
+`package.json` at the root holds the one version of every package. `npm run set-version -- 6.1.0` sets it everywhere; push that to `main` and CI publishes the npm packages and the Maven artifact that are not out yet, then tags `6.1.0` for Swift Package Manager.
 
 ## License
 
@@ -302,18 +202,18 @@ PulsoIcon is open source under the [ISC license](./LICENSE) © CityPulso.
 
 ### What is ours, and what comes from other icon sets
 
-| Part | Origin |
-|---|---|
-| Every animation (how each icon moves) | Written for PulsoIcon |
-| Runtime code (`createIcon`, triggers, motion recipes) | Written for PulsoIcon |
-| About 3,700 icons, including about 2,770 line-art brand logos | Drawn for PulsoIcon |
-| Shapes of the 2020 Lucide icons | Based on [Lucide](https://lucide.dev) (ISC; some derived from Feather, MIT) |
-| Shapes of the icons marked "Adapted from Tabler Icons" | Based on [Tabler Icons](https://tabler.io/icons) (MIT) |
-| Shapes of the icons marked "Adapted from Iconoir" | Based on [Iconoir](https://iconoir.com) (MIT) |
-| Five icons marked "Adapted from Hugeicons" | Adapted from [Hugeicons](https://hugeicons.com) (MIT) |
-| Icons marked "Drawn after Phosphor Icons" | Redrawn after [Phosphor](https://phosphoricons.com) shapes (MIT) |
-| Solid shapes marked "Solid from Tabler Icons" / "Solid from Phosphor Icons" | Taken from the Tabler filled set and the Phosphor fill weight (MIT) |
-| Brand icons marked "Drawn after Simple Icons" | Drawn after the logos collected by [Simple Icons](https://simpleicons.org) (CC0) |
+| Part                                                                        | Origin                                                                           |
+| --------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Every animation (how each icon moves)                                       | Written for PulsoIcon                                                            |
+| Runtime code (every package's components, triggers, motion recipes)         | Written for PulsoIcon                                                            |
+| About 3,700 icons, including about 2,770 line-art brand logos               | Drawn for PulsoIcon                                                              |
+| Shapes of the 2020 Lucide icons                                             | Based on [Lucide](https://lucide.dev) (ISC; some derived from Feather, MIT)      |
+| Shapes of the icons marked "Adapted from Tabler Icons"                      | Based on [Tabler Icons](https://tabler.io/icons) (MIT)                           |
+| Shapes of the icons marked "Adapted from Iconoir"                           | Based on [Iconoir](https://iconoir.com) (MIT)                                    |
+| Five icons marked "Adapted from Hugeicons"                                  | Adapted from [Hugeicons](https://hugeicons.com) (MIT)                            |
+| Icons marked "Drawn after Phosphor Icons"                                   | Redrawn after [Phosphor](https://phosphoricons.com) shapes (MIT)                 |
+| Solid shapes marked "Solid from Tabler Icons" / "Solid from Phosphor Icons" | Taken from the Tabler filled set and the Phosphor fill weight (MIT)              |
+| Brand icons marked "Drawn after Simple Icons"                               | Drawn after the logos collected by [Simple Icons](https://simpleicons.org) (CC0) |
 
 Icons based on or drawn after Tabler Icons, Iconoir, Hugeicons, Phosphor or Simple Icons name their source in a comment at the top of their file; the Lucide icons keep their Lucide names. The full license texts are in [LICENSE](./LICENSE).
 

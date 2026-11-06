@@ -1,4 +1,4 @@
-// node tests/browser/motion-parity.mjs [key …]: React and pulsoicon-core/dom must be in the same state at the same moments.
+// node tests/browser/motion-parity.mjs [key …]: React (pulsoicon-react) and pulsoicon-core/dom must be in the same state at the same moments.
 import { build } from "esbuild";
 import { readFile } from "node:fs/promises";
 import { compile } from "svelte/compiler";
@@ -8,7 +8,7 @@ import { chromium } from "playwright-core";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const pkg = (p) => path.join(root, "packages", p);
-const alias = { pulsoicon: pkg("react/src/index.ts"), "pulsoicon-core": pkg("core/src/index.ts"), "pulsoicon-vue": pkg("vue/src/index.ts"), "pulsoicon-svelte": pkg("svelte/src/index.ts") };
+const alias = { "pulsoicon-react": pkg("react/src/index.ts"), "pulsoicon-core": pkg("core/src/index.ts"), "pulsoicon-vue": pkg("vue/src/index.ts"), "pulsoicon-svelte": pkg("svelte/src/index.ts") };
 const out = await build({
   entryPoints: [path.join(root, "tests/browser/motion-parity.entry.tsx")],
   bundle: true,
@@ -22,9 +22,9 @@ const out = await build({
     {
       name: "workspace",
       setup(b) {
-        b.onResolve({ filter: /^pulsoicon(-core|-vue|-svelte)?(\/.*)?$/ }, ({ path: p }) => {
+        b.onResolve({ filter: /^pulsoicon(-core|-react|-vue|-svelte)?(\/.*)?$/ }, ({ path: p }) => {
           if (alias[p]) return { path: alias[p] };
-          const [, flavour, rest] = p.match(/^pulsoicon(-core|-vue|-svelte)?\/(.*)$/);
+          const [, flavour, rest] = p.match(/^pulsoicon(-core|-react|-vue|-svelte)?\/(.*)$/);
           return { path: pkg(`${flavour ? flavour.slice(1) : "react"}/src/${rest}.ts`) };
         });
         // Svelte 5 strips the TypeScript in <script lang="ts"> itself.

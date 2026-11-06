@@ -2,7 +2,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { frameMarkup, iconFrame } from "pulsoicon-core";
 import { ICONS as DATA } from "pulsoicon-core/all";
-import { ICON_NAMES, ICONS } from "pulsoicon/all";
+import { ICON_NAMES, ICONS } from "pulsoicon-react/all";
 import { describe, expect, it } from "vitest";
 
 // pulsoicon-core's iconFrame is what the Vue and Svelte packages render; it must be React's markup exactly.
