@@ -59,7 +59,11 @@ export function createIcon(displayName: string, iconName: string, spec: Omit<Ico
     setup(props, { attrs, expose }) {
       const maskId = `pulsoicon${useId().replace(/[^\w-]/g, "")}`;
       const svg = ref<SVGSVGElement>();
-      const frame = computed(() => iconFrame(data, { ...props, maskId }));
+      // Only the drawing props shape the frame: a new frame remounts the player, so play / animated must not be read here
+      // (a play change would otherwise stop the motion it has just started).
+      const frame = computed(() =>
+        iconFrame(data, { size: props.size, color: props.color, strokeWidth: props.strokeWidth, absoluteStrokeWidth: props.absoluteStrokeWidth, solid: props.solid, maskId }),
+      );
       let player: IconPlayer | undefined;
       const options = () => ({ animated: props.animated, autoAnimated: props.autoAnimated });
       const handle: IconHandle = {

@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+### Fixed
+
+- **pulsoicon-vue: `play` did nothing.** Changing `play` rebuilt the icon's player and stopped the motion it had just
+  started. The icon now plays when `play` turns `true`, as in React and Svelte.
+- The browser parity test also plays icons through the `play` prop, and its number comparison no longer reads the dots
+  of `www.w3.org` as numbers.
+
 ## 6.0.1
 
 ### Breaking

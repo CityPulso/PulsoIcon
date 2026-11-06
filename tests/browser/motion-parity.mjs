@@ -43,9 +43,10 @@ const page = await browser.newPage();
 await page.setContent("<!doctype html><body></body>");
 await page.addScriptTag({ content: out.outputFiles[0].text });
 let failures = 0;
-for (const key of keys) {
-  for (const solid of [false, true]) {
-    await page.evaluate(([k, s]) => window.mount(k, s), [key, solid]).catch((e) => {
+const runs = [...keys.flatMap((key) => [false, true].map((solid) => [key, solid, "handle"])), ...keys.slice(0, 4).map((key) => [key, false, "play"])];
+for (const [key, solid, trigger] of runs) {
+  {
+    await page.evaluate(([k, s, t]) => window.mount(k, s, t), [key, solid, trigger]).catch((e) => {
       throw new Error(`${key}${solid ? " solid" : ""}: ${e.message}`);
     });
     await page.waitForTimeout(50);
@@ -61,21 +62,21 @@ for (const key of keys) {
         const diff = sample.react.map((r, j) => [r, sample[other][j]]).filter(([r, c]) => !close(r, c));
         if (sample.react.length !== sample[other].length || diff.length) {
           failures++;
-          console.log(`${key}${solid ? " solid" : ""} ${other} sample ${i}: ${sample.react.length}/${sample[other].length} elements`, diff.slice(0, 3));
+          console.log(`${key}${solid ? " solid" : ""} (${trigger}) ${other} sample ${i}: ${sample.react.length}/${sample[other].length} elements`, diff.slice(0, 3));
         }
       }
     });
   }
 }
 await browser.close();
-console.log(failures ? `${failures} mismatched samples` : `motion parity: ${keys.length} icons × outline/solid, React = core = Vue = Svelte`);
+console.log(failures ? `${failures} mismatched samples` : `motion parity: ${keys.length} icons × outline/solid, plus ${runs.length - keys.length * 2} played through the play prop: React = core = Vue = Svelte`);
 process.exit(failures ? 1 : 0);
 
 /** Same state, allowing the few milliseconds the two players start apart. */
 function close(a, b) {
   if (a === b) return true;
-  const na = a?.match(/-?[\d.]+(e-?\d+)?/g) ?? [];
-  const nb = b?.match(/-?[\d.]+(e-?\d+)?/g) ?? [];
-  if (na.length !== nb.length || a.replace(/-?[\d.]+(e-?\d+)?/g, "#") !== b.replace(/-?[\d.]+(e-?\d+)?/g, "#")) return false;
+  const na = a?.match(/-?\d*\.?\d+(e-?\d+)?/g) ?? [];
+  const nb = b?.match(/-?\d*\.?\d+(e-?\d+)?/g) ?? [];
+  if (na.length !== nb.length || a.replace(/-?\d*\.?\d+(e-?\d+)?/g, "#") !== b.replace(/-?\d*\.?\d+(e-?\d+)?/g, "#")) return false;
   return na.every((v, i) => Math.abs(Number(v) - Number(nb[i])) < 0.08 * Math.max(1, Math.abs(Number(v))));
 }
