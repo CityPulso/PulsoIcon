@@ -1,5 +1,7 @@
 # PulsoIcon for Android (Jetpack Compose)
 
+[← All platforms](../README.md)
+
 `com.citypulso:pulsoicon-compose` on Maven Central: the 9955 PulsoIcon icons for Jetpack Compose, with the same props and motion as [`pulsoicon-react`](../packages/react). Android 8.0 (API 26) or newer.
 
 ## Install

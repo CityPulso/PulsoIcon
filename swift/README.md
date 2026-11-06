@@ -1,5 +1,7 @@
 # PulsoIcon for iOS and macOS (SwiftUI)
 
+[← All platforms](../README.md)
+
 The 9955 PulsoIcon icons for SwiftUI, with the same props and motion as [`pulsoicon-react`](../packages/react). iOS 17, macOS 14, tvOS 17, watchOS 10, visionOS 1 or newer.
 
 ## Install

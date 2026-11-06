@@ -15,6 +15,16 @@
   <a href="./LICENSE"><img src="https://img.shields.io/npm/l/pulsoicon-react?color=f2552c" alt="license" /></a>
 </p>
 
+<p align="center">
+  <strong>Docs:</strong>
+  <a href="./packages/react/README.md">React</a> ·
+  <a href="./packages/vue/README.md">Vue</a> ·
+  <a href="./packages/svelte/README.md">Svelte</a> ·
+  <a href="./kotlin/README.md">Android (Compose)</a> ·
+  <a href="./swift/README.md">iOS / macOS (SwiftUI)</a> ·
+  <a href="./packages/core/README.md">Core data</a>
+</p>
+
 ---
 
 <p align="center">
@@ -43,19 +53,22 @@ Every one of the 9955 motions is written for this set. About 3,700 icons are dra
 
 One version number covers every package.
 
-| Platform                  | Install                                                                          | Docs                                 |
-| ------------------------- | -------------------------------------------------------------------------------- | ------------------------------------ |
-| React 18+                 | `npm install pulsoicon-react`                                                    | [packages/react](./packages/react)   |
-| Vue 3.5+                  | `npm install pulsoicon-vue`                                                      | [packages/vue](./packages/vue)       |
-| Svelte 5                  | `npm install pulsoicon-svelte`                                                   | [packages/svelte](./packages/svelte) |
-| Android (Jetpack Compose) | `implementation("com.citypulso:pulsoicon-compose:<version>")`                    | [kotlin](./kotlin)                   |
-| iOS / macOS (SwiftUI)     | `.package(url: "https://github.com/CityPulso/PulsoIcon.git", from: "<version>")` | [swift](./swift)                     |
+| Platform                  | Install                                                                          | Guide                                        |
+| ------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
+| React 18+                 | `npm install pulsoicon-react`                                                    | [React README](./packages/react/README.md)   |
+| Vue 3.5+                  | `npm install pulsoicon-vue`                                                      | [Vue README](./packages/vue/README.md)       |
+| Svelte 5                  | `npm install pulsoicon-svelte`                                                   | [Svelte README](./packages/svelte/README.md) |
+| Android (Jetpack Compose) | `implementation("com.citypulso:pulsoicon-compose:<version>")`                    | [Android README](./kotlin/README.md)         |
+| iOS / macOS (SwiftUI)     | `.package(url: "https://github.com/CityPulso/PulsoIcon.git", from: "<version>")` | [iOS / macOS README](./swift/README.md)      |
+| Any other framework       | `npm install pulsoicon-core`                                                     | [Core README](./packages/core/README.md)     |
+
+Each guide has the install, a quick start, every prop and how to play icons from code on that platform.
 
 `pulsoicon-core` holds the icon data the web packages share; they install it for you. Until 5.2.1 the React package was called `pulsoicon`; from 6.0.1 it is `pulsoicon-react` (only the import changes).
 
 ## Quick start
 
-React:
+React ([full guide](./packages/react/README.md)):
 
 ```tsx
 import { Bell, Trash2 } from "pulsoicon-react";
@@ -64,7 +77,7 @@ import { Bell, Trash2 } from "pulsoicon-react";
 <button><Trash2 color="crimson" strokeWidth={1.5} /> Delete</button>
 ```
 
-Vue:
+Vue ([full guide](./packages/vue/README.md)):
 
 ```vue
 <script setup lang="ts">
@@ -76,7 +89,7 @@ import { Bell } from "pulsoicon-vue";
 </template>
 ```
 
-Svelte:
+Svelte ([full guide](./packages/svelte/README.md)):
 
 ```svelte
 <script lang="ts">
@@ -86,7 +99,7 @@ Svelte:
 <button><Bell size={20} /> Notifications</button>
 ```
 
-Jetpack Compose:
+Jetpack Compose ([full guide](./kotlin/README.md)):
 
 ```kotlin
 val interactions = remember { MutableInteractionSource() }
@@ -95,7 +108,7 @@ IconButton(onClick = { /* … */ }, interactionSource = interactions) {
 }
 ```
 
-SwiftUI:
+SwiftUI ([full guide](./swift/README.md)):
 
 ```swift
 Button { /* … */ } label: {
