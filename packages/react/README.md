@@ -84,7 +84,7 @@ Icon components and their props work the same. Lucide's helpers (`createLucideIc
 
 ### Coming from `pulsoicon` 5.x
 
-The React package was called `pulsoicon` until 5.2.1. From 6.0.0 it is `pulsoicon-react`, next to `pulsoicon-vue` and `pulsoicon-svelte`; nothing else changed:
+The React package was called `pulsoicon` until 5.2.1. From 6.0.1 it is `pulsoicon-react`, next to `pulsoicon-vue` and `pulsoicon-svelte`; nothing else changed:
 
 ```diff
 - import { Bell } from "pulsoicon";

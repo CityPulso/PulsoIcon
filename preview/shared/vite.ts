@@ -1,10 +1,10 @@
 import type { PluginOption, UserConfig } from "vite";
-import type { FrameworkEnum } from "./frameworks.ts";
+import type { FrameworkEnum } from "./frameworks.js";
 
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { FRAMEWORKS } from "./frameworks.ts";
+import { FRAMEWORKS } from "./frameworks.js";
 
 const repo = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const src = (pkg: string, file: string) => path.join(repo, "packages", pkg, "src", file);

@@ -1,6 +1,6 @@
 {
   "name": "pulsoicon-react",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "9955 animated React icons, each with its own hand-written motion. Drop-in replacement for lucide-react.",
   "type": "module",
   "sideEffects": false,
@@ -61,7 +61,7 @@
     "prepublishOnly": "npm run typecheck && npm test && npm run build"
   },
   "dependencies": {
-    "pulsoicon-core": "6.0.0"
+    "pulsoicon-core": "6.0.1"
   },
   "peerDependencies": {
     "motion": ">=12.0.0",

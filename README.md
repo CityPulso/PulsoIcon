@@ -51,7 +51,7 @@ One version number covers every package.
 | Android (Jetpack Compose) | `implementation("com.citypulso:pulsoicon-compose:<version>")`                    | [kotlin](./kotlin)                   |
 | iOS / macOS (SwiftUI)     | `.package(url: "https://github.com/CityPulso/PulsoIcon.git", from: "<version>")` | [swift](./swift)                     |
 
-`pulsoicon-core` holds the icon data the web packages share; they install it for you. Until 5.2.1 the React package was called `pulsoicon`; from 6.0.0 it is `pulsoicon-react` (only the import changes).
+`pulsoicon-core` holds the icon data the web packages share; they install it for you. Until 5.2.1 the React package was called `pulsoicon`; from 6.0.1 it is `pulsoicon-react` (only the import changes).
 
 ## Quick start
 
