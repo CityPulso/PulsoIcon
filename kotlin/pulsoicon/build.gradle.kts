@@ -62,7 +62,7 @@ mavenPublishing {
     pom {
         name.set("PulsoIcon")
         description.set("Animated icons for Jetpack Compose, each with its own hand-written motion. The same icons and motion as the pulsoicon-react npm package.")
-        url.set("https://github.com/CityPulso/PulsoIcon")
+        url.set("https://pulsoicon.com")
         licenses {
             license {
                 name.set("ISC License")

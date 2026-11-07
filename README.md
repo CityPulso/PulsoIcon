@@ -16,6 +16,12 @@
 </p>
 
 <p align="center">
+  <a href="https://pulsoicon.com"><strong>pulsoicon.com</strong></a>: browse all icons, try them live and copy the code ·
+  <a href="https://pulsoicon.com/playground">Playground</a> ·
+  <a href="https://pulsoicon.com/docs">Documentation</a>
+</p>
+
+<p align="center">
   <strong>Docs:</strong>
   <a href="./packages/react/README.md">React</a> ·
   <a href="./packages/vue/README.md">Vue</a> ·

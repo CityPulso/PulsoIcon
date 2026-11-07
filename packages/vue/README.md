@@ -4,6 +4,8 @@
 
 <h1 align="center">PulsoIcon for Vue</h1>
 
+<p align="center"><a href="https://pulsoicon.com"><strong>pulsoicon.com</strong></a>: browse all icons, try them live and copy the code</p>
+
 <p align="center">
   <strong>9955 animated icons. Every one has its own motion.</strong>
 </p>
