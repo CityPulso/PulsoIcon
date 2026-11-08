@@ -22,6 +22,7 @@
     "preview:react": "vite --config preview/react/vite.config.ts",
     "preview:vue": "vite --config preview/vue/vite.config.ts",
     "preview:svelte": "vite --config preview/svelte/vite.config.ts",
+    "readme:gif": "tsx scripts/readme-gif/record.ts",
     "prettier": "prettier --write \"{packages/core/src,packages/*/tests,packages/react/src/runtime,preview,scripts,tests}/**/*.{ts,tsx,mjs,css,html}\" packages/vue/src/createIcon.ts \"preview/**/*.vue\"",
     "import-solid": "tsx .scripts/import-solid.ts && npm run prettier"
   },
