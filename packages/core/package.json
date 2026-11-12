@@ -1,18 +1,18 @@
 {
   "name": "pulsoicon-core",
-  "version": "6.1.0",
+  "version": "6.2.0",
   "description": "Framework-free data and motion for PulsoIcon: 9955 icons, their per-shape motion recipes and the solid drawings. Used by pulsoicon-react, -vue, -svelte, -solid, -preact, -angular and -astro.",
   "type": "module",
   "sideEffects": false,
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CityPulso/PulsoIcon.git",
+    "url": "git+https://github.com/CityPulso/PulsoIcon-Package.git",
     "directory": "packages/core"
   },
   "homepage": "https://pulsoicon.com",
   "bugs": {
-    "url": "https://github.com/CityPulso/PulsoIcon/issues"
+    "url": "https://github.com/CityPulso/PulsoIcon-Package/issues"
   },
   "keywords": [
     "icons",

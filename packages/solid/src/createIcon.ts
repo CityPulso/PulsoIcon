@@ -79,6 +79,8 @@ export function createIcon(displayName: string, iconName: string, spec: Omit<Ico
         maskId,
       }),
     );
+    // Size, stroke width and class only touch the <svg>; keep the shapes' DOM unless the drawing itself changed.
+    const shapes = createMemo(() => frame().children, undefined, { equals: (a, b) => JSON.stringify(a) === JSON.stringify(b) });
     let svg: SVGSVGElement | undefined;
     let player: IconPlayer | undefined;
     const options = () => ({ animated: own.animated, autoAnimated: own.autoAnimated });
@@ -113,7 +115,7 @@ export function createIcon(displayName: string, iconName: string, spec: Omit<Ico
         },
         ref: (el: SVGSVGElement) => (svg = el),
         get children() {
-          return frame().children.map(render);
+          return shapes().map(render);
         },
       }),
     );

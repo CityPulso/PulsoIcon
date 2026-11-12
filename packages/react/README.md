@@ -14,7 +14,7 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/pulsoicon-react"><img src="https://img.shields.io/npm/v/pulsoicon-react?color=f2552c" alt="npm version" /></a>
   <a href="https://www.npmjs.com/package/pulsoicon-react"><img src="https://img.shields.io/npm/dm/pulsoicon-react?color=f2552c" alt="npm downloads" /></a>
-  <a href="https://github.com/CityPulso/PulsoIcon/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/pulsoicon-react?color=f2552c" alt="license" /></a>
+  <a href="https://github.com/CityPulso/PulsoIcon-Package/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/pulsoicon-react?color=f2552c" alt="license" /></a>
 </p>
 
 ---
@@ -27,7 +27,7 @@ A bell rings. A calendar lifts its rings. A trash can opens its lid. A clock's h
 
 PulsoIcon gives every icon a motion written for that icon, not one effect stamped on all of them. At rest each icon is a clean 24×24 icon; it plays when someone hovers or focuses the button, link or tab it sits in.
 
-Every one of the 9955 motions is written for this set. About 3,700 icons are drawn here, including the line-art brand logos; the rest build on the shapes of [Lucide](https://lucide.dev), [Tabler Icons](https://tabler.io/icons) and [Iconoir](https://iconoir.com), which are credited in [LICENSE](https://github.com/CityPulso/PulsoIcon/blob/main/LICENSE).
+Every one of the 9955 motions is written for this set. About 3,700 icons are drawn here, including the line-art brand logos; the rest build on the shapes of [Lucide](https://lucide.dev), [Tabler Icons](https://tabler.io/icons) and [Iconoir](https://iconoir.com), which are credited in [LICENSE](https://github.com/CityPulso/PulsoIcon-Package/blob/main/LICENSE).
 
 ## Why PulsoIcon
 
@@ -49,7 +49,7 @@ npm install pulsoicon-react
 
 Works with React 18 or newer. [Motion](https://motion.dev) (12 or newer) is installed for you; if your app already uses Motion, PulsoIcon shares that copy.
 
-The same icons, props and motion are also available for [Vue, Svelte, Solid, Preact, Angular, Astro, Android and iOS](https://github.com/CityPulso/PulsoIcon#packages).
+The same icons, props and motion are also available for [Vue, Svelte, Solid, Preact, Angular, Astro, Android and iOS](https://github.com/CityPulso/PulsoIcon-Package#packages).
 
 ## Quick start
 
@@ -219,5 +219,5 @@ to the correct logo. Issues on GitHub are welcome too.
 ## License
 
 ISC © CityPulso. Some icon shapes come from Lucide, Tabler Icons, Iconoir, Hugeicons and Phosphor; ship the
-[LICENSE](https://github.com/CityPulso/PulsoIcon/blob/main/LICENSE) file with your app. What comes from where is listed in the
-[repository README](https://github.com/CityPulso/PulsoIcon#license).
+[LICENSE](https://github.com/CityPulso/PulsoIcon-Package/blob/main/LICENSE) file with your app. What comes from where is listed in the
+[repository README](https://github.com/CityPulso/PulsoIcon-Package#license).

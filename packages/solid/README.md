@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/pulsoicon-solid"><img src="https://img.shields.io/npm/v/pulsoicon-solid?color=f2552c" alt="npm version" /></a>
-  <a href="https://github.com/CityPulso/PulsoIcon/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/pulsoicon-solid?color=f2552c" alt="license" /></a>
+  <a href="https://github.com/CityPulso/PulsoIcon-Package/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/pulsoicon-solid?color=f2552c" alt="license" /></a>
 </p>
 
 ---
@@ -103,7 +103,7 @@ Or drive it from a signal: `<Bell autoAnimated={false} play={hasNewMessage()} />
 
 ## Finding icons
 
-Names follow lucide-solid (`Calendar`, `Trash2`), every icon is also exported with an `Icon` suffix (`BellIcon`), and other icon sets' names work too (`Gear` is `Settings`, Tabler's `IconHome` is `Home`). Brand logos start with `Brand` (`BrandGithub`). Browse them all in the [repository README](https://github.com/CityPulso/PulsoIcon#finding-icons).
+Names follow lucide-solid (`Calendar`, `Trash2`), every icon is also exported with an `Icon` suffix (`BellIcon`), and other icon sets' names work too (`Gear` is `Settings`, Tabler's `IconHome` is `Home`). Brand logos start with `Brand` (`BrandGithub`). Browse them all in the [repository README](https://github.com/CityPulso/PulsoIcon-Package#finding-icons).
 
 For icon pickers, `pulsoicon-solid/all` exports every icon by its kebab-case name (all 9955 of them, so only where you need the full set). `pulsoicon-solid/names` lists the names without loading any icon, and `pulsoicon-solid/icons/<name>` loads one:
 
@@ -121,8 +121,8 @@ Each icon renders `<svg class="pulsoicon pulsoicon-<name>">`, so CSS can target 
 
 ## Other platforms
 
-The same icons, props and motion: [React, Vue, Svelte, Solid, Preact, Angular, Astro, Android (Jetpack Compose) and iOS (SwiftUI)](https://github.com/CityPulso/PulsoIcon#packages).
+The same icons, props and motion: [React, Vue, Svelte, Solid, Preact, Angular, Astro, Android (Jetpack Compose) and iOS (SwiftUI)](https://github.com/CityPulso/PulsoIcon-Package#packages).
 
 ## License
 
-ISC © CityPulso. Some icon shapes come from Lucide, Tabler Icons, Iconoir, Hugeicons and Phosphor; ship the [LICENSE](https://github.com/CityPulso/PulsoIcon/blob/main/LICENSE) file with your app. What comes from where is listed in the [repository README](https://github.com/CityPulso/PulsoIcon#license).
+ISC © CityPulso. Some icon shapes come from Lucide, Tabler Icons, Iconoir, Hugeicons and Phosphor; ship the [LICENSE](https://github.com/CityPulso/PulsoIcon-Package/blob/main/LICENSE) file with your app. What comes from where is listed in the [repository README](https://github.com/CityPulso/PulsoIcon-Package#license).

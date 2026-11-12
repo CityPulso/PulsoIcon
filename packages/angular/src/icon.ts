@@ -53,6 +53,7 @@ export function drawIcon(inputs: IconInputs, host: () => SVGSVGElement | undefin
   const browser = isPlatformBrowser(inject(PLATFORM_ID));
   const maskId = `pulsoicon-ng${nextId++}`;
   let drawn: Drawn = { attrs: [], classes: [], styles: [] };
+  let drawnShapes = "";
   let player: IconPlayer | undefined;
   let mounted = false;
 
@@ -69,7 +70,13 @@ export function drawIcon(inputs: IconInputs, host: () => SVGSVGElement | undefin
   };
 
   const draw = (svg: SVGSVGElement, frame: FrameElement, label: string | undefined) => {
-    while (svg.firstChild) renderer.removeChild(svg, svg.firstChild);
+    // Size, stroke width and label only touch the <svg>; keep the shapes' DOM unless the drawing itself changed.
+    const shapes = JSON.stringify(frame.children);
+    if (shapes !== drawnShapes) {
+      while (svg.firstChild) renderer.removeChild(svg, svg.firstChild);
+      for (const child of frame.children) renderer.appendChild(svg, create(child));
+      drawnShapes = shapes;
+    }
     for (const name of drawn.attrs) renderer.removeAttribute(svg, name);
     for (const name of drawn.classes) renderer.removeClass(svg, name);
     for (const name of drawn.styles) renderer.removeStyle(svg, name, RendererStyleFlags2.DashCase);
@@ -81,7 +88,6 @@ export function drawIcon(inputs: IconInputs, host: () => SVGSVGElement | undefin
     for (const name of classList) renderer.addClass(svg, name);
     const styles = styleEntries(style);
     for (const [k, v] of styles) renderer.setStyle(svg, k, v, RendererStyleFlags2.DashCase);
-    for (const child of frame.children) renderer.appendChild(svg, create(child));
     drawn = { attrs: Object.keys(all), classes: classList, styles: styles.map(([k]) => k) };
   };
 

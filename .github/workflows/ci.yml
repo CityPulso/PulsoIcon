@@ -4,7 +4,7 @@
 #
 # npm uses Trusted Publishing (OIDC), no NPM_TOKEN. A package's first version is published by hand (npm can only
 # trust a publisher for a package that exists), then on npmjs.com → the package → Settings → Trusted Publisher:
-#   Organization or user: CityPulso · Repository: PulsoIcon · Workflow filename: ci.yml · Environment: (empty)
+#   Organization or user: CityPulso · Repository: PulsoIcon-Package · Workflow filename: ci.yml · Environment: (empty)
 # pulsoicon-angular is published from packages/angular/dist (the ng-packagr output), so its first version too:
 #   npm run build && npm publish ./packages/angular/dist
 #

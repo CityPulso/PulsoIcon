@@ -1,18 +1,18 @@
 {
   "name": "pulsoicon-angular",
-  "version": "6.1.0",
+  "version": "6.2.0",
   "description": "9955 animated Angular icons, each with its own hand-written motion: a standalone <pulso-icon> component and svg[pulsoIcon] directive. The same icons, props and motion as pulsoicon-react.",
   "type": "module",
   "sideEffects": false,
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CityPulso/PulsoIcon.git",
+    "url": "git+https://github.com/CityPulso/PulsoIcon-Package.git",
     "directory": "packages/angular"
   },
   "homepage": "https://pulsoicon.com",
   "bugs": {
-    "url": "https://github.com/CityPulso/PulsoIcon/issues"
+    "url": "https://github.com/CityPulso/PulsoIcon-Package/issues"
   },
   "keywords": [
     "icons",
@@ -29,7 +29,7 @@
     "prepublishOnly": "node -e \"process.exit(process.cwd().endsWith('dist') ? 0 : (console.error('Publish packages/angular/dist (the ng-packagr output), not packages/angular.'), 1))\""
   },
   "dependencies": {
-    "pulsoicon-core": "6.1.0",
+    "pulsoicon-core": "6.2.0",
     "tslib": "^2.3.0"
   },
   "peerDependencies": {

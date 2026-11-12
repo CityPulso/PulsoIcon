@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/pulsoicon-core"><img src="https://img.shields.io/npm/v/pulsoicon-core?color=f2552c" alt="npm version" /></a>
-  <a href="https://github.com/CityPulso/PulsoIcon/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/pulsoicon-core?color=f2552c" alt="license" /></a>
+  <a href="https://github.com/CityPulso/PulsoIcon-Package/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/pulsoicon-core?color=f2552c" alt="license" /></a>
 </p>
 
 ---
@@ -36,8 +36,8 @@ The data every PulsoIcon package is built from: the 9955 icons (their shapes and
 | `pulsoicon-core/frame`        | `iconFrame(data, options)`: the resting `<svg>` as a plain element tree, exactly what the React package renders                                                     |
 | `pulsoicon-core/dom`          | `playIcon(svg, frame, options)`: plays an icon rendered from that tree with [Motion](https://motion.dev)'s `animate()` (Motion is then needed as a peer dependency) |
 
-`pulsoicon-vue`, `pulsoicon-svelte`, `pulsoicon-solid`, `pulsoicon-preact` and `pulsoicon-angular` are each a thin component around `iconFrame` and `playIcon`; [their source](https://github.com/CityPulso/PulsoIcon/tree/main/packages) shows how to wrap them.
+`pulsoicon-vue`, `pulsoicon-svelte`, `pulsoicon-solid`, `pulsoicon-preact` and `pulsoicon-angular` are each a thin component around `iconFrame` and `playIcon`; [their source](https://github.com/CityPulso/PulsoIcon-Package/tree/main/packages) shows how to wrap them.
 
 ## License
 
-ISC © CityPulso. Some icon shapes come from Lucide, Tabler Icons, Iconoir, Hugeicons and Phosphor; see [LICENSE](https://github.com/CityPulso/PulsoIcon/blob/main/LICENSE) and the [repository README](https://github.com/CityPulso/PulsoIcon#license).
+ISC © CityPulso. Some icon shapes come from Lucide, Tabler Icons, Iconoir, Hugeicons and Phosphor; see [LICENSE](https://github.com/CityPulso/PulsoIcon-Package/blob/main/LICENSE) and the [repository README](https://github.com/CityPulso/PulsoIcon-Package#license).

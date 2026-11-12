@@ -73,7 +73,7 @@ One version number covers every package.
 | Angular 19+               | `npm install pulsoicon-angular`                                                  | [Angular README](./packages/angular/README.md) |
 | Astro 5+                  | `npm install pulsoicon-astro`                                                    | [Astro README](./packages/astro/README.md)     |
 | Android (Jetpack Compose) | `implementation("com.citypulso:pulsoicon-compose:<version>")`                    | [Android README](./kotlin/README.md)           |
-| iOS / macOS (SwiftUI)     | `.package(url: "https://github.com/CityPulso/PulsoIcon.git", from: "<version>")` | [iOS / macOS README](./swift/README.md)        |
+| iOS / macOS (SwiftUI)     | `.package(url: "https://github.com/CityPulso/PulsoIcon-Package.git", from: "<version>")` | [iOS / macOS README](./swift/README.md)        |
 | Any other framework       | `npm install pulsoicon-core`                                                     | [Core README](./packages/core/README.md)       |
 
 Each guide has the install, a quick start, every prop and how to play icons from code on that platform.

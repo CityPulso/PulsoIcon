@@ -6,10 +6,10 @@ The 9955 PulsoIcon icons for SwiftUI, with the same props and motion as [`pulsoi
 
 ## Install
 
-Xcode → File → Add Package Dependencies → `https://github.com/CityPulso/PulsoIcon.git`, or in `Package.swift`:
+Xcode → File → Add Package Dependencies → `https://github.com/CityPulso/PulsoIcon-Package.git`, or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/CityPulso/PulsoIcon.git", from: "<version>"),
+.package(url: "https://github.com/CityPulso/PulsoIcon-Package.git", from: "<version>"),
 // and in your target:
 .product(name: "PulsoIcon", package: "PulsoIcon"),
 ```

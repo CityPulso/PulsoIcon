@@ -66,7 +66,7 @@ mavenPublishing {
         licenses {
             license {
                 name.set("ISC License")
-                url.set("https://github.com/CityPulso/PulsoIcon/blob/main/LICENSE")
+                url.set("https://github.com/CityPulso/PulsoIcon-Package/blob/main/LICENSE")
             }
         }
         developers {
@@ -77,9 +77,9 @@ mavenPublishing {
             }
         }
         scm {
-            url.set("https://github.com/CityPulso/PulsoIcon")
-            connection.set("scm:git:git://github.com/CityPulso/PulsoIcon.git")
-            developerConnection.set("scm:git:ssh://git@github.com/CityPulso/PulsoIcon.git")
+            url.set("https://github.com/CityPulso/PulsoIcon-Package")
+            connection.set("scm:git:git://github.com/CityPulso/PulsoIcon-Package.git")
+            developerConnection.set("scm:git:ssh://git@github.com/CityPulso/PulsoIcon-Package.git")
         }
     }
 }
