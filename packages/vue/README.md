@@ -113,7 +113,7 @@ Each icon renders `<svg class="pulsoicon pulsoicon-<name>">`, so CSS can target 
 
 ## Other platforms
 
-The same icons, props and motion: [React, Vue, Svelte, Android (Jetpack Compose) and iOS (SwiftUI)](https://github.com/CityPulso/PulsoIcon#packages).
+The same icons, props and motion: [React, Vue, Svelte, Solid, Preact, Angular, Astro, Android (Jetpack Compose) and iOS (SwiftUI)](https://github.com/CityPulso/PulsoIcon#packages).
 
 ## License
 

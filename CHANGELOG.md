@@ -1,5 +1,20 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- **Four more web packages**, drawing the same 9955 icons with the same motion and props as React:
+  - `pulsoicon-solid` (Solid 1.8+): reactive props, `ref` handle, server rendering.
+  - `pulsoicon-preact` (Preact 10.11+ and 11): `ref` handle, no React aliasing needed.
+  - `pulsoicon-angular` (Angular 19+): a standalone `<pulso-icon [icon]="Bell">` component and an `svg[pulsoIcon]`
+    directive sharing one engine; each icon is a data object you import, so bundles keep only the icons used. Built
+    with ng-packagr (Angular Package Format, partial Ivy), safe under SSR, with a `label` input for standalone icons.
+  - `pulsoicon-astro` (Astro 5+): server-rendered `.astro` components; each icon on the page adds one small script
+    for its motion, and `getIconHandle()` from `pulsoicon-astro/client` plays it from code.
+- A gallery for each of them (`npm run preview:solid`, `preview:preact`, `preview:angular`, `preview:astro`), and Solid
+  and Preact in the browser parity test.
+
 ## 6.1.0
 
 ### Fixed

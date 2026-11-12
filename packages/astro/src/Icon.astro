@@ -1,0 +1,14 @@
+---
+// One icon drawn from its data, rendered on the server. The generated components (icons/*.astro) wrap it with their own
+// data and a script that hands that data to the client player, so only the icons on the page ship their motion.
+import type { IconData } from "pulsoicon-core";
+import type { IconProps } from "./types";
+
+import { iconMarkup } from "./markup";
+
+type Props = IconProps & { data: IconData };
+
+const { data, ...props } = Astro.props;
+---
+
+<Fragment set:html={iconMarkup(data, props)} />

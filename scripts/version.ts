@@ -13,7 +13,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const PACKAGES = ["core", "react", "vue", "svelte"];
+const PACKAGES = ["core", "react", "vue", "svelte", "solid", "preact", "angular", "astro"];
 
 type Manifest = { name: string; version: string; dependencies?: Record<string, string> };
 const read = (file: string) => JSON.parse(readFileSync(path.join(root, file), "utf8")) as Manifest;

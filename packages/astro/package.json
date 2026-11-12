@@ -1,0 +1,58 @@
+{
+  "name": "pulsoicon-astro",
+  "version": "6.1.0",
+  "description": "9955 animated Astro icons, each with its own hand-written motion. Rendered on the server; only the icons on the page ship their motion. The same icons, props and motion as pulsoicon-react.",
+  "type": "module",
+  "sideEffects": false,
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CityPulso/PulsoIcon.git",
+    "directory": "packages/astro"
+  },
+  "homepage": "https://pulsoicon.com",
+  "bugs": {
+    "url": "https://github.com/CityPulso/PulsoIcon/issues"
+  },
+  "keywords": [
+    "icons",
+    "animated-icons",
+    "astro",
+    "astro-component",
+    "withastro",
+    "lucide",
+    "motion",
+    "svg"
+  ],
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./all": "./src/all.ts",
+    "./names": "./src/names.ts",
+    "./client": "./src/client.ts",
+    "./icons/*": "./src/icons/*.astro"
+  },
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "test -f src/index.ts || (echo 'src/index.ts is generated: run npm run gen at the repository root' && exit 1)",
+    "prepack": "node ../../scripts/pack-files.mjs",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "pulsoicon-core": "6.1.0"
+  },
+  "peerDependencies": {
+    "astro": ">=5.0.0",
+    "motion": ">=12.0.0"
+  },
+  "author": "CityPulso",
+  "devDependencies": {
+    "astro": "^7.4.11"
+  }
+}

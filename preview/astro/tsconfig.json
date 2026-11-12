@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "astro/client"],
+    "paths": {
+      "pulsoicon-astro": ["../../packages/astro/src/index.ts"],
+      "pulsoicon-astro/icons/*": ["../../packages/astro/src/icons/*.astro"],
+      "pulsoicon-astro/*": ["../../packages/astro/src/*"],
+      "pulsoicon-core": ["../../packages/core/src/index.ts"],
+      "pulsoicon-core/*": ["../../packages/core/src/*"]
+    }
+  },
+  "include": [".", "../shared"],
+  "exclude": ["node_modules", ".astro"]
+}

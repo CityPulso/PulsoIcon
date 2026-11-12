@@ -23,7 +23,7 @@
 
 The data every PulsoIcon package is built from: the 9955 icons (their shapes and the motion of each shape), the 35 motion recipes, the solid drawings and the other names icons answer to. It has no framework in it.
 
-**You normally don't install this package yourself.** `pulsoicon-react`, `pulsoicon-vue` and `pulsoicon-svelte` depend on it and install it for you. Use it directly to build PulsoIcon for another framework, or to read the icon data.
+**You normally don't install this package yourself.** `pulsoicon-react`, `pulsoicon-vue`, `pulsoicon-svelte`, `pulsoicon-solid`, `pulsoicon-preact`, `pulsoicon-angular` and `pulsoicon-astro` depend on it and install it for you. Use it directly to build PulsoIcon for another framework, or to read the icon data.
 
 ## What is in it
 
@@ -36,7 +36,7 @@ The data every PulsoIcon package is built from: the 9955 icons (their shapes and
 | `pulsoicon-core/frame`        | `iconFrame(data, options)`: the resting `<svg>` as a plain element tree, exactly what the React package renders                                                     |
 | `pulsoicon-core/dom`          | `playIcon(svg, frame, options)`: plays an icon rendered from that tree with [Motion](https://motion.dev)'s `animate()` (Motion is then needed as a peer dependency) |
 
-`pulsoicon-vue` and `pulsoicon-svelte` are each a thin component around `iconFrame` and `playIcon`; [their source](https://github.com/CityPulso/PulsoIcon/tree/main/packages) shows how to wrap them.
+`pulsoicon-vue`, `pulsoicon-svelte`, `pulsoicon-solid`, `pulsoicon-preact` and `pulsoicon-angular` are each a thin component around `iconFrame` and `playIcon`; [their source](https://github.com/CityPulso/PulsoIcon/tree/main/packages) shows how to wrap them.
 
 ## License
 

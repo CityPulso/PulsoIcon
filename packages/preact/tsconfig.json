@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "pulsoicon-preact": [
+        "../../packages/preact/src/index.ts"
+      ],
+      "pulsoicon-preact/*": [
+        "../../packages/preact/src/*"
+      ],
+      "pulsoicon-core": [
+        "../../packages/core/src/index.ts"
+      ],
+      "pulsoicon-core/*": [
+        "../../packages/core/src/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "tests"
+  ]
+}

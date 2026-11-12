@@ -1,4 +1,5 @@
-// node tests/browser/motion-parity.mjs [key …]: React (pulsoicon-react) and pulsoicon-core/dom must be in the same state at the same moments.
+// node tests/browser/motion-parity.mjs [key …]: React (pulsoicon-react), pulsoicon-core/dom and the Vue, Svelte, Solid and Preact packages
+// must be in the same state at the same moments.
 import { build } from "esbuild";
 import { readFile } from "node:fs/promises";
 import { compile } from "svelte/compiler";
@@ -8,7 +9,7 @@ import { chromium } from "playwright-core";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const pkg = (p) => path.join(root, "packages", p);
-const alias = { "pulsoicon-react": pkg("react/src/index.ts"), "pulsoicon-core": pkg("core/src/index.ts"), "pulsoicon-vue": pkg("vue/src/index.ts"), "pulsoicon-svelte": pkg("svelte/src/index.ts") };
+const alias = Object.fromEntries(["react", "core", "vue", "svelte", "solid", "preact"].map((p) => [`pulsoicon-${p}`, pkg(`${p}/src/index.ts`)]));
 const out = await build({
   entryPoints: [path.join(root, "tests/browser/motion-parity.entry.tsx")],
   bundle: true,
@@ -22,9 +23,9 @@ const out = await build({
     {
       name: "workspace",
       setup(b) {
-        b.onResolve({ filter: /^pulsoicon(-core|-react|-vue|-svelte)?(\/.*)?$/ }, ({ path: p }) => {
+        b.onResolve({ filter: /^pulsoicon(-core|-react|-vue|-svelte|-solid|-preact)?(\/.*)?$/ }, ({ path: p }) => {
           if (alias[p]) return { path: alias[p] };
-          const [, flavour, rest] = p.match(/^pulsoicon(-core|-react|-vue|-svelte)?\/(.*)$/);
+          const [, flavour, rest] = p.match(/^pulsoicon(-core|-react|-vue|-svelte|-solid|-preact)?\/(.*)$/);
           return { path: pkg(`${flavour ? flavour.slice(1) : "react"}/src/${rest}.ts`) };
         });
         // Svelte 5 strips the TypeScript in <script lang="ts"> itself.
@@ -58,7 +59,7 @@ for (const [key, solid, trigger] of runs) {
       samples.push(await page.evaluate(() => window.sample()));
     }
     samples.forEach((sample, i) => {
-      for (const other of ["core", "vue", "svelte"]) {
+      for (const other of ["core", "vue", "svelte", "solid", "preact"]) {
         const diff = sample.react.map((r, j) => [r, sample[other][j]]).filter(([r, c]) => !close(r, c));
         if (sample.react.length !== sample[other].length || diff.length) {
           failures++;
@@ -69,7 +70,7 @@ for (const [key, solid, trigger] of runs) {
   }
 }
 await browser.close();
-console.log(failures ? `${failures} mismatched samples` : `motion parity: ${keys.length} icons × outline/solid, plus ${runs.length - keys.length * 2} played through the play prop: React = core = Vue = Svelte`);
+console.log(failures ? `${failures} mismatched samples` : `motion parity: ${keys.length} icons × outline/solid, plus ${runs.length - keys.length * 2} played through the play prop: React = core = Vue = Svelte = Solid = Preact`);
 process.exit(failures ? 1 : 0);
 
 /** Same state, allowing the few milliseconds the two players start apart. */

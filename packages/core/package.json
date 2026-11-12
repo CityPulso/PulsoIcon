@@ -1,7 +1,7 @@
 {
   "name": "pulsoicon-core",
   "version": "6.1.0",
-  "description": "Framework-free data and motion for PulsoIcon: 9955 icons, their per-shape motion recipes and the solid drawings. Used by pulsoicon-react, pulsoicon-vue and pulsoicon-svelte.",
+  "description": "Framework-free data and motion for PulsoIcon: 9955 icons, their per-shape motion recipes and the solid drawings. Used by pulsoicon-react, -vue, -svelte, -solid, -preact, -angular and -astro.",
   "type": "module",
   "sideEffects": false,
   "license": "ISC",

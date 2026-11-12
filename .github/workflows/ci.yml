@@ -1,10 +1,12 @@
 # Every push and pull request: test every package. Pushes to main also release whatever the root package.json
-# version has not released yet: npm (pulsoicon-core, pulsoicon-react, pulsoicon-vue, pulsoicon-svelte), Maven Central
+# version has not released yet: npm (pulsoicon-core, -react, -vue, -svelte, -solid, -preact, -angular, -astro), Maven Central
 # (com.citypulso:pulsoicon-compose) and the git tag SwiftPM installs from. Changing that version is how a release starts.
 #
 # npm uses Trusted Publishing (OIDC), no NPM_TOKEN. A package's first version is published by hand (npm can only
 # trust a publisher for a package that exists), then on npmjs.com → the package → Settings → Trusted Publisher:
 #   Organization or user: CityPulso · Repository: PulsoIcon · Workflow filename: ci.yml · Environment: (empty)
+# pulsoicon-angular is published from packages/angular/dist (the ng-packagr output), so its first version too:
+#   npm run build && npm publish ./packages/angular/dist
 #
 # Maven Central needs these repository secrets; without them the Maven step is skipped:
 #   MAVEN_CENTRAL_USERNAME / MAVEN_CENTRAL_PASSWORD  (central.sonatype.com → View Account → Generate User Token)
@@ -22,7 +24,7 @@ concurrency:
 
 jobs:
   web:
-    name: Web (core, React, Vue, Svelte)
+    name: Web (core, React, Vue, Svelte, Solid, Preact, Angular, Astro)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -33,12 +35,12 @@ jobs:
       - run: npm ci
       - name: One version everywhere
         run: npm run version:check
-      - name: Kotlin and Swift files are generated from the current icons
+      - name: Committed generated files (web, Kotlin, Swift) match the current icons
         run: npm run gen:check
       - run: npm run build
       - run: npm run typecheck
       - run: npm test
-      - name: Motion parity in a browser (React = core player = Vue = Svelte)
+      - name: Motion parity in a browser (React = core player = Vue = Svelte = Solid = Preact)
         run: |
           npx playwright-core install --with-deps chromium
           npm run test:browser
@@ -99,10 +101,12 @@ jobs:
       - run: npm run build
       - name: Publish to npm
         run: |
-          for pkg in core react vue svelte; do
+          for pkg in core react vue svelte solid preact angular astro; do
             name=$(node -p "require('./packages/$pkg/package.json').name")
             if npm view "$name@${{ steps.v.outputs.version }}" version >/dev/null 2>&1; then
               echo "$name@${{ steps.v.outputs.version }} is already on npm"
+            elif [ "$pkg" = angular ]; then
+              npm publish ./packages/angular/dist
             else
               npm publish --workspace "packages/$pkg"
             fi

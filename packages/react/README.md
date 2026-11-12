@@ -49,7 +49,7 @@ npm install pulsoicon-react
 
 Works with React 18 or newer. [Motion](https://motion.dev) (12 or newer) is installed for you; if your app already uses Motion, PulsoIcon shares that copy.
 
-The same icons, props and motion are also available for [Vue, Svelte, Android and iOS](https://github.com/CityPulso/PulsoIcon#packages).
+The same icons, props and motion are also available for [Vue, Svelte, Solid, Preact, Angular, Astro, Android and iOS](https://github.com/CityPulso/PulsoIcon#packages).
 
 ## Quick start
 

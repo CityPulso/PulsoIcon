@@ -22,5 +22,10 @@
   "include": [
     "preview",
     "scripts"
+  ],
+  "exclude": [
+    "preview/solid",
+    "preview/preact",
+    "preview/angular"
   ]
 }

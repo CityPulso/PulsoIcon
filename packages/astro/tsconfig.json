@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": [
+      "node",
+      "astro/client"
+    ],
+    "paths": {
+      "pulsoicon-astro": [
+        "./src/index.ts"
+      ],
+      "pulsoicon-astro/*": [
+        "./src/*"
+      ],
+      "pulsoicon-core": [
+        "../core/src/index.ts"
+      ],
+      "pulsoicon-core/*": [
+        "../core/src/*"
+      ]
+    }
+  },
+  "include": [
+    "astro-modules.d.ts",
+    "src/**/*.ts",
+    "tests",
+    "vitest.config.ts"
+  ]
+}

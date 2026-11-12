@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "paths": {
+      "pulsoicon-angular": ["../../packages/angular/dist/types/pulsoicon-angular.d.ts"],
+      "pulsoicon-angular/all": ["../../packages/angular/dist/types/pulsoicon-angular-all.d.ts"],
+      "pulsoicon-core": ["../../packages/core/src/index.ts"],
+      "pulsoicon-core/*": ["../../packages/core/src/*"]
+    }
+  },
+  "include": [".", "../shared"]
+}

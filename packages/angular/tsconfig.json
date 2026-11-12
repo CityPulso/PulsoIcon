@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.lib.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["node"],
+    "paths": {
+      "pulsoicon-angular": ["./dist/types/pulsoicon-angular.d.ts"],
+      "pulsoicon-angular/all": ["./dist/types/pulsoicon-angular-all.d.ts"],
+      "pulsoicon-angular/names": ["./dist/types/pulsoicon-angular-names.d.ts"],
+      "pulsoicon-core": ["../core/src/index.ts"],
+      "pulsoicon-core/*": ["../core/src/*"]
+    }
+  },
+  "include": ["src", "all", "names", "tests"],
+  "exclude": ["dist", "node_modules"]
+}

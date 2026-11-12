@@ -1,5 +1,5 @@
 /**
- * Everything the three previews (React, Vue, Svelte) share: the icon list with its categories, release groups and
+ * Everything the previews (React, Vue, Svelte, Solid, Preact, Angular, Astro) share: the icon list with its categories, release groups and
  * solid review states, the filters, the "Play visible" helper and the parsed changelog. Each preview only renders it.
  */
 import { ICON_NAMES } from "pulsoicon-core/names";

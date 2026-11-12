@@ -2,10 +2,10 @@
  * Generates every platform's icon files from the single source, packages/core/src/icons/*.ts.
  *
  *   npx tsx scripts/gen.ts            write everything
- *   npx tsx scripts/gen.ts --check    fail when a committed generated file (Kotlin, Swift) is out of date
+ *   npx tsx scripts/gen.ts --check    fail when a generated file is out of date
  *
- * Web packages (core all.ts, react / vue / svelte icons + index + all) are build outputs and git-ignored;
- * the Kotlin and Swift files are committed, because Gradle includeBuild and SwiftPM read the sources directly.
+ * Every generated file is committed: core all.ts / names.ts; react / vue / svelte / solid / preact / astro icons + index +
+ * all + names; angular public-api; and the Kotlin and Swift files (Gradle includeBuild and SwiftPM read the sources directly).
  * Anything the native generators do not recognise fails the run instead of being skipped.
  */
 import type { IconData } from "../packages/core/src/index.js";
@@ -74,6 +74,19 @@ export function writeTree(dir: string, files: Map<string, string>, check: boolea
   return check ? stale : [];
 }
 
+/** Writes one file (path relative to the repository) when it changed; with `check`, only compares. Returns it when stale. */
+function writeOne(rel: string, text: string, check: boolean): string[] {
+  let current: string | undefined;
+  try {
+    current = readFileSync(path.join(ROOT, rel), "utf8");
+  } catch {
+    current = undefined;
+  }
+  if (current === text) return [];
+  if (!check) writeFileSync(path.join(ROOT, rel), text);
+  return check ? [rel] : [];
+}
+
 function listFiles(dir: string, prefix = ""): string[] {
   let entries;
   try {
@@ -127,16 +140,15 @@ function namesModule(icons: IconData[]): string {
   ].join("\n");
 }
 
-function genCore(icons: IconData[]): void {
-  writeFileSync(path.join(ROOT, "packages/core/src/names.ts"), namesModule(icons));
-  writeFileSync(
-    path.join(ROOT, "packages/core/src/all.ts"),
-    webAll(icons, "IconData", 'import type { IconData } from "./types.js";', (k) => `./icons/${k}.js`),
-  );
+function genCore(icons: IconData[], check: boolean): string[] {
+  return [
+    ...writeOne("packages/core/src/names.ts", namesModule(icons), check),
+    ...writeOne("packages/core/src/all.ts", webAll(icons, "IconData", 'import type { IconData } from "./types.js";', (k) => `./icons/${k}.js`), check),
+  ];
 }
 
 /** One wrapper per icon (`Bell = createIcon("Bell", "bell", data)`), plus the package index and `all`. */
-function genWeb(pkg: string, icons: IconData[], opts: { create: string; createFrom: string; type: string; typeFrom: string; head: string[] }): void {
+function genWeb(pkg: string, icons: IconData[], check: boolean, opts: { create: string; createFrom: string; type: string; typeFrom: string; head: string[] }): string[] {
   const files = new Map<string, string>();
   for (const i of icons) {
     files.set(
@@ -152,17 +164,16 @@ function genWeb(pkg: string, icons: IconData[], opts: { create: string; createFr
       ].join("\n"),
     );
   }
-  writeTree(`packages/${pkg}/src/icons`, files, false);
-  writeFileSync(path.join(ROOT, `packages/${pkg}/src/names.ts`), namesModule(icons));
-  writeFileSync(path.join(ROOT, `packages/${pkg}/src/index.ts`), [HEADER, ...opts.head, "", ...webIndexLines(icons, (k) => `./icons/${k}.js`), ""].join("\n"));
-  writeFileSync(
-    path.join(ROOT, `packages/${pkg}/src/all.ts`),
-    webAll(icons, opts.type, `import type { ${opts.type} } from "${opts.typeFrom}";`, (k) => `./icons/${k}.js`),
-  );
+  return [
+    ...writeTree(`packages/${pkg}/src/icons`, files, check),
+    ...writeOne(`packages/${pkg}/src/names.ts`, namesModule(icons), check),
+    ...writeOne(`packages/${pkg}/src/index.ts`, [HEADER, ...opts.head, "", ...webIndexLines(icons, (k) => `./icons/${k}.js`), ""].join("\n"), check),
+    ...writeOne(`packages/${pkg}/src/all.ts`, webAll(icons, opts.type, `import type { ${opts.type} } from "${opts.typeFrom}";`, (k) => `./icons/${k}.js`), check),
+  ];
 }
 
 /** Svelte: one component file per icon wrapping Icon.svelte (Svelte compiles components, it cannot build them from a function). */
-function genSvelte(icons: IconData[]): void {
+function genSvelte(icons: IconData[], check: boolean): string[] {
   const files = new Map<string, string>();
   for (const i of icons) {
     files.set(
@@ -190,8 +201,6 @@ function genSvelte(icons: IconData[]): void {
       ].join("\n"),
     );
   }
-  writeTree("packages/svelte/src/icons", files, false);
-  writeFileSync(path.join(ROOT, "packages/svelte/src/names.ts"), namesModule(icons));
   const head = [
     'export { default as Icon } from "./Icon.svelte";',
     'export type { IconHandle, IconProps, PulsoIcon } from "./types.js";',
@@ -199,11 +208,84 @@ function genSvelte(icons: IconData[]): void {
     'export type { Recipe, RecipeName, RecipeParams, RecipeVariants } from "pulsoicon-core";',
   ];
   const from = (k: string) => `./icons/${k}.svelte`;
-  writeFileSync(path.join(ROOT, "packages/svelte/src/index.ts"), [HEADER, ...head, "", ...webIndexLines(icons, from, () => "default"), ""].join("\n"));
-  writeFileSync(
-    path.join(ROOT, "packages/svelte/src/all.ts"),
-    webAll(icons, "PulsoIcon", 'import type { PulsoIcon } from "./types.js";', from, (i) => `import ${i.name} from "${from(i.key)}";`),
-  );
+  return [
+    ...writeTree("packages/svelte/src/icons", files, check),
+    ...writeOne("packages/svelte/src/names.ts", namesModule(icons), check),
+    ...writeOne("packages/svelte/src/index.ts", [HEADER, ...head, "", ...webIndexLines(icons, from, () => "default"), ""].join("\n"), check),
+    ...writeOne(
+      "packages/svelte/src/all.ts",
+      webAll(icons, "PulsoIcon", 'import type { PulsoIcon } from "./types.js";', from, (i) => `import ${i.name} from "${from(i.key)}";`),
+      check,
+    ),
+  ];
+}
+
+/**
+ * Angular: one standalone component and directive take the icon data as an input, so the package re-exports the core data
+ * (`Bell` is the icon's IconData). Each icon stays its own module in pulsoicon-core, so unused icons are tree-shaken.
+ */
+function genAngular(icons: IconData[], check: boolean): string[] {
+  const head = [
+    'export { PulsoIconComponent } from "./component";',
+    'export { PulsoIconDirective } from "./directive";',
+    'export type { IconData, IconHandle } from "./icon";',
+    'export { RECIPE_NAMES, RECIPES } from "pulsoicon-core";',
+    'export type { Recipe, RecipeName, RecipeParams, RecipeVariants } from "pulsoicon-core";',
+  ];
+  return writeOne("packages/angular/src/public-api.ts", [HEADER, ...head, "", ...webIndexLines(icons, (k) => `pulsoicon-core/icons/${k}`), ""].join("\n"), check);
+}
+
+/**
+ * Astro: one component file per icon wrapping Icon.astro, which renders the resting frame on the server. Its <script> is
+ * bundled once per icon used on the page and hands the icon's data to the client player.
+ */
+function genAstro(icons: IconData[], check: boolean): string[] {
+  const files = new Map<string, string>();
+  for (const i of icons) {
+    files.set(
+      `${i.key}.astro`,
+      [
+        "---",
+        HEADER,
+        'import type { IconProps } from "../types";',
+        "",
+        `import { ${i.name} as data } from "pulsoicon-core/icons/${i.key}";`,
+        "",
+        'import Icon from "../Icon.astro";',
+        "",
+        "type Props = IconProps;",
+        "---",
+        "",
+        "<Icon {...Astro.props} data={data} />",
+        "",
+        "<script>",
+        `  import { ${i.name} } from "pulsoicon-core/icons/${i.key}";`,
+        "",
+        '  import { register } from "../client";',
+        "",
+        `  register(${i.name});`,
+        "</script>",
+        "",
+      ].join("\n"),
+    );
+  }
+  const head = [
+    'export { default as Icon } from "./Icon.astro";',
+    'export type { IconHandle, IconProps, PulsoIcon } from "./types";',
+    'export { RECIPE_NAMES, RECIPES } from "pulsoicon-core";',
+    'export type { Recipe, RecipeName, RecipeParams, RecipeVariants } from "pulsoicon-core";',
+  ];
+  const from = (k: string) => `./icons/${k}.astro`;
+  return [
+    ...writeTree("packages/astro/src/icons", files, check),
+    ...writeOne("packages/astro/src/names.ts", namesModule(icons), check),
+    ...writeOne("packages/astro/src/index.ts", [HEADER, ...head, "", ...webIndexLines(icons, from, () => "default"), ""].join("\n"), check),
+    ...writeOne(
+      "packages/astro/src/all.ts",
+      webAll(icons, "PulsoIcon", 'import type { PulsoIcon } from "./types";', from, (i) => `import ${i.name} from "${from(i.key)}";`),
+      check,
+    ),
+  ];
 }
 
 async function main(): Promise<void> {
@@ -220,18 +302,16 @@ async function main(): Promise<void> {
     }
   }
 
-  const stale = [...genKotlin(icons, check), ...genSwift(icons, check)];
-  if (check) {
-    if (stale.length) {
-      console.error(`Generated files are out of date (run npx tsx scripts/gen.ts):\n  ${stale.slice(0, 20).join("\n  ")}${stale.length > 20 ? `\n  … ${stale.length - 20} more` : ""}`);
-      process.exit(1);
-    }
-    console.log(`gen --check: ${icons.length} icons up to date`);
-    return;
-  }
-
-  genCore(icons);
-  genWeb("react", icons, {
+  const webHead = [
+    'export { createIcon } from "./createIcon.js";',
+    'export type { IconHandle, IconProps, PulsoIcon } from "./createIcon.js";',
+    'export { RECIPE_NAMES, RECIPES } from "pulsoicon-core";',
+    'export type { Recipe, RecipeName, RecipeParams, RecipeVariants } from "pulsoicon-core";',
+  ];
+  const web = (pkg: string) => genWeb(pkg, icons, check, { create: "createIcon", createFrom: "../createIcon.js", type: "PulsoIcon", typeFrom: "./createIcon.js", head: webHead });
+  const stale = [
+    ...genCore(icons, check),
+    ...genWeb("react", icons, check, {
     create: "createIcon",
     createFrom: "../runtime/createIcon.js",
     type: "PulsoIcon",
@@ -242,20 +322,24 @@ async function main(): Promise<void> {
       'export { RECIPE_NAMES, RECIPES } from "pulsoicon-core";',
       'export type { Recipe, RecipeName, RecipeParams, RecipeVariants } from "pulsoicon-core";',
     ],
-  });
-  genWeb("vue", icons, {
-    create: "createIcon",
-    createFrom: "../createIcon.js",
-    type: "PulsoIcon",
-    typeFrom: "./createIcon.js",
-    head: [
-      'export { createIcon } from "./createIcon.js";',
-      'export type { IconHandle, IconProps, PulsoIcon } from "./createIcon.js";',
-      'export { RECIPE_NAMES, RECIPES } from "pulsoicon-core";',
-      'export type { Recipe, RecipeName, RecipeParams, RecipeVariants } from "pulsoicon-core";',
-    ],
-  });
-  genSvelte(icons);
+    }),
+    ...web("vue"),
+    ...genSvelte(icons, check),
+    ...web("solid"),
+    ...web("preact"),
+    ...genAngular(icons, check),
+    ...genAstro(icons, check),
+    ...genKotlin(icons, check),
+    ...genSwift(icons, check),
+  ];
+  if (check) {
+    if (stale.length) {
+      console.error(`Generated files are out of date (run npx tsx scripts/gen.ts):\n  ${stale.slice(0, 20).join("\n  ")}${stale.length > 20 ? `\n  … ${stale.length - 20} more` : ""}`);
+      process.exit(1);
+    }
+    console.log(`gen --check: ${icons.length} icons up to date`);
+    return;
+  }
   console.log(`gen: ${icons.length} icons, ${Object.values(ALIASES).flat().length} other names`);
 }
 

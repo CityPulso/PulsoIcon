@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>9955 animated icons. Every one has its own motion.</strong><br />
-  For React, Vue, Svelte, Jetpack Compose and SwiftUI. Icons come alive on hover; in React they replace lucide-react in one line.
+  For React, Vue, Svelte, Solid, Preact, Angular, Astro, Jetpack Compose and SwiftUI. Icons come alive on hover; in React they replace lucide-react in one line.
 </p>
 
 <p align="center">
@@ -26,6 +26,10 @@
   <a href="./packages/react/README.md">React</a> ·
   <a href="./packages/vue/README.md">Vue</a> ·
   <a href="./packages/svelte/README.md">Svelte</a> ·
+  <a href="./packages/solid/README.md">Solid</a> ·
+  <a href="./packages/preact/README.md">Preact</a> ·
+  <a href="./packages/angular/README.md">Angular</a> ·
+  <a href="./packages/astro/README.md">Astro</a> ·
   <a href="./kotlin/README.md">Android (Compose)</a> ·
   <a href="./swift/README.md">iOS / macOS (SwiftUI)</a> ·
   <a href="./packages/core/README.md">Core data</a>
@@ -53,20 +57,24 @@ Every one of the 9955 motions is written for this set. About 3,700 icons are dra
 - **Ships only what you use**: every icon is its own module and the package is side-effect free, so bundlers keep the icons you import and drop the rest. Three icons add about 12 kB before minification.
 - **Plays where people point**: hover or focus anywhere on a button, link, label, tab or menu item and its icon plays.
 - **Respects reduced motion**: nothing moves when the system asks for less motion.
-- **Every platform, one source**: React, Vue, Svelte, Jetpack Compose and SwiftUI draw the same icons with the same motion and take the same props.
+- **Every platform, one source**: React, Vue, Svelte, Solid, Preact, Angular, Astro, Jetpack Compose and SwiftUI draw the same icons with the same motion and take the same props.
 
 ## Packages
 
 One version number covers every package.
 
-| Platform                  | Install                                                                          | Guide                                        |
-| ------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
-| React 18+                 | `npm install pulsoicon-react`                                                    | [React README](./packages/react/README.md)   |
-| Vue 3.5+                  | `npm install pulsoicon-vue`                                                      | [Vue README](./packages/vue/README.md)       |
-| Svelte 5                  | `npm install pulsoicon-svelte`                                                   | [Svelte README](./packages/svelte/README.md) |
-| Android (Jetpack Compose) | `implementation("com.citypulso:pulsoicon-compose:<version>")`                    | [Android README](./kotlin/README.md)         |
-| iOS / macOS (SwiftUI)     | `.package(url: "https://github.com/CityPulso/PulsoIcon.git", from: "<version>")` | [iOS / macOS README](./swift/README.md)      |
-| Any other framework       | `npm install pulsoicon-core`                                                     | [Core README](./packages/core/README.md)     |
+| Platform                  | Install                                                                          | Guide                                          |
+| ------------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------- |
+| React 18+                 | `npm install pulsoicon-react`                                                    | [React README](./packages/react/README.md)     |
+| Vue 3.5+                  | `npm install pulsoicon-vue`                                                      | [Vue README](./packages/vue/README.md)         |
+| Svelte 5                  | `npm install pulsoicon-svelte`                                                   | [Svelte README](./packages/svelte/README.md)   |
+| Solid 1.8+                | `npm install pulsoicon-solid`                                                    | [Solid README](./packages/solid/README.md)     |
+| Preact 10.11+             | `npm install pulsoicon-preact`                                                   | [Preact README](./packages/preact/README.md)   |
+| Angular 19+               | `npm install pulsoicon-angular`                                                  | [Angular README](./packages/angular/README.md) |
+| Astro 5+                  | `npm install pulsoicon-astro`                                                    | [Astro README](./packages/astro/README.md)     |
+| Android (Jetpack Compose) | `implementation("com.citypulso:pulsoicon-compose:<version>")`                    | [Android README](./kotlin/README.md)           |
+| iOS / macOS (SwiftUI)     | `.package(url: "https://github.com/CityPulso/PulsoIcon.git", from: "<version>")` | [iOS / macOS README](./swift/README.md)        |
+| Any other framework       | `npm install pulsoicon-core`                                                     | [Core README](./packages/core/README.md)       |
 
 Each guide has the install, a quick start, every prop and how to play icons from code on that platform.
 
@@ -101,6 +109,32 @@ Svelte ([full guide](./packages/svelte/README.md)):
 <script lang="ts">
   import { Bell } from "pulsoicon-svelte";
 </script>
+
+<button><Bell size={20} /> Notifications</button>
+```
+
+Solid ([full guide](./packages/solid/README.md)) and Preact ([full guide](./packages/preact/README.md)) take the same JSX as React, imported from `pulsoicon-solid` or `pulsoicon-preact`.
+
+Angular ([full guide](./packages/angular/README.md)):
+
+```ts
+import { Bell, PulsoIconComponent } from "pulsoicon-angular";
+
+@Component({
+  imports: [PulsoIconComponent],
+  template: `<button><pulso-icon [icon]="Bell" size="20" /> Notifications</button>`,
+})
+export class Toolbar {
+  protected readonly Bell = Bell;
+}
+```
+
+Astro ([full guide](./packages/astro/README.md)):
+
+```astro
+---
+import Bell from "pulsoicon-astro/icons/bell";
+---
 
 <button><Bell size={20} /> Notifications</button>
 ```
@@ -191,25 +225,25 @@ to the correct logo. Issues on GitHub are welcome too.
 
 ```bash
 npm install
-npm run gen              # writes every platform's icon files from packages/core
-npm run preview:react    # gallery of every icon, http://localhost:10205
-npm run preview:vue      # the same gallery in Vue, http://localhost:10206
-npm run preview:svelte   # and in Svelte, http://localhost:10207
+npm run preview          # every gallery at once: React :10205, Vue :10206, Svelte :10207, Solid :10208,
+                         # Preact :10209, Angular :10210, Astro :10211 (npm run preview -- vue for just one)
+npm run gen              # after editing an icon: rewrites every platform's icon files from packages/core
 npm test
 npm run build
 ```
 
 Each icon is one data file in `packages/core/src/icons/<name>.ts`, shared by every platform: the shapes of the icon and, for each shape, an optional motion (`r` recipe from `packages/core/src/recipes.ts`, `d` delay, `x`/`y` direction, `a` amplitude, `o` pivot point on the 24×24 grid). Edit that file to change how an icon moves, then run `npm run gen`. Other names live in `packages/core/src/aliases.ts`.
 
-| Folder                                              | What                                                                               |
-| --------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| `packages/core`                                     | `pulsoicon-core`: the icons, recipes, solid drawings and the framework-free player |
-| `packages/react`, `packages/vue`, `packages/svelte` | The web packages; their icon files are generated                                   |
-| `kotlin/`                                           | The Android library (Gradle); `icons/` is generated and committed                  |
-| `swift/` and `Package.swift`                        | The Swift package; `Icons/` is generated and committed                             |
-| `preview/`                                          | The three galleries; `preview/shared` holds what they share                        |
+| Folder                                                        | What                                                                               |
+| ------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `packages/core`                                               | `pulsoicon-core`: the icons, recipes, solid drawings and the framework-free player |
+| `packages/react`, `vue`, `svelte`, `solid`, `preact`, `astro` | The web packages; their icon files are generated and committed                     |
+| `packages/angular`                                            | The Angular library, built by ng-packagr; npm publishes its `dist/`                |
+| `kotlin/`                                                     | The Android library (Gradle); `icons/` is generated and committed                  |
+| `swift/` and `Package.swift`                                  | The Swift package; `Icons/` is generated and committed                             |
+| `preview/`                                                    | One gallery per web framework; `preview/shared` holds what they share              |
 
-The Kotlin and Swift recipes are written by hand; their tests check them against `packages/core` (`kotlin/`: `./gradlew :pulsoicon:testDebugUnitTest`; Swift: `swift test`). `npm run test:browser` plays icons in Chromium through React, Vue and Svelte side by side and checks that they move the same.
+The Kotlin and Swift recipes are written by hand; their tests check them against `packages/core` (`kotlin/`: `./gradlew :pulsoicon:testDebugUnitTest`; Swift: `swift test`). `npm run test:browser` plays icons in Chromium through React, Vue, Svelte, Solid and Preact side by side and checks that they move the same.
 
 ### Releasing
 
