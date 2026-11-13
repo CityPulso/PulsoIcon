@@ -11,7 +11,7 @@ Xcode → File → Add Package Dependencies → `https://github.com/CityPulso/Pu
 ```swift
 .package(url: "https://github.com/CityPulso/PulsoIcon-Package.git", from: "<version>"),
 // and in your target:
-.product(name: "PulsoIcon", package: "PulsoIcon"),
+.product(name: "PulsoIcon", package: "PulsoIcon-Package"),
 ```
 
 ## Quick start
